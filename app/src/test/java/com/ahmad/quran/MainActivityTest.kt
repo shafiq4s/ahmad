@@ -85,10 +85,12 @@ class MainActivityTest {
             assertEquals("ar",a.resources.configuration.localesCompat())
             assertEquals(0,a.reader.parsedDocumentCount);assertEquals(0,a.reader.retainedDocumentCount)
             val list=a.findViewById<ListView>(R.id.surah_list)
+            a.findViewById<View>(R.id.open_surahs).performClick();shadowOf(Looper.getMainLooper()).idle()
             assertEquals(114,list.adapter.count)
             val row=list.adapter.getView(1,null,list)
             assertTrue(row.findViewById<TextView>(R.id.surah_details).text.contains(a.getString(R.string.medinan)))
             for(surah in listOf(1,2,3,112,114)) {
+                a.findViewById<View>(R.id.open_surahs).performClick();shadowOf(Looper.getMainLooper()).idle()
                 list.performItemClick(list.adapter.getView(surah-1,null,list),surah-1,surah.toLong())
                 val target=QuranSvgEdition(a).firstPage(surah)
                 await { a.findViewById<NativeSvgPageView>(R.id.mushaf_page).page?.geometry?.pageNumber==target }

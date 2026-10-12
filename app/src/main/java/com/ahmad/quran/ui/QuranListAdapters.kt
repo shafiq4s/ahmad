@@ -76,9 +76,33 @@ class BookmarkAdapter(private val context: Context, private val onRemove: (Readi
         val view=convertView ?: LayoutInflater.from(context).inflate(R.layout.row_bookmark,parent,false)
         val item=getItem(position)
         view.findViewById<TextView>(R.id.bookmark_surah).text=context.getString(R.string.ayah_surah,names[item.surahNumber].orEmpty())
-        view.findViewById<TextView>(R.id.bookmark_location).text=context.getString(R.string.ayah_page,item.pageNumber)+
-            (item.ayahNumber?.let { " · "+context.getString(R.string.ayah_number,it) }.orEmpty())
+        view.findViewById<TextView>(R.id.bookmark_location).text=item.ayahNumber?.let {
+            context.getString(R.string.bookmark_ayah_location,item.pageNumber,it)
+        } ?: context.getString(R.string.ayah_page,item.pageNumber)
         view.findViewById<View>(R.id.bookmark_remove).setOnClickListener { onRemove(item) }
+        return view
+    }
+}
+
+class SearchResultAdapter(private val context: Context) : BaseAdapter() {
+    private var items: List<com.ahmad.quran.data.Ayah> = emptyList()
+    private var surahs: List<Surah> = emptyList()
+    private var names: Map<Int,String> = emptyMap()
+    fun submit(items: List<com.ahmad.quran.data.Ayah>, surahs: List<Surah>) {
+        if(this.items === items && this.surahs === surahs) return
+        this.items=items;this.surahs=surahs;names=surahs.associate { it.surahNumber to it.name }
+        notifyDataSetChanged()
+    }
+    override fun getCount()=items.size
+    override fun getItem(position: Int)=items[position]
+    override fun getItemId(position: Int)=getItem(position).let { (it.surahNumber*1000+it.ayahNumber).toLong() }
+    override fun hasStableIds()=true
+    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+        val view=convertView ?: LayoutInflater.from(context).inflate(R.layout.row_search_result,parent,false)
+        val ayah=getItem(position)
+        view.findViewById<TextView>(R.id.search_result_reference).text=context.getString(R.string.quran_search_reference,names[ayah.surahNumber].orEmpty(),ayah.ayahNumber)
+        // Native line clamping previews the original string; no normalized text or edited substring is displayed.
+        view.findViewById<TextView>(R.id.search_result_text).text=ayah.text
         return view
     }
 }

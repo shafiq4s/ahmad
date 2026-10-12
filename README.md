@@ -50,13 +50,17 @@ The obsolete Open Mushaf image/rectangle runtime, temporary page assets and rast
 
 ## Reader interface
 
-The RTL header separates the current artwork-page surah name from its juz/page caption, with 48dp index/settings icon targets. A quiet bottom bar holds previous/next icons, the current page out of 604 and a bounded native page-entry dialog. Page changes use a short 110ms view-alpha transition without changing loading, cache or navigation. Warm surfaces, restrained green, flat rounded controls and subtle separators match the existing ayah dialog.
+The RTL header separates the current artwork-page surah name from its juz caption, with 48dp index/settings icon targets. A quiet bottom bar holds previous/next icons, the current page out of 604 and a bounded native page-entry dialog. Page changes use a short 110ms view-alpha transition without changing loading, cache or navigation. Warm surfaces, restrained green, flat rounded controls and subtle separators match the existing ayah dialog.
 
 The existing 114-surah ListView shows its original name/number/count/classification plus the first page from the Quran SVG edition. Settings retain the implemented local dark switch, add pinch guidance and show the actual build version and existing source/licenses. No placeholder audio controls or new libraries are introduced. See [UI validation](tools/reader-design/REPORT.md).
 
 ## Local reading experience
 
-The home index offers a named-surah/page resume card, a page-bookmark list and surah-name-only filtering. SharedPreferences stores the last successfully drawn artwork page, surah context and timestamp. Optional cold-start resume does not override saved-screen restoration. Page bookmarks are unique per edition/page and can retain a selected canonical ayah; footer and ayah-dialog toggles share the same local state. Removing bookmarks changes no Quran records.
+The current launch opens a compact home screen; the original index is a separate entry. Home exposes resume, open mushaf, surah index, bookmarks and offline Quran search. A native launch icon/readiness surface uses the existing vector book and app name, without a timer or extra activity. Automatic resume continues to respect the existing preference.
+
+Offline text search streams the read-only canonical table on IO workers, with a 250ms debounce, cancellation and batches of 50. Only comparison keys remove marks/tatweel, fold alif/yeh forms and try documented dagger-alif/carrier alternatives. Every result retains the original text; native maxLines previews it without rewriting. Results and direct surah/ayah jumps use the artwork edition map and select via the existing renderer after a successful draw. Back from results returns to the preserved search. No source/schema rebuild, SVG/geometry change, additional dependency or endpoint is introduced. See [search and navigation validation](tools/offline-search/REPORT.md).
+
+Home offers a named-surah/page resume card and a page-bookmark entry; the separate surah index retains name-only filtering. SharedPreferences stores the last successfully drawn artwork page, surah context and timestamp. Optional cold-start resume does not override saved-screen restoration. Page bookmarks are unique per edition/page and can retain a selected canonical ayah; footer and ayah-dialog toggles share the same local state. Removing bookmarks changes no Quran records.
 
 The existing compact jump dialog switches between page 1–604, juz 1–30 and surah selection. Official Tanzil juz starts are canonical IDs resolved through the current Quran SVG edition map: juz 7 starts at 5:82 on artwork page121, which itself begins at 5:78. This keeps canonical part membership separate from page layouts.
 

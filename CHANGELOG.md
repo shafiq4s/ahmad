@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased — Home, offline Quran search and ayah navigation
+
+- Added a compact RTL home screen with last-page resume and clear mushaf/index/bookmark/search entry points; retained optional automatic resume and local preferences.
+- Added cancellable, debounced, read-only canonical text search on IO workers, paged in batches of 50. Comparison keys fold documented Arabic spelling/marks; results retain the exact original Tanzil text, previewed with native line clamping.
+- Routed search results and a validated surah/ayah jump through the current Quran SVG edition map. Pending selection waits for successful page display and survives retry; the existing highlight/gesture/matrix implementation is unchanged.
+- Reused the vector book icon for native launch branding and a short named readiness surface without timers or new libraries. Added explicit empty states, accessibility pane labels and guarded retries.
+- Kept reader chrome styling and removed duplicated header page information; fixed last-read recording when a seed draws before canonical metadata is ready. Preserved original sources, geometry, edition mapping, downloader and three-document cache.
+- See tools/offline-search/REPORT.md for scope, normalization and verification. No audio, tafsir, payment, hosting or subscription work.
 ## Unreleased — Local reading experience
 
 - Unified quiet green/ivory surfaces, shared corner/spacing tokens and compatible system bars. Kept the approved SVG renderer, selection, touch polygons and gestures unchanged.

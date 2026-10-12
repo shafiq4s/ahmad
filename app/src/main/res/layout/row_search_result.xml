@@ -1,0 +1,8 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:minHeight="72dp" android:layoutDirection="rtl" android:orientation="vertical" android:padding="20dp">
+    <TextView android:id="@+id/search_result_reference" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textSize="15sp" android:textStyle="bold" android:textColor="@color/primary" />
+    <TextView android:id="@+id/search_result_text" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:textSize="22sp" android:textColor="@color/text_primary" android:lineSpacingExtra="5dp"
+        android:maxLines="3" android:ellipsize="end" android:textDirection="rtl" />
+</LinearLayout>

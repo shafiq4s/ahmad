@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">القرآن الكريم</string>
+    <string name="home">الرئيسية</string>
+    <string name="open_mushaf">فتح المصحف</string>
+    <string name="bookmarks_short">العلامات</string>
+    <string name="search">البحث</string>
+    <string name="quran_search_title">البحث في القرآن</string>
+    <string name="quran_search_hint">كلمة أو عبارة من القرآن</string>
+    <string name="quran_search_help">ابحث في الآيات دون اتصال بالإنترنت</string>
+    <string name="quran_search_initial">اكتب كلمة أو عبارة لعرض الآيات</string>
+    <string name="quran_search_empty">لا توجد آيات مطابقة. جرّب عبارة أخرى.</string>
+    <string name="quran_search_loading">جارٍ البحث…</string>
+    <string name="quran_search_error">تعذر عرض النتائج. حاول مرة أخرى.</string>
+    <string name="quran_search_more">عرض المزيد</string>
+    <string name="quran_search_count">النتائج المعروضة: %1$d</string>
+    <string name="quran_search_reference">سورة %1$s · الآية %2$d</string>
+    <string name="last_read_empty">ابدأ القراءة، وسيظهر آخر موضعك هنا.</string>
+    <string name="cache_empty">لا توجد صفحات منزلة بعد. الصفحات المضمنة متاحة دائمًا.</string>
+    <string name="jump_ayah_hint">رقم الآية من ١ إلى %1$d</string>
+    <string name="jump_ayah_title">رقم الآية</string>
+    <string name="first_ayah_number" translatable="false">1</string>
+    <string name="jump_ayah_invalid">أدخل رقم آية من 1 إلى %1$d.</string>
+    <string name="page_asset_test_unconfigured">لم يُضبط مصدر تحميل الصفحات في هذه النسخة التجريبية. الصفحات المضمنة والمحفوظة متاحة للقراءة.</string>
     <string name="ayah_options_title">تفاصيل الآية</string>
     <string name="ayah_close">إغلاق</string>
     <string name="ayah_surah">سورة %1$s</string>
@@ -14,7 +35,6 @@
     <string name="ayah_share">مشاركة</string>
     <string name="ayah_copied">تم نسخ نص الآية</string>
     <string name="surah_index">فهرس السور</string>
-    <string name="read_pages">قراءة بالصفحة</string>
     <string name="settings">الإعدادات</string>
     <string name="loading">جارٍ فتح المصحف…</string>
     <string name="load_error">تعذر فتح بيانات المصحف. حاول مرة أخرى.</string>
@@ -27,10 +47,8 @@
     <string name="surah_type_count">%1$s · عدد الآيات: %2$d</string>
     <string name="surah_ayah_count">عدد الآيات: %1$d</string>
     <string name="page_location">صفحة %1$d من %2$d</string>
-    <string name="page_juz">الصفحة %1$d من %2$d · الجزء %3$d</string>
     <string name="continue_reading">متابعة القراءة</string>
     <string name="resume_surah">%1$s · الآية %2$d</string>
-    <string name="resume_page">مصحف المدينة · الصفحة %1$d</string>
     <string name="reading_settings">إعدادات القراءة</string>
     <string name="dark_mode">الوضع الداكن</string>
     <string name="previous_page">الصفحة السابقة</string>
@@ -51,20 +69,17 @@ Creative Commons Attribution 3.0</string>
     <string name="svg_zoom_help">كبّر صفحة المصحف بإصبعين. المس الفراغ لإظهار الأشرطة أو إخفائها. التنقل بالسحب متاح بحجم الصفحة الأصلي.</string>
     <string name="quran_svg_attribution">Quran.ws مشروع مستقل، ومصدر صفحات المصحف وبيانات مواضع الآيات. توثيقه يُرجع أصل صفحات حفص إلى مصحف مجمع الملك فهد لعام ١٤٤١هـ.
 https://github.com/quran-ws/quran-svg</string>
-    <string name="reader_meta">الجزء %1$d · الصفحة %2$d</string>
     <string name="page_fraction">%1$d / %2$d</string>
     <string name="page_jump_title">انتقال في المصحف</string>
     <string name="page_jump_hint">أدخل رقم الصفحة من ١ إلى ٦٠٤</string>
     <string name="surah_first_page">صفحة %1$d</string>
     <string name="settings_subtitle">القراءة ومعلومات التطبيق</string>
     <string name="app_version">الإصدار %1$s</string>
-    <string name="mushaf_source_summary">مصحف المدينة · رواية حفص
-الرسم: Quran.ws / مجمع الملك فهد
-النص القرآني: Tanzil</string>
     <string name="sources_heading">المصادر والترخيص</string>
     <string name="bookmarks">العلامات المرجعية</string>
     <string name="bookmark_add_action">حفظ الصفحة كعلامة</string>
     <string name="bookmark_remove_action">إزالة العلامة</string>
+    <string name="bookmark_ayah_location">الصفحة %1$d · الآية %2$d</string>
     <string name="bookmarks_empty">لم تحفظ أي علامة بعد</string>
     <string name="bookmarks_hint">احفظ صفحة للعودة إليها بسهولة من هنا.</string>
     <string name="bookmarks_subtitle">صفحاتك المحفوظة على هذا الجهاز</string>

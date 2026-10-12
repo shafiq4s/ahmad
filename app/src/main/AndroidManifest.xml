@@ -11,6 +11,7 @@
         android:theme="@style/Theme.QuranReader">
         <activity
             android:name=".ui.MainActivity"
+            android:theme="@style/Theme.QuranReader.Launch"
             android:exported="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize">

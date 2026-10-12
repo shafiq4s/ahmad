@@ -1,0 +1,3 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/verse_badge">
+    <item><shape android:shape="rectangle"><solid android:color="@color/primary" /><corners android:radius="@dimen/button_radius" /></shape></item>
+</ripple>

@@ -18,14 +18,17 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.currentCoroutineContext
+import kotlinx.coroutines.ensureActive
 
-enum class Screen { QURAN, READER, SETTINGS, BOOKMARKS }
+enum class Screen { HOME, QURAN, READER, SETTINGS, BOOKMARKS, SEARCH }
 enum class ReaderMode { SURAH, PAGE }
 
 data class AyahDetails(val ayah: Ayah, val surahName: String, val juzNumber: Int?)
 
 data class QuranUiState(
-    val screen: Screen = Screen.QURAN,
+    val screen: Screen = Screen.HOME,
     val surahs: List<Surah> = emptyList(),
     val revelationTypes: Map<Int, String> = emptyMap(),
     val edition: MushafEdition? = null,
@@ -44,15 +47,22 @@ data class QuranUiState(
     val keepScreenAwake: Boolean = false,
     val autoResumeReading: Boolean = false,
     val showReaderBarsOnOpen: Boolean = true,
+    val targetAyah: AyahId? = null,
+    val searchQuery: String = "",
+    val searchResults: List<Ayah> = emptyList(),
+    val searchLoading: Boolean = false,
+    val searchHasMore: Boolean = false,
+    val searchError: Boolean = false,
 )
 
 class MainViewModel(application: Application, private val savedState: SavedStateHandle) : AndroidViewModel(application) {
     private val preferences = ReadingPreferences(application)
     private val repository = lazy { QuranRepository.open(application) }
     private var loadJob: Job? = null
+    private var searchJob: Job? = null
     private var svgEdition: QuranSvgEdition? = null
     private val mutableState = MutableStateFlow(QuranUiState(
-        screen = Screen.entries.firstOrNull { it.name == savedState.get<String>("readingScreen") } ?: Screen.QURAN,
+        screen = Screen.entries.firstOrNull { it.name == savedState.get<String>("readingScreen") } ?: Screen.HOME,
         mode = ReaderMode.entries.firstOrNull { it.name == savedState.get<String>("readerMode") } ?: ReaderMode.SURAH,
         surahNumber = (savedState.get<Int>("surahNumber") ?: 1).coerceIn(1, 114),
         pageNumber = (savedState.get<Int>("pageNumber") ?: 1).coerceIn(1, 604),
@@ -63,16 +73,75 @@ class MainViewModel(application: Application, private val savedState: SavedState
         keepScreenAwake = preferences.keepScreenAwake,
         autoResumeReading = preferences.autoResumeReading,
         showReaderBarsOnOpen = preferences.showReaderBarsOnOpen,
+        targetAyah = savedState.get<Int>("targetSurah")?.let { s -> savedState.get<Int>("targetAyah")?.let { a -> AyahId(s,a) } },
+        searchQuery = savedState.get<String>("searchQuery").orEmpty(),
     ))
     val state = mutableState.asStateFlow()
 
     private var autoResumePending = savedState.get<String>("readingScreen") == null && preferences.autoResumeReading
 
-    init { load() }
+    init {
+        load()
+        if(mutableState.value.searchQuery.isNotBlank()) search(mutableState.value.searchQuery)
+    }
 
     fun navigateTo(screen: Screen) {
+        if (screen != Screen.READER) clearTarget()
         savedState["readingScreen"] = screen.name
         mutableState.value = mutableState.value.copy(screen = screen)
+    }
+
+    fun navigateBack() {
+        val destination = if(mutableState.value.screen == Screen.READER)
+            Screen.entries.firstOrNull { it.name == savedState.get<String>("readerReturnScreen") && it != Screen.READER } ?: Screen.HOME
+            else Screen.HOME
+        navigateTo(destination)
+    }
+
+    fun openAyah(id: AyahId): Boolean {
+        val surah = mutableState.value.surahs.firstOrNull { it.surahNumber == id.surahNumber } ?: return false
+        if (id.ayahNumber !in 1..surah.ayahCount) return false
+        val map = svgEdition ?: return false
+        val page = map.pageForAyah(id) ?: return false
+        open(ReaderMode.PAGE, id.surahNumber, page, map.firstAyah(page), id)
+        return true
+    }
+    fun consumeTarget(id: AyahId) {
+        if(mutableState.value.targetAyah == id) clearTarget()
+    }
+    private fun clearTarget() {
+        savedState.remove<Int>("targetSurah");savedState.remove<Int>("targetAyah")
+        mutableState.value = mutableState.value.copy(targetAyah = null)
+    }
+
+    fun search(query: String) {
+        searchJob?.cancel()
+        savedState["searchQuery"] = query
+        mutableState.value = mutableState.value.copy(searchQuery=query,searchResults=emptyList(),searchLoading=query.isNotBlank(),searchHasMore=false,searchError=false)
+        if(query.isNotBlank()) runSearch(query,0,true)
+    }
+    fun loadMoreSearchResults() {
+        val current=mutableState.value
+        if(!current.searchLoading && (current.searchHasMore || current.searchError)) {
+            mutableState.value=current.copy(searchLoading=true,searchError=false)
+            runSearch(current.searchQuery,current.searchResults.size,false)
+        }
+    }
+    private fun runSearch(query: String, offset: Int, debounce: Boolean) {
+        searchJob=viewModelScope.launch {
+            try {
+                if(debounce) delay(250)
+                val rows=withContext(Dispatchers.IO) {
+                    val request=currentCoroutineContext()
+                    repository.value.searchAyahs(query,offset,51) { request.ensureActive() }
+                }
+                mutableState.value=mutableState.value.copy(searchResults=mutableState.value.searchResults+rows.take(50),
+                    searchLoading=false,searchHasMore=rows.size>50,searchError=false)
+            } catch(error: Exception) {
+                if(error is CancellationException) throw error
+                mutableState.value=mutableState.value.copy(searchLoading=false,searchError=true)
+            }
+        }
     }
 
     fun firstPageForSurah(surahNumber: Int): Int? = svgEdition?.firstPage(surahNumber)
@@ -126,12 +195,15 @@ class MainViewModel(application: Application, private val savedState: SavedState
     fun setShowReaderBarsOnOpen(enabled: Boolean) {
         preferences.setShowReaderBarsOnOpen(enabled);mutableState.value=mutableState.value.copy(showReaderBarsOnOpen=enabled)
     }
-    private fun open(mode: ReaderMode, surah: Int, page: Int, anchor: AyahId) {
+    private fun open(mode: ReaderMode, surah: Int, page: Int, anchor: AyahId, target: AyahId? = null) {
+        if(mutableState.value.screen != Screen.READER) savedState["readerReturnScreen"] = mutableState.value.screen.name
+        savedState["targetSurah"] = target?.surahNumber
+        savedState["targetAyah"] = target?.ayahNumber
         savedState["readerMode"] = mode.name
         savedState["surahNumber"] = surah
         savedState["pageNumber"] = page
         saveAnchor(anchor)
-        mutableState.value = mutableState.value.copy(mode = mode, surahNumber = surah, pageNumber = page, anchor = anchor)
+        mutableState.value = mutableState.value.copy(mode = mode, surahNumber = surah, pageNumber = page, anchor = anchor, targetAyah=target)
         navigateTo(Screen.READER)
         load()
     }
@@ -166,6 +238,7 @@ class MainViewModel(application: Application, private val savedState: SavedState
 
     override fun onCleared() {
         loadJob?.cancel()
+        searchJob?.cancel()
         if (repository.isInitialized()) repository.value.close()
         super.onCleared()
     }

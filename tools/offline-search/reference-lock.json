@@ -1,0 +1,14 @@
+{
+  "app/src/main/java/com/ahmad/quran/mushaf/svg/AyahHighlight.kt": "5bf92e4857cec04b77ad4e2fb297ea6623510f19e4bcbb0cc9d5d11ae69c6733",
+  "app/src/main/java/com/ahmad/quran/mushaf/svg/AyahPolygons.kt": "016d094d1d96338a12cca7a5e8b49588629c8bc2a309876c0623ad22330d4255",
+  "app/src/main/java/com/ahmad/quran/mushaf/svg/QuranSvgPageAdapter.kt": "481b8caf5bdf16b49ddb16873241deb41a5c30bba1b651830422b10bec184b1f",
+  "app/src/main/java/com/ahmad/quran/mushaf/svg/OpeningPageHitOverrides.kt": "9131c3381e7d5e2d58df92686dc6210eaa14595737d314bbfcab090a03056f30",
+  "app/src/main/java/com/ahmad/quran/mushaf/svg/QuranSvgEdition.kt": "ae4c365ec2514c247538db50bce3e35e73190459388d4489865514853cc6f3cd",
+  "app/src/main/java/com/ahmad/quran/mushaf/svg/NativeSvgPageLoader.kt": "185e5cc6a44805f68ee0bd781c48760ac2a4d29bf9cdb565107ddf0d05427b25",
+  "app/src/main/java/com/ahmad/quran/mushaf/svg/OnDemandPageAssets.kt": "67dbdf0fea2c059fc45f992e79bbd25fcf3d5471fb5b6bb1d52257b8eb7d7f54",
+  "app/src/main/java/com/ahmad/quran/ui/MushafReaderController.kt": "da0171bb674ece354dd7707419805c5789d83ada04f1083508c8ea94cbb8347e",
+  "app/src/main/java/com/ahmad/quran/ui/ReadingPreferences.kt": "5a9ad76be23aaa041cb15a643bb808e9d338e3b4906d221405781298ad12c68d",
+  "app/src/main/java/com/ahmad/quran/ui/AyahOptionsDialog.kt": "3b7a00cd61c218e51dea562dee8c952a0086234692c2af8c519334c68c1c3b62",
+  "app/build.gradle.kts": "bec5168409bf8a125a7f156e9c28b37f5ae048653cf527e745d0f824ab350a32",
+  "config/mushaf-page-assets.json": "43550f03ad1e23637012adbf125ca1e990d2bf7a3b117753a11d703ba473b7b1"
+}

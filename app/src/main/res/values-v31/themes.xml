@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.QuranReader.Launch" parent="Theme.QuranReader">
+        <item name="android:windowSplashScreenBackground">@color/surface</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_launcher</item>
+        <item name="android:windowSplashScreenAnimationDuration">0</item>
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+</resources>

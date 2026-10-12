@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/ayah_dialog_background">
+<LinearLayout
     android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="rtl"
     android:orientation="vertical" android:padding="24dp" android:background="@drawable/ayah_dialog_background">
     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/page_jump_title"
@@ -15,7 +16,12 @@
         android:minHeight="56dp" android:layout_marginTop="16dp" android:inputType="number" android:importantForAutofill="no"
         android:imeOptions="actionGo" android:selectAllOnFocus="true" android:maxLines="1" android:maxLength="4"
         android:hint="@string/page_number" android:gravity="center" android:textSize="24sp" />
-    <Spinner android:id="@+id/jump_selection" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="16dp" android:visibility="gone" android:contentDescription="@string/go_page" />
+    <Spinner android:id="@+id/jump_selection" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="16dp" android:visibility="gone" android:contentDescription="@string/jump_surah_hint" />
+    <TextView android:id="@+id/jump_ayah_label" style="@style/SettingsBody" android:text="@string/jump_ayah_title" android:labelFor="@id/jump_ayah_number" android:visibility="gone" />
+    <EditText android:id="@+id/jump_ayah_number" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:minHeight="56dp" android:layout_marginTop="12dp" android:inputType="number" android:importantForAutofill="no"
+        android:imeOptions="actionGo" android:singleLine="true" android:maxLength="3" android:gravity="center"
+        android:text="@string/first_ayah_number" android:textSize="22sp" android:hint="@string/ayah_options_title" android:visibility="gone" />
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal"
         android:gravity="end" android:layout_marginTop="20dp">
         <Button android:id="@+id/jump_confirm" style="@style/ReaderTextButton" android:layout_width="wrap_content"
@@ -24,3 +30,4 @@
             android:layout_height="48dp" android:minWidth="64dp" android:layout_marginStart="8dp" android:text="@string/ayah_close" />
     </LinearLayout>
 </LinearLayout>
+</ScrollView>

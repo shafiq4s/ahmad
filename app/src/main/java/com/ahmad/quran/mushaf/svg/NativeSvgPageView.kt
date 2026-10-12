@@ -135,6 +135,14 @@ class NativeSvgPageView @JvmOverloads constructor(context: Context, attrs: Attri
         transitionTo(visualHighlight())
     }
 
+    /** Navigation uses the approved selection renderer, without synthesizing a touch event. */
+    fun selectAyah(id: AyahId): Boolean {
+        if (page?.geometry?.regions?.none { it.ayahId == id } != false) return false
+        holdSelection()
+        select(id)
+        return true
+    }
+
     /** Keep the selection until another ayah, page or an explicit dismissal replaces it. */
     fun holdSelection() {
         selectionHeld = true

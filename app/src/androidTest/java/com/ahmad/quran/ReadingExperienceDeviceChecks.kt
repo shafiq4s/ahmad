@@ -62,16 +62,21 @@ class ReadingExperienceDeviceChecks(private val test: Instrumentation, private v
             activity.findViewById<View>(R.id.toggle_bookmark).performClick()
         }
         check(preferences.bookmarks.single().pageNumber == 121)
-        main { model.navigateTo(Screen.QURAN) }
-        waitUntil { activity.findViewById<View>(R.id.quran_panel).visibility == View.VISIBLE }
+        main { model.navigateTo(Screen.HOME) }
+        waitUntil { activity.findViewById<View>(R.id.home_panel).visibility == View.VISIBLE }
         main {
             check(activity.findViewById<TextView>(R.id.last_location).text.contains("المائدة"))
+        }
+        capture("01-home")
+        main { activity.findViewById<View>(R.id.open_surahs).performClick() }
+        waitUntil { activity.findViewById<View>(R.id.quran_panel).visibility == View.VISIBLE }
+        main {
             activity.findViewById<EditText>(R.id.surah_search).setText("الاخلاص")
             val rows = activity.findViewById<ListView>(R.id.surah_list)
             check(rows.adapter.count == 1 && rows.adapter.getItemId(0) == 112L)
             activity.findViewById<EditText>(R.id.surah_search).setText("")
         }
-        capture("01-home")
+        main { model.navigateTo(Screen.HOME) }
         main { activity.findViewById<View>(R.id.open_bookmarks).performClick() }
         waitUntil { activity.findViewById<View>(R.id.bookmarks_panel).visibility == View.VISIBLE }
         capture("02-bookmarks")

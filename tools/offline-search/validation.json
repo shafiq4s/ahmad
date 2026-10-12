@@ -1,0 +1,64 @@
+{
+  "tests": {
+    "app": {
+      "tests": 108,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "svg-native-prototype": {
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "testedApis": [
+    23,
+    36
+  ],
+  "platform": "Robolectric; UI captures use native Canvas",
+  "lint": {
+    "errors": 0,
+    "warnings": 9,
+    "issueIds": [
+      "LockedOrientationActivity",
+      "NewerVersionAvailable",
+      "DiscouragedApi",
+      "InefficientWeight",
+      "Overdraw",
+      "UselessParent",
+      "UselessParent",
+      "TooManyViews",
+      "UseKtx"
+    ]
+  },
+  "frozenReferencesUnchanged": 12,
+  "existingRepositoryAndRendererMethodsUnchanged": true,
+  "canonicalAndEditionAssetBytesExact": true,
+  "sourceArtworkCount": 604,
+  "packagedSeedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    300,
+    600,
+    601,
+    602,
+    603,
+    604
+  ],
+  "packagedOfficialPolygons": 604,
+  "defaultBaseUrl": "",
+  "newDependencies": [],
+  "searchPageSize": 50,
+  "searchComparisonOnlyNormalization": true,
+  "apk": {
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "bytes": 6862682,
+    "sha256": "335859a7b331ac50fba1d47929424dcc171bdb43b18295f2da5c975a2943e684",
+    "previousBytes": 6837509
+  }
+}

@@ -65,6 +65,7 @@ class ReaderDesignTest {
         val controller=Robolectric.buildActivity(MainActivity::class.java).setup();val a=controller.get()
         try {
             ready(a);assertEquals(0,a.reader.parsedDocumentCount)
+            a.findViewById<View>(R.id.open_surahs).performClick();settle(a)
             val list=a.findViewById<ListView>(R.id.surah_list);val map=QuranSvgEdition(a)
             for(i in 0 until list.adapter.count) {
                 val row=list.adapter.getView(i,null,list)
@@ -75,7 +76,7 @@ class ReaderDesignTest {
             capture(a,"surah-index")
             val v=page(a,121)
             assertEquals(a.getString(R.string.ayah_surah,"المائدة"),a.findViewById<TextView>(R.id.screen_title).text.toString())
-            assertEquals(a.getString(R.string.reader_meta,6,121),a.findViewById<TextView>(R.id.reader_location).text.toString())
+            assertEquals(a.getString(R.string.ayah_juz,6),a.findViewById<TextView>(R.id.reader_location).text.toString())
             assertEquals(a.getString(R.string.page_fraction,121,604),a.findViewById<TextView>(R.id.page_indicator).text.toString())
             assertNoCover(a,v)
             for(id in listOf(R.id.nav_quran,R.id.nav_settings,R.id.previous_page,R.id.next_page,R.id.go_page)) {

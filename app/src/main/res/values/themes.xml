@@ -12,12 +12,15 @@
         <item name="android:statusBarColor">@color/surface</item>
         <item name="android:navigationBarColor">@color/primary_dark</item>
     </style>
+    <style name="Theme.QuranReader.Launch" parent="Theme.QuranReader">
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
     <style name="AyahDialogAnimation">
         <item name="android:windowEnterAnimation">@anim/ayah_dialog_enter</item>
         <item name="android:windowExitAnimation">@anim/ayah_dialog_exit</item>
     </style>
     <style name="ReaderIconButton" parent="Widget.AppCompat.ImageButton">
-        <item name="android:layout_width">48dp</item><item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">@dimen/touch_target</item><item name="android:layout_height">@dimen/touch_target</item>
         <item name="android:padding">12dp</item><item name="android:background">?attr/selectableItemBackgroundBorderless</item>
         <item name="android:tint">@color/reader_icon_tint</item>
     </style>
@@ -25,7 +28,7 @@
         <item name="android:minHeight">48dp</item><item name="android:minWidth">64dp</item>
         <item name="android:paddingStart">16dp</item><item name="android:paddingEnd">16dp</item>
         <item name="android:background">@drawable/reader_button_background</item><item name="android:stateListAnimator">@null</item>
-        <item name="android:textColor">@color/primary</item><item name="android:textSize">16sp</item><item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/reader_icon_tint</item><item name="android:textSize">16sp</item><item name="android:textAllCaps">false</item>
     </style>
     <style name="SettingsSection">
         <item name="android:layout_width">match_parent</item><item name="android:layout_height">wrap_content</item>

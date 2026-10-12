@@ -12,6 +12,30 @@ import java.util.Locale
 class QuranRepository private constructor(private val database: SQLiteDatabase) : Closeable {
     val isReadOnly: Boolean get() = database.isReadOnly
 
+    /** Read-only cursor scan; comparison folding never changes canonical storage or results. */
+    fun searchAyahs(query: String, offset: Int = 0, limit: Int = 51, checkCancelled: () -> Unit = {}): List<Ayah> {
+        require(offset >= 0 && limit in 1..101)
+        val key = QuranSearch.key(query)
+        if (key.isEmpty()) return emptyList()
+        // ponytail: bounded 6236-row scan; add a separate search index only if measured latency warrants it.
+        return database.rawQuery(
+            "SELECT surahNumber,ayahNumber,text FROM ayah_texts WHERE textVersionId=? ORDER BY surahNumber,ayahNumber",
+            arrayOf(DEFAULT_TEXT_VERSION),
+        ).use { cursor ->
+            buildList {
+                var matched = 0
+                while (cursor.moveToNext()) {
+                    checkCancelled()
+                    val text = cursor.getString(2)
+                    if (QuranSearch.matches(text,key) && matched++ >= offset) {
+                        add(Ayah(cursor.getInt(0), cursor.getInt(1), text))
+                        if (size == limit) break
+                    }
+                }
+            }
+        }
+    }
+
     fun getSurahs(): List<Surah> = database.rawQuery(
         "SELECT surahNumber,name,ayahCount FROM surahs ORDER BY surahNumber", null,
     ).use { cursor -> buildList { while (cursor.moveToNext()) add(Surah(cursor.getInt(0), cursor.getString(1), cursor.getInt(2))) } }
