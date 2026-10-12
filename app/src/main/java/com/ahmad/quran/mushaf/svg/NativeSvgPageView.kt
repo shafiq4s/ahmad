@@ -28,7 +28,7 @@ class NativeSvgPageView @JvmOverloads constructor(context: Context, attrs: Attri
         private set
     private val matrix = Matrix()
     private val inverse = Matrix()
-    private val highlight = Paint(Paint.ANTI_ALIAS_FLAG).apply { color = 0x26C49A45 }
+    private val highlight = Paint(Paint.ANTI_ALIAS_FLAG)
     private var ink: AyahHighlight? = null
     private var visualPath: Path? = null
     private var previousPath: Path? = null
@@ -39,7 +39,11 @@ class NativeSvgPageView @JvmOverloads constructor(context: Context, attrs: Attri
     private var focus = PagePoint(0f, 0f)
     var selectedAyah: AyahId? = null
         private set
+    private var selectionHeld = false
     var onAyahLongPress: ((AyahId) -> Unit)? = null
+    var onAyahTap: ((AyahId) -> Unit)? = null
+    var onBlankTap: (() -> Unit)? = null
+    private var multiplePointers = false
     var onPageSwipe: ((Int) -> Unit)? = null
     /** One-shot completion of the next actual View draw, for the standalone gate. */
     var onNextRender: (() -> Unit)? = null
@@ -55,7 +59,17 @@ class NativeSvgPageView @JvmOverloads constructor(context: Context, attrs: Attri
     private val clearSelection = Runnable { selectedAyah = null; ink = null; transitionTo(null) }
     private val gestures = GestureDetector(context, object : GestureDetector.SimpleOnGestureListener() {
         override fun onDown(e: MotionEvent) = true
-        override fun onSingleTapUp(e: MotionEvent) = performClick()
+        override fun onSingleTapUp(e: MotionEvent): Boolean {
+            if (multiplePointers) return true
+            val chosen = hitTest(e.x, e.y)
+            if (chosen == null) onBlankTap?.invoke()
+            else {
+                holdSelection()
+                select(chosen)
+                onAyahTap?.invoke(chosen)
+            }
+            return performClick()
+        }
         override fun onFling(start: MotionEvent?, end: MotionEvent, velocityX: Float, velocityY: Float): Boolean {
             if (start == null || zoom > 1f || page == null) return false
             val dx = end.x-start.x
@@ -66,19 +80,14 @@ class NativeSvgPageView @JvmOverloads constructor(context: Context, attrs: Attri
             return true
         }
         override fun onLongPress(e: MotionEvent) {
+            if (multiplePointers) return
             val start = System.nanoTime()
-            selectedAyah = hitTest(e.x, e.y) ?: return
-            removeCallbacks(clearSelection)
+            val chosen = hitTest(e.x, e.y) ?: return
             lastLongPressDispatchNanos = System.nanoTime()-start
-            val chosen = selectedAyah!!
-            val current = page ?: return
+            select(chosen)
             onAyahLongPress?.invoke(chosen)
-            if (page !== current || selectedAyah != chosen) return
-            val region = current.geometry.regions.first { it.ayahId == chosen }
-            ink = AyahHighlight.prepare(current, region)
-            transitionTo(visualHighlight())
         }
-    })
+    }).apply { setOnDoubleTapListener(null) }
     private val scaleGestures = android.view.ScaleGestureDetector(context,
         object : android.view.ScaleGestureDetector.SimpleOnScaleGestureListener() {
             override fun onScale(detector: android.view.ScaleGestureDetector): Boolean {
@@ -92,6 +101,7 @@ class NativeSvgPageView @JvmOverloads constructor(context: Context, attrs: Attri
         removeCallbacks(clearSelection)
         this.page = page
         selectedAyah = null
+        selectionHeld = false
         resetHighlight()
         zoom = 1f
         updateMatrix()
@@ -104,6 +114,7 @@ class NativeSvgPageView @JvmOverloads constructor(context: Context, attrs: Attri
         onNextRender = null
         page = null
         selectedAyah = null
+        selectionHeld = false
         resetHighlight()
         invalidate()
     }
@@ -113,6 +124,27 @@ class NativeSvgPageView @JvmOverloads constructor(context: Context, attrs: Attri
         val event = MotionEvent.obtain(now, now, MotionEvent.ACTION_CANCEL, 0f, 0f, 0)
         gestures.onTouchEvent(event)
         event.recycle()
+    }
+
+    private fun select(id: AyahId) {
+        val current = page ?: return
+        removeCallbacks(clearSelection)
+        if (selectedAyah == id) return
+        selectedAyah = id
+        ink = AyahHighlight.prepare(current.geometry, current.geometry.regions.first { it.ayahId == id })
+        transitionTo(visualHighlight())
+    }
+
+    /** Keep the selection until another ayah, page or an explicit dismissal replaces it. */
+    fun holdSelection() {
+        selectionHeld = true
+        removeCallbacks(clearSelection)
+    }
+
+    fun clearAyahSelection() {
+        selectionHeld = false
+        removeCallbacks(clearSelection)
+        clearSelection.run()
     }
 
     fun setZoom(value: Float, x: Float = width/2f, y: Float = height/2f) {
@@ -179,10 +211,10 @@ class NativeSvgPageView @JvmOverloads constructor(context: Context, attrs: Attri
         val start = System.nanoTime()
         canvas.save()
         canvas.concat(matrix)
-        // Honey backdrop first: original vector letters, marks and numbers remain on top.
+        // Pale green line strips first; original vector letters, marks and numbers stay on top.
         fun backdrop(path: Path?, opacity: Float) {
             if (path != null && opacity > 0f) {
-                highlight.color = android.graphics.Color.argb((38*opacity).toInt(),196,154,69)
+                highlight.color = android.graphics.Color.argb((46*opacity).toInt(),123,183,150)
                 canvas.drawPath(path,highlight)
             }
         }
@@ -205,13 +237,15 @@ class NativeSvgPageView @JvmOverloads constructor(context: Context, attrs: Attri
     override fun performClick(): Boolean { super.performClick(); return true }
     @SuppressLint("ClickableViewAccessibility") // GestureDetector delegates ordinary taps to performClick.
     override fun onTouchEvent(event: MotionEvent): Boolean {
+        if (event.actionMasked == MotionEvent.ACTION_DOWN) multiplePointers = false
+        if (event.pointerCount > 1) multiplePointers = true
         scaleGestures.onTouchEvent(event)
         if (scaleGestures.isInProgress) {
             val cancel = MotionEvent.obtain(event).apply { action = MotionEvent.ACTION_CANCEL }
             gestures.onTouchEvent(cancel)
             cancel.recycle()
         } else gestures.onTouchEvent(event)
-        if (event.actionMasked == MotionEvent.ACTION_UP && selectedAyah != null) postDelayed(clearSelection, 1800)
+        if (event.actionMasked == MotionEvent.ACTION_UP && selectedAyah != null && !selectionHeld) postDelayed(clearSelection, 1800)
         return true
     }
 }

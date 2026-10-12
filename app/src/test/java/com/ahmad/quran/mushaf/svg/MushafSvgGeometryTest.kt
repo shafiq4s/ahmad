@@ -40,6 +40,9 @@ import java.time.Duration
 @Config(sdk = [23, 36])
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
 class MushafSvgGeometryTest {
+    @org.junit.Before fun installLocalRenderingFixtures() {
+        com.ahmad.quran.SourcePageFixtures.install(org.robolectric.RuntimeEnvironment.getApplication())
+    }
     private val context get() = RuntimeEnvironment.getApplication()
 
     @Test fun sourceIdentityAndOpeningOverridesRemainEditionScopedAndUnambiguous() {

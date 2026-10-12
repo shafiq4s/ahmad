@@ -1,0 +1,48 @@
+{
+  "tests": {
+    "app": {
+      "tests": 78,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "svg-native-prototype": {
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "debug": {
+      "errors": 0,
+      "warnings": 9,
+      "ids": [
+        "LockedOrientationActivity",
+        "NewerVersionAvailable",
+        "DiscouragedApi",
+        "InefficientWeight",
+        "Overdraw",
+        "UnusedResources",
+        "UselessParent",
+        "UselessParent",
+        "UseKtx"
+      ]
+    },
+    "release": {
+      "errors": 0,
+      "warnings": 9,
+      "ids": [
+        "LockedOrientationActivity",
+        "NewerVersionAvailable",
+        "DiscouragedApi",
+        "InefficientWeight",
+        "Overdraw",
+        "UnusedResources",
+        "UselessParent",
+        "UselessParent",
+        "UseKtx"
+      ]
+    }
+  }
+}

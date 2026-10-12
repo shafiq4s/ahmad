@@ -1,0 +1,42 @@
+[
+  {
+    "ayah": "1:1",
+    "page": 1,
+    "juz": 1,
+    "canonicalTextExact": true,
+    "copyExact": true,
+    "shareExact": true
+  },
+  {
+    "ayah": "1:7",
+    "page": 1,
+    "juz": 1,
+    "canonicalTextExact": true,
+    "copyExact": true,
+    "shareExact": true
+  },
+  {
+    "ayah": "2:282",
+    "page": 48,
+    "juz": 3,
+    "canonicalTextExact": true,
+    "copyExact": true,
+    "shareExact": true
+  },
+  {
+    "ayah": "5:78",
+    "page": 121,
+    "juz": 6,
+    "canonicalTextExact": true,
+    "copyExact": true,
+    "shareExact": true
+  },
+  {
+    "ayah": "114:6",
+    "page": 604,
+    "juz": 30,
+    "canonicalTextExact": true,
+    "copyExact": true,
+    "shareExact": true
+  }
+]

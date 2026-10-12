@@ -1,0 +1,21 @@
+{
+  "bind": "127.0.0.1",
+  "pagesServed": [
+    121,
+    119,
+    120,
+    122,
+    123
+  ],
+  "statusCodes": [
+    200,
+    200,
+    200,
+    200,
+    200
+  ],
+  "firstRequestedPage": 121,
+  "sourceHashesVerifiedByServer": true,
+  "serverStoppedBeforeOfflineReopen": true,
+  "noSecondDownload121": true
+}

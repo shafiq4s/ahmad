@@ -5,6 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
 import com.ahmad.quran.data.AyahId
+import com.ahmad.quran.data.Ayah
 import com.ahmad.quran.data.MushafEdition
 import com.ahmad.quran.data.QuranRepository
 import com.ahmad.quran.data.ReadingMetadata
@@ -18,8 +19,10 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-enum class Screen { QURAN, READER, SETTINGS }
+enum class Screen { QURAN, READER, SETTINGS, BOOKMARKS }
 enum class ReaderMode { SURAH, PAGE }
+
+data class AyahDetails(val ayah: Ayah, val surahName: String, val juzNumber: Int?)
 
 data class QuranUiState(
     val screen: Screen = Screen.QURAN,
@@ -36,6 +39,11 @@ data class QuranUiState(
     val notice: String = "",
     val loading: Boolean = true,
     val error: Boolean = false,
+    val bookmarks: List<ReadingBookmark> = emptyList(),
+    val juzPages: Map<Int, Int> = emptyMap(),
+    val keepScreenAwake: Boolean = false,
+    val autoResumeReading: Boolean = false,
+    val showReaderBarsOnOpen: Boolean = true,
 )
 
 class MainViewModel(application: Application, private val savedState: SavedStateHandle) : AndroidViewModel(application) {
@@ -51,8 +59,14 @@ class MainViewModel(application: Application, private val savedState: SavedState
         anchor = AyahId(savedState.get<Int>("anchorSurah") ?: 1, savedState.get<Int>("anchorAyah") ?: 1),
         lastLocation = preferences.lastLocation,
         darkMode = preferences.darkMode,
+        bookmarks = preferences.bookmarks,
+        keepScreenAwake = preferences.keepScreenAwake,
+        autoResumeReading = preferences.autoResumeReading,
+        showReaderBarsOnOpen = preferences.showReaderBarsOnOpen,
     ))
     val state = mutableState.asStateFlow()
+
+    private var autoResumePending = savedState.get<String>("readingScreen") == null && preferences.autoResumeReading
 
     init { load() }
 
@@ -60,6 +74,8 @@ class MainViewModel(application: Application, private val savedState: SavedState
         savedState["readingScreen"] = screen.name
         mutableState.value = mutableState.value.copy(screen = screen)
     }
+
+    fun firstPageForSurah(surahNumber: Int): Int? = svgEdition?.firstPage(surahNumber)
 
     fun openSurah(surahNumber: Int) {
         require(surahNumber in 1..114)
@@ -82,6 +98,34 @@ class MainViewModel(application: Application, private val savedState: SavedState
         open(ReaderMode.PAGE, location.surahNumber, page, id)
     }
 
+    fun openJuz(juzNumber: Int) {
+        mutableState.value.juzPages[juzNumber]?.let(::openPage)
+    }
+    fun toggleBookmark(pageNumber: Int, id: AyahId? = null) {
+        require(pageNumber in 1..604)
+        if (mutableState.value.bookmarks.any { it.editionId == QuranSvgEdition.ID && it.pageNumber == pageNumber }) {
+            removeBookmark(QuranSvgEdition.ID, pageNumber)
+        } else {
+            val contextId = id ?: checkNotNull(svgEdition).firstAyah(pageNumber)
+            val surah = mutableState.value.surahs.first { it.surahNumber == contextId.surahNumber }
+            require(contextId.ayahNumber in 1..surah.ayahCount)
+            preferences.saveBookmark(ReadingBookmark(pageNumber, contextId.surahNumber, id?.ayahNumber))
+            mutableState.value = mutableState.value.copy(bookmarks = preferences.bookmarks)
+        }
+    }
+    fun removeBookmark(editionId: String, pageNumber: Int) {
+        preferences.removeBookmark(editionId, pageNumber)
+        mutableState.value = mutableState.value.copy(bookmarks = preferences.bookmarks)
+    }
+    fun setKeepScreenAwake(enabled: Boolean) {
+        preferences.setKeepScreenAwake(enabled);mutableState.value=mutableState.value.copy(keepScreenAwake=enabled)
+    }
+    fun setAutoResumeReading(enabled: Boolean) {
+        preferences.setAutoResumeReading(enabled);mutableState.value=mutableState.value.copy(autoResumeReading=enabled)
+    }
+    fun setShowReaderBarsOnOpen(enabled: Boolean) {
+        preferences.setShowReaderBarsOnOpen(enabled);mutableState.value=mutableState.value.copy(showReaderBarsOnOpen=enabled)
+    }
     private fun open(mode: ReaderMode, surah: Int, page: Int, anchor: AyahId) {
         savedState["readerMode"] = mode.name
         savedState["surahNumber"] = surah
@@ -106,6 +150,15 @@ class MainViewModel(application: Application, private val savedState: SavedState
         mutableState.value = mutableState.value.copy(darkMode = enabled)
     }
     fun retry() = load()
+
+    suspend fun getAyahDetails(id: AyahId): AyahDetails = withContext(Dispatchers.IO) {
+        val ayah = checkNotNull(repository.value.getAyah(id.surahNumber, id.ayahNumber))
+        val surah = mutableState.value.surahs.first { it.surahNumber == id.surahNumber }
+        // Canonical juz membership, never a Tanzil page lookup.
+        AyahDetails(ayah, surah.name, repository.value.getJuzForAyah(
+            QuranRepository.DEFAULT_EDITION, id.surahNumber, id.ayahNumber,
+        ))
+    }
     private fun saveAnchor(anchor: AyahId) {
         savedState["anchorSurah"] = anchor.surahNumber
         savedState["anchorAyah"] = anchor.ayahNumber
@@ -129,6 +182,9 @@ class MainViewModel(application: Application, private val savedState: SavedState
                         val surahs = selection.surahs.ifEmpty { repo.getSurahs() }
                         val map = svgEdition ?: QuranSvgEdition(getApplication()).also { svgEdition=it }
                         val edition = map.edition
+                        val juzPages = selection.juzPages.ifEmpty { ReadingMetadata.getJuzStarts(getApplication()).mapValues { (_, id) ->
+                            checkNotNull(map.pageForAyah(id))
+                        } }
                         val types = selection.revelationTypes.ifEmpty { ReadingMetadata.getRevelationTypes(getApplication()) }
                         val page = if (selection.mode==ReaderMode.SURAH && selection.screen==Screen.READER)
                             map.pageForAyah(selection.anchor) ?: map.firstPage(selection.surahNumber)
@@ -139,18 +195,22 @@ class MainViewModel(application: Application, private val savedState: SavedState
                         val notice=selection.notice.ifEmpty {
                             repo.getNotice()+"\n\n"+getApplication<Application>().assets.open("mushaf-svg/NOTICE.md").bufferedReader().use { it.readText() }
                         }
-                        selection.copy(surahs = surahs, revelationTypes = types, edition = edition, anchor = anchor,
+                        selection.copy(surahs = surahs, revelationTypes = types, juzPages = juzPages, edition = edition, anchor = anchor,
                             mode=ReaderMode.PAGE, pageNumber = page, juzNumber = juz, notice = notice, loading = false)
                     }
                 }
                 savedState["pageNumber"] = loaded.pageNumber
                 saveAnchor(loaded.anchor)
                 mutableState.value = mutableState.value.copy(
-                    surahs = loaded.surahs, revelationTypes = loaded.revelationTypes, edition = loaded.edition,
+                    surahs = loaded.surahs, revelationTypes = loaded.revelationTypes, juzPages = loaded.juzPages, edition = loaded.edition,
                     anchor = loaded.anchor, pageNumber = loaded.pageNumber, juzNumber = loaded.juzNumber,
                     mode = ReaderMode.PAGE,
                     notice = loaded.notice, loading = false, error = false,
                 )
+                if (autoResumePending) {
+                    autoResumePending = false
+                    resumeReading()
+                }
             } catch (error: Exception) {
                 if (error is CancellationException) throw error
                 mutableState.value = mutableState.value.copy(loading = false, error = true)

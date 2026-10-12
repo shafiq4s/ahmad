@@ -1,0 +1,85 @@
+{
+  "appTests": {
+    "tests": 45,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "svg-native-prototypeTests": {
+    "tests": 13,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 5,
+    "issues": [
+      "LockedOrientationActivity",
+      "NewerVersionAvailable",
+      "DiscouragedApi",
+      "UseKtx",
+      "UseKtx"
+    ]
+  },
+  "debugApk": {
+    "bytes": 143176294,
+    "sha256": "eab51650e7943432dad911d8cc574dcce431135a73d1755aa0fa11006b76c498"
+  },
+  "finalSheetRecheck": {
+    "tests": 4,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "log": "/tmp/ayah-sheet-toast-fix.log"
+  },
+  "validatedAtUtc": "2026-10-12T02:38:50.641998+00:00",
+  "sourceSvgJsonFilesUnchanged": 1208,
+  "tanzilDigestsUnchanged": 11,
+  "geometryCacheControllerDigestsUnchanged": 7,
+  "highlightGeometryAndHitMethodsUnchanged": true,
+  "material": {
+    "url": "https://dl.google.com/dl/android/maven2/com/google/android/material/material/1.12.0/material-1.12.0.aar",
+    "bytes": 2323473,
+    "sha256": "4a672941b626b9ab91ae893ed22598ea53ad69125c858c0a59fa9b90daa5cb08",
+    "version": "1.12.0",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://raw.githubusercontent.com/material-components/material-components-android/1.12.0/LICENSE",
+    "licenseSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "pages": [
+    1,
+    1,
+    48,
+    121,
+    604
+  ],
+  "ayahIds": [
+    "1:1",
+    "1:7",
+    "2:282",
+    "5:78",
+    "114:6"
+  ],
+  "scopedNativeParagraphChecks": "API23 Android emulator plus Robolectric SDK36; SDK23/36 Robolectric functional identity, data, clipboard, share, lifetime, back/outside/drag checks",
+  "physicalDeviceTest": false,
+  "screenshots": [
+    "tools/ayah-sheet/screenshots/device-api23-short.png",
+    "tools/ayah-sheet/screenshots/device-api23-long-collapsed.png",
+    "tools/ayah-sheet/screenshots/device-api23-long-expanded.png"
+  ],
+  "actualAndroidEmulator": {
+    "api": 23,
+    "success": true,
+    "report": "tools/ayah-sheet/device-api23.json",
+    "fiveAyahsPassed": true,
+    "realAndroidTextScrollingVerified": true,
+    "copyExact": true,
+    "backKeepsReader": true,
+    "softwareCpuEmulation": true,
+    "physicalDevice": false
+  },
+  "api36Validation": "Robolectric simulation; no API36 native emulator run claimed",
+  "shareValidation": "Robolectric SDK23/36 native chooser intent; exact canonical EXTRA_TEXT only; no external message sent",
+  "api23CopyConfirmationFix": "Platform Toast uses application context to avoid Activity AppCompat inflater; native final copy checks pass."
+}

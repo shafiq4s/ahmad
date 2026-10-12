@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">القرآن الكريم</string>
+    <string name="ayah_options_title">تفاصيل الآية</string>
+    <string name="ayah_close">إغلاق</string>
+    <string name="ayah_surah">سورة %1$s</string>
+    <string name="ayah_number">الآية %1$d</string>
+    <string name="ayah_juz">الجزء %1$d</string>
+    <string name="ayah_page">الصفحة %1$d</string>
+    <string name="ayah_loading">جارٍ عرض الآية…</string>
+    <string name="ayah_play_later">تشغيل\nقريبًا</string>
+    <string name="ayah_tafsir_later">تفسير\nقريبًا</string>
+    <string name="ayah_copy">نسخ</string>
+    <string name="ayah_share">مشاركة</string>
+    <string name="ayah_copied">تم نسخ نص الآية</string>
     <string name="surah_index">فهرس السور</string>
     <string name="read_pages">قراءة بالصفحة</string>
     <string name="settings">الإعدادات</string>
     <string name="loading">جارٍ فتح المصحف…</string>
     <string name="load_error">تعذر فتح بيانات المصحف. حاول مرة أخرى.</string>
     <string name="retry">إعادة المحاولة</string>
+    <string name="page_asset_loading">جارٍ تحميل الصفحة…</string>
+    <string name="page_asset_error">تعذر تحميل الصفحة. تحقق من الاتصال وحاول مرة أخرى.</string>
     <string name="number_value">%1$d</string>
     <string name="meccan">مكية</string>
     <string name="medinan">مدنية</string>
@@ -26,22 +40,60 @@
     <string name="go_page">انتقال</string>
     <string name="page_invalid">أدخل رقم صفحة من 1 إلى %1$d.</string>
     <string name="about_heading">حول التطبيق</string>
-    <string name="about_description">قراءة القرآن كاملًا دون اتصال بالإنترنت.</string>
+    <string name="about_description">النص القرآني محفوظ محليًا. صفحات المصحف متاحة دون اتصال بعد تحميلها.</string>
     <string name="tanzil_attribution">نص القرآن وبيانات المصحف: Tanzil Project
 https://tanzil.net
 Creative Commons Attribution 3.0</string>
     <string name="tanzil_terms">النص محفوظ كما ورد من المصدر دون تغيير.</string>
     <string name="show_license">إشعار الترخيص</string>
     <string name="selected_ayah">%1$d:%2$d</string>
-    <string name="mushaf_page_description">صفحة المصحف. اسحب إلى اليمين للتقدم وإلى اليسار للرجوع. اضغط مطولًا لتحديد آية.</string>
-    <string name="zoom_1">1×</string>
-    <string name="zoom_2">2×</string>
-    <string name="zoom_4">4×</string>
-    <string name="svg_zoom_help">يمكن تكبير صفحة المصحف بإصبعين أو بأزرار التكبير. التنقل بالسحب متاح عندما تكون الصفحة بحجمها الأصلي.</string>
-    <string name="quran_svg_attribution">أصول المصحف وهندسة تحديد الآيات: Quran.ws
-https://github.com/quran-ws/quran-svg
-حفص / KFQC · v1.1.1
-المصدر التقني المثبت: b4155f07e4aea087d2c458069acff9f7c7e749f6
-بحسب توثيق المصدر، يعود الرسم إلى مصحف مجمع الملك فهد 1441هـ. Quran.ws مشروع تقني مستقل.
-مساهمات المصدر وبيانات التحديد: CC BY 4.0؛ شروط الرسم الأصلي محفوظة في إشعار الترخيص.</string>
+    <string name="mushaf_page_description">صفحة المصحف. اسحب إلى اليمين للتقدم وإلى اليسار للرجوع. المس آية لتحديدها، واضغط مطولًا لخياراتها. المس الفراغ لإظهار عناصر القراءة أو إخفائها.</string>
+    <string name="svg_zoom_help">كبّر صفحة المصحف بإصبعين. المس الفراغ لإظهار الأشرطة أو إخفائها. التنقل بالسحب متاح بحجم الصفحة الأصلي.</string>
+    <string name="quran_svg_attribution">Quran.ws مشروع مستقل، ومصدر صفحات المصحف وبيانات مواضع الآيات. توثيقه يُرجع أصل صفحات حفص إلى مصحف مجمع الملك فهد لعام ١٤٤١هـ.
+https://github.com/quran-ws/quran-svg</string>
+    <string name="reader_meta">الجزء %1$d · الصفحة %2$d</string>
+    <string name="page_fraction">%1$d / %2$d</string>
+    <string name="page_jump_title">انتقال في المصحف</string>
+    <string name="page_jump_hint">أدخل رقم الصفحة من ١ إلى ٦٠٤</string>
+    <string name="surah_first_page">صفحة %1$d</string>
+    <string name="settings_subtitle">القراءة ومعلومات التطبيق</string>
+    <string name="app_version">الإصدار %1$s</string>
+    <string name="mushaf_source_summary">مصحف المدينة · رواية حفص
+الرسم: Quran.ws / مجمع الملك فهد
+النص القرآني: Tanzil</string>
+    <string name="sources_heading">المصادر والترخيص</string>
+    <string name="bookmarks">العلامات المرجعية</string>
+    <string name="bookmark_add_action">حفظ الصفحة كعلامة</string>
+    <string name="bookmark_remove_action">إزالة العلامة</string>
+    <string name="bookmarks_empty">لم تحفظ أي علامة بعد</string>
+    <string name="bookmarks_hint">احفظ صفحة للعودة إليها بسهولة من هنا.</string>
+    <string name="bookmarks_subtitle">صفحاتك المحفوظة على هذا الجهاز</string>
+    <string name="resume_details">سورة %1$s · الصفحة %2$d</string>
+    <string name="surah_search_hint">بحث باسم السورة</string>
+    <string name="surah_search_empty">لا توجد سورة بهذا الاسم</string>
+    <string name="jump_page_mode">صفحة</string>
+    <string name="jump_juz_mode">جزء</string>
+    <string name="jump_surah_mode">سورة</string>
+    <string name="jump_juz_hint">اختر الجزء من ١ إلى ٣٠</string>
+    <string name="jump_surah_hint">اختر السورة</string>
+    <string name="keep_screen_awake">إبقاء الشاشة مضاءة أثناء القراءة</string>
+    <string name="auto_resume_reading">فتح آخر موضع تلقائيًا</string>
+    <string name="show_reader_bars">إظهار الأشرطة عند فتح القارئ</string>
+    <string name="cache_heading">الصفحات المحفوظة على الجهاز</string>
+    <string name="cache_size">حجم الصفحات المنزلة: %1$s</string>
+    <string name="cache_help">تبقى الصفحات المنزلة متاحة للقراءة دون اتصال.</string>
+    <string name="cache_clear">مسح الصفحات المنزلة</string>
+    <string name="cache_confirm">ستحتاج الصفحات المنزلة إلى التحميل مرة أخرى. ستبقى الصفحات المضمنة والعلامات وآخر موضع قراءة محفوظة.</string>
+    <string name="cache_clearing">جارٍ مسح الصفحات…</string>
+    <string name="cache_cleared">تم مسح الصفحات المنزلة</string>
+    <string name="cache_clear_failed">تعذر مسح بعض الصفحات. حاول مرة أخرى.</string>
+    <string name="cancel">إلغاء</string>
+    <string name="support_heading">دعم المشروع</string>
+    <string name="support_description">التطبيق مجاني. سيتاح الدعم الاختياري مستقبلًا للمساهمة في صيانة المشروع واستمراره.</string>
+    <string name="coming_soon">قريبًا</string>
+    <string name="privacy_heading">الخصوصية</string>
+    <string name="privacy_placeholder">سياسة الخصوصية قيد الإعداد، وستتوفر قبل النشر العام.</string>
+    <string name="about_sources">النص القرآني: Tanzil
+صفحات المصحف ومواضع الآيات: Quran.ws</string>
+    <string name="page_asset_unavailable">هذه الصفحة غير متاحة على جهازك حاليًا. يمكنك قراءة الصفحات المضمنة أو المحفوظة.</string>
 </resources>

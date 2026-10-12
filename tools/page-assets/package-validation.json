@@ -1,0 +1,50 @@
+{
+  "seedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    300,
+    600,
+    601,
+    602,
+    603,
+    604
+  ],
+  "seedRawBytes": 4963718,
+  "artifacts": {
+    "app/build/outputs/apk/debug/app-debug.apk": {
+      "bytes": 6792690,
+      "sha256": "a90b450afe19cf151a64272535944301fc90bbe9e326b3137916ba3951ac3e52",
+      "previousBytes": 141791033,
+      "reductionBytes": 134998343,
+      "reductionPercent": 95.2093656021252,
+      "svgCount": 11,
+      "officialPolygonCount": 604,
+      "seedCompressedBytes": 1719085
+    },
+    "app/build/outputs/apk/release/app-release-unsigned.apk": {
+      "bytes": 3200690,
+      "sha256": "e9a990f726b99019adc6f25414ffc430f8121d3fbb4901d0e4ea5a6e59a6d5c3",
+      "previousBytes": 104916870,
+      "reductionBytes": 101716180,
+      "reductionPercent": 96.94930853350849,
+      "svgCount": 11,
+      "officialPolygonCount": 604,
+      "seedCompressedBytes": 1320888
+    },
+    "app/build/outputs/bundle/release/app-release.aab": {
+      "bytes": 3822352,
+      "sha256": "e29962d710962ebe16624de467bf5cb26fff779a550124bec6dfc21dc7fd7e51",
+      "previousBytes": 105553635,
+      "reductionBytes": 101731283,
+      "reductionPercent": 96.3787585335171,
+      "svgCount": 11,
+      "officialPolygonCount": 604,
+      "seedCompressedBytes": 1320888
+    }
+  },
+  "frozenReadingReferencesUnchanged": true,
+  "sourceSvgCount": 604
+}

@@ -14,7 +14,9 @@ import java.util.Locale
 data class NativeSvgPage(val geometry: PolygonMushafPage, val artwork: SVG, val parseNanos: Long)
 
 /** Single caller thread in the app. Standard LRU bounds retained documents to one or three. */
-class NativeSvgPageLoader(private val context: Context, capacity: Int = 1, private val assetRoot: String = "mushaf-svg") : AutoCloseable, com.ahmad.quran.mushaf.MushafPageAssetProvider {
+class NativeSvgPageLoader(private val context: Context, capacity: Int = 1, private val assetRoot: String = "mushaf-svg",
+    private val pageAssets: OnDemandPageAssets? = if (assetRoot == "mushaf-svg") OnDemandPageAssets(context) else null,
+) : AutoCloseable, com.ahmad.quran.mushaf.MushafPageAssetProvider {
     val cache = LruCache<Int, NativeSvgPage>(capacity)
     private val repository = QuranRepository.open(context)
     private val adapter = QuranSvgPageAdapter { repository.getAyah(it.surahNumber, it.ayahNumber) != null }
@@ -26,7 +28,7 @@ class NativeSvgPageLoader(private val context: Context, capacity: Int = 1, priva
     override val availablePages: List<Int> get()=pages
     override fun openPage(pageNumber: Int): java.io.InputStream {
         require(pageNumber in pages)
-        return context.assets.open("$assetRoot/"+"%03d.svg".format(Locale.ROOT,pageNumber))
+        return pageAssets?.openPage(pageNumber) ?: context.assets.open("$assetRoot/"+"%03d.svg".format(Locale.ROOT,pageNumber))
     }
     @Volatile var parsedDocumentCount = 0
         private set
@@ -44,7 +46,7 @@ class NativeSvgPageLoader(private val context: Context, capacity: Int = 1, priva
         cache.snapshot().keys.filter { it !in allowed }.forEach { cache.remove(it) }
     }
 
-    fun load(number: Int): NativeSvgPage {
+    fun load(number: Int, shouldContinue: () -> Boolean = { true }): NativeSvgPage {
         require(number in pages)
         cache.get(number)?.let { return it }
         if (cache.maxSize() == 1) cache.evictAll()
@@ -52,8 +54,11 @@ class NativeSvgPageLoader(private val context: Context, capacity: Int = 1, priva
         val metadata = catalog.getJSONArray("pages").getJSONObject(pages.indexOf(number))
         val source = adapter.parse(catalog.getString("editionId"), number,
             box(metadata.getJSONArray("viewBox")), box(metadata.getJSONArray("renderBox")), read("$stem.json"))
-        val start = System.nanoTime()
-        val svg = openPage(number).use { SVG.getFromInputStream(it) }
+        var start = 0L
+        val svg = (pageAssets?.openPage(number, shouldContinue) ?: openPage(number)).use {
+            start = System.nanoTime()
+            SVG.getFromInputStream(it)
+        }
         parsedDocumentCount++
         val elapsed = System.nanoTime()-start
         return NativeSvgPage(overrides.apply(source), svg, elapsed).also { cache.put(number, it) }
@@ -65,7 +70,8 @@ class NativeSvgPageLoader(private val context: Context, capacity: Int = 1, priva
         val index = pages.indexOf(number)
         listOfNotNull(pages.getOrNull(index-1), pages.getOrNull(index+1)).forEach {
             if (!shouldContinue()) return
-            load(it)
+            // Memory prefetch only parses neighbours already local; disk prefetch owns downloads.
+            if (pageAssets == null || pageAssets.isLocal(it)) load(it, shouldContinue)
         }
     }
 

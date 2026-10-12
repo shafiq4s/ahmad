@@ -1,4 +1,10 @@
 import java.security.MessageDigest
+import org.gradle.api.file.DirectoryProperty
+import org.gradle.api.tasks.OutputDirectory
+
+abstract class StagePageAssets : Exec() {
+    @get:OutputDirectory abstract val outputDirectory: DirectoryProperty
+}
 
 plugins {
     id("com.android.application")
@@ -15,7 +21,9 @@ android {
         targetSdk = 36
         versionCode = 5
         versionName = "0.5.0"
-        testInstrumentationRunner = "com.ahmad.quran.MushafInstrumentation"
+        testInstrumentationRunner = if (providers.gradleProperty("pageAssetDeviceTests").orNull == "true")
+            "com.ahmad.quran.PageAssetInstrumentation" else if (providers.gradleProperty("readerUiDeviceTests").orNull == "true")
+            "com.ahmad.quran.ReaderUiInstrumentation" else "com.ahmad.quran.MushafInstrumentation"
     }
 
     compileOptions {
@@ -30,9 +38,6 @@ android {
         }
     }
     buildFeatures { buildConfig = true }
-    sourceSets {
-        getByName("main").assets.srcDir("../tools/mushaf-svg/local-assets")
-    }
     testOptions {
         unitTests.isIncludeAndroidResources = true
         unitTests.all {
@@ -80,3 +85,23 @@ val checkSvgDependency = tasks.register("checkSvgDependency") {
     }
 }
 tasks.matching { it.name == "preBuild" }.configureEach { dependsOn(checkMushafAssets, checkSvgDependency) }
+
+for (variant in listOf("debug", "release")) {
+    val baseUrl = providers.gradleProperty("quranPageBaseUrl").orElse("")
+    val output = layout.buildDirectory.dir("generated/pageAssets/$variant")
+    tasks.register<StagePageAssets>("stage${variant.replaceFirstChar { it.uppercase() }}PageAssets") {
+        dependsOn(checkMushafAssets)
+        inputs.file(rootProject.file("config/mushaf-page-assets.json"))
+        inputs.dir(rootProject.file("tools/mushaf-svg/local-assets"))
+        inputs.file(rootProject.file("tools/page-assets/stage_assets.py"))
+        inputs.property("baseUrl", baseUrl)
+        outputDirectory.set(output)
+        workingDir(rootProject.projectDir)
+        commandLine(listOf("python3", "tools/page-assets/stage_assets.py", "--destination", output.get().asFile.absolutePath,
+            "--base-url", baseUrl.get()) + if (variant == "debug") listOf("--allow-local-http") else emptyList())
+    }
+}
+androidComponents.onVariants { variant ->
+    val stage = tasks.named<StagePageAssets>("stage${variant.name.replaceFirstChar { it.uppercase() }}PageAssets")
+    variant.sources.assets?.addGeneratedSourceDirectory(stage) { it.outputDirectory }
+}

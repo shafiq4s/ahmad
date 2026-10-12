@@ -21,11 +21,14 @@ import java.time.Duration
 @Config(sdk=[36],qualifiers="xhdpi")
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
 class AyahHighlightCaptureTest {
+    @org.junit.Before fun installLocalRenderingFixtures() {
+        com.ahmad.quran.SourcePageFixtures.install(org.robolectric.RuntimeEnvironment.getApplication())
+    }
     @Test fun captureReferencePages() {
         val app=RuntimeEnvironment.getApplication()
         val stage=System.getProperty("highlight.captureStage","after")
         val tools=File(requireNotNull(System.getProperty("quran.sourceDir")),"../..")
-        val output=File(tools,"ayah-highlight/screenshots/$stage").apply { mkdirs() }
+        val output=File(tools,"reader-ui/screenshots/$stage").apply { mkdirs() }
         NativeSvgPageLoader(app,1).use { loader ->
             for(number in listOf(1,2,48,121,604)) {
                 val view=NativeSvgPageView(app);view.layout(0,0,1080,1722);view.display(loader.load(number))
@@ -37,7 +40,7 @@ class AyahHighlightCaptureTest {
                     view.setZoom(1f);val focus=view.screenPoint(point);view.setZoom(zoom,focus.x,focus.y)
                     val p=view.screenPoint(point);val now=SystemClock.uptimeMillis()
                     val down=MotionEvent.obtain(now,now,MotionEvent.ACTION_DOWN,p.x,p.y,0);view.dispatchTouchEvent(down);down.recycle()
-                    shadowOf(Looper.getMainLooper()).idleFor(Duration.ofMillis(900))
+                    shadowOf(Looper.getMainLooper()).idleFor(Duration.ofMillis(650))
                     assertEquals(com.ahmad.quran.data.AyahId(row.getInt("surahNumber"),row.getInt("ayahNumber")),view.selectedAyah)
                     val bitmap=Bitmap.createBitmap(1080,1722,Bitmap.Config.ARGB_8888);bitmap.eraseColor(android.graphics.Color.WHITE)
                     view.draw(Canvas(bitmap))

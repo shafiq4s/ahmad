@@ -13,7 +13,7 @@ interface MushafPageMap {
     fun pageForAyah(id: AyahId): Int?
 }
 
-/** Offline edition assets. Polygon coordinates are independent of UI direction. */
+/** Edition artwork streams. Polygon coordinates are independent of asset storage and UI direction. */
 interface MushafPageAssetProvider {
     val editionId: String
     val availablePages: List<Int>

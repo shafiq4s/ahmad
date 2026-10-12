@@ -1,0 +1,9 @@
+{
+  "url": "https://dl.google.com/dl/android/maven2/com/google/android/material/material/1.12.0/material-1.12.0.aar",
+  "bytes": 2323473,
+  "sha256": "4a672941b626b9ab91ae893ed22598ea53ad69125c858c0a59fa9b90daa5cb08",
+  "version": "1.12.0",
+  "license": "Apache-2.0",
+  "licenseUrl": "https://raw.githubusercontent.com/material-components/material-components-android/1.12.0/LICENSE",
+  "licenseSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+}

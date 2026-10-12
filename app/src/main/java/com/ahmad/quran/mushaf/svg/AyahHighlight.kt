@@ -1,125 +1,57 @@
 package com.ahmad.quran.mushaf.svg
 
-import android.graphics.Bitmap
-import android.graphics.Canvas
-import android.graphics.Color
-import android.graphics.Paint
 import android.graphics.Path
 import android.graphics.RectF
-import kotlin.math.ceil
-import kotlin.math.max
+import kotlin.math.abs
 import kotlin.math.min
 
-/** Presentation only. Neither the source polygons nor hit testing consume this geometry. */
-internal class AyahHighlight private constructor(
-    private val original: Path,
-    private val inkBounds: List<RectF>,
-    private val uncertainty: Float,
-) {
-    var insetReduced=false
-        private set
-    val patchCount: Int get()=inkBounds.size
-
-    fun path(sourcePixelsPerScreenPixel: Float, density: Float): Path {
-        val inset=2.5f*density*sourcePixelsPerScreenPixel
-        val radius=1.25f*density*sourcePixelsPerScreenPixel
-        val safePadding=uncertainty+0.5f*density*sourcePixelsPerScreenPixel
-        val outerPadding=uncertainty+1.25f*density*sourcePixelsPerScreenPixel
-        val border=Path()
-        Paint(Paint.ANTI_ALIAS_FLAG).apply {
-            style=Paint.Style.STROKE;strokeWidth=2*inset;strokeJoin=Paint.Join.ROUND
-        }.getFillPath(original,border)
-        val core=Path(original)
-        if(!core.op(border,Path.Op.DIFFERENCE)) core.set(original)
-        val result=Path()
-        val protected=Path()
-        for(bounds in inkBounds) {
-            result.addPath(rounded(bounds,outerPadding,radius))
-            protected.addPath(rounded(bounds,safePadding,min(radius,safePadding)))
+/** Presentation-only line strips for the pinned Hafs/KFQC artwork. Never used by hit testing. */
+internal class AyahHighlight private constructor(val lines: List<RectF>) {
+    fun path(sourcePixelsPerScreenPixel: Float, density: Float): Path = Path().apply {
+        for (line in lines) {
+            val radius = min(3f * density * sourcePixelsPerScreenPixel, min(line.height(), line.width()) / 4f)
+            addRoundRect(line, radius, radius, Path.Direction.CW)
         }
-        // Compound winding paths union the rectangles without an expensive boolean op per patch.
-        // Recover the ink envelope locally wherever the 2.5dp erosion would cut a mark.
-        val fallback=Path(protected)
-        fallback.op(core,Path.Op.DIFFERENCE)
-        insetReduced=!fallback.isEmpty
-        if(!result.op(core,Path.Op.INTERSECT)) result.set(original)
-        result.op(protected,Path.Op.UNION)
-        if(inkBounds.isEmpty()) result.set(original)
-        result.op(original,Path.Op.INTERSECT)
-        return result
-    }
-
-    private fun rounded(bounds: RectF, padding: Float, radius: Float): Path {
-        val rect=RectF(bounds).apply { inset(-padding,-padding) }
-        return Path().apply { addRoundRect(rect,radius,radius,Path.Direction.CW) }
     }
 
     companion object {
-        private fun dilate(input: ByteArray,width: Int,height: Int,radius: Int,horizontal: Boolean): ByteArray {
-            val result=ByteArray(input.size)
-            val lines=if(horizontal)height else width
-            val length=if(horizontal)width else height
-            fun index(line: Int,position: Int)=if(horizontal)line*width+position else position*width+line
-            for(line in 0 until lines) {
-                var count=0
-                for(i in 0..min(radius,length-1)) count+=input[index(line,i)].toInt()
-                for(position in 0 until length) {
-                    if(count>0) result[index(line,position)]=1
-                    val remove=position-radius
-                    val add=position+radius+1
-                    if(remove>=0)count-=input[index(line,remove)].toInt()
-                    if(add<length)count+=input[index(line,add)].toInt()
-                }
+        fun prepare(page: PolygonMushafPage, region: AyahPolygonRegion): AyahHighlight {
+            // The opening spread has a narrower, seven-row typesetting grid. Other pages
+            // use the source's fifteen-row grid. These are visual bands, not touch overrides.
+            val opening = page.pageNumber <= 2
+            val firstCenter = if (opening) 32.5f else 25.25f
+            val pitch = if (opening) 28.33f else 36f
+            val height = pitch * 0.80f
+            val bounds = page.viewBox
+            val lines = (0 until if (opening) 7 else 15).mapNotNull { index ->
+                val center = firstCenter + index * pitch
+                val spans = region.polygons.flatMap { spansAt(it, center) }
+                if (spans.isEmpty()) return@mapNotNull null
+                // Unite every piece of this ayah on the same row, including intervening whitespace.
+                val left = spans.minOf { it.first }.coerceAtLeast(bounds.left)
+                val right = spans.maxOf { it.second }.coerceAtMost(bounds.right)
+                if (right <= left) null else RectF(left, center - height / 2f, right, center + height / 2f)
             }
-            return result
+            return AyahHighlight(lines)
         }
 
-        fun prepare(page: NativeSvgPage, region: AyahPolygonRegion): AyahHighlight {
-            val original=region.path()
-            val bounds=RectF();original.computeBounds(bounds,true)
-            // ponytail: selected-ayah analysis only, <=1024px per edge; never retain a page raster.
-            val scale=min(3f,1024f/max(bounds.width(),bounds.height()))
-            val width=max(1,ceil(bounds.width()*scale).toInt())
-            val height=max(1,ceil(bounds.height()*scale).toInt())
-            val bitmap=Bitmap.createBitmap(width,height,Bitmap.Config.ARGB_8888)
-            val pixels=IntArray(width*height)
-            try {
-                val canvas=Canvas(bitmap)
-                canvas.scale(scale,scale);canvas.translate(-bounds.left,-bounds.top)
-                canvas.clipPath(original)
-                page.artwork.renderToCanvas(canvas,page.geometry.viewBox)
-                bitmap.getPixels(pixels,0,width,0,0,width,height)
-            } finally { bitmap.recycle() }
-            val occupied=ByteArray(pixels.size)
-            for(i in pixels.indices) {
-                val color=pixels[i]
-                if(Color.alpha(color)>0 && min(Color.red(color),min(Color.green(color),Color.blue(color)))<250) occupied[i]=1
+        /** Horizontal winding-rule spans; source points and touch geometry remain immutable. */
+        private fun spansAt(polygon: PagePolygon, y: Float): List<Pair<Float, Float>> {
+            val crossings = polygon.points.indices.mapNotNull { index ->
+                val a = polygon.points[index]
+                val b = polygon.points[(index + 1) % polygon.points.size]
+                if (!((a.y <= y && b.y > y) || (b.y <= y && a.y > y))) null
+                else (a.x + (y - a.y) * (b.x - a.x) / (b.y - a.y)) to if (b.y > a.y) 1 else -1
+            }.sortedBy { it.first }
+            var winding = 0
+            var left = 0f
+            val spans = mutableListOf<Pair<Float, Float>>()
+            for ((x, direction) in crossings) {
+                if (winding == 0) left = x
+                winding += direction
+                if (winding == 0 && abs(x - left) > 0.001f) spans.add(left to x)
             }
-            // Join nearby ink locally, not by a full-width row projection or guessed line height.
-            val expanded=dilate(dilate(occupied,width,height,max(1,ceil(scale*0.6f).toInt()),true),
-                width,height,max(1,ceil(scale*0.35f).toInt()),false)
-            val queue=IntArray(pixels.size)
-            val bands=mutableListOf<RectF>()
-            for(seed in expanded.indices) {
-                if(expanded[seed].toInt()==0) continue
-                var head=0;var tail=1;queue[0]=seed;expanded[seed]=0
-                var left=width;var right=-1;var top=height;var bottom=-1
-                while(head<tail) {
-                    val cell=queue[head++];val x=cell%width;val y=cell/width
-                    if(occupied[cell].toInt()!=0) {
-                        left=min(left,x);right=max(right,x);top=min(top,y);bottom=max(bottom,y)
-                    }
-                    for(dy in -1..1) for(dx in -1..1) {
-                        val nx=x+dx;val ny=y+dy
-                        if(nx !in 0 until width || ny !in 0 until height) continue
-                        val next=ny*width+nx
-                        if(expanded[next].toInt()!=0) { expanded[next]=0;queue[tail++]=next }
-                    }
-                }
-                if(right>=0) bands.add(RectF(bounds.left+left/scale,bounds.top+top/scale,
-                    bounds.left+(right+1)/scale,bounds.top+(bottom+1)/scale))
-            }
-            return AyahHighlight(original,bands,2f/scale)
+            return spans
         }
     }
 }

@@ -1,0 +1,19 @@
+{
+  "api": 23,
+  "success": true,
+  "bundled": [
+    1,
+    300,
+    604
+  ],
+  "downloaded": [
+    119,
+    120,
+    121,
+    122,
+    123
+  ],
+  "sha256Exact": true,
+  "offlineReopen121": true,
+  "memoryDocumentsMax": 3
+}

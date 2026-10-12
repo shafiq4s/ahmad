@@ -1,0 +1,42 @@
+{
+  "api": 23,
+  "success": true,
+  "cases": [
+    {
+      "ayah": "1:1",
+      "page": 1,
+      "canonicalExact": true,
+      "copyExact": true,
+      "backKeepsReader": true
+    },
+    {
+      "ayah": "1:7",
+      "page": 1,
+      "canonicalExact": true,
+      "copyExact": true,
+      "backKeepsReader": true
+    },
+    {
+      "ayah": "2:282",
+      "page": 48,
+      "canonicalExact": true,
+      "copyExact": true,
+      "backKeepsReader": true
+    },
+    {
+      "ayah": "5:78",
+      "page": 121,
+      "canonicalExact": true,
+      "copyExact": true,
+      "backKeepsReader": true
+    },
+    {
+      "ayah": "114:6",
+      "page": 604,
+      "canonicalExact": true,
+      "copyExact": true,
+      "backKeepsReader": true
+    }
+  ],
+  "realAndroidTextScrollingVerified": true
+}

@@ -1,0 +1,115 @@
+{
+  "apk": {
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "bytes": 141791033,
+    "sha256": "957cd4fdd74904b8ef7144f160a1df3f32790620180dd7eb3e5be1ef6976c68f",
+    "signatureSchemes": [
+      "v1",
+      "v2"
+    ],
+    "minSdk": 23,
+    "targetSdk": 36
+  },
+  "tests": {
+    "app": {
+      "tests": 54,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "svg-native-prototype": {
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 9,
+    "warningIds": [
+      "LockedOrientationActivity",
+      "NewerVersionAvailable",
+      "DiscouragedApi",
+      "InefficientWeight",
+      "Overdraw",
+      "UnusedResources",
+      "UselessParent",
+      "UselessParent",
+      "UseKtx"
+    ]
+  },
+  "references": {
+    "stageFiles": 12,
+    "svgPages": 604,
+    "polygonPages": 604,
+    "tanzilFiles": 11,
+    "allUnchanged": true
+  },
+  "apiCoverage": {
+    "23": "Robolectric and actual Android emulator passed",
+    "36": "Robolectric passed; software emulator did not complete boot"
+  },
+  "newDependencies": [],
+  "internetPermission": false,
+  "deviceApi23": {
+    "design": {
+      "api": 23,
+      "success": true,
+      "readerPage": 121,
+      "immersivePage": 48,
+      "screenshots": 5
+    },
+    "canonical": {
+      "api": 23,
+      "success": true,
+      "cases": [
+        {
+          "ayah": "1:1",
+          "page": 1,
+          "canonicalExact": true,
+          "copyExact": true,
+          "backKeepsReader": true
+        },
+        {
+          "ayah": "1:7",
+          "page": 1,
+          "canonicalExact": true,
+          "copyExact": true,
+          "backKeepsReader": true
+        },
+        {
+          "ayah": "2:282",
+          "page": 48,
+          "canonicalExact": true,
+          "copyExact": true,
+          "backKeepsReader": true
+        },
+        {
+          "ayah": "5:78",
+          "page": 121,
+          "canonicalExact": true,
+          "copyExact": true,
+          "backKeepsReader": true
+        },
+        {
+          "ayah": "114:6",
+          "page": 604,
+          "canonicalExact": true,
+          "copyExact": true,
+          "backKeepsReader": true
+        }
+      ],
+      "realAndroidTextScrollingVerified": true
+    },
+    "apkInstalledBytes": 141791033,
+    "instrumentationSuccess": true
+  },
+  "screenshots": {
+    "tools/reader-design/screenshots/device-api23/page-jump.png": "2888f7261d42dab6f9eb8eff8654ff2181d9a5eb94846cbfb82eeda64064a36e",
+    "tools/reader-design/screenshots/device-api23/reader-121.png": "8436104772857c429b6c302c33bcfd772c583dd61357dae53020a72006391734",
+    "tools/reader-design/screenshots/device-api23/reader-48-immersive.png": "bbd3f40cfe574a85dfdf7714306b6f3fc970b0fb061bfe3e225dd7197bb3aac9",
+    "tools/reader-design/screenshots/device-api23/settings.png": "dbc5f739f645cb0693f428664593f0d0debfc00dcc581b7ea215c80c86f870dd",
+    "tools/reader-design/screenshots/device-api23/surah-index.png": "76e7b4087150852546867cb68891293420e80ef1baacc5e2c5b704dd60a7ae6e"
+  }
+}

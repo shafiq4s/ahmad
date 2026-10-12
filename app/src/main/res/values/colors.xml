@@ -6,4 +6,8 @@
     <color name="text_primary">#1D2925</color>
     <color name="text_secondary">#46554E</color>
     <color name="verse_badge">#E4EEE7</color>
+    <color name="surface_muted">#F0F3ED</color>
+    <color name="divider">#E1E7DF</color>
+    <color name="support_badge">#EEE7D7</color>
+    <color name="support_badge_text">#756443</color>
 </resources>

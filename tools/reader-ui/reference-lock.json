@@ -1,0 +1,10 @@
+{
+  "app/src/main/java/com/ahmad/quran/mushaf/svg/AyahPolygons.kt": "016d094d1d96338a12cca7a5e8b49588629c8bc2a309876c0623ad22330d4255",
+  "app/src/main/java/com/ahmad/quran/mushaf/svg/QuranSvgPageAdapter.kt": "481b8caf5bdf16b49ddb16873241deb41a5c30bba1b651830422b10bec184b1f",
+  "app/src/main/java/com/ahmad/quran/mushaf/svg/OpeningPageHitOverrides.kt": "9131c3381e7d5e2d58df92686dc6210eaa14595737d314bbfcab090a03056f30",
+  "app/src/main/java/com/ahmad/quran/mushaf/svg/NativeSvgPageLoader.kt": "06702bbb68cf8dd4b110bafd6439975d813e20690b549cfe86fc265ed858c758",
+  "app/src/main/java/com/ahmad/quran/ui/MushafReaderController.kt": "41034fbc92c00c5fc4e6e431d5085b19a83c2eb499031016cefff9e08aa28c12",
+  "app/src/main/java/com/ahmad/quran/mushaf/svg/QuranSvgEdition.kt": "ae4c365ec2514c247538db50bce3e35e73190459388d4489865514853cc6f3cd",
+  "tools/svg-native/opening-hit-overrides.json": "f9cdec09bb5abae526d5ce59aaa2fff9eaa5e3f26107f02c69352622dd258b22",
+  "app/src/main/AndroidManifest.xml": "fc95ac8197add4ba8f3e98eda1442cc810773e61f86c59f9c483b403b7f2b198"
+}

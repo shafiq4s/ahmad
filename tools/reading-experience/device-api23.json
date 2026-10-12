@@ -1,0 +1,13 @@
+{
+  "api": 23,
+  "success": true,
+  "resumeTimestamp": true,
+  "bookmarkModalExactId": true,
+  "surahNameSearch": true,
+  "juz7ArtworkPage": 121,
+  "optionsPersist": true,
+  "awakeOnlyInReader": true,
+  "entryBarsHidden": true,
+  "cacheClearPreservesLocalStateAndCanonicalAssets": true,
+  "screenshots": 5
+}

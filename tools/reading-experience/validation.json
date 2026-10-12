@@ -1,0 +1,67 @@
+{
+  "tests": {
+    "app": {
+      "tests": 92,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "svg-native-prototype": {
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 15,
+    "issueIds": [
+      "LockedOrientationActivity",
+      "NewerVersionAvailable",
+      "DiscouragedApi",
+      "InefficientWeight",
+      "Overdraw",
+      "UnusedResources",
+      "UnusedResources",
+      "UnusedResources",
+      "UnusedResources",
+      "UselessParent",
+      "UselessParent",
+      "TooManyViews",
+      "Autofill",
+      "UseKtx",
+      "SetTextI18n"
+    ]
+  },
+  "frozenReferencesUnchanged": 12,
+  "originalControllerMethodsUnchanged": true,
+  "packagedSeedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    300,
+    600,
+    601,
+    602,
+    603,
+    604
+  ],
+  "officialPolygons": 604,
+  "packagedSourceBytesExact": true,
+  "newDependencies": [],
+  "defaultBaseUrl": "",
+  "apk": {
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "bytes": 6837509,
+    "sha256": "72a6d4ba1af8516ce341351cb791f24d9f515c69dc4a28fad7e5ff739420ca0a",
+    "previousBytes": 6792690
+  },
+  "platformValidation": {
+    "23": "Robolectric and actual Android emulator passed",
+    "36": "Robolectric/native-Canvas passed; no device run claimed"
+  },
+  "nativeDeviceReport": "device-api23.json"
+}

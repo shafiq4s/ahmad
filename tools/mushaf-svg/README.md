@@ -8,8 +8,8 @@ license notice and all11 Tanzil reference hashes.
 
 Exactly604 full-page SVG and604 per-page JSON originals from
 `mushafs/hafs/kfqc/`, commit `b4155f07e4aea087d2c458069acff9f7c7e749f6`, stable
-assets v1.1.1. No surah crops. Committed local-assets is included in main assets,
-not in the optional five-page validation APK. A fresh checkout includes these files; restoration uses the pinned
+assets v1.1.1. No surah crops. Ignored local-assets is included in main assets,
+not in the optional five-page validation APK. Fresh preparation uses the pinned
 manifest URLs if original local cache files are unavailable; no application
 network capability is added.
 

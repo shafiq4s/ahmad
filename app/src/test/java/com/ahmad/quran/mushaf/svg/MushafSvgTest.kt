@@ -16,6 +16,9 @@ import java.security.MessageDigest
 @RunWith(RobolectricTestRunner::class)
 @Config(sdk=[23,36])
 class MushafSvgTest {
+    @org.junit.Before fun installLocalRenderingFixtures() {
+        com.ahmad.quran.SourcePageFixtures.install(org.robolectric.RuntimeEnvironment.getApplication())
+    }
     private val context get()=RuntimeEnvironment.getApplication()
     private fun read(name:String)=context.assets.open("mushaf-svg/$name").bufferedReader().use { it.readText() }
     private fun box(a:JSONArray)=RectF(a.getDouble(0).toFloat(),a.getDouble(1).toFloat(),(a.getDouble(0)+a.getDouble(2)).toFloat(),(a.getDouble(1)+a.getDouble(3)).toFloat())
@@ -25,7 +28,8 @@ class MushafSvgTest {
         val files=manifest.getJSONArray("files")
         for(i in 0 until files.length()) {
             val row=files.getJSONObject(i);val digest=MessageDigest.getInstance("SHA-256");var bytes=0L
-            context.assets.open("mushaf-svg/"+row.getString("filename")).use { stream ->
+            (if(row.getString("filename").endsWith(".svg")) com.ahmad.quran.SourcePageFixtures.original(row.getString("filename")).inputStream()
+                else context.assets.open("mushaf-svg/"+row.getString("filename"))).use { stream ->
                 val buffer=ByteArray(65536);var count=stream.read(buffer)
                 while(count>=0) { digest.update(buffer,0,count);bytes+=count;count=stream.read(buffer) }
             }

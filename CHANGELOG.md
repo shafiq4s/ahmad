@@ -1,5 +1,44 @@
 # Changelog
 
+## Unreleased — Local reading experience
+
+- Unified quiet green/ivory surfaces, shared corner/spacing tokens and compatible system bars. Kept the approved SVG renderer, selection, touch polygons and gestures unchanged.
+- Added timestamped last-read state, a surah/page resume card and optional cold-start resume; saved-screen recreation still takes precedence.
+- Added local page bookmarks with optional canonical ayah context, a compact list, footer toggle and add/remove in the existing ayah dialog. Copy/share remain text-only; playback and tafsir remain disabled.
+- Added surah-name filtering and a single page/juz/surah jump dialog. Juz targets resolve official canonical starts through the artwork edition, never Tanzil page starts.
+- Added persisted keep-awake and initial-bar preferences, readable disk-cache size and confirmed clearing of downloaded artwork after cancellation barriers. Seeds, canonical data, geometry, bookmarks and reading state remain intact.
+- Added support/about sections, honest future optional-support and privacy placeholders, and independent Quran.ws/KFQC provenance. No payment, audio, hosting or dependency change. See tools/reading-experience/REPORT.md.
+
+## Unreleased — Verified on-demand SVG pages
+
+- Package configurable original seeds (1–5, 300, 600–604), all604 polygons/maps/manifests/licenses and unchanged Tanzil; keep all originals in the source workspace.
+- Resolve bundled artwork, verified edition/version disk cache, then an explicit configurable source. Use native HttpURLConnection with timeouts, bounded retry, exact length/SHA-256 and atomic temporary-file commit.
+- Download raw neighbours ±2 after the requested page draws on an independent worker; keep parsed SVG memory capped at3 and prioritize distant foreground requests.
+- Add INTERNET and a debug-only local HTTP allowance, with empty default base URLs and no production domain. Add Arabic loading/failure/retry inside the page area. No networking library or audio feature.
+- Preserve text, source polygons/opening overrides, highlight, modal, gestures, renderer, canonical data, edition/page mapping and navigation. See tools/page-assets/REPORT.md.
+
+## Unreleased — Quiet reader chrome
+
+- Restyled the RTL header with current surah and a separate juz/page caption; added simple native index/settings icons with 48dp touch targets.
+- Restyled the footer with Arabic previous/next arrows, current page and a compact native page-entry dialog. Removed production zoom/debug controls; pinch remains unchanged.
+- Blank taps animate bar height/alpha over 190ms to release page space; the existing renderer handles viewport resizing. Added a light 110ms page reveal without changing cache or navigation.
+- Kept the existing ListView and added artwork-edition first-page labels; restyled existing settings with app version/source and pinch help.
+- Preserved renderer, hit testing, highlight, long press, ayah dialog, source polygons/overrides, edition, Tanzil, Gradle dependencies and manifest byte-for-byte. See tools/reader-design/REPORT.md.
+
+## Unreleased — Line selection and centered ayah options
+
+- Replaced ink-hugging patches with straight pale-green row strips, uniform per-page height/gaps and gentle rounded corners. Source polygons, opening hit overrides and artwork remain immutable; no selected-ayah raster analysis remains.
+- Ordinary taps select only; platform-timed long presses select and open one centered RTL dialog. Blank taps fade existing reader controls without changing the artwork viewport. Pinch, matrices, RTL fling navigation and cache remain unchanged.
+- Replaced the Bottom Sheet with a bounded, scrolling AppCompat dialog, explicit close and light window dim. Retained exact Tanzil text/metadata, artwork-edition page number, text-only copy/share and disabled playback/tafsir. Removed the now-unused Material dependency; added no library.
+- Added one hidden, default-off future recitation-on-tap preference, without playback, URLs, audio assets or network permission. See tools/reader-ui/REPORT.md for validation.
+
+## Unreleased — Canonical ayah bottom sheet
+
+- Added one RTL Material bottom sheet with surah/ayah/juz/current artwork-page metadata and verbatim canonical Tanzil text. It initially occupies 48% of the viewport and expands to 88%, with nested text scrolling and visible actions.
+- Retained the approved highlight while the sheet is open; Back, outside taps and downward dismissal use its unchanged fade-out. Another long press updates the same sheet. Touch polygons, matrices, highlight appearance, navigation methods, document cache and Quran reference bytes are unchanged.
+- Enabled text-only clipboard copy and native Android Sharesheet; play and tafsir are visibly disabled as coming later. Added no audio/tafsir implementation.
+- Added Google Material 1.12.0 (Apache-2.0) for standard dragging, nested scrolling and accessibility, with its official license packaged. See tools/ayah-sheet/REPORT.md for tests, scope and native automated captures.
+
 ## Unreleased — Ayah selection appearance
 
 - Added a soft honey backdrop at 15% opacity with a 140ms selection/clear transition; original SVG ink renders above it.

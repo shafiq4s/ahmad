@@ -37,6 +37,9 @@ import java.time.Duration
 @Config(sdk=[23,36])
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
 class MainActivityTest {
+    @org.junit.Before fun installLocalRenderingFixtures() {
+        com.ahmad.quran.SourcePageFixtures.install(org.robolectric.RuntimeEnvironment.getApplication())
+    }
     private fun await(condition:()->Boolean) {
         val deadline=System.nanoTime()+20_000_000_000L
         while (!condition() && System.nanoTime()<deadline) { shadowOf(Looper.getMainLooper()).idle();Thread.sleep(10) }
@@ -74,7 +77,7 @@ class MainActivityTest {
     @Test fun offlineIndexIsArabicAndStartupParsesZeroSvgDocuments() {
         val app=RuntimeEnvironment.getApplication()
         Settings.Global.putInt(app.contentResolver,Settings.Global.AIRPLANE_MODE_ON,1)
-        assertEquals(PackageManager.PERMISSION_DENIED,app.packageManager.checkPermission("android.permission.INTERNET",app.packageName))
+        assertEquals(PackageManager.PERMISSION_GRANTED,app.packageManager.checkPermission("android.permission.INTERNET",app.packageName))
         val controller=Robolectric.buildActivity(MainActivity::class.java).setup()
         try {
             val a=controller.get();ready(a)
@@ -128,7 +131,7 @@ class MainActivityTest {
         val controller=Robolectric.buildActivity(MainActivity::class.java).setup()
         try {
             val a=controller.get();ready(a);var view=page(a,1)
-            assertFalse(a.findViewById<Button>(R.id.previous_page).isEnabled)
+            assertFalse(a.findViewById<View>(R.id.previous_page).isEnabled)
             val now=SystemClock.uptimeMillis();val y=view.height/2f
             for((action,x,time) in listOf(Triple(MotionEvent.ACTION_DOWN,20f,now),Triple(MotionEvent.ACTION_MOVE,100f,now+30),Triple(MotionEvent.ACTION_UP,300f,now+60))) {
                 val e=MotionEvent.obtain(now,time,action,x,y,0);view.dispatchTouchEvent(e);e.recycle()
@@ -138,10 +141,16 @@ class MainActivityTest {
             for(n in listOf(604,25,400,100,600,121)) ViewModelProvider(a)[MainViewModel::class.java].openPage(n)
             await { view.page?.geometry?.pageNumber==121 };draw(a)
             assertEquals(121,ReadingPreferences(a).lastLocation!!.pageNumber)
-            page(a,604);assertFalse(a.findViewById<Button>(R.id.next_page).isEnabled)
-            a.findViewById<Button>(R.id.previous_page).performClick();await { view.page?.geometry?.pageNumber==603 };draw(a)
-            a.findViewById<EditText>(R.id.page_number).setText("605");a.findViewById<Button>(R.id.go_page).performClick()
-            assertNotNull(a.findViewById<EditText>(R.id.page_number).error)
+            page(a,604);assertFalse(a.findViewById<View>(R.id.next_page).isEnabled)
+            a.findViewById<View>(R.id.previous_page).performClick();await { view.page?.geometry?.pageNumber==603 };draw(a)
+            a.findViewById<Button>(R.id.go_page).performClick()
+            val jump=checkNotNull(a.pageJumpDialog)
+            val input=checkNotNull(jump.findViewById<EditText>(R.id.page_number))
+            input.setText("605");jump.findViewById<Button>(R.id.jump_confirm)!!.performClick()
+            assertNotNull(input.error)
+            input.setText("604");jump.findViewById<Button>(R.id.jump_confirm)!!.performClick()
+            await { view.page?.geometry?.pageNumber==604 };draw(a)
+            assertFalse(jump.isShowing)
         } finally { controller.pause().stop().destroy() }
     }
     @Test fun resumeRecreationAndLegacyTanzilLocationMigrateByAyah() {
@@ -163,13 +172,13 @@ class MainActivityTest {
     @Test fun localDarkSettingAndBothAttributionsRemainAvailable() {
         val controller=Robolectric.buildActivity(MainActivity::class.java).setup()
         try {
-            var a=controller.get();ready(a);a.findViewById<Button>(R.id.nav_settings).performClick();shadowOf(Looper.getMainLooper()).idle()
+            var a=controller.get();ready(a);a.findViewById<View>(R.id.nav_settings).performClick();shadowOf(Looper.getMainLooper()).idle()
             a.findViewById<SwitchCompat>(R.id.dark_mode).isChecked=true;shadowOf(Looper.getMainLooper()).idle()
             assertTrue(ReadingPreferences(a).darkMode)
             controller.recreate();a=controller.get();ready(a)
             assertEquals(Configuration.UI_MODE_NIGHT_YES,a.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK)
             assertTrue(a.findViewById<TextView>(R.id.tanzil_attribution).text.contains("https://tanzil.net"))
-            assertTrue(a.findViewById<TextView>(R.id.quran_svg_attribution).text.contains(QuranSvgEdition.COMMIT))
+            assertTrue(a.findViewById<TextView>(R.id.quran_svg_attribution).text.contains("مشروع مستقل"))
             a.findViewById<Button>(R.id.show_license).performClick()
             assertTrue(a.findViewById<TextView>(R.id.license_notice).text.contains("Tanzil Project"))
             assertTrue(a.findViewById<TextView>(R.id.license_notice).text.contains("CC BY 4.0"))

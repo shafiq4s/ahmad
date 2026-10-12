@@ -1,13 +1,13 @@
 # Architecture
 
-## Main offline page reader
+## Main page reader
 
 Native XML -> MainActivity -> MainViewModel and MushafReaderController.
 MainViewModel loads canonical metadata from the existing QuranRepository/read-only SQLite, reads the small QuranSvgEdition catalog and maintains navigation via SavedStateHandle/StateFlow. It does not parse artwork. The UI binds Arabic index/settings/page controls; the SVG is the entire visible page, with no reflowed Quran text over it.
 
-MushafReaderController owns one background loader worker. It releases the old view before a new load, rejects stale callbacks and loads only the selected page. NativeSvgPageLoader implements the edition asset provider with a standard LRU bounded to3 documents; current, previous and next are pruned on distant jumps. Prefetch runs after the current view draw, checks cancellation between pages and cannot block that first draw. Leaving the reader evicts retained documents; destruction closes the worker/repository.
+MushafReaderController uses an independent foreground loader and raw-file download worker. OnDemandPageAssets resolves bundled, verified disk, then remote data through the existing edition asset contract. Foreground jumps never queue behind optional neighbour downloads. Generation checks reject stale work/callbacks; in-progress reads have bounded timeouts. The page must draw before ±2 disk prefetch begins. Per-page locks coalesce concurrent transfers of the same page. NativeSvgPageLoader retains at most three parsed documents (current/nearest neighbours); memory prefetch reads only files already local and never starts downloads. Leaving the reader evicts parsed documents while keeping raw disk files. Closing stops both workers and the SQLite repository.
 
-NativeSvgPageView directly renders AndroidSVG1.4. One source-to-screen Matrix and its inverse handle drawing, highlighting and hit testing. No RTL reflection. Below API26 the approved software-layer fallback is unchanged; modern APIs keep the default hardware path. The view fits the source presentation box with preserved aspect ratio, supports vector zoom and RTL fling navigation at1x. Long press returns only AyahId; ordinary tap does not select. Source polygons with multiple components are grouped under one ayah. Selection remains temporary.
+NativeSvgPageView directly renders AndroidSVG1.4. One source-to-screen Matrix and its inverse handle drawing, highlighting and hit testing. No RTL reflection. Below API26 the approved software-layer fallback is unchanged; modern APIs keep the default hardware path. The view fits the source presentation box with preserved aspect ratio, supports vector zoom and RTL fling navigation at1x. Long press returns only AyahId; ordinary tap selects without opening a window. Source polygons with multiple components are grouped under one ayah. Selection remains temporary.
 
 QuranSvgPageAdapter is the sole external polygon-format parser. It rejects unsupported syntax, invalid canonical IDs, inconsistent edition/page identities and out-of-bounds coordinates. OpeningPageHitOverrides uses the unchanged local reviewed file only on pages1/2; official SVG/JSON bytes remain intact. Heading and unnumbered basmalah artwork has no canonical ayah identity.
 
@@ -15,13 +15,21 @@ QuranSvgPageAdapter is the sole external polygon-format parser. It rejects unsup
 
 `AyahId(surahNumber, ayahNumber)` and Ayah are unchanged. There is no pageNumber on canonical Ayah. QuranRepository's original Tanzil `madina_hafs_604` map remains frozen. The independent `quran_ws_hafs_kfqc_b4155f0` MushafEdition, MushafPageMap and MushafPageAssetProvider own artwork, polygon geometry and page-first/last/surah-start relationships. The production catalog is derived from the full audited edition-page-map, with a pinned manifest of its own. Tanzil boundaries provide a canonical juz label from the page's first ayah, not a page-layout calculation.
 
-SharedPreferences preserves the last successfully drawn edition/page. Older text-reader positions migrate via canonical ayah into the current artwork edition; a saved Tanzil page number is never reused blindly. SavedStateHandle restores recreation. Existing dark-mode and legacy text-size preferences are preserved; SVG reading uses pinch/buttons rather than reflowing text.
+SharedPreferences preserves the last successfully drawn edition/page. Older text-reader positions migrate via canonical ayah into the current artwork edition; a saved Tanzil page number is never reused blindly. SavedStateHandle restores recreation. Existing dark-mode and legacy text-size preferences are preserved; SVG reading uses pinch only rather than reflowing text.
+
+ReadingPreferences also stores a last-read timestamp, keep-awake/automatic-resume/initial-bars options and a small JSON list of local page bookmarks. ReadingBookmark owns edition/page plus optional canonical ayah context; canonical Ayah is unchanged. Malformed or invalid bookmark rows are rejected against the official surah counts. Automatic resume applies only to a fresh launch and never overwrites a restored screen. The index filters only surah names, without touching ayah text. Thirty official canonical juz starts resolve through QuranSvgEdition.pageForAyah; Tanzil page starts do not drive artwork jumps.
+
+DownloadedPageCache is a settings-only file-management helper scoped to the current artwork edition directory. Before clearing, the controller invalidates reader work and queues foreground/download barriers so cancelled writers cannot repopulate the cache after deletion. Disk-size calculation and deletion run off the main thread. Canonical database/assets, seed pages, polygon JSON and SharedPreferences live elsewhere and are never deleted. The existing transfer, verification, prioritization and bounded-memory methods remain unchanged.
+
+Support/about reuse the current lightweight settings screen. Support is explanatory text only, with no provider, payment state or network call. About separates independent Quran.ws from its documented upstream KFQC source and retains source notices/licenses. A privacy preparation placeholder has no URL. Shared visual dimensions and system-bar handling apply to host UI; none alter artwork geometry, highlight or touch matrices.
 
 The approved prebuilt database is atomically copied if needed, hash-verified, opened read-only with query_only and never populated by an initial ayah import. All11 approved artifact hashes are checked before builds. No schema/source text/normalization changes are permitted for UI work.
 
 ## Assets and dependencies
 
-Full originals are restored to ignored tools/mushaf-svg/local-assets and packaged via main assets sourceSet. Exactly604 SVG/604 JSON; no surah crops. Committed manifest fields include source URL/repository, pinned commit, stable release, edition, filename/length/SHA-256, notices and archive provenance. Build tasks verify assets, frozen Quran references and the AndroidSVG AAR before packaging. No full-artwork hash scan or SVG preload occurs at runtime startup.
+Full originals remain under ignored tools/mushaf-svg/local-assets. Variant-generated staging packages only the seed SVG list from config/mushaf-page-assets.json and all604 JSON/map/source manifests/hashes/licenses. Originals are never deleted or rewritten. The downloader takes an explicit configurable base URL, with no upstream URL fallback. Release defaults to no endpoint and requires HTTPS if configured; debug can use a loopback/emulator HTTP test host. INTERNET is the only new normal permission. HttpURLConnection, SHA-256, FileOutputStream and same-directory atomic rename cover downloading without an added networking dependency.
+
+Disk cache is namespaced by the pinned edition/version. Every cache read verifies expected length and SHA-256. Downloads have 5s connect/read timeouts, a 30s total transfer deadline, a two-attempt ceiling, size limits and cancellation checks; only a verified completed file gains the final .svg name. Orphan .part files are never opened. Runtime artwork startup parses no SVG or whole-corpus hashes. A page-area loading/error/retry overlay is host UI and changes none of the view's drawing/gesture/matrix/highlight code.
 
 The old image/rectangle runtime and raster-only trials were removed after the integration gate passed. Useful identity/bounds/scaling/heading/stale-touch tests now exercise the production polygon reader. The optional five-page native validation app shares production sources. Original manifests, notices and historical audit/provenance reports remain. The old unmodified upstream audit's marker-format incompatibility is documented in tools/svg-native/clean-audit; user explicitly accepted that diagnosed tool failure as nonblocking.
 
@@ -33,7 +41,7 @@ Only Abdul Kabir is initially planned. Avoid a fixed one-reciter enum in data co
 
 Timing items use independent ayah references and `startMs`/`endMs`, and identify the exact track/audio revision. A replaced MP3 must not silently use old timestamps. Verify numbering/bismillah correspondence before enabling tap-to-play. Playback may later choose a completed downloaded file or the remote stream, with a standard Android media stack assessed for API 23.
 
-No player, catalog fetch, download manager, foreground service, network permission, hosting upload, timing generator, or media dependency is added by this milestone.
+No audio player/catalog, download manager, foreground service, hosting upload, timing generator or media dependency is implemented. The page-asset HTTP client is independent of the deferred audio design.
 
 ## Validation
 

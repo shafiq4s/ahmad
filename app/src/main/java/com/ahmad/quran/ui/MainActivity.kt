@@ -1,16 +1,34 @@
 package com.ahmad.quran.ui
 
+import android.animation.ValueAnimator
 import android.content.Context
 import android.content.res.Configuration
 import android.os.Bundle
+import android.view.Gravity
+import android.view.Window
+import android.view.WindowManager
+import android.view.inputmethod.EditorInfo
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ListView
 import android.widget.TextView
+import android.widget.Spinner
+import android.widget.RadioGroup
+import android.widget.ArrayAdapter
+import android.text.format.Formatter
+import android.os.Build
+import androidx.appcompat.app.AlertDialog
+import androidx.core.content.ContextCompat
+import androidx.core.widget.doAfterTextChanged
+import androidx.core.view.doOnLayout
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+import org.json.JSONObject
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.appcompat.app.AppCompatDialog
 import androidx.appcompat.widget.SwitchCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
@@ -23,15 +41,32 @@ import androidx.lifecycle.repeatOnLifecycle
 import com.ahmad.quran.R
 import com.ahmad.quran.mushaf.svg.NativeSvgPageView
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.Job
 import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
     private lateinit var viewModel: MainViewModel
     private lateinit var backCallback: OnBackPressedCallback
+    private lateinit var bookmarkAdapter: BookmarkAdapter
+    private var previousScreen: Screen? = null
+    private var cacheRefresh: Job? = null
+    private var cacheClearBusy = false
+    private val pageSourceConfigured by lazy { assets.open("mushaf-svg/page-assets-config.json").bufferedReader().use { JSONObject(it.readText()).getString("baseUrl").isNotBlank() } }
     private lateinit var surahAdapter: SurahAdapter
     lateinit var reader: MushafReaderController
         private set
     private lateinit var pageView: NativeSvgPageView
+    lateinit var ayahDialog: AyahOptionsDialog
+        private set
+    private var ayahLoad: Job? = null
+    private var readerChromeVisible = true
+    private var chromeFraction = 1f
+    private var chromeAnimation: ValueAnimator? = null
+    private var topHeight = 0
+    private var bottomHeight = 0
+    private var displayedPage: Int? = null
+    var pageJumpDialog: AppCompatDialog? = null
+        private set
 
     override fun attachBaseContext(newBase: Context) {
         val arabic=Locale.forLanguageTag("ar")
@@ -56,31 +91,76 @@ class MainActivity : AppCompatActivity() {
         reader=MushafReaderController(this,pageView,createdAt,{ number ->
             viewModel.recordPageDisplayed(number)
             findViewById<View>(R.id.loading).isVisible=false
+            updatePageAssetStatus()
+            if (displayedPage!=null && displayedPage!=number) {
+                pageView.animate().alpha(1f).setDuration(110).start()
+            }
+            if(displayedPage==null || displayedPage==number) pageView.alpha=1f
+            displayedPage=number
         },{
             findViewById<View>(R.id.loading).isVisible=false
-            findViewById<View>(R.id.load_error).isVisible=true
-            findViewById<View>(R.id.retry_load).isVisible=true
+            updatePageAssetStatus()
         })
         pageView.onPageSwipe={ step -> viewModel.openPage(viewModel.state.value.pageNumber+step) }
+        pageView.onBlankTap={ toggleReaderChrome() }
         pageView.onAyahLongPress={ id ->
+            val page=checkNotNull(pageView.page).geometry
+            pageView.holdSelection()
+            ayahLoad?.cancel()
+            val surah=viewModel.state.value.surahs.first { it.surahNumber==id.surahNumber }
+            ayahDialog.begin(id,surah.name,page.editionId,page.pageNumber)
+            ayahLoad=lifecycleScope.launch {
+                try {
+                    val details=viewModel.getAyahDetails(id)
+                    if (pageView.selectedAyah==id && pageView.page?.geometry===page) ayahDialog.bind(details)
+                } catch (error: Exception) {
+                    if (error is kotlinx.coroutines.CancellationException) throw error
+                    ayahDialog.dismiss()
+                    android.widget.Toast.makeText(applicationContext,R.string.load_error,android.widget.Toast.LENGTH_SHORT).show()
+                }
+            }
             findViewById<TextView>(R.id.selected_ayah).apply {
-                text=getString(R.string.selected_ayah,id.surahNumber,id.ayahNumber);isVisible=true
+                text=getString(R.string.selected_ayah,id.surahNumber,id.ayahNumber);isVisible=false
             }
         }
-        listOf(R.id.zoom_1 to 1f,R.id.zoom_2 to 2f,R.id.zoom_4 to 4f).forEach { (id,zoom) ->
-            findViewById<Button>(id).setOnClickListener { pageView.setZoom(zoom) }
-        }
-        surahAdapter=SurahAdapter(this)
+        surahAdapter=SurahAdapter(this) { viewModel.firstPageForSurah(it) }
         findViewById<ListView>(R.id.surah_list).apply {
             adapter=surahAdapter
             setOnItemClickListener { _,_,position,_ -> viewModel.openSurah(surahAdapter.getItem(position).surahNumber) }
         }
+        findViewById<EditText>(R.id.surah_search).doAfterTextChanged {
+            surahAdapter.filter(it?.toString().orEmpty())
+            findViewById<View>(R.id.surah_search_empty).isVisible=surahAdapter.count==0 && !viewModel.state.value.loading
+        }
+        bookmarkAdapter=BookmarkAdapter(this) { viewModel.removeBookmark(it.editionId,it.pageNumber) }
+        findViewById<ListView>(R.id.bookmarks_list).apply {
+            adapter=bookmarkAdapter
+            setOnItemClickListener { _,_,position,_ -> viewModel.openPage(bookmarkAdapter.getItem(position).pageNumber) }
+        }
         backCallback=object:OnBackPressedCallback(false) {
-            override fun handleOnBackPressed() { viewModel.navigateTo(Screen.QURAN) }
+            override fun handleOnBackPressed() { if(!cacheClearBusy) viewModel.navigateTo(Screen.QURAN) }
         }
         onBackPressedDispatcher.addCallback(this,backCallback)
-        findViewById<Button>(R.id.nav_quran).setOnClickListener { viewModel.navigateTo(Screen.QURAN) }
-        findViewById<Button>(R.id.nav_settings).setOnClickListener { viewModel.navigateTo(Screen.SETTINGS) }
+        ayahDialog=AyahOptionsDialog(this) {
+            ayahLoad?.cancel()
+            pageView.clearAyahSelection()
+            findViewById<View>(R.id.selected_ayah).isVisible=false
+        }
+        ayahDialog.isPageBookmarked={ page -> viewModel.state.value.bookmarks.any { it.pageNumber==page } }
+        ayahDialog.onBookmarkToggle={ id,page -> viewModel.toggleBookmark(page,id) }
+        findViewById<View>(R.id.open_bookmarks).setOnClickListener { viewModel.navigateTo(Screen.BOOKMARKS) }
+        findViewById<View>(R.id.toggle_bookmark).setOnClickListener {
+            val page=pageView.page?.geometry?.pageNumber
+            val state=viewModel.state.value
+            if(reader.displaying && !state.loading && !state.error && page==state.pageNumber)
+                viewModel.toggleBookmark(checkNotNull(page),pageView.selectedAyah)
+        }
+        findViewById<SwitchCompat>(R.id.keep_screen_awake).setOnCheckedChangeListener { _,enabled -> viewModel.setKeepScreenAwake(enabled) }
+        findViewById<SwitchCompat>(R.id.auto_resume_reading).setOnCheckedChangeListener { _,enabled -> viewModel.setAutoResumeReading(enabled) }
+        findViewById<SwitchCompat>(R.id.show_reader_bars).setOnCheckedChangeListener { _,enabled -> viewModel.setShowReaderBarsOnOpen(enabled) }
+        findViewById<View>(R.id.cache_clear).setOnClickListener { confirmClearCache() }
+        findViewById<View>(R.id.nav_quran).setOnClickListener { viewModel.navigateTo(Screen.QURAN) }
+        findViewById<View>(R.id.nav_settings).setOnClickListener { viewModel.navigateTo(Screen.SETTINGS) }
         findViewById<Button>(R.id.continue_reading).setOnClickListener { viewModel.resumeReading() }
         findViewById<Button>(R.id.read_pages).setOnClickListener { viewModel.openPage(1) }
         findViewById<SwitchCompat>(R.id.dark_mode).setOnCheckedChangeListener { _,enabled ->
@@ -90,18 +170,14 @@ class MainActivity : AppCompatActivity() {
             }
         }
         findViewById<Button>(R.id.retry_load).setOnClickListener { viewModel.retry() }
-        findViewById<Button>(R.id.previous_page).setOnClickListener { viewModel.openPage(viewModel.state.value.pageNumber-1) }
-        findViewById<Button>(R.id.next_page).setOnClickListener { viewModel.openPage(viewModel.state.value.pageNumber+1) }
-        findViewById<Button>(R.id.go_page).setOnClickListener {
-            val input=findViewById<EditText>(R.id.page_number)
-            val page=input.text.toString().toIntOrNull()
-            if (page==null || page !in 1..604) input.error=getString(R.string.page_invalid,604)
-            else {
-                input.error=null;input.clearFocus()
-                WindowCompat.getInsetsController(window,input).hide(WindowInsetsCompat.Type.ime())
-                viewModel.openPage(page)
-            }
+        findViewById<Button>(R.id.page_asset_retry).setOnClickListener {
+            reader.retry(viewModel.state.value.pageNumber)
+            updatePageAssetStatus()
         }
+        findViewById<View>(R.id.previous_page).setOnClickListener { viewModel.openPage(viewModel.state.value.pageNumber-1) }
+        findViewById<View>(R.id.next_page).setOnClickListener { viewModel.openPage(viewModel.state.value.pageNumber+1) }
+        findViewById<Button>(R.id.go_page).setOnClickListener { showPageJump() }
+        findViewById<TextView>(R.id.app_version).text=getString(R.string.app_version,com.ahmad.quran.BuildConfig.VERSION_NAME)
         findViewById<Button>(R.id.show_license).setOnClickListener {
             findViewById<TextView>(R.id.license_notice).apply { isVisible=!isVisible }
         }
@@ -109,45 +185,243 @@ class MainActivity : AppCompatActivity() {
     }
     private fun render(state: QuranUiState) {
         val reading=state.screen==Screen.READER
+        val enteringReader=reading && previousScreen!=Screen.READER
+        val enteringSettings=state.screen==Screen.SETTINGS && previousScreen!=Screen.SETTINGS
+        if(previousScreen!=state.screen && state.screen!=Screen.QURAN) {
+            currentFocus?.clearFocus()
+            WindowCompat.getInsetsController(window,findViewById(R.id.app_root)).hide(WindowInsetsCompat.Type.ime())
+        }
+        if (ayahDialog.isOpen && (!reading || ayahDialog.pageNumber!=state.pageNumber)) ayahDialog.dismiss()
+        if (!reading && chromeFraction!=1f) restoreReaderChrome()
+        if (!reading) pageJumpDialog?.dismiss()
         findViewById<View>(R.id.app_label).isVisible=!reading
         findViewById<TextView>(R.id.screen_title).apply {
-            isVisible=state.screen==Screen.SETTINGS
-            text=getString(R.string.settings)
+            text=when(state.screen) {
+                Screen.READER -> state.surahs.firstOrNull { it.surahNumber==state.anchor.surahNumber }?.let { getString(R.string.ayah_surah,it.name) }
+                    ?: getString(R.string.app_name)
+                Screen.SETTINGS -> getString(R.string.settings)
+                Screen.QURAN -> getString(R.string.app_name)
+                Screen.BOOKMARKS -> getString(R.string.bookmarks)
+            }
         }
         surahAdapter.submit(state.surahs,state.revelationTypes)
-        mapOf(Screen.QURAN to R.id.quran_panel,Screen.READER to R.id.reader_panel,Screen.SETTINGS to R.id.settings_panel).forEach { (screen,id) ->
+        findViewById<View>(R.id.surah_search_empty).isVisible=surahAdapter.count==0 && !state.loading
+        bookmarkAdapter.submit(state.bookmarks,state.surahs)
+        findViewById<View>(R.id.bookmarks_empty).isVisible=state.bookmarks.isEmpty()
+        val bookmarked=state.bookmarks.any { it.pageNumber==state.pageNumber }
+        findViewById<android.widget.ImageButton>(R.id.toggle_bookmark).apply {
+            setImageResource(if(bookmarked)R.drawable.ic_bookmark_filled else R.drawable.ic_bookmark)
+            contentDescription=getString(if(bookmarked)R.string.bookmark_remove_action else R.string.bookmark_add_action)
+            isEnabled=reading && !state.loading && !state.error && reader.displaying && pageView.page?.geometry?.pageNumber==state.pageNumber
+        }
+        ayahDialog.refreshBookmarkAction()
+        mapOf(Screen.QURAN to R.id.quran_panel,Screen.READER to R.id.reader_panel,Screen.SETTINGS to R.id.settings_panel,Screen.BOOKMARKS to R.id.bookmarks_panel).forEach { (screen,id) ->
             findViewById<View>(id).isVisible=state.screen==screen
         }
         mapOf(Screen.QURAN to R.id.nav_quran,Screen.SETTINGS to R.id.nav_settings).forEach { (screen,id) ->
-            findViewById<Button>(id).isEnabled=state.screen!=screen
+            findViewById<View>(id).isEnabled=state.screen!=screen && !cacheClearBusy
         }
         if (reading && !state.loading && !state.error) {
             if (pageView.page?.geometry?.pageNumber!=state.pageNumber) findViewById<View>(R.id.selected_ayah).isVisible=false
+            if (displayedPage!=null && pageView.page?.geometry?.pageNumber!=state.pageNumber) {
+                pageView.animate().cancel();pageView.alpha=0.82f
+            }
             reader.show(state.pageNumber)
         } else if (!reading) reader.leave()
-        findViewById<View>(R.id.loading).isVisible=state.loading || (reading && !reader.displaying && !state.error)
+        findViewById<View>(R.id.loading).isVisible=state.loading
+        updatePageAssetStatus()
         findViewById<View>(R.id.load_error).isVisible=state.error
         findViewById<View>(R.id.retry_load).isVisible=state.error
         findViewById<TextView>(R.id.edition_name).text=state.edition?.name.orEmpty()
-        findViewById<TextView>(R.id.reader_location).text=state.juzNumber?.let { getString(R.string.page_juz,state.pageNumber,604,it) }
-            ?: getString(R.string.page_location,state.pageNumber,604)
+        findViewById<TextView>(R.id.reader_location).text=when(state.screen) {
+            Screen.READER -> state.juzNumber?.let { getString(R.string.reader_meta,it,state.pageNumber) }
+                ?: getString(R.string.ayah_page,state.pageNumber)
+            Screen.SETTINGS -> getString(R.string.settings_subtitle)
+            Screen.QURAN -> state.edition?.name.orEmpty()
+            Screen.BOOKMARKS -> getString(R.string.bookmarks_subtitle)
+        }
+        findViewById<TextView>(R.id.page_indicator).apply {
+            text=getString(R.string.page_fraction,state.pageNumber,604)
+            contentDescription=getString(R.string.page_location,state.pageNumber,604)
+        }
         findViewById<Button>(R.id.continue_reading).apply { isVisible=state.lastLocation!=null;isEnabled=!state.loading }
         findViewById<Button>(R.id.read_pages).isEnabled=!state.loading && state.edition!=null
         findViewById<TextView>(R.id.last_location).apply {
             isVisible=state.lastLocation!=null
-            text=state.lastLocation?.let { if(it.editionId==state.edition?.editionId) getString(R.string.resume_page,it.pageNumber)
-                else getString(R.string.resume_surah,state.surahs.firstOrNull { s -> s.surahNumber==it.surahNumber }?.name.orEmpty(),it.ayahNumber) }.orEmpty()
+            text=state.lastLocation?.let { location ->
+                val name=state.surahs.firstOrNull { it.surahNumber==location.surahNumber }?.name.orEmpty()
+                if(location.editionId==state.edition?.editionId) getString(R.string.resume_details,name,location.pageNumber)
+                else getString(R.string.resume_surah,name,location.ayahNumber)
+            }.orEmpty()
         }
         findViewById<SwitchCompat>(R.id.dark_mode).isChecked=state.darkMode
-        WindowCompat.getInsetsController(window,findViewById(R.id.app_root)).isAppearanceLightStatusBars=!state.darkMode
-        val input=findViewById<EditText>(R.id.page_number)
-        if (!input.hasFocus()) input.setText(getString(R.string.page_value,state.pageNumber))
-        findViewById<Button>(R.id.previous_page).isEnabled=!state.loading && state.pageNumber>1
-        findViewById<Button>(R.id.next_page).isEnabled=!state.loading && state.pageNumber<604
+        findViewById<SwitchCompat>(R.id.keep_screen_awake).isChecked=state.keepScreenAwake
+        findViewById<SwitchCompat>(R.id.auto_resume_reading).isChecked=state.autoResumeReading
+        findViewById<SwitchCompat>(R.id.show_reader_bars).isChecked=state.showReaderBarsOnOpen
+        if(reading && state.keepScreenAwake) window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+        else window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
+        syncSystemBars()
+        findViewById<View>(R.id.previous_page).isEnabled=!state.loading && state.pageNumber>1
+        findViewById<View>(R.id.next_page).isEnabled=!state.loading && state.pageNumber<604
         findViewById<Button>(R.id.go_page).isEnabled=!state.loading
         findViewById<TextView>(R.id.license_notice).text=state.notice
         backCallback.isEnabled=state.screen!=Screen.QURAN
+        previousScreen=state.screen
+        if(enteringSettings) refreshCacheSize()
+        if(enteringReader && !state.showReaderBarsOnOpen) findViewById<View>(R.id.bottom_bar).doOnLayout {
+            if(viewModel.state.value.screen==Screen.READER && readerChromeVisible) toggleReaderChrome()
+        }
     }
     override fun onPause() { if (::reader.isInitialized) reader.saveMeasurements();super.onPause() }
-    override fun onDestroy() { if (::reader.isInitialized) reader.close();super.onDestroy() }
+    private fun updatePageAssetStatus() {
+        val reading=viewModel.state.value.screen==Screen.READER
+        findViewById<View>(R.id.page_asset_status).isVisible=reading && !viewModel.state.value.error && !reader.displaying
+        findViewById<View>(R.id.page_asset_progress).isVisible=!reader.failed
+        findViewById<Button>(R.id.page_asset_retry).isVisible=reader.failed
+        findViewById<TextView>(R.id.page_asset_message).setText(when {
+            !reader.failed -> R.string.page_asset_loading
+            !pageSourceConfigured -> R.string.page_asset_unavailable
+            else -> R.string.page_asset_error
+        })
+        val state=viewModel.state.value
+        findViewById<View>(R.id.toggle_bookmark).isEnabled=reading && !state.loading && !state.error && reader.displaying && pageView.page?.geometry?.pageNumber==state.pageNumber
+    }
+    @Suppress("DEPRECATION")
+    private fun syncSystemBars() {
+        val dark=ReadingPreferences(this).darkMode
+        window.statusBarColor=ContextCompat.getColor(this,R.color.surface)
+        window.navigationBarColor=ContextCompat.getColor(this,if(Build.VERSION.SDK_INT>=26)R.color.surface else R.color.primary_dark)
+        WindowCompat.getInsetsController(window,findViewById(R.id.app_root)).apply {
+            isAppearanceLightStatusBars=!dark
+            isAppearanceLightNavigationBars=Build.VERSION.SDK_INT>=26 && !dark
+        }
+        if(Build.VERSION.SDK_INT>=29) {
+            window.isStatusBarContrastEnforced=false
+            window.isNavigationBarContrastEnforced=false
+        }
+    }
+    override fun onResume() { super.onResume();syncSystemBars() }
+    override fun onWindowFocusChanged(hasFocus: Boolean) { super.onWindowFocusChanged(hasFocus);if(hasFocus)syncSystemBars() }
+    private fun refreshCacheSize() {
+        cacheRefresh?.cancel()
+        cacheRefresh=lifecycleScope.launch {
+            val bytes=withContext(Dispatchers.IO) { DownloadedPageCache(applicationContext).sizeBytes() }
+            findViewById<TextView>(R.id.cache_size).text=getString(R.string.cache_size,Formatter.formatShortFileSize(this@MainActivity,bytes))
+        }
+    }
+    private fun confirmClearCache() {
+        val dialog=AlertDialog.Builder(this).setTitle(R.string.cache_clear).setMessage(R.string.cache_confirm)
+            .setNegativeButton(R.string.cancel,null).setPositiveButton(R.string.cache_clear) { _,_ ->
+                cacheClearBusy=true;render(viewModel.state.value)
+                findViewById<View>(R.id.cache_clear).isEnabled=false
+                findViewById<TextView>(R.id.cache_feedback).apply { isVisible=true;setText(R.string.cache_clearing) }
+                reader.clearDownloadedPages { success ->
+                    cacheClearBusy=false;render(viewModel.state.value)
+                    findViewById<View>(R.id.cache_clear).isEnabled=true
+                    findViewById<TextView>(R.id.cache_feedback).setText(if(success)R.string.cache_cleared else R.string.cache_clear_failed)
+                    refreshCacheSize()
+                }
+            }.create()
+        dialog.show();dialog.window?.setBackgroundDrawableResource(R.drawable.ayah_dialog_background)
+    }
+    private fun readerChrome(): List<View> = listOf(R.id.top_bar,R.id.bottom_bar).map { findViewById(it) }
+
+    private fun toggleReaderChrome() {
+        if (viewModel.state.value.screen!=Screen.READER) return
+        val bars=readerChrome()
+        if (topHeight==0) topHeight=bars[0].height
+        if (bottomHeight==0) bottomHeight=bars[1].height
+        readerChromeVisible=!readerChromeVisible
+        chromeAnimation?.cancel()
+        bars.forEach { it.visibility=View.VISIBLE }
+        chromeAnimation=ValueAnimator.ofFloat(chromeFraction,if(readerChromeVisible)1f else 0f).apply {
+            duration=190
+            addUpdateListener { animation ->
+                chromeFraction=animation.animatedValue as Float
+                bars.forEachIndexed { index,bar ->
+                    bar.alpha=chromeFraction
+                    val height=((if(index==0)topHeight else bottomHeight)*chromeFraction).toInt()
+                    if(bar.layoutParams.height!=height) bar.layoutParams=bar.layoutParams.apply { this.height=height }
+                    bar.visibility=if(chromeFraction==0f && !readerChromeVisible) View.GONE else View.VISIBLE
+                }
+            }
+            start()
+        }
+    }
+
+    private fun restoreReaderChrome() {
+        chromeAnimation?.cancel()
+        chromeFraction=1f;readerChromeVisible=true
+        topHeight=0;bottomHeight=0
+        readerChrome().forEach { bar ->
+            bar.alpha=1f;bar.isVisible=true
+            bar.layoutParams=bar.layoutParams.apply { height=android.view.ViewGroup.LayoutParams.WRAP_CONTENT }
+        }
+    }
+
+    private fun showPageJump() {
+        pageJumpDialog?.dismiss()
+        val dialog=AppCompatDialog(this)
+        pageJumpDialog=dialog
+        dialog.supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog.setContentView(R.layout.page_jump_dialog)
+        dialog.setCanceledOnTouchOutside(true)
+        val input=checkNotNull(dialog.findViewById<EditText>(R.id.page_number))
+        input.setText(getString(R.string.page_value,viewModel.state.value.pageNumber))
+        val modes=checkNotNull(dialog.findViewById<RadioGroup>(R.id.jump_mode))
+        val selection=checkNotNull(dialog.findViewById<Spinner>(R.id.jump_selection))
+        val hint=checkNotNull(dialog.findViewById<TextView>(R.id.jump_hint))
+        modes.setOnCheckedChangeListener { _,checked ->
+            val pageMode=checked==R.id.jump_mode_page
+            input.isVisible=pageMode;selection.isVisible=!pageMode
+            hint.setText(when(checked) { R.id.jump_mode_juz -> R.string.jump_juz_hint;R.id.jump_mode_surah -> R.string.jump_surah_hint;else -> R.string.page_jump_hint })
+            if(!pageMode) {
+                WindowCompat.getInsetsController(checkNotNull(dialog.window),input).hide(WindowInsetsCompat.Type.ime())
+                val labels=if(checked==R.id.jump_mode_juz) (1..30).map { getString(R.string.ayah_juz,it) }
+                    else viewModel.state.value.surahs.map { getString(R.string.number_value,it.surahNumber)+" · "+it.name }
+                selection.adapter=ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item,labels)
+                selection.setSelection(if(checked==R.id.jump_mode_juz)(viewModel.state.value.juzNumber ?: 1)-1 else viewModel.state.value.anchor.surahNumber-1)
+            } else input.requestFocus()
+        }
+        fun confirm() {
+            if(modes.checkedRadioButtonId!=R.id.jump_mode_page) {
+                dialog.dismiss()
+                if(modes.checkedRadioButtonId==R.id.jump_mode_juz) viewModel.openJuz(selection.selectedItemPosition+1)
+                else viewModel.openSurah(selection.selectedItemPosition+1)
+                return
+            }
+            val number=input.text.toString().toIntOrNull()
+            if(number==null || number !in 1..604) input.error=getString(R.string.page_invalid,604)
+            else {
+                WindowCompat.getInsetsController(checkNotNull(dialog.window),input).hide(WindowInsetsCompat.Type.ime())
+                dialog.dismiss()
+                viewModel.openPage(number)
+            }
+        }
+        dialog.findViewById<Button>(R.id.jump_confirm)!!.setOnClickListener { confirm() }
+        dialog.findViewById<Button>(R.id.jump_cancel)!!.setOnClickListener { dialog.dismiss() }
+        input.setOnEditorActionListener { _,action,_ -> if(action==EditorInfo.IME_ACTION_GO) { confirm();true } else false }
+        dialog.window?.apply {
+            setBackgroundDrawableResource(android.R.color.transparent)
+            setGravity(Gravity.CENTER)
+            addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND)
+            setDimAmount(0.22f)
+            attributes=attributes.apply { windowAnimations=R.style.AyahDialogAnimation }
+            setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE or WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE)
+        }
+        dialog.show()
+        val width=minOf((480*resources.displayMetrics.density).toInt(),(findViewById<View>(R.id.app_root).width*.90f).toInt())
+        dialog.window?.setLayout(width,android.view.ViewGroup.LayoutParams.WRAP_CONTENT)
+        input.requestFocus();input.selectAll()
+    }
+    override fun onDestroy() {
+        ayahLoad?.cancel()
+        cacheRefresh?.cancel()
+        chromeAnimation?.cancel()
+        if (::pageView.isInitialized) pageView.animate().cancel()
+        pageJumpDialog?.dismiss()
+        if (::ayahDialog.isInitialized) ayahDialog.dismiss()
+        if (::reader.isInitialized) reader.close()
+        super.onDestroy()
+    }
 }
