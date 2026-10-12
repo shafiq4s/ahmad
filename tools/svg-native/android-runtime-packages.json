@@ -1,0 +1,20 @@
+[
+  {
+    "package": "emulator",
+    "url": "https://dl.google.com/android/repository/emulator-linux_x64-16428233.zip",
+    "bytes": 349654171,
+    "sha1": "cd7362ea55dfb86a418958138dc396e74165dd01"
+  },
+  {
+    "package": "system-images;android-36;default;x86_64",
+    "url": "https://dl.google.com/android/repository/sys-img/android/x86_64-36_r02.zip",
+    "bytes": 844217077,
+    "sha1": "829c076e8ff448a336097ae25a355b495ba36e2c"
+  },
+  {
+    "package": "system-images;android-23;default;x86",
+    "url": "https://dl.google.com/android/repository/sys-img/android/x86-23_r10.zip",
+    "bytes": 260804863,
+    "sha1": "f6c3e3dd7bd951454795aa75c3a145fd05ac25bb"
+  }
+]

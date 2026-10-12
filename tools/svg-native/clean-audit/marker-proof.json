@@ -1,0 +1,55 @@
+{
+  "pages": [
+    {
+      "page": 48,
+      "xmlOrnaments": 1,
+      "xmlNumeralAnchors": 1,
+      "auditMarkers": 0,
+      "jsonAyahs": 1,
+      "outerMatrixMatches": 1,
+      "offendingGroupStart": "<g class=\"ayah-mark-ornament\" transform=\"translate(98.937243 83.649216) scale(0.009 -0.009) matrix(0.95233582 0 0 -1.00936986 -738.53642519 498.12402740)\">",
+      "markerXPathNamespace": "{http://www.w3.org/2000/svg}",
+      "function": "polygon_lib.markers",
+      "functionLine": 135,
+      "regexLine": 53,
+      "matchingLoopLine": 158
+    },
+    {
+      "page": 121,
+      "xmlOrnaments": 6,
+      "xmlNumeralAnchors": 6,
+      "auditMarkers": 0,
+      "jsonAyahs": 6,
+      "outerMatrixMatches": 1,
+      "offendingGroupStart": "<g class=\"ayah-mark-ornament\" transform=\"translate(51.900865 84.981966) scale(0.009 -0.009) matrix(0.95233582 0 0 -1.00936986 -738.53642519 498.12402740)\">",
+      "markerXPathNamespace": "{http://www.w3.org/2000/svg}",
+      "function": "polygon_lib.markers",
+      "functionLine": 135,
+      "regexLine": 53,
+      "matchingLoopLine": 158
+    },
+    {
+      "page": 604,
+      "xmlOrnaments": 15,
+      "xmlNumeralAnchors": 15,
+      "auditMarkers": 0,
+      "jsonAyahs": 15,
+      "outerMatrixMatches": 1,
+      "offendingGroupStart": "<g class=\"ayah-mark-ornament\" transform=\"translate(161.024947 81.885118) scale(0.009 -0.009) matrix(0.95233582 0 0 -1.00936986 -738.53642519 498.12402740)\">",
+      "markerXPathNamespace": "{http://www.w3.org/2000/svg}",
+      "function": "polygon_lib.markers",
+      "functionLine": 135,
+      "regexLine": 53,
+      "matchingLoopLine": 158
+    }
+  ],
+  "controlledRegexCases": {
+    "legacy": 1,
+    "class_only": 0,
+    "matrix_only": 0,
+    "both": 0
+  },
+  "regex": "<g transform=\"translate\\(([-\\d.eE]+) ([-\\d.eE]+)\\) scale\\(([-\\d.eE]+) ([-\\d.eE]+)\\)\">(.*?)</g>",
+  "sourceDataModified": false,
+  "rendererInvokedForMarkerParsing": false
+}

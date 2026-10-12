@@ -1,0 +1,7 @@
+commit 29445bcaff08ba218f3d5b84a95377951982a79a
+Author:     adelpro <adelpro@gmail.com>
+AuthorDate: Fri Jan 17 14:41:21 2025 +0100
+Commit:     adelpro <adelpro@gmail.com>
+CommitDate: Fri Jan 17 14:41:21 2025 +0100
+
+    test(assets): added hafs pages to design repo

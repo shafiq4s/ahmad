@@ -1,0 +1,140 @@
+{
+  "editionId": "open_mushaf_hafs_images_test_v1",
+  "sourceCommit": "f4aa7867059ac6250a3f8aa68c64002ca1874b7d",
+  "temporaryAssetsOnly": true,
+  "releaseApkBuiltThisPhase": false,
+  "availableImagePages": [
+    1,
+    2,
+    7,
+    48,
+    121,
+    187,
+    531,
+    585,
+    604
+  ],
+  "imageBytes": 690943,
+  "apk": {
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "bytes": 5145879,
+    "sha256": "2c8f8e8a4419b522fd80a57942423e6afc8921587e9809d45f0f00cf8497447e",
+    "package": "com.ahmad.quran.mushafdebug",
+    "increaseOverApprovedReaderBytes": 799955
+  },
+  "frozenReferencesVerified": 11,
+  "databaseBytes": 2170880,
+  "releaseContainsTemporaryImages": false,
+  "releaseContainsTestActivity": false,
+  "releaseFeatureFlag": false,
+  "tests": {
+    "app": {
+      "tests": 51,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "suites": [
+        {
+          "suite": "com.ahmad.quran.MainActivityTest",
+          "tests": 12,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "com.ahmad.quran.QuranRepositoryTest",
+          "tests": 8,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "com.ahmad.quran.ReadingPreferencesTest",
+          "tests": 6,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "com.ahmad.quran.mushaf.ImageReaderDebugTest",
+          "tests": 5,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "com.ahmad.quran.mushaf.MushafPageMapTest",
+          "tests": 20,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    },
+    "standalonePrototype": {
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "suites": [
+        {
+          "suite": "com.ahmad.quran.overlayprototype.OverlayGeometryTest",
+          "tests": 10,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        {
+          "suite": "com.ahmad.quran.overlayprototype.OverlayScreenshotTest",
+          "tests": 1,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      ]
+    },
+    "totalPassed": 62
+  },
+  "lint": {
+    "appDebug": {
+      "errors": 0,
+      "warnings": [
+        "NewerVersionAvailable",
+        "UseKtx"
+      ]
+    },
+    "appRelease": {
+      "errors": 0,
+      "warnings": [
+        "NewerVersionAvailable",
+        "UseKtx"
+      ]
+    },
+    "prototypeDebug": {
+      "errors": 0,
+      "warnings": [
+        "NewerVersionAvailable"
+      ]
+    }
+  },
+  "structuralMaps": {
+    "pages": 604,
+    "canonicalAyahIds": 6236,
+    "rectangles": 14101,
+    "invalidIds": 0,
+    "outOfBounds": 0,
+    "overlaps": 0,
+    "differencesFromTanzil": 36
+  },
+  "newDependencies": [],
+  "physicalDeviceTested": false,
+  "defaultFlagCheck": {
+    "flag": false,
+    "testsPassed": 1,
+    "temporaryImagesPackaged": 0,
+    "entryAbsent": true,
+    "testCases": [
+      "indexEntryRequiresTheExplicitBuildFlag"
+    ]
+  }
+}

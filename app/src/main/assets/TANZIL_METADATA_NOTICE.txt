@@ -1,0 +1,9 @@
+
+// Quran Metadata (ver 1.0) 
+// Copyright (C) 2008-2009 Tanzil.info
+// License: Creative Commons Attribution 3.0
+
+
+<quran type="metadata" version="1.0" copyright="(C) 2008-2009 Tanzil.info" license="cc-by">
+Source: https://tanzil.net/res/text/metadata/quran-data.xml
+License reference: https://tanzil.net/docs/Text_License

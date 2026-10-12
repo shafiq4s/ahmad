@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Direct SVG Trial</string>
+    <string name="previous_page">السابقة</string>
+    <string name="next_page">التالية</string>
+    <string name="page_prompt">صفحة %1$d · ضغط مطوّل لتحديد الآية</string>
+    <string name="loading_prompt">تحميل الصفحة %1$d</string>
+    <string name="error_prompt">تعذّر تحميل الصفحة</string>
+    <string name="ayah_label">%1$d:%2$d</string>
+    <string name="cache_mode">الوضع %1$s · %2$d</string>
+    <string name="zoom_value">%1$d×</string>
+    <string name="validation_stats">%13$s · API %1$d · %2$s\ncold %11$.1f · parse %6$.1f · render %7$.1f ms\nnav %15$s · median/P95 %4$s/%5$s · press %12$.3f ms\ncache %3$d · retained %14$d · hit/miss %9$d/%10$d\nPSS current/max %16$s/%8$s KiB · Ayah %17$s</string>
+</resources>

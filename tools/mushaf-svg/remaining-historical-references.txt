@@ -1,0 +1,197 @@
+./README.md:32:The obsolete Open Mushaf image/rectangle runtime, temporary page assets and raster-only prototype were removed only after the new reader passed its gate. Historical provenance reports and source manifests remain for traceability. The optional `-PnativeSvgPrototype=true` five-page direct-SVG validation app reuses the main renderer without packaging the full corpus.
+./CHANGELOG.md:17:- Kept all old Open Mushaf and raster prototypes. Release is disabled; no full corpus of page artwork, sound, tafsir, word selection, Engine or cloud added. See tools/svg-native/REPORT.md and OPENING_OVERRIDES.md.
+./CHANGELOG.md:23:- Kept all Tanzil references, pagination and previous Open Mushaf tools unchanged. Detected and reported six official opening-spread overlap pairs; ambiguous hits fail closed.
+./CHANGELOG.md:30:- Traced all 604 Hafs image blobs across 69 branch heads to Open Mushaf commit 29445bcaff08ba218f3d5b84a95377951982a79a (2025-01-17, design/hafs), preceding the 2025-03-17 main-path addition. Recorded license, attribution and coordinate-lineage evidence; a separate SVG permission-named file is only a pending request.
+./tools/image-provenance/REPORT.md:7:public APK/AAB builds and final downloadable packages.** Open Mushaf's general
+./tools/image-provenance/REPORT.md:15:The pinned Open Mushaf About screen says `صفحات المصحف من` and links to the
+./tools/image-provenance/REPORT.md:18:This is the publisher attribution made by Open Mushaf; it does not identify an
+./tools/image-provenance/REPORT.md:22:[b5d95e3ee193f6950764724a92b116488ab407fb](https://github.com/adelpro/open-mushaf-native/blob/b5d95e3ee193f6950764724a92b116488ab407fb/app/%28tabs%29/%28more%29/about.tsx).
+./tools/image-provenance/REPORT.md:24:from. The current pinned [About screen](https://github.com/adelpro/open-mushaf-native/blob/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/app/%28tabs%29/%28more%29/about.tsx)
+./tools/image-provenance/REPORT.md:34:## 2. First introduction into Open Mushaf
+./tools/image-provenance/REPORT.md:43:- [Commit](https://github.com/adelpro/open-mushaf-native/commit/29445bcaff08ba218f3d5b84a95377951982a79a).
+./tools/image-provenance/REPORT.md:49:[d637a25898f4fd72bab6dac505cb138ca5a2f266](https://github.com/adelpro/open-mushaf-native/commit/d637a25898f4fd72bab6dac505cb138ca5a2f266)
+./tools/image-provenance/REPORT.md:52:[b11a3ab816443852f34620ed69b01d12ab2b6ba9](https://github.com/adelpro/open-mushaf-native/commit/b11a3ab816443852f34620ed69b01d12ab2b6ba9),
+./tools/image-provenance/REPORT.md:77:inside Open Mushaf `aya.json` is identical to
+./tools/image-provenance/REPORT.md:88:ancestry. Preserve this notice and the Open Mushaf MIT notice when distributing
+./tools/image-provenance/REPORT.md:94:Those statements do not establish that Open Mushaf's Hafs images came from it.
+./tools/image-provenance/REPORT.md:116:The 604 Open Mushaf Git blob IDs were compared with PNG additions/modifications
+./tools/image-provenance/REPORT.md:132:[`docs/licenses/quran-svg-permission.eml`](https://github.com/adelpro/open-mushaf-native/blob/576f45a4c6df9f04ea6fd382d142bc2433755e5c/docs/licenses/quran-svg-permission.eml)
+./tools/image-provenance/REPORT.md:144:| Open Mushaf software | Root MIT, copyright `[2024] adelpro`; README states MIT | MIT permits software use, modification and distribution with the copyright and full license notice retained. It does not require publishing our source. It is not an independently verified image rights grant. |
+./tools/image-provenance/REPORT.md:145:| Coordinate data | All tuples match Mauri's 2021 array under its existing root MIT; Open Mushaf declares MIT for its derived repository | The documented data path supports reuse/format conversion with Ibrahim BIDI and Open Mushaf notices retained. Do not copy GPL tool code or conflate these notices with image permission. |
+./tools/image-provenance/REPORT.md:164:- Retain `Copyright (c) [2024] adelpro` for applicable Open Mushaf material.
+./tools/image-provenance/REPORT.md:207:Android device and approved `MushafTouchOverlayView`/`AyahRegion` technically.
+./tools/image-provenance/portrait-validation.json:26:    "app/src/main/java/com/ahmad/quran/mushaf/MushafTouchOverlayView.kt": "6a47ae274f25e13f3f6729291cca3197246edb506b611237cbd98ca9e95a8383"
+./tools/image-provenance/evidence/open-README.md:1:# Open-Mushaf Native – Modern Offline Quran Reader (React Native, Expo, PWA)
+./tools/image-provenance/evidence/open-README.md:8:  <img src="https://raw.githubusercontent.com/adelpro/open-mushaf-native/main/design/banner/banner.png"
+./tools/image-provenance/evidence/open-README.md:9:  alt="Open-Mushaf Banner" width="900" />
+./tools/image-provenance/evidence/open-README.md:14:![GitHub Stars](https://img.shields.io/github/stars/adelpro/open-mushaf-native?style=social)
+./tools/image-provenance/evidence/open-README.md:15:![GitHub Forks](https://img.shields.io/github/forks/adelpro/open-mushaf-native?style=social)
+./tools/image-provenance/evidence/open-README.md:16:![GitHub Watchers](https://img.shields.io/github/watchers/adelpro/open-mushaf-native?style=social)
+./tools/image-provenance/evidence/open-README.md:19:[![CodeQL](https://github.com/adelpro/open-mushaf-native/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/adelpro/open-mushaf-native/actions/workflows/github-code-scanning/codeql)
+./tools/image-provenance/evidence/open-README.md:20:[![Codacy Badge](https://app.codacy.com/project/badge/Grade/ee280dfe97634fa5b5afd85fc8652d85)](https://app.codacy.com/gh/adelpro/open-mushaf-native/dashboard?utm_source=gh&utm_medium=referral)
+./tools/image-provenance/evidence/open-README.md:22:[![Release Notes](https://img.shields.io/github/release/adelpro/open-mushaf-native?style=flat-square)](https://github.com/adelpro/open-mushaf-native/releases)
+./tools/image-provenance/evidence/open-README.md:23:[![Open Issues](https://img.shields.io/github/issues/adelpro/open-mushaf-native?style=flat-square)](https://github.com/adelpro/open-mushaf-native/issues)
+./tools/image-provenance/evidence/open-README.md:24:![License](https://img.shields.io/github/license/adelpro/open-mushaf-native?style=flat-square)
+./tools/image-provenance/evidence/open-README.md:56:**Open-Mushaf Native** is a modern, minimalist Quran Mushaf built for seamless reading and Tafseer exploration.  
+./tools/image-provenance/evidence/open-README.md:80:<a href="https://play.google.com/store/apps/details?id=com.adelpro.openmushafnative" target="_blank">
+./tools/image-provenance/evidence/open-README.md:84:<a href="https://open-mushaf-native.web.app/" target="_blank">
+./tools/image-provenance/evidence/open-README.md:88:<a href="https://github.com/adelpro/open-mushaf-native/releases/latest" target="_blank">
+./tools/image-provenance/evidence/open-README.md:99:  <img src="https://raw.githubusercontent.com/adelpro/open-mushaf-native/main/screenshots/main-screen.png" alt="Main reading interface" width="250" />
+./tools/image-provenance/evidence/open-README.md:100:  <img src="https://raw.githubusercontent.com/adelpro/open-mushaf-native/main/screenshots/dark-mode.png" alt="Dark mode" width="250" />
+./tools/image-provenance/evidence/open-README.md:101:  <img src="https://raw.githubusercontent.com/adelpro/open-mushaf-native/main/screenshots/tafseer-popup.png" alt="Tafseer popup" width="250" />
+./tools/image-provenance/evidence/open-README.md:102:  <img src="https://raw.githubusercontent.com/adelpro/open-mushaf-native/main/screenshots/sura-index.png" alt="Surah index" width="250" />
+./tools/image-provenance/evidence/open-README.md:117:git clone https://github.com/adelpro/open-mushaf-native.git
+./tools/image-provenance/evidence/open-README.md:118:cd open-mushaf-native
+./tools/image-provenance/evidence/open-README.md:127:Please follow the [contribution guidelines](https://github.com/adelpro/open-mushaf-native/blob/main/CONTRIBUTING.md) and ensure **zero ESLint errors** before submitting a pull request.
+./tools/image-provenance/evidence/open-README.md:133:[![Stargazers repo roster for @adelpro/open-mushaf-native](https://reporoster.com/stars/adelpro/open-mushaf-native)](https://github.com/adelpro/open-mushaf-native/stargazers)
+./tools/image-provenance/evidence/open-README.md:148:[LICENSE](https://github.com/adelpro/open-mushaf-native/blob/main/LICENSE) file
+./tools/mushaf-svg/removed-paths.json:12:  "app/src/main/java/com/ahmad/quran/mushaf/MushafTouchOverlayView.kt",
+./tools/image-provenance/evidence/evidence-manifest.json:4:    "repository": "adelpro/open-mushaf-native",
+./tools/image-provenance/evidence/evidence-manifest.json:8:    "sourceUrl": "https://github.com/adelpro/open-mushaf-native/blob/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/LICENSE"
+./tools/image-provenance/evidence/evidence-manifest.json:12:    "repository": "adelpro/open-mushaf-native",
+./tools/image-provenance/evidence/evidence-manifest.json:16:    "sourceUrl": "https://github.com/adelpro/open-mushaf-native/blob/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/README.md"
+./tools/image-provenance/evidence/evidence-manifest.json:20:    "repository": "adelpro/open-mushaf-native",
+./tools/image-provenance/evidence/evidence-manifest.json:24:    "sourceUrl": "https://github.com/adelpro/open-mushaf-native/blob/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/app/(tabs)/(more)/about.tsx"
+./tools/image-provenance/evidence/evidence-manifest.json:28:    "repository": "adelpro/open-mushaf-native",
+./tools/image-provenance/evidence/evidence-manifest.json:32:    "sourceUrl": "https://github.com/adelpro/open-mushaf-native/commit/b11a3ab816443852f34620ed69b01d12ab2b6ba9"
+./tools/image-provenance/evidence/evidence-manifest.json:36:    "repository": "adelpro/open-mushaf-native",
+./tools/image-provenance/evidence/evidence-manifest.json:40:    "sourceUrl": "https://github.com/adelpro/open-mushaf-native/blob/b5d95e3ee193f6950764724a92b116488ab407fb/app/(tabs)/(more)/about.tsx"
+./tools/image-provenance/evidence/evidence-manifest.json:92:    "repository": "adelpro/open-mushaf-native",
+./tools/image-provenance/evidence/evidence-manifest.json:96:    "sourceUrl": "https://github.com/adelpro/open-mushaf-native/commit/29445bcaff08ba218f3d5b84a95377951982a79a"
+./tools/image-provenance/evidence/evidence-manifest.json:100:    "repository": "adelpro/open-mushaf-native",
+./tools/image-provenance/evidence/evidence-manifest.json:104:    "sourceUrl": "https://github.com/adelpro/open-mushaf-native/commit/d637a25898f4fd72bab6dac505cb138ca5a2f266"
+./tools/image-provenance/evidence/evidence-manifest.json:108:    "repository": "adelpro/open-mushaf-native",
+./tools/image-provenance/evidence/evidence-manifest.json:112:    "sourceUrl": "https://github.com/adelpro/open-mushaf-native/blob/576f45a4c6df9f04ea6fd382d142bc2433755e5c/docs/licenses/quran-svg-permission.eml"
+./tools/image-provenance/evidence/open-original-attribution.tsx.txt:82:                  href="https://github.com/adelpro/open-mushaf-native"
+./tools/image-provenance/evidence/open-original-attribution.tsx.txt:85:                  open-mushaf-native
+./tools/image-provenance/evidence/open-original-attribution.tsx.txt:92:            © {new Date().getFullYear()} Open-Mushaf. جميع الحقوق محفوظة.
+./tools/image-provenance/evidence/retrieval-outcomes.json:21:      "url": "https://api.github.com/repos/adelpro/open-mushaf-native/commits?path=assets/mushaf-data/mushaf-elmadina-hafs-assim/1.png&per_page=100",
+./tools/image-provenance/evidence/retrieval-outcomes.json:41:      "url": "https://github.com/adelpro/open-mushaf-native/commits/main/assets/mushaf-data/mushaf-elmadina-hafs-assim/1.png",
+./tools/image-provenance/evidence/retrieval-outcomes.json:45:      "url": "https://github.com/adelpro/open-mushaf-native.git",
+./tools/image-provenance/evidence/open-about.tsx.txt:116:                href="https://github.com/adelpro/open-mushaf-native"
+./tools/image-provenance/evidence/open-about.tsx.txt:119:                accessibilityLabel="Open Mushaf Native repository"
+./tools/image-provenance/evidence/open-about.tsx.txt:120:                accessibilityHint="فتح الرابط إلى مستودع Open Mushaf Native"
+./tools/image-provenance/evidence/open-about.tsx.txt:122:                open-mushaf-native
+./tools/image-provenance/evidence/open-about.tsx.txt:129:          © {new Date().getFullYear()} Open-Mushaf. جميع الحقوق محفوظة.
+./tools/image-provenance/evidence/svg-permission-placeholder.eml.txt:3:Subject: Request for redistribution permission — quran-svg in open-mushaf-native
+./tools/image-provenance/evidence/svg-permission-placeholder.eml.txt:11:I'm the maintainer of open-mushaf-native, an open-source Quran reader
+./tools/image-provenance/evidence/svg-permission-placeholder.eml.txt:12:app for iOS, Android, and Web (https://github.com/adelpro/open-mushaf-native).
+./tools/image-provenance/evidence/svg-permission-placeholder.eml.txt:37:(com.adelpro.openmushafnative). Total installs: small but growing.
+./tools/overlay-prototype/results/fixture-manifest.json:45:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/1.png",
+./tools/overlay-prototype/results/fixture-manifest.json:53:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/2.png",
+./tools/overlay-prototype/results/fixture-manifest.json:61:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/3.png",
+./tools/overlay-prototype/results/fixture-manifest.json:69:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/7.png",
+./tools/overlay-prototype/results/fixture-manifest.json:77:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/48.png",
+./tools/overlay-prototype/results/fixture-manifest.json:85:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/120.png",
+./tools/overlay-prototype/results/fixture-manifest.json:93:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/121.png",
+./tools/overlay-prototype/results/fixture-manifest.json:101:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/122.png",
+./tools/overlay-prototype/results/fixture-manifest.json:109:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/123.png",
+./tools/overlay-prototype/results/fixture-manifest.json:117:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/144.png",
+./tools/overlay-prototype/results/fixture-manifest.json:125:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/145.png",
+./tools/overlay-prototype/results/fixture-manifest.json:133:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/187.png",
+./tools/overlay-prototype/results/fixture-manifest.json:141:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/200.png",
+./tools/overlay-prototype/results/fixture-manifest.json:149:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/208.png",
+./tools/overlay-prototype/results/fixture-manifest.json:157:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/342.png",
+./tools/overlay-prototype/results/fixture-manifest.json:165:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/367.png",
+./tools/overlay-prototype/results/fixture-manifest.json:173:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/377.png",
+./tools/overlay-prototype/results/fixture-manifest.json:181:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/400.png",
+./tools/overlay-prototype/results/fixture-manifest.json:189:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/415.png",
+./tools/overlay-prototype/results/fixture-manifest.json:197:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/446.png",
+./tools/overlay-prototype/results/fixture-manifest.json:205:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/453.png",
+./tools/overlay-prototype/results/fixture-manifest.json:213:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/499.png",
+./tools/overlay-prototype/results/fixture-manifest.json:221:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/507.png",
+./tools/overlay-prototype/results/fixture-manifest.json:229:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/526.png",
+./tools/overlay-prototype/results/fixture-manifest.json:237:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/528.png",
+./tools/overlay-prototype/results/fixture-manifest.json:245:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/531.png",
+./tools/overlay-prototype/results/fixture-manifest.json:253:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/532.png",
+./tools/overlay-prototype/results/fixture-manifest.json:261:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/533.png",
+./tools/overlay-prototype/results/fixture-manifest.json:269:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/534.png",
+./tools/overlay-prototype/results/fixture-manifest.json:277:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/564.png",
+./tools/overlay-prototype/results/fixture-manifest.json:285:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/565.png",
+./tools/overlay-prototype/results/fixture-manifest.json:293:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/567.png",
+./tools/overlay-prototype/results/fixture-manifest.json:301:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/568.png",
+./tools/overlay-prototype/results/fixture-manifest.json:309:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/569.png",
+./tools/overlay-prototype/results/fixture-manifest.json:317:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/570.png",
+./tools/overlay-prototype/results/fixture-manifest.json:325:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/575.png",
+./tools/overlay-prototype/results/fixture-manifest.json:333:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/576.png",
+./tools/overlay-prototype/results/fixture-manifest.json:341:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/583.png",
+./tools/overlay-prototype/results/fixture-manifest.json:349:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/584.png",
+./tools/overlay-prototype/results/fixture-manifest.json:357:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/585.png",
+./tools/overlay-prototype/results/fixture-manifest.json:365:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/586.png",
+./tools/overlay-prototype/results/fixture-manifest.json:373:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/587.png",
+./tools/overlay-prototype/results/fixture-manifest.json:381:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/588.png",
+./tools/overlay-prototype/results/fixture-manifest.json:389:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/589.png",
+./tools/overlay-prototype/results/fixture-manifest.json:397:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/590.png",
+./tools/overlay-prototype/results/fixture-manifest.json:405:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/591.png",
+./tools/overlay-prototype/results/fixture-manifest.json:413:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/592.png",
+./tools/overlay-prototype/results/fixture-manifest.json:421:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/593.png",
+./tools/overlay-prototype/results/fixture-manifest.json:429:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/594.png",
+./tools/overlay-prototype/results/fixture-manifest.json:437:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/595.png",
+./tools/overlay-prototype/results/fixture-manifest.json:445:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/596.png",
+./tools/overlay-prototype/results/fixture-manifest.json:453:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/597.png",
+./tools/overlay-prototype/results/fixture-manifest.json:461:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/598.png",
+./tools/overlay-prototype/results/fixture-manifest.json:469:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/599.png",
+./tools/overlay-prototype/results/fixture-manifest.json:477:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/600.png",
+./tools/overlay-prototype/results/fixture-manifest.json:485:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/602.png",
+./tools/overlay-prototype/results/fixture-manifest.json:493:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/603.png",
+./tools/overlay-prototype/results/fixture-manifest.json:501:      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/604.png",
+./tools/overlay-prototype/results/visual-review.json:11:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:20:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:29:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:38:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:47:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:56:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:65:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:74:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:83:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:92:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:101:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:110:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:119:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:128:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:137:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:146:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:155:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:164:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:173:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:182:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:191:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:200:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:209:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:218:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:227:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:236:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:245:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:254:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:263:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:272:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:281:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:290:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:299:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:308:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:317:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/visual-review.json:326:      "matchesOpenMushafPoints": true,
+./tools/overlay-prototype/results/PAGINATION_REVIEW.md:3:The original images were visually inspected for the printed first and last verse. All 36 ranges agree with Open Mushaf endpoints. No change was made to the existing Tanzil map. This establishes observed pagination differences, not the exact printed edition/year, which remains unverified.
+./tools/overlay-prototype/results/PAGINATION_REVIEW.md:5:| Page | Printed / Open Mushaf range | Existing Tanzil range |
+./tools/svg-native/full-audit/REPORT.md:27:11. **Pagination:** 25 starts and 25 completed ends differ; their union contains 36 affected pages. Fair end compares the last completed SVG ayah to Tanzil `endOrdinal-1`. No continuation exists here. This is edition pagination, with no missing or extra canonical verse. The earlier Open Mushaf figure concerned a different edition and comparison; do not reuse it as Quran.ws's start-difference count. Complete differences:
+./tools/svg-native/full-audit/REPORT.md:90:23. **Removal after successful approved integration:** old overlay-prototype, Open Mushaf images/aya fixtures and preparation/validation tools, old main debug image activity/provider, marker-estimated maps and old MushafTouchOverlayView. Later remove raster svg-prototype after moving neutral polygons/parser and useful tests. Retain frozen Quran data/models/repository, edition contracts, regression coverage, source hashes/provenance/licenses, opening rationale and CHANGELOG. Nothing deleted now.
+./tools/svg-native/full-audit/REPORT.md:94:**Standalone APK:** 2,453,941 bytes; SHA256 `7a0fc70531703e7dbf0566bc46a2b95c33b6da78dd29ae149b1873561e0adcb6`. Only001,002,048,121,604 original SVG/JSON; no604-page/raster/Open Mushaf assets. Min23/target36, portrait, release disabled, no INTERNET permission. AndroidSVG AAR SHA256 `02a5b08a2b35d2d58eb2eaca9d84ac00fb341da725fdbd653ea3ed130437e95a` and Apache2 notice remain locked. Cloud audit tools are not Android dependencies.
+./tools/overlay-prototype/README.md:29:`fetch_fixtures.py` pins Open Mushaf commit
+./tools/overlay-prototype/README.md:56:`MushafPageFrame` contains an `ImageView` and `MushafTouchOverlayView`. One
+./tools/overlay-prototype/README.md:97:Open Mushaf's MIT notice is retained in the temporary fixtures. The project
+./tools/svg-native/REPORT.md:19:Opt-in module `svg-native-prototype` uses Android/Kotlin, minSdk 23, target 36, portrait. Release is disabled; the main app has no new runtime dependency or reader integration. It packages five original SVG/JSON pairs, frozen Tanzil assets and notices; no WebP, aya.json, Open Mushaf artwork, Engine, WebView or INTERNET permission. Only neutral polygon contracts/parser are shared from the earlier prototype, not its raster renderer. `OpeningPageHitOverrides` is a separate local adapter. Callbacks return only canonical AyahId, not page/word identity.
+./tools/svg-native/REPORT.md:86:After final replacement approval, removable candidates are old `overlay-prototype`, aya/PNG fixtures/preparation scripts, the old main-app debug image activity/provider, marker-estimated geometry/page maps and `MushafTouchOverlayView` rectangle implementation once no consumers remain. The previous raster-only `svg-prototype` may then be removed after moving neutral parser/contracts and needed regressions. Retain frozen Quran data/models/repository, independent edition contracts, useful regression tests, source hashes, provenance/license reports and CHANGELOG. Nothing was deleted now.
+./tools/image-reader/README.md:13:the independent ID `open_mushaf_hafs_images_test_v1`, not `madina_hafs_604`.
+./tools/image-reader/README.md:32:- `MushafPageFrame` and `MushafTouchOverlayView`: image + transparent touch layer,
+./tools/image-reader/README.md:79:Pinned Open Mushaf commit: `f4aa7867059ac6250a3f8aa68c64002ca1874b7d`.
+./tools/image-reader/README.md:81:- `aya.json`: `605ffbd1959ce9fea24e0c65b645f6ba0b13dc3f0430deb9f0053f8629c503cd`
+./tools/image-reader/README.md:85:- MIT notices for Open Mushaf and Ibrahim BIDI's coordinate source are retained
+./tools/image-reader/README.md:90:**The Open Mushaf page images remain temporary local testing assets.** Upstream
+./tools/image-reader/validation.json:2:  "editionId": "open_mushaf_hafs_images_test_v1",
+./tools/svg-native/README.md:35:`NativeSvgPageView` renders AndroidSVG directly into a native Canvas. The identical source-to-screen matrix transforms artwork and selection; the inverse performs polygon hit testing. Source coordinates are never mirrored for RTL. Page 1/2 presentation bounds include the source heading outside the root viewBox; artwork is unchanged. The neutral polygon parser/contracts are reused without importing the earlier raster view or Open Mushaf algorithm. Own `OpeningPageHitOverrides` applies only to this edition's opening pages; see `OPENING_OVERRIDES.md`.
+./tools/quran-svg/REPORT.md:3:This is an isolated, opt-in debug candidate, not a final renderer decision or a release asset pack. No Open Mushaf implementation/data is compiled into it. The approved reader and all older prototypes remain available.
+./tools/quran-svg/REPORT.md:78:Nothing was removed from Open Mushaf. After final approval and replacement of its main-app debug entry, removable items include `overlay-prototype/`, the old aya/PNG fixtures and prepare scripts, `tools/image-reader` trial assets/provider/activity, and the old marker-based `OverlayGeometry` / `HafsImagePageMap` / rectangle touch view if there are no remaining consumers. Replace their tests with the polygon regression suite before deleting them. Retain the source/license investigation reports, changelog, canonical Quran models/repository and useful edition-independent presentation contracts. No deletion or full-page integration is authorized by this trial report.
+./tools/quran-svg/README.md:6:Read [REPORT.md](REPORT.md) and [source-lock.json](source-lock.json) before using these fixtures. They are separate from the reader's production assets and the old Open Mushaf trial.
+./tools/quran-svg/validation.json:40:    "includesOpenMushafAssets": false,
+./tools/svg-native/clean-audit/README.md:75:older Open Mushaf/raster prototypes on the strength of this report alone.
+./tools/svg-native/full-audit/README.md:69:release disabled. Exactly five SVG/JSON pairs; no raster page assets, Open Mushaf

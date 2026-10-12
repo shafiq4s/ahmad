@@ -1,0 +1,62 @@
+[
+  {
+    "page": 1,
+    "ayahIds": 7,
+    "polygons": 7,
+    "invalidIds": 0,
+    "outOfBounds": 0,
+    "overlaps": null,
+    "graphicsValidation": "Logic only; Robolectric API 23 does not render native graphics",
+    "firstAyah": "1:1",
+    "lastAyah": "1:7",
+    "tanzilFirstAyah": "1:1"
+  },
+  {
+    "page": 2,
+    "ayahIds": 5,
+    "polygons": 5,
+    "invalidIds": 0,
+    "outOfBounds": 0,
+    "overlaps": null,
+    "graphicsValidation": "Logic only; Robolectric API 23 does not render native graphics",
+    "firstAyah": "2:1",
+    "lastAyah": "2:5",
+    "tanzilFirstAyah": "2:1"
+  },
+  {
+    "page": 48,
+    "ayahIds": 1,
+    "polygons": 1,
+    "invalidIds": 0,
+    "outOfBounds": 0,
+    "overlaps": null,
+    "graphicsValidation": "Logic only; Robolectric API 23 does not render native graphics",
+    "firstAyah": "2:282",
+    "lastAyah": "2:282",
+    "tanzilFirstAyah": "2:282"
+  },
+  {
+    "page": 121,
+    "ayahIds": 6,
+    "polygons": 15,
+    "invalidIds": 0,
+    "outOfBounds": 0,
+    "overlaps": null,
+    "graphicsValidation": "Logic only; Robolectric API 23 does not render native graphics",
+    "firstAyah": "5:78",
+    "lastAyah": "5:83",
+    "tanzilFirstAyah": "5:77"
+  },
+  {
+    "page": 604,
+    "ayahIds": 15,
+    "polygons": 18,
+    "invalidIds": 0,
+    "outOfBounds": 0,
+    "overlaps": null,
+    "graphicsValidation": "Logic only; Robolectric API 23 does not render native graphics",
+    "firstAyah": "112:1",
+    "lastAyah": "114:6",
+    "tanzilFirstAyah": "112:1"
+  }
+]

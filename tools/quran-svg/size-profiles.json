@@ -1,0 +1,197 @@
+[
+  {
+    "page": 1,
+    "width": 1080,
+    "dimensions": [
+      1080,
+      1342
+    ],
+    "pngBytes": 280146,
+    "webpBytes": 82684,
+    "svgBytes": 185309,
+    "deflatedSvgBytes": 45226,
+    "jsonBytes": 1424
+  },
+  {
+    "page": 1,
+    "width": 1440,
+    "dimensions": [
+      1440,
+      1789
+    ],
+    "pngBytes": 393243,
+    "webpBytes": 115042,
+    "svgBytes": 185309,
+    "deflatedSvgBytes": 45226,
+    "jsonBytes": 1424
+  },
+  {
+    "page": 1,
+    "width": 2160,
+    "dimensions": [
+      2160,
+      2684
+    ],
+    "pngBytes": 626029,
+    "webpBytes": 179726,
+    "svgBytes": 185309,
+    "deflatedSvgBytes": 45226,
+    "jsonBytes": 1424
+  },
+  {
+    "page": 2,
+    "width": 1080,
+    "dimensions": [
+      1080,
+      1378
+    ],
+    "pngBytes": 331779,
+    "webpBytes": 99308,
+    "svgBytes": 223381,
+    "deflatedSvgBytes": 56888,
+    "jsonBytes": 1128
+  },
+  {
+    "page": 2,
+    "width": 1440,
+    "dimensions": [
+      1440,
+      1837
+    ],
+    "pngBytes": 462648,
+    "webpBytes": 137422,
+    "svgBytes": 223381,
+    "deflatedSvgBytes": 56888,
+    "jsonBytes": 1128
+  },
+  {
+    "page": 2,
+    "width": 2160,
+    "dimensions": [
+      2160,
+      2756
+    ],
+    "pngBytes": 734483,
+    "webpBytes": 214250,
+    "svgBytes": 223381,
+    "deflatedSvgBytes": 56888,
+    "jsonBytes": 1128
+  },
+  {
+    "page": 48,
+    "width": 1080,
+    "dimensions": [
+      1080,
+      1722
+    ],
+    "pngBytes": 683116,
+    "webpBytes": 208546,
+    "svgBytes": 573550,
+    "deflatedSvgBytes": 166638,
+    "jsonBytes": 132
+  },
+  {
+    "page": 48,
+    "width": 1440,
+    "dimensions": [
+      1440,
+      2296
+    ],
+    "pngBytes": 945633,
+    "webpBytes": 289890,
+    "svgBytes": 573550,
+    "deflatedSvgBytes": 166638,
+    "jsonBytes": 132
+  },
+  {
+    "page": 48,
+    "width": 2160,
+    "dimensions": [
+      2160,
+      3443
+    ],
+    "pngBytes": 1497762,
+    "webpBytes": 453700,
+    "svgBytes": 573550,
+    "deflatedSvgBytes": 166638,
+    "jsonBytes": 132
+  },
+  {
+    "page": 121,
+    "width": 1080,
+    "dimensions": [
+      1080,
+      1722
+    ],
+    "pngBytes": 616769,
+    "webpBytes": 186792,
+    "svgBytes": 490647,
+    "deflatedSvgBytes": 138227,
+    "jsonBytes": 1325
+  },
+  {
+    "page": 121,
+    "width": 1440,
+    "dimensions": [
+      1440,
+      2296
+    ],
+    "pngBytes": 858038,
+    "webpBytes": 260280,
+    "svgBytes": 490647,
+    "deflatedSvgBytes": 138227,
+    "jsonBytes": 1325
+  },
+  {
+    "page": 121,
+    "width": 2160,
+    "dimensions": [
+      2160,
+      3443
+    ],
+    "pngBytes": 1362670,
+    "webpBytes": 407720,
+    "svgBytes": 490647,
+    "deflatedSvgBytes": 138227,
+    "jsonBytes": 1325
+  },
+  {
+    "page": 604,
+    "width": 1080,
+    "dimensions": [
+      1080,
+      1722
+    ],
+    "pngBytes": 440442,
+    "webpBytes": 129766,
+    "svgBytes": 367714,
+    "deflatedSvgBytes": 94332,
+    "jsonBytes": 2255
+  },
+  {
+    "page": 604,
+    "width": 1440,
+    "dimensions": [
+      1440,
+      2296
+    ],
+    "pngBytes": 622755,
+    "webpBytes": 182656,
+    "svgBytes": 367714,
+    "deflatedSvgBytes": 94332,
+    "jsonBytes": 2255
+  },
+  {
+    "page": 604,
+    "width": 2160,
+    "dimensions": [
+      2160,
+      3443
+    ],
+    "pngBytes": 1001306,
+    "webpBytes": 288282,
+    "svgBytes": 367714,
+    "deflatedSvgBytes": 94332,
+    "jsonBytes": 2255
+  }
+]

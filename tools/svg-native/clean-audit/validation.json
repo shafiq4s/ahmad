@@ -1,0 +1,212 @@
+{
+  "checkedAt": "2026-10-11T14:51:29.775794+00:00",
+  "commit": "b4155f07e4aea087d2c458069acff9f7c7e749f6",
+  "edition": "Hafs / KFQC",
+  "gitCheckouts": {
+    "/workspace/quran-svg-upstream-validation": {
+      "commit": "b4155f07e4aea087d2c458069acff9f7c7e749f6",
+      "status": ""
+    },
+    "/workspace/quran-svg-regeneration-validation": {
+      "commit": "b4155f07e4aea087d2c458069acff9f7c7e749f6",
+      "status": ""
+    }
+  },
+  "upstream": {
+    "subsetExitCode": 1,
+    "fullExitCode": 1,
+    "findings": 698,
+    "signatures": {
+      "MARKERCOUNT": 602,
+      "UNCOVERED": 96
+    },
+    "stderrBytes": 0,
+    "unchangedFindingSetMatchesPrevious": true,
+    "classification": {
+      "REAL_CONTENT_OR_GEOMETRY_PROBLEM": 0,
+      "AUDIT_TOOL_COMPATIBILITY_PROBLEM": 698,
+      "ENVIRONMENT_DEPENDENCY_PROBLEM": 0,
+      "EXPECTED_OPENING_PAGE_EXCEPTION": 0,
+      "UNKNOWN": 0
+    }
+  },
+  "frozen": {
+    "tanzilReferenceChecks": {
+      "tools/quran/sources/quran-data.xml": "8867c1d88191472adec9db694b3cd9f135b1a2ef580574d32cf888dcb22c5c7a",
+      "tools/quran/sources/quran-uthmani.txt": "6933e133dd56db778c801bf738848454e43648105a151e8d84d86a7cae39ec5f",
+      "tools/quran/sources/Text_License.html": "2edbc4b664fea5402893f3a60f212f8bf43dc3dee800b5fbcf4d3693819a9c79",
+      "tools/quran/sources/provenance.json": "5f497bab3bb993623c1520f94935cb21401dc19e1b6014e5c2be5b2bee34cf82",
+      "tools/quran/sources/quran-data.js": "9e9930c592aaa34b5c7a79ff4e99ffdc782263a266090bfe2c49e4ed4bac4ca4",
+      "app/src/main/assets/source-manifest.json": "b7710ff7b47a7d1b9404316de999bd3fb266c9f2bae652753bcdfff802d31602",
+      "app/src/main/assets/TANZIL_METADATA_NOTICE.txt": "bfc202cdf6bbd4a1f1a963ba1a31189c25c4f0d01861117dc9aa53e1e1916564",
+      "app/src/main/assets/quran-data.xml": "8867c1d88191472adec9db694b3cd9f135b1a2ef580574d32cf888dcb22c5c7a",
+      "app/src/main/assets/TANZIL_NOTICE.txt": "72493509d507314f60c018fd33aa57d9064a0de42be8926745e4953f59925c62",
+      "app/src/main/assets/quran-uthmani-v1.db": "8ed100334e8eca42124035f51fffe934d52b20e5224b3a44c1a33b44dba74416",
+      "app/src/main/java/com/ahmad/quran/data/CorpusInfo.kt": "e5e52c87f7c6611ee46808856b0fbff51f243d803751e32ca2cc2ec623b08ffd"
+    },
+    "openingOverrideSha256": "f9cdec09bb5abae526d5ce59aaa2fff9eaa5e3f26107f02c69352622dd258b22",
+    "fullManifestFilesMatchedUnmodified": 1820,
+    "fullSvgCount": 604,
+    "fullJsonCount": 604
+  },
+  "independent": {
+    "commit": "b4155f07e4aea087d2c458069acff9f7c7e749f6",
+    "editionId": "quran_ws_hafs_kfqc_b4155f0",
+    "canonicalAyahIds": 6236,
+    "appearances": 6236,
+    "pageCount": 604,
+    "svgCount": 604,
+    "jsonCount": 604,
+    "passed": true,
+    "missing": [],
+    "invalidIds": [],
+    "unexplainedDuplicates": {},
+    "continuations": {},
+    "failures": [],
+    "finalPositiveAreaOverlaps": [],
+    "startDifferenceCount": 25,
+    "completedEndDifferenceCount": 25,
+    "sourceMarkerChecks": 6236,
+    "openingOverrideSha256": "f9cdec09bb5abae526d5ce59aaa2fff9eaa5e3f26107f02c69352622dd258b22",
+    "tanzilSha256": "8ed100334e8eca42124035f51fffe934d52b20e5224b3a44c1a33b44dba74416",
+    "textLimitation": "SVG outlines have no lossless Unicode verse text: this audit validates identity/sequence/artifact hashes, not a 604-page visual transcription. Frozen Tanzil text remains unchanged.",
+    "geometryPolicy": "Exact nonzero SVG fill: self-crossing/self-touching opening rings are interpreted by polygonized faces and original-point winding. No coordinates, overrides or source artifacts are changed; no make_valid/buffer/snap.",
+    "reportPath": "tools/svg-native/full-audit/independent-report.json",
+    "reportSha256": "2bbb913fb742c11dee7c2e0ecf600146ba1f47acf356ba0035f9b0e665c06fe4",
+    "paginationDifferenceUnion": 36,
+    "sourceOverlapCountPages3To604": 0
+  },
+  "build": {
+    "command": "./gradlew -PnativeSvgPrototype=true :svg-native-prototype:assembleDebug :svg-native-prototype:assembleDebugAndroidTest :svg-native-prototype:testDebugUnitTest :svg-native-prototype:lintDebug",
+    "exitCode": 0,
+    "log": "build.stdout.txt",
+    "unitTestExecutions": 13,
+    "unitTestFailures": 0,
+    "unitTestSuites": [
+      {
+        "path": "svg-native-prototype/build/test-results/testDebugUnitTest/TEST-com.ahmad.quran.svgnative.NativeSvgActivityTest.xml",
+        "name": "com.ahmad.quran.svgnative.NativeSvgActivityTest",
+        "tests": "2",
+        "skipped": "0",
+        "failures": "0",
+        "errors": "0",
+        "timestamp": "2026-10-11T14:49:34.902Z",
+        "hostname": "325b7aced448",
+        "time": "11.931"
+      },
+      {
+        "path": "svg-native-prototype/build/test-results/testDebugUnitTest/TEST-com.ahmad.quran.svgnative.NativeSvgMeasurementsTest.xml",
+        "name": "com.ahmad.quran.svgnative.NativeSvgMeasurementsTest",
+        "tests": "2",
+        "skipped": "0",
+        "failures": "0",
+        "errors": "0",
+        "timestamp": "2026-10-11T14:49:46.848Z",
+        "hostname": "325b7aced448",
+        "time": "8.886"
+      },
+      {
+        "path": "svg-native-prototype/build/test-results/testDebugUnitTest/TEST-com.ahmad.quran.svgnative.NativeSvgValidationTest.xml",
+        "name": "com.ahmad.quran.svgnative.NativeSvgValidationTest",
+        "tests": "9",
+        "skipped": "0",
+        "failures": "0",
+        "errors": "0",
+        "timestamp": "2026-10-11T14:49:55.745Z",
+        "hostname": "325b7aced448",
+        "time": "7.807"
+      }
+    ],
+    "robolectricSdks": [
+      23,
+      36
+    ],
+    "independentRegressionTests": 4,
+    "lintErrors": 0,
+    "lintWarnings": 3,
+    "lintReport": "svg-native-prototype/build/reports/lint-results-debug.txt"
+  },
+  "apk": {
+    "path": "svg-native-prototype/build/outputs/apk/debug/svg-native-prototype-debug.apk",
+    "bytes": 2454513,
+    "sha256": "3bd09b658ef89407ce28810af73f210f77c55a15bd7918fbc66aa48f379e7e59",
+    "pages": [
+      1,
+      2,
+      48,
+      121,
+      604
+    ],
+    "packagedOriginalFiles": [
+      {
+        "path": "assets/native-svg/001.svg",
+        "sha256": "6c6c3190d6edd66cfaf17dd40c80052d86d53074915d0119535c698c48845b4f",
+        "bytes": 185309
+      },
+      {
+        "path": "assets/native-svg/001.json",
+        "sha256": "218520567df2d8c4689bbf8b9836564cba613f4f5bacb61843eabc9b7579cd17",
+        "bytes": 1424
+      },
+      {
+        "path": "assets/native-svg/002.svg",
+        "sha256": "d5d166d3ee2293cc7d290c5c827b6a488a531b997f365bf7b250522350cd4ca3",
+        "bytes": 223381
+      },
+      {
+        "path": "assets/native-svg/002.json",
+        "sha256": "f3c909dfa1156ea4a034d6e62ae123caef60a9450520e32d52ce312d41cc4e91",
+        "bytes": 1128
+      },
+      {
+        "path": "assets/native-svg/048.svg",
+        "sha256": "d41b84832533609b04370035d6cdcb04cbec9809591f84522cd247c93cec948b",
+        "bytes": 573550
+      },
+      {
+        "path": "assets/native-svg/048.json",
+        "sha256": "05085d23634212586463007987e919d73e0e5c4cb046336dc29ef20726887eab",
+        "bytes": 132
+      },
+      {
+        "path": "assets/native-svg/121.svg",
+        "sha256": "f58fd81bc649dc130fe05cd08ee5d08ce7ab9c609437f23c6e6ab875fab6e83e",
+        "bytes": 490647
+      },
+      {
+        "path": "assets/native-svg/121.json",
+        "sha256": "0bfafdbf64bd753dbe8190376e09530e244db37e5e4ffbbbe8aa8f976326ace5",
+        "bytes": 1325
+      },
+      {
+        "path": "assets/native-svg/604.svg",
+        "sha256": "b2e1a6f9bc561d826ab8519a3b2684f31a6c99fb5a0328192222be8764ee4eba",
+        "bytes": 367714
+      },
+      {
+        "path": "assets/native-svg/604.json",
+        "sha256": "d75e3a12fcc37cbe84e9df7436d614398da4cae3ce607c599db6e708cfaf447d",
+        "bytes": 2255
+      }
+    ],
+    "internetPermission": false,
+    "minSdk": 23,
+    "targetSdk": 36,
+    "portrait": true,
+    "androidsvg": {
+      "coordinate": "com.caverock:androidsvg-aar:1.4",
+      "version": "1.4",
+      "license": "Apache-2.0",
+      "aarBytes": 202395,
+      "classesJarBytes": 222137,
+      "aarSha256": "02a5b08a2b35d2d58eb2eaca9d84ac00fb341da725fdbd653ea3ed130437e95a",
+      "sourceUrl": "https://repo.maven.apache.org/maven2/com/caverock/androidsvg-aar/1.4/androidsvg-aar-1.4.aar",
+      "scope": "Standalone prototype only; not added to main app."
+    },
+    "additionalRuntimeDependency": false
+  },
+  "physicalModernDeviceTest": "PENDING",
+  "mainAppIntegration": false,
+  "sourceToolsPatched": false,
+  "verdict": "UPSTREAM_AUDIT_NOT_RESOLVED"
+}

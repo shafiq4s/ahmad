@@ -1,0 +1,7 @@
+commit d637a25898f4fd72bab6dac505cb138ca5a2f266
+Author:     adelpro <adelpro@gmail.com>
+AuthorDate: Thu Mar 6 21:51:13 2025 +0100
+Commit:     adelpro <adelpro@gmail.com>
+CommitDate: Thu Mar 6 21:51:13 2025 +0100
+
+    feat(hafs): move hafs image files to mushaf data

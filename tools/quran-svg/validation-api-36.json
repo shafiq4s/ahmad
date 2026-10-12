@@ -1,0 +1,100 @@
+[
+  {
+    "page": 1,
+    "ayahIds": 7,
+    "polygons": 7,
+    "invalidIds": 0,
+    "outOfBounds": 0,
+    "overlaps": [
+      {
+        "a": "1:5",
+        "b": "1:6",
+        "intersectionBounds": "RectF(56.04, 130.02159, 229.52, 131.26)",
+        "approximateAreaSquareSourceUnits": 11.213880643772427
+      },
+      {
+        "a": "1:5",
+        "b": "1:7",
+        "intersectionBounds": "RectF(78.59325, 130.39, 113.7, 130.59236)",
+        "approximateAreaSquareSourceUnits": 3.5520782906678505
+      },
+      {
+        "a": "1:6",
+        "b": "1:7",
+        "intersectionBounds": "RectF(100.22854, 130.39, 204.99, 160.65)",
+        "approximateAreaSquareSourceUnits": 16.09309689636575
+      }
+    ],
+    "graphicsValidation": "Native Skia",
+    "firstAyah": "1:1",
+    "lastAyah": "1:7",
+    "tanzilFirstAyah": "1:1"
+  },
+  {
+    "page": 2,
+    "ayahIds": 5,
+    "polygons": 5,
+    "invalidIds": 0,
+    "outOfBounds": 0,
+    "overlaps": [
+      {
+        "a": "2:2",
+        "b": "2:3",
+        "intersectionBounds": "RectF(33.75, 72.23, 172.36, 72.32384)",
+        "approximateAreaSquareSourceUnits": 6.5030245413363446
+      },
+      {
+        "a": "2:3",
+        "b": "2:4",
+        "intersectionBounds": "RectF(113.95, 133.63, 228.16, 133.88)",
+        "approximateAreaSquareSourceUnits": 28.55187612643931
+      },
+      {
+        "a": "2:4",
+        "b": "2:5",
+        "intersectionBounds": "RectF(37.73, 158.53, 200.01, 160.15)",
+        "approximateAreaSquareSourceUnits": 262.8921999091981
+      }
+    ],
+    "graphicsValidation": "Native Skia",
+    "firstAyah": "2:1",
+    "lastAyah": "2:5",
+    "tanzilFirstAyah": "2:1"
+  },
+  {
+    "page": 48,
+    "ayahIds": 1,
+    "polygons": 1,
+    "invalidIds": 0,
+    "outOfBounds": 0,
+    "overlaps": [],
+    "graphicsValidation": "Native Skia",
+    "firstAyah": "2:282",
+    "lastAyah": "2:282",
+    "tanzilFirstAyah": "2:282"
+  },
+  {
+    "page": 121,
+    "ayahIds": 6,
+    "polygons": 15,
+    "invalidIds": 0,
+    "outOfBounds": 0,
+    "overlaps": [],
+    "graphicsValidation": "Native Skia",
+    "firstAyah": "5:78",
+    "lastAyah": "5:83",
+    "tanzilFirstAyah": "5:77"
+  },
+  {
+    "page": 604,
+    "ayahIds": 15,
+    "polygons": 18,
+    "invalidIds": 0,
+    "outOfBounds": 0,
+    "overlaps": [],
+    "graphicsValidation": "Native Skia",
+    "firstAyah": "112:1",
+    "lastAyah": "114:6",
+    "tanzilFirstAyah": "112:1"
+  }
+]

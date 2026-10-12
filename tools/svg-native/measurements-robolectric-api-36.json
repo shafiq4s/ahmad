@@ -1,0 +1,328 @@
+{
+  "environment": "Robolectric host JVM; API 23 rendering is command execution only, API 36 uses native Skia",
+  "api": 36,
+  "viewportPixels": [
+    1080,
+    1722
+  ],
+  "renderSurfaceBytes": 7439040,
+  "nativeGraphics": true,
+  "firstContentColdMs": 73.812618,
+  "firstPageLoadMs": 11.793205,
+  "firstParseMs": 6.891058,
+  "firstRenderMs": 12.815696,
+  "cacheModes": [
+    {
+      "cacheCapacity": 1,
+      "loadMedianMs": 15.522741,
+      "renderMedianMs": 20.803692,
+      "switchMedianMs": 40.369073,
+      "switchP95Ms": 78.246849,
+      "samples": [
+        {
+          "page": 1,
+          "cacheHit": false,
+          "loadMs": 13.919119,
+          "parseMs": 7.989706,
+          "renderMs": 14.348726,
+          "contentReadyMs": 30.502504
+        },
+        {
+          "page": 2,
+          "cacheHit": false,
+          "loadMs": 33.07899,
+          "parseMs": 9.035131,
+          "renderMs": 15.854517,
+          "contentReadyMs": 50.371727
+        },
+        {
+          "page": 48,
+          "cacheHit": false,
+          "loadMs": 15.498549,
+          "parseMs": 14.270411,
+          "renderMs": 31.226534,
+          "contentReadyMs": 48.078348
+        },
+        {
+          "page": 121,
+          "cacheHit": false,
+          "loadMs": 22.12271,
+          "parseMs": 16.697825,
+          "renderMs": 25.459562,
+          "contentReadyMs": 49.000743
+        },
+        {
+          "page": 604,
+          "cacheHit": false,
+          "loadMs": 22.960845,
+          "parseMs": 12.78239,
+          "renderMs": 23.037862,
+          "contentReadyMs": 47.272453
+        },
+        {
+          "page": 121,
+          "cacheHit": false,
+          "loadMs": 20.483802,
+          "parseMs": 16.213614,
+          "renderMs": 24.34873,
+          "contentReadyMs": 46.034113
+        },
+        {
+          "page": 48,
+          "cacheHit": false,
+          "loadMs": 10.860952,
+          "parseMs": 9.70568,
+          "renderMs": 23.263679,
+          "contentReadyMs": 35.50906
+        },
+        {
+          "page": 2,
+          "cacheHit": false,
+          "loadMs": 8.213571,
+          "parseMs": 5.349693,
+          "renderMs": 10.735619,
+          "contentReadyMs": 20.96163
+        },
+        {
+          "page": 1,
+          "cacheHit": false,
+          "loadMs": 9.08622,
+          "parseMs": 4.625666,
+          "renderMs": 9.113971,
+          "contentReadyMs": 19.10384
+        },
+        {
+          "page": 2,
+          "cacheHit": false,
+          "loadMs": 10.824007,
+          "parseMs": 7.529981,
+          "renderMs": 66.542432,
+          "contentReadyMs": 78.246849
+        },
+        {
+          "page": 48,
+          "cacheHit": false,
+          "loadMs": 22.424114,
+          "parseMs": 18.001177,
+          "renderMs": 34.444768,
+          "contentReadyMs": 58.365331
+        },
+        {
+          "page": 121,
+          "cacheHit": false,
+          "loadMs": 19.246969,
+          "parseMs": 14.048114,
+          "renderMs": 19.807613,
+          "contentReadyMs": 40.369073
+        },
+        {
+          "page": 604,
+          "cacheHit": false,
+          "loadMs": 15.522741,
+          "parseMs": 6.872308,
+          "renderMs": 14.148167,
+          "contentReadyMs": 31.25653
+        },
+        {
+          "page": 121,
+          "cacheHit": false,
+          "loadMs": 13.092898,
+          "parseMs": 9.379473,
+          "renderMs": 17.094431,
+          "contentReadyMs": 31.277362
+        },
+        {
+          "page": 48,
+          "cacheHit": false,
+          "loadMs": 15.790148,
+          "parseMs": 14.708787,
+          "renderMs": 20.803692,
+          "contentReadyMs": 37.707608
+        }
+      ],
+      "memory": {
+        "baselineManagedPlusNativeBytes": 255102512,
+        "retainedManagedPlusNativeBytes": 258417456,
+        "retainedDeltaBytes": 3314944,
+        "observedPeakBytes": 265447216,
+        "observedPeakDeltaBytes": 10344704,
+        "sampleIntervalMs": 5,
+        "scope": "Runtime managed heap + Debug native malloc heap; rendering surface already in baseline; not PSS"
+      }
+    },
+    {
+      "cacheCapacity": 3,
+      "loadMedianMs": 0.002691,
+      "renderMedianMs": 14.723989,
+      "switchMedianMs": 15.300374,
+      "switchP95Ms": 20.685565,
+      "samples": [
+        {
+          "page": 1,
+          "cacheHit": false,
+          "loadMs": 6.33802,
+          "parseMs": 3.40553,
+          "renderMs": 6.737872,
+          "contentReadyMs": 13.828307
+        },
+        {
+          "page": 2,
+          "cacheHit": true,
+          "loadMs": 0.003016,
+          "parseMs": 0,
+          "renderMs": 7.966533,
+          "contentReadyMs": 8.677932
+        },
+        {
+          "page": 48,
+          "cacheHit": true,
+          "loadMs": 0.00313,
+          "parseMs": 0,
+          "renderMs": 16.500489,
+          "contentReadyMs": 17.060553
+        },
+        {
+          "page": 121,
+          "cacheHit": true,
+          "loadMs": 0.003223,
+          "parseMs": 0,
+          "renderMs": 14.723989,
+          "contentReadyMs": 15.300374
+        },
+        {
+          "page": 604,
+          "cacheHit": true,
+          "loadMs": 0.002972,
+          "parseMs": 0,
+          "renderMs": 20.081516,
+          "contentReadyMs": 20.685565
+        },
+        {
+          "page": 121,
+          "cacheHit": true,
+          "loadMs": 0.001832,
+          "parseMs": 0,
+          "renderMs": 15.31353,
+          "contentReadyMs": 15.885743
+        },
+        {
+          "page": 48,
+          "cacheHit": true,
+          "loadMs": 0.001815,
+          "parseMs": 0,
+          "renderMs": 16.77558,
+          "contentReadyMs": 17.324168
+        },
+        {
+          "page": 2,
+          "cacheHit": true,
+          "loadMs": 0.001728,
+          "parseMs": 0,
+          "renderMs": 7.82181,
+          "contentReadyMs": 8.314505
+        },
+        {
+          "page": 1,
+          "cacheHit": true,
+          "loadMs": 0.001415,
+          "parseMs": 0,
+          "renderMs": 6.556846,
+          "contentReadyMs": 7.017256
+        },
+        {
+          "page": 2,
+          "cacheHit": true,
+          "loadMs": 0.001514,
+          "parseMs": 0,
+          "renderMs": 7.690036,
+          "contentReadyMs": 8.183901
+        },
+        {
+          "page": 48,
+          "cacheHit": true,
+          "loadMs": 0.002832,
+          "parseMs": 0,
+          "renderMs": 17.994143,
+          "contentReadyMs": 18.470726
+        },
+        {
+          "page": 121,
+          "cacheHit": true,
+          "loadMs": 0.003072,
+          "parseMs": 0,
+          "renderMs": 14.674618,
+          "contentReadyMs": 15.195535
+        },
+        {
+          "page": 604,
+          "cacheHit": true,
+          "loadMs": 0.002691,
+          "parseMs": 0,
+          "renderMs": 10.959865,
+          "contentReadyMs": 11.427872
+        },
+        {
+          "page": 121,
+          "cacheHit": true,
+          "loadMs": 0.001979,
+          "parseMs": 0,
+          "renderMs": 15.328579,
+          "contentReadyMs": 15.769172
+        },
+        {
+          "page": 48,
+          "cacheHit": true,
+          "loadMs": 0.001685,
+          "parseMs": 0,
+          "renderMs": 16.440136,
+          "contentReadyMs": 16.940916
+        }
+      ],
+      "memory": {
+        "baselineManagedPlusNativeBytes": 255097968,
+        "retainedManagedPlusNativeBytes": 259969424,
+        "retainedDeltaBytes": 4871456,
+        "observedPeakBytes": 271514992,
+        "observedPeakDeltaBytes": 16417024,
+        "sampleIntervalMs": 5,
+        "scope": "Runtime managed heap + Debug native malloc heap; rendering surface already in baseline; not PSS"
+      }
+    }
+  ],
+  "hitTestingMedianMs": 0.005225,
+  "hitTestingP95Ms": 0.014891,
+  "rasterBaseline": {
+    "format": "PNG, temporary in-memory native capture",
+    "decodeMedianMs": 21.611171,
+    "drawMedianMs": 0.735564,
+    "decodedBitmapBytes": 7439040,
+    "encodedBytes": 404424
+  },
+  "pageParseAndRender": [
+    {
+      "page": 1,
+      "parseMs": 3.387958,
+      "renderMs": 7.474528
+    },
+    {
+      "page": 2,
+      "parseMs": 3.700138,
+      "renderMs": 7.944523
+    },
+    {
+      "page": 48,
+      "parseMs": 16.306835,
+      "renderMs": 17.303738
+    },
+    {
+      "page": 121,
+      "parseMs": 8.961521,
+      "renderMs": 14.999997
+    },
+    {
+      "page": 604,
+      "parseMs": 6.751114,
+      "renderMs": 11.942511
+    }
+  ]
+}

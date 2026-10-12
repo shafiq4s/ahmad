@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#8DD6BA</color>
+    <color name="primary_dark">#0B1411</color>
+    <color name="surface">#101C18</color>
+    <color name="text_primary">#E7F0E9</color>
+    <color name="text_secondary">#B6C9C0</color>
+    <color name="verse_badge">#243D32</color>
+</resources>

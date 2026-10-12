@@ -1,0 +1,118 @@
+{
+  "commit": "b4155f07e4aea087d2c458069acff9f7c7e749f6",
+  "retrievedAt": "2026-10-11T02:21:35.127490+00:00",
+  "files": [
+    {
+      "path": "mushafs/hafs/kfqc/svg/001.svg",
+      "url": "https://raw.githubusercontent.com/quran-ws/quran-svg/b4155f07e4aea087d2c458069acff9f7c7e749f6/mushafs/hafs/kfqc/svg/001.svg",
+      "bytes": 185309,
+      "sha256": "6c6c3190d6edd66cfaf17dd40c80052d86d53074915d0119535c698c48845b4f"
+    },
+    {
+      "path": "mushafs/hafs/kfqc/json/001.json",
+      "url": "https://raw.githubusercontent.com/quran-ws/quran-svg/b4155f07e4aea087d2c458069acff9f7c7e749f6/mushafs/hafs/kfqc/json/001.json",
+      "bytes": 1424,
+      "sha256": "218520567df2d8c4689bbf8b9836564cba613f4f5bacb61843eabc9b7579cd17"
+    },
+    {
+      "path": "mushafs/hafs/kfqc/svg/002.svg",
+      "url": "https://raw.githubusercontent.com/quran-ws/quran-svg/b4155f07e4aea087d2c458069acff9f7c7e749f6/mushafs/hafs/kfqc/svg/002.svg",
+      "bytes": 223381,
+      "sha256": "d5d166d3ee2293cc7d290c5c827b6a488a531b997f365bf7b250522350cd4ca3"
+    },
+    {
+      "path": "mushafs/hafs/kfqc/json/002.json",
+      "url": "https://raw.githubusercontent.com/quran-ws/quran-svg/b4155f07e4aea087d2c458069acff9f7c7e749f6/mushafs/hafs/kfqc/json/002.json",
+      "bytes": 1128,
+      "sha256": "f3c909dfa1156ea4a034d6e62ae123caef60a9450520e32d52ce312d41cc4e91"
+    },
+    {
+      "path": "mushafs/hafs/kfqc/svg/048.svg",
+      "url": "https://raw.githubusercontent.com/quran-ws/quran-svg/b4155f07e4aea087d2c458069acff9f7c7e749f6/mushafs/hafs/kfqc/svg/048.svg",
+      "bytes": 573550,
+      "sha256": "d41b84832533609b04370035d6cdcb04cbec9809591f84522cd247c93cec948b"
+    },
+    {
+      "path": "mushafs/hafs/kfqc/json/048.json",
+      "url": "https://raw.githubusercontent.com/quran-ws/quran-svg/b4155f07e4aea087d2c458069acff9f7c7e749f6/mushafs/hafs/kfqc/json/048.json",
+      "bytes": 132,
+      "sha256": "05085d23634212586463007987e919d73e0e5c4cb046336dc29ef20726887eab"
+    },
+    {
+      "path": "mushafs/hafs/kfqc/svg/121.svg",
+      "url": "https://raw.githubusercontent.com/quran-ws/quran-svg/b4155f07e4aea087d2c458069acff9f7c7e749f6/mushafs/hafs/kfqc/svg/121.svg",
+      "bytes": 490647,
+      "sha256": "f58fd81bc649dc130fe05cd08ee5d08ce7ab9c609437f23c6e6ab875fab6e83e"
+    },
+    {
+      "path": "mushafs/hafs/kfqc/json/121.json",
+      "url": "https://raw.githubusercontent.com/quran-ws/quran-svg/b4155f07e4aea087d2c458069acff9f7c7e749f6/mushafs/hafs/kfqc/json/121.json",
+      "bytes": 1325,
+      "sha256": "0bfafdbf64bd753dbe8190376e09530e244db37e5e4ffbbbe8aa8f976326ace5"
+    },
+    {
+      "path": "mushafs/hafs/kfqc/svg/604.svg",
+      "url": "https://raw.githubusercontent.com/quran-ws/quran-svg/b4155f07e4aea087d2c458069acff9f7c7e749f6/mushafs/hafs/kfqc/svg/604.svg",
+      "bytes": 367714,
+      "sha256": "b2e1a6f9bc561d826ab8519a3b2684f31a6c99fb5a0328192222be8764ee4eba"
+    },
+    {
+      "path": "mushafs/hafs/kfqc/json/604.json",
+      "url": "https://raw.githubusercontent.com/quran-ws/quran-svg/b4155f07e4aea087d2c458069acff9f7c7e749f6/mushafs/hafs/kfqc/json/604.json",
+      "bytes": 2255,
+      "sha256": "d75e3a12fcc37cbe84e9df7436d614398da4cae3ce607c599db6e708cfaf447d"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/quran-ws/quran-svg/b4155f07e4aea087d2c458069acff9f7c7e749f6/LICENSE",
+      "bytes": 10415,
+      "sha256": "0c3f54cf8be9bbc33946d5b2c61a6befb1f9222dcd17972139a0e72529db354f"
+    },
+    {
+      "path": "NOTICE.md",
+      "url": "https://raw.githubusercontent.com/quran-ws/quran-svg/b4155f07e4aea087d2c458069acff9f7c7e749f6/NOTICE.md",
+      "bytes": 4430,
+      "sha256": "41536e8e555052df526d6fc444dfc49ec9b5a708fe60b6dc7b3259204e5c09a4"
+    },
+    {
+      "path": "docs/PROVENANCE.md",
+      "url": "https://raw.githubusercontent.com/quran-ws/quran-svg/b4155f07e4aea087d2c458069acff9f7c7e749f6/docs/PROVENANCE.md",
+      "bytes": 3250,
+      "sha256": "59c05393bc75b44b478d37ecd1c30c60c1b187c1c6050c850e0d8bece82b5abf"
+    },
+    {
+      "path": "docs/FORMAT.md",
+      "url": "https://raw.githubusercontent.com/quran-ws/quran-svg/b4155f07e4aea087d2c458069acff9f7c7e749f6/docs/FORMAT.md",
+      "bytes": 5125,
+      "sha256": "7a9cf500c2d3cdade3751259c8a821c1476456661710694f0382ef6de7ce9122"
+    },
+    {
+      "path": "docs/GETTING-THE-FILES.md",
+      "url": "https://raw.githubusercontent.com/quran-ws/quran-svg/b4155f07e4aea087d2c458069acff9f7c7e749f6/docs/GETTING-THE-FILES.md",
+      "bytes": 2615,
+      "sha256": "004a325f43763791736247dc79dcaf8085d5f2ba08c1ca0dfe6e773742b27234"
+    },
+    {
+      "path": "LICENSES/CC-BY-4.0.txt",
+      "url": "https://raw.githubusercontent.com/quran-ws/quran-svg/b4155f07e4aea087d2c458069acff9f7c7e749f6/LICENSES/CC-BY-4.0.txt",
+      "bytes": 17023,
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744"
+    }
+  ],
+  "editionId": "quran_ws_hafs_kfqc_b4155f0",
+  "riwayah": "Hafs an Asim",
+  "edition": "King Fahd Complex digital Mushaf al-Madinah 1441H",
+  "stableAssetRelease": "v1.1.1",
+  "stableReleaseCommit": "3ff27b46cecb0c0519d77531d9c868a579d1f623",
+  "upstreamSourceArchive": {
+    "name": "1441-AI-hafs.zip",
+    "bytes": 466430736,
+    "sha256": "280c5d71ca16aaeeb3a343be1b92c76fa6df71d0671e202c026fde12402d9eef",
+    "verification": "Reported by upstream PROVENANCE.md; original archive not downloaded in this trial."
+  },
+  "license": {
+    "originalPageArtwork": "KFQC free digital use terms reproduced in LICENSE section 2 and NOTICE.md section 2.1",
+    "polygonMetadata": "CC BY 4.0; in-product attribution waived; standalone data redistribution retains attribution",
+    "repositoryTools": "MIT"
+  }
+}

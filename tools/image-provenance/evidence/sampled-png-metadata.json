@@ -1,0 +1,173 @@
+[
+  {
+    "page": 1,
+    "sha256": "6bc3a0f32c4f61885b2a59ee28e01f18e483d7ab5fefc57975fd9aea21a737db",
+    "width": 456,
+    "height": 672,
+    "pngChunks": [
+      "IDAT",
+      "IEND",
+      "IHDR",
+      "PLTE",
+      "pHYs",
+      "sBIT",
+      "tEXt"
+    ],
+    "textChunks": {
+      "Creation Time": "10/29/11",
+      "Software": "Adobe Fireworks CS5"
+    }
+  },
+  {
+    "page": 2,
+    "sha256": "215779c6299c27bbc489a5d6fe74e154f39980f43476639dfd712b6d4c6b2d18",
+    "width": 456,
+    "height": 672,
+    "pngChunks": [
+      "IDAT",
+      "IEND",
+      "IHDR",
+      "PLTE",
+      "pHYs",
+      "sBIT",
+      "tEXt"
+    ],
+    "textChunks": {
+      "Creation Time": "10/29/11",
+      "Software": "Adobe Fireworks CS5"
+    }
+  },
+  {
+    "page": 7,
+    "sha256": "caf37bc518f3cb8985b30cfff47fce9c9156cdd31c189087cd47c7d563286663",
+    "width": 456,
+    "height": 672,
+    "pngChunks": [
+      "IDAT",
+      "IEND",
+      "IHDR",
+      "PLTE",
+      "pHYs",
+      "sBIT",
+      "tEXt"
+    ],
+    "textChunks": {
+      "Creation Time": "10/29/11",
+      "Software": "Adobe Fireworks CS5"
+    }
+  },
+  {
+    "page": 48,
+    "sha256": "39940bae8fd1b03b4b28c38b5eecdda77d763cc0c731bea8b66f36dd294410ec",
+    "width": 456,
+    "height": 672,
+    "pngChunks": [
+      "IDAT",
+      "IEND",
+      "IHDR",
+      "PLTE",
+      "pHYs",
+      "sBIT",
+      "tEXt"
+    ],
+    "textChunks": {
+      "Creation Time": "10/29/11",
+      "Software": "Adobe Fireworks CS5"
+    }
+  },
+  {
+    "page": 121,
+    "sha256": "824842b23e7976ce5d7d96a64d6f509e04c6c26803ae56a6bb9813e6bd7eb3a8",
+    "width": 456,
+    "height": 672,
+    "pngChunks": [
+      "IDAT",
+      "IEND",
+      "IHDR",
+      "PLTE",
+      "pHYs",
+      "sBIT",
+      "tEXt"
+    ],
+    "textChunks": {
+      "Creation Time": "10/29/11",
+      "Software": "Adobe Fireworks CS5"
+    }
+  },
+  {
+    "page": 187,
+    "sha256": "21409c3a119fc52ac9397aa6177b4ad4cd7db3a8106d23f9741657bb79836d7b",
+    "width": 456,
+    "height": 672,
+    "pngChunks": [
+      "IDAT",
+      "IEND",
+      "IHDR",
+      "PLTE",
+      "pHYs",
+      "sBIT",
+      "tEXt"
+    ],
+    "textChunks": {
+      "Creation Time": "10/29/11",
+      "Software": "Adobe Fireworks CS5"
+    }
+  },
+  {
+    "page": 531,
+    "sha256": "998e113927909f241cea01c8a4d307608dd900757091aa3cdd7aff47a4038111",
+    "width": 456,
+    "height": 672,
+    "pngChunks": [
+      "IDAT",
+      "IEND",
+      "IHDR",
+      "PLTE",
+      "pHYs",
+      "sBIT",
+      "tEXt"
+    ],
+    "textChunks": {
+      "Creation Time": "10/29/11",
+      "Software": "Adobe Fireworks CS5"
+    }
+  },
+  {
+    "page": 585,
+    "sha256": "c308fd3ca7cd485e674b546269386a4e2d15ea19040bd0070948b6cd6992e9dc",
+    "width": 456,
+    "height": 672,
+    "pngChunks": [
+      "IDAT",
+      "IEND",
+      "IHDR",
+      "PLTE",
+      "pHYs",
+      "sBIT",
+      "tEXt"
+    ],
+    "textChunks": {
+      "Creation Time": "10/29/11",
+      "Software": "Adobe Fireworks CS5"
+    }
+  },
+  {
+    "page": 604,
+    "sha256": "9d2bbb006015e7c92aa28a348f5469b0fa08382f656094d3278d3379c2064743",
+    "width": 456,
+    "height": 672,
+    "pngChunks": [
+      "IDAT",
+      "IEND",
+      "IHDR",
+      "PLTE",
+      "pHYs",
+      "sBIT",
+      "tEXt"
+    ],
+    "textChunks": {
+      "Creation Time": "10/29/11",
+      "Software": "Adobe Fireworks CS5"
+    }
+  }
+]

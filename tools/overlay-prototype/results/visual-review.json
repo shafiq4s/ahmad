@@ -1,0 +1,352 @@
+{
+  "method": "Manual visual inspection of original PNG endpoints; not a proof of every word hit region.",
+  "sourceCommit": "f4aa7867059ac6250a3f8aa68c64002ca1874b7d",
+  "differentPagesReviewed": 36,
+  "exactPrintedEditionYearVerified": false,
+  "pages": [
+    {
+      "page": 120,
+      "printedFirstAyahId": "5:71",
+      "printedLastAyahId": "5:77",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "5:71",
+      "tanzilLastAyahId": "5:76",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 121,
+      "printedFirstAyahId": "5:78",
+      "printedLastAyahId": "5:83",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "5:77",
+      "tanzilLastAyahId": "5:82",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 122,
+      "printedFirstAyahId": "5:84",
+      "printedLastAyahId": "5:90",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "5:83",
+      "tanzilLastAyahId": "5:89",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 123,
+      "printedFirstAyahId": "5:91",
+      "printedLastAyahId": "5:95",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "5:90",
+      "tanzilLastAyahId": "5:95",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 144,
+      "printedFirstAyahId": "6:125",
+      "printedLastAyahId": "6:130",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "6:125",
+      "tanzilLastAyahId": "6:131",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 145,
+      "printedFirstAyahId": "6:131",
+      "printedLastAyahId": "6:137",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "6:132",
+      "tanzilLastAyahId": "6:137",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 531,
+      "printedFirstAyahId": "54:50",
+      "printedLastAyahId": "55:18",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "54:50",
+      "tanzilLastAyahId": "55:16",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 532,
+      "printedFirstAyahId": "55:19",
+      "printedLastAyahId": "55:41",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "55:17",
+      "tanzilLastAyahId": "55:40",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 533,
+      "printedFirstAyahId": "55:42",
+      "printedLastAyahId": "55:69",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "55:41",
+      "tanzilLastAyahId": "55:67",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 534,
+      "printedFirstAyahId": "55:70",
+      "printedLastAyahId": "56:16",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "55:68",
+      "tanzilLastAyahId": "56:16",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 564,
+      "printedFirstAyahId": "67:27",
+      "printedLastAyahId": "68:16",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "67:27",
+      "tanzilLastAyahId": "68:15",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 565,
+      "printedFirstAyahId": "68:17",
+      "printedLastAyahId": "68:42",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "68:16",
+      "tanzilLastAyahId": "68:42",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 567,
+      "printedFirstAyahId": "69:9",
+      "printedLastAyahId": "69:35",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "69:9",
+      "tanzilLastAyahId": "69:34",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 568,
+      "printedFirstAyahId": "69:36",
+      "printedLastAyahId": "70:10",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "69:35",
+      "tanzilLastAyahId": "70:10",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 569,
+      "printedFirstAyahId": "70:11",
+      "printedLastAyahId": "70:40",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "70:11",
+      "tanzilLastAyahId": "70:39",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 570,
+      "printedFirstAyahId": "70:41",
+      "printedLastAyahId": "71:10",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "70:40",
+      "tanzilLastAyahId": "71:10",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 575,
+      "printedFirstAyahId": "73:20",
+      "printedLastAyahId": "74:18",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "73:20",
+      "tanzilLastAyahId": "74:17",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 576,
+      "printedFirstAyahId": "74:19",
+      "printedLastAyahId": "74:47",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "74:18",
+      "tanzilLastAyahId": "74:47",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 583,
+      "printedFirstAyahId": "78:31",
+      "printedLastAyahId": "79:16",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "78:31",
+      "tanzilLastAyahId": "79:15",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 584,
+      "printedFirstAyahId": "79:17",
+      "printedLastAyahId": "79:46",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "79:16",
+      "tanzilLastAyahId": "79:46",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 585,
+      "printedFirstAyahId": "80:1",
+      "printedLastAyahId": "80:40",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "80:1",
+      "tanzilLastAyahId": "80:42",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 586,
+      "printedFirstAyahId": "80:41",
+      "printedLastAyahId": "81:29",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "81:1",
+      "tanzilLastAyahId": "81:29",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 587,
+      "printedFirstAyahId": "82:1",
+      "printedLastAyahId": "83:4",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "82:1",
+      "tanzilLastAyahId": "83:6",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 588,
+      "printedFirstAyahId": "83:5",
+      "printedLastAyahId": "83:33",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "83:7",
+      "tanzilLastAyahId": "83:34",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 589,
+      "printedFirstAyahId": "83:34",
+      "printedLastAyahId": "84:24",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "83:35",
+      "tanzilLastAyahId": "84:25",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 590,
+      "printedFirstAyahId": "84:25",
+      "printedLastAyahId": "85:22",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "85:1",
+      "tanzilLastAyahId": "85:22",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 591,
+      "printedFirstAyahId": "86:1",
+      "printedLastAyahId": "87:10",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "86:1",
+      "tanzilLastAyahId": "87:15",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 592,
+      "printedFirstAyahId": "87:11",
+      "printedLastAyahId": "88:22",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "87:16",
+      "tanzilLastAyahId": "88:26",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 593,
+      "printedFirstAyahId": "88:23",
+      "printedLastAyahId": "89:22",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "89:1",
+      "tanzilLastAyahId": "89:23",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 594,
+      "printedFirstAyahId": "89:23",
+      "printedLastAyahId": "90:18",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "89:24",
+      "tanzilLastAyahId": "90:20",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 595,
+      "printedFirstAyahId": "90:19",
+      "printedLastAyahId": "92:9",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "91:1",
+      "tanzilLastAyahId": "92:14",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 596,
+      "printedFirstAyahId": "92:10",
+      "printedLastAyahId": "94:2",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "92:15",
+      "tanzilLastAyahId": "94:8",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 597,
+      "printedFirstAyahId": "94:3",
+      "printedLastAyahId": "96:12",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "95:1",
+      "tanzilLastAyahId": "96:19",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 598,
+      "printedFirstAyahId": "96:13",
+      "printedLastAyahId": "98:5",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "97:1",
+      "tanzilLastAyahId": "98:7",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 599,
+      "printedFirstAyahId": "98:6",
+      "printedLastAyahId": "100:5",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "98:8",
+      "tanzilLastAyahId": "100:9",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    },
+    {
+      "page": 600,
+      "printedFirstAyahId": "100:6",
+      "printedLastAyahId": "102:8",
+      "matchesOpenMushafPoints": true,
+      "tanzilFirstAyahId": "100:10",
+      "tanzilLastAyahId": "102:8",
+      "observation": "Observed printed pagination differs from the existing Tanzil map; no corpus mutation."
+    }
+  ],
+  "specialLayouts": {
+    "1": "Numbered basmalah is 1:1; narrower frame, smaller line pitch.",
+    "2": "Unnumbered basmalah is excluded from 2:1.",
+    "187": "Surah 9 title is on this page; no basmalah.",
+    "585": "Surah 80 title is at the bottom of image 584; image 585 begins with its basmalah.",
+    "splitTitleSample": [
+      208,
+      342,
+      367,
+      377,
+      415,
+      446,
+      453,
+      499,
+      507,
+      526,
+      585
+    ]
+  },
+  "remainingVisualPages": 546
+}

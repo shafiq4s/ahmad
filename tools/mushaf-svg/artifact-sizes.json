@@ -1,0 +1,32 @@
+[
+  {
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "bytes": 139177279,
+    "sha256": "3fb3f221973add8582945ebe04bafd0067f05095ff25b288fe5f04b5ade9026f",
+    "beforeBytes": 4380621,
+    "increaseBytes": 134796658,
+    "mushafCompressedPayloadBytes": 134076393,
+    "mushafRawPayloadBytes": 374193362,
+    "verifiedManifestRecords": 1216
+  },
+  {
+    "path": "app/build/outputs/apk/release/app-release-unsigned.apk",
+    "bytes": 104916870,
+    "sha256": "df7e9fde4ea13755c369a3411713f8dd2e76843f28fe6922e8ef35c9787fde1e",
+    "beforeBytes": 1323859,
+    "increaseBytes": 103593011,
+    "mushafCompressedPayloadBytes": 103292386,
+    "mushafRawPayloadBytes": 374193362,
+    "verifiedManifestRecords": 1216
+  },
+  {
+    "path": "app/build/outputs/bundle/release/app-release.aab",
+    "bytes": 105553635,
+    "sha256": "c104624a21628b470167355d3e56305357c5ab51d0a40e6152ab4d28c0c093cc",
+    "beforeBytes": 1820820,
+    "increaseBytes": 103732815,
+    "mushafCompressedPayloadBytes": 103292386,
+    "mushafRawPayloadBytes": 374193362,
+    "verifiedManifestRecords": 1216
+  }
+]

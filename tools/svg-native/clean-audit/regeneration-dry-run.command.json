@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "tools/build_ayah_polygons.py",
+    "--mushaf",
+    "hafs",
+    "--pages",
+    "3-604",
+    "--workers",
+    "4",
+    "--dry-run"
+  ],
+  "exactCommand": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/build_ayah_polygons.py --mushaf hafs --pages 3-604 --workers 4 --dry-run",
+  "cwd": "/workspace/quran-svg-regeneration-validation",
+  "exitCode": 0,
+  "environmentOverrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH": "/workspace/.tools/svg-audit-python"
+  },
+  "pathPrefix": "/workspace/.tools/librsvg-audit/usr/bin"
+}

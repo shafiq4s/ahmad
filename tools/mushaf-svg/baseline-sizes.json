@@ -1,0 +1,17 @@
+[
+  {
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "bytes": 4380621,
+    "sha256": "d8e3fba5e4c349f429de221b00ed55a05be734af213916767a4413f68a77fdc0"
+  },
+  {
+    "path": "app/build/outputs/apk/release/app-release-unsigned.apk",
+    "bytes": 1323859,
+    "sha256": "b381ac65fa9d672273e55c52afe808842ac269f4911928f965963af37c948aed"
+  },
+  {
+    "path": "app/build/outputs/bundle/release/app-release.aab",
+    "bytes": 1820820,
+    "sha256": "6b033ee598817110bf2b98b6d7d1d0d75fae9dd631939a0bc6ace547367f719d"
+  }
+]

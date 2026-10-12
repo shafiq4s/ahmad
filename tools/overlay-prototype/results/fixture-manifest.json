@@ -1,0 +1,508 @@
+{
+  "purpose": "Temporary local overlay validation only. Not approved for distribution.",
+  "commit": "f4aa7867059ac6250a3f8aa68c64002ca1874b7d",
+  "differentPages": [
+    120,
+    121,
+    122,
+    123,
+    144,
+    145,
+    531,
+    532,
+    533,
+    534,
+    564,
+    565,
+    567,
+    568,
+    569,
+    570,
+    575,
+    576,
+    583,
+    584,
+    585,
+    586,
+    587,
+    588,
+    589,
+    590,
+    591,
+    592,
+    593,
+    594,
+    595,
+    596,
+    597,
+    598,
+    599,
+    600
+  ],
+  "images": [
+    {
+      "page": 1,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/1.png",
+      "bytes": 104404,
+      "width": 456,
+      "height": 672,
+      "sha256": "6bc3a0f32c4f61885b2a59ee28e01f18e483d7ab5fefc57975fd9aea21a737db"
+    },
+    {
+      "page": 2,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/2.png",
+      "bytes": 105434,
+      "width": 456,
+      "height": 672,
+      "sha256": "215779c6299c27bbc489a5d6fe74e154f39980f43476639dfd712b6d4c6b2d18"
+    },
+    {
+      "page": 3,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/3.png",
+      "bytes": 67465,
+      "width": 456,
+      "height": 672,
+      "sha256": "55181bdabe93c56fb37fdeb8b142df8f3644ea8bf420aca86042093e97102a31"
+    },
+    {
+      "page": 7,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/7.png",
+      "bytes": 70477,
+      "width": 456,
+      "height": 672,
+      "sha256": "caf37bc518f3cb8985b30cfff47fce9c9156cdd31c189087cd47c7d563286663"
+    },
+    {
+      "page": 48,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/48.png",
+      "bytes": 68495,
+      "width": 456,
+      "height": 672,
+      "sha256": "39940bae8fd1b03b4b28c38b5eecdda77d763cc0c731bea8b66f36dd294410ec"
+    },
+    {
+      "page": 120,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/120.png",
+      "bytes": 70387,
+      "width": 456,
+      "height": 672,
+      "sha256": "a50c93e3f18f8b434d344fe0dcf240339f83ab377e78fc70669ff6a144e10490"
+    },
+    {
+      "page": 121,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/121.png",
+      "bytes": 65526,
+      "width": 456,
+      "height": 672,
+      "sha256": "824842b23e7976ce5d7d96a64d6f509e04c6c26803ae56a6bb9813e6bd7eb3a8"
+    },
+    {
+      "page": 122,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/122.png",
+      "bytes": 69447,
+      "width": 456,
+      "height": 672,
+      "sha256": "bbdac1deaf0eabb594f6a5605f35ea1cc5de2c0eeff5c6aa1c0974c819147c53"
+    },
+    {
+      "page": 123,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/123.png",
+      "bytes": 68209,
+      "width": 456,
+      "height": 672,
+      "sha256": "8c049960687e896cf8cb4e0eb94482abd06c689eef96dd0183d10c4784919896"
+    },
+    {
+      "page": 144,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/144.png",
+      "bytes": 66056,
+      "width": 456,
+      "height": 672,
+      "sha256": "3c72de173258f401c222b2bd397eeac5870b6959c05f4f5eecef4871530a7674"
+    },
+    {
+      "page": 145,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/145.png",
+      "bytes": 64581,
+      "width": 456,
+      "height": 672,
+      "sha256": "2b90ce62e4bae43eb72b5bcc3af06759271cf9a7bdfb78458d40d73ac9061c17"
+    },
+    {
+      "page": 187,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/187.png",
+      "bytes": 70213,
+      "width": 456,
+      "height": 672,
+      "sha256": "21409c3a119fc52ac9397aa6177b4ad4cd7db3a8106d23f9741657bb79836d7b"
+    },
+    {
+      "page": 200,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/200.png",
+      "bytes": 69678,
+      "width": 456,
+      "height": 672,
+      "sha256": "ad5b469e215789063be098b87a1705766bc8523cf742cbad6fed6c902d4ee5c9"
+    },
+    {
+      "page": 208,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/208.png",
+      "bytes": 67517,
+      "width": 456,
+      "height": 672,
+      "sha256": "6e70657569907d1e9866a08e76d13024cb722bdd25fa5e09465416736c04ee32"
+    },
+    {
+      "page": 342,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/342.png",
+      "bytes": 67113,
+      "width": 456,
+      "height": 672,
+      "sha256": "0329ef07863a893fe29ced0a06ae51de3de8c8ae8a87bf6ecaf6261cf58d9913"
+    },
+    {
+      "page": 367,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/367.png",
+      "bytes": 69465,
+      "width": 456,
+      "height": 672,
+      "sha256": "84167bacfcbf2a16f87e2476a1785ad0d7c415a98a7dc3c36625fe10b4017ec9"
+    },
+    {
+      "page": 377,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/377.png",
+      "bytes": 67741,
+      "width": 456,
+      "height": 672,
+      "sha256": "2b2f6f9e1755753698eea9420eab9523533b3c6c07152853b03bc349981c432e"
+    },
+    {
+      "page": 400,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/400.png",
+      "bytes": 65981,
+      "width": 456,
+      "height": 672,
+      "sha256": "1b07382a70efc14c4d39c0d7464d6fdaa90dac5285cad73b89fa460164883f7d"
+    },
+    {
+      "page": 415,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/415.png",
+      "bytes": 67321,
+      "width": 456,
+      "height": 672,
+      "sha256": "388085d9735149aa5d2ea999a93187754f36daeb38998df77bd7775a407ada23"
+    },
+    {
+      "page": 446,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/446.png",
+      "bytes": 70903,
+      "width": 456,
+      "height": 672,
+      "sha256": "3d036ef2d737b812d06680aec5c8d0b91e482f75ea9ef9684cfc5cd566d99d87"
+    },
+    {
+      "page": 453,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/453.png",
+      "bytes": 70476,
+      "width": 456,
+      "height": 672,
+      "sha256": "99c403ed12bb2adcbef9552d52e8dc47999f384baa4acb127666a7a6ea1f88b6"
+    },
+    {
+      "page": 499,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/499.png",
+      "bytes": 69478,
+      "width": 456,
+      "height": 672,
+      "sha256": "28cca7d6e08cd4fb08820e83d699e27710208624c014d99ebd3539bac99e226b"
+    },
+    {
+      "page": 507,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/507.png",
+      "bytes": 71528,
+      "width": 456,
+      "height": 672,
+      "sha256": "22b6c7c1a6b39b27b4b5b3888424a7a90d17992fecf43a66c52d4fda8de003f4"
+    },
+    {
+      "page": 526,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/526.png",
+      "bytes": 69424,
+      "width": 456,
+      "height": 672,
+      "sha256": "97c465a8978bf5e501f4a75636d129cae81db23a762dce63fa498a28e5fe5f80"
+    },
+    {
+      "page": 528,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/528.png",
+      "bytes": 71312,
+      "width": 456,
+      "height": 672,
+      "sha256": "50e1e78d0ae7836e338dbbb52c4b56b314b2a115ed7ec09f021e61f95223fd65"
+    },
+    {
+      "page": 531,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/531.png",
+      "bytes": 70886,
+      "width": 456,
+      "height": 672,
+      "sha256": "998e113927909f241cea01c8a4d307608dd900757091aa3cdd7aff47a4038111"
+    },
+    {
+      "page": 532,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/532.png",
+      "bytes": 71903,
+      "width": 456,
+      "height": 672,
+      "sha256": "2165fbc989e623b49485658f34d96e3e2aaeb1310d6275c875455981cec484f4"
+    },
+    {
+      "page": 533,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/533.png",
+      "bytes": 72494,
+      "width": 456,
+      "height": 672,
+      "sha256": "94864bc3f2c6654e0963673df8898b21e9d8218bf99bf1df82fa8ae65057ab52"
+    },
+    {
+      "page": 534,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/534.png",
+      "bytes": 70004,
+      "width": 456,
+      "height": 672,
+      "sha256": "424f8915496c06fd15432506d6175ee1f47b0c57a2029173efb5ff9d260f32bb"
+    },
+    {
+      "page": 564,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/564.png",
+      "bytes": 71242,
+      "width": 456,
+      "height": 672,
+      "sha256": "0e762a37fc8ac7826e5b786939c8223ac3c63c9ed1a7fd7c0951917d6f9b3286"
+    },
+    {
+      "page": 565,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/565.png",
+      "bytes": 74709,
+      "width": 456,
+      "height": 672,
+      "sha256": "0226f07d3febf07da859a37556ff362041c5877b3ca6f5135586cefa37d56507"
+    },
+    {
+      "page": 567,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/567.png",
+      "bytes": 74248,
+      "width": 456,
+      "height": 672,
+      "sha256": "166f7126367c429d865aa30bd601481f729c72e7e1ddb1d47a95f1b33cb13f60"
+    },
+    {
+      "page": 568,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/568.png",
+      "bytes": 72387,
+      "width": 456,
+      "height": 672,
+      "sha256": "78146ef4d408b0abe1d914b523fa1ae95d6e97553b78a145e675ce39bdb15eee"
+    },
+    {
+      "page": 569,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/569.png",
+      "bytes": 74699,
+      "width": 456,
+      "height": 672,
+      "sha256": "21f8f45b869bc09551c33c944af905462ba1607344199c55dbaad41d2925f25d"
+    },
+    {
+      "page": 570,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/570.png",
+      "bytes": 71155,
+      "width": 456,
+      "height": 672,
+      "sha256": "0fdf1227d289ad57f617eaee012025470b74d4438da0f3964a2a5b212c87ff3f"
+    },
+    {
+      "page": 575,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/575.png",
+      "bytes": 73267,
+      "width": 456,
+      "height": 672,
+      "sha256": "095f5885540a36cb69bc31cbcb661d60e5499f96f34506b75ab387b143e05654"
+    },
+    {
+      "page": 576,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/576.png",
+      "bytes": 74086,
+      "width": 456,
+      "height": 672,
+      "sha256": "9e160220944b342ffa3789f3be20b96c82f56abadc013b859f038211c9f69c90"
+    },
+    {
+      "page": 583,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/583.png",
+      "bytes": 73261,
+      "width": 456,
+      "height": 672,
+      "sha256": "d28571caf067a69ea92fd8ad65a293a4a8fb3e43662338c386e331f8e754650a"
+    },
+    {
+      "page": 584,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/584.png",
+      "bytes": 74612,
+      "width": 456,
+      "height": 672,
+      "sha256": "61b0014575b27b77ae8566d64344c2cd67124b0b3872a335384d674b3b586e22"
+    },
+    {
+      "page": 585,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/585.png",
+      "bytes": 70169,
+      "width": 456,
+      "height": 672,
+      "sha256": "c308fd3ca7cd485e674b546269386a4e2d15ea19040bd0070948b6cd6992e9dc"
+    },
+    {
+      "page": 586,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/586.png",
+      "bytes": 71798,
+      "width": 456,
+      "height": 672,
+      "sha256": "71165d1319e6ebb8d3209d94259531def053dd4df8e26a81cd6f3a5f584cab0b"
+    },
+    {
+      "page": 587,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/587.png",
+      "bytes": 72842,
+      "width": 456,
+      "height": 672,
+      "sha256": "aa7898698d55d421a594a87af5bf681b15598357c6de375f8079d7079f7cd1c6"
+    },
+    {
+      "page": 588,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/588.png",
+      "bytes": 72180,
+      "width": 456,
+      "height": 672,
+      "sha256": "711982edd78c54088f7c896250293d509cd8454ee979a3d6590b2fcc127d3cf3"
+    },
+    {
+      "page": 589,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/589.png",
+      "bytes": 70697,
+      "width": 456,
+      "height": 672,
+      "sha256": "80afca99e146bef9bf4a5f8a17269744960a27da604b8c47bdbd840fc3bce804"
+    },
+    {
+      "page": 590,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/590.png",
+      "bytes": 71990,
+      "width": 456,
+      "height": 672,
+      "sha256": "6346aba780f449beef32ff1bc5b22f5b1c65c376df1aaf9b1b627dca0fc3bd65"
+    },
+    {
+      "page": 591,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/591.png",
+      "bytes": 72595,
+      "width": 456,
+      "height": 672,
+      "sha256": "6e4a5780f95bd0a8d4e3ce0f544c57ef8fe76319065bffc4cab91901061e2317"
+    },
+    {
+      "page": 592,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/592.png",
+      "bytes": 72434,
+      "width": 456,
+      "height": 672,
+      "sha256": "2e83baeef2542a9f9d65906563f37367994e48a77162e5fdf7203990df1d3bbe"
+    },
+    {
+      "page": 593,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/593.png",
+      "bytes": 71134,
+      "width": 456,
+      "height": 672,
+      "sha256": "5ad26186bcc85c87b61a4270ce6e264245f9f3a648508d9797c41c78ee556cbc"
+    },
+    {
+      "page": 594,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/594.png",
+      "bytes": 70067,
+      "width": 456,
+      "height": 672,
+      "sha256": "32082b83a5b1038f518c64a8af2b4f6f4ccdd4b28db65fd1f71bc72e271f3d3c"
+    },
+    {
+      "page": 595,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/595.png",
+      "bytes": 72023,
+      "width": 456,
+      "height": 672,
+      "sha256": "b280847115f0a2b7d23792beddf712ce70711a8bd0706ae8aff9e19b8e3e0f35"
+    },
+    {
+      "page": 596,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/596.png",
+      "bytes": 72000,
+      "width": 456,
+      "height": 672,
+      "sha256": "7a7dd5282ffa7b054efdc465de87b1e952902157c3f8127dfd68ad5e46a33d96"
+    },
+    {
+      "page": 597,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/597.png",
+      "bytes": 72020,
+      "width": 456,
+      "height": 672,
+      "sha256": "dc070ac90d5317cdf5e8cb54aa93c87215449f1d1e14f075cea95dfedbc72495"
+    },
+    {
+      "page": 598,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/598.png",
+      "bytes": 72395,
+      "width": 456,
+      "height": 672,
+      "sha256": "021ecddc040fcafba62c0fa69a59a8f33ce9e92d5af5f54ed619c3ceda51aa80"
+    },
+    {
+      "page": 599,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/599.png",
+      "bytes": 70760,
+      "width": 456,
+      "height": 672,
+      "sha256": "324957126ca76c0685a88b60e2e5d499fc115fd5731c2eb3e72fcb7266941a0d"
+    },
+    {
+      "page": 600,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/600.png",
+      "bytes": 71286,
+      "width": 456,
+      "height": 672,
+      "sha256": "195fc3f671b263493b627fe978f15aba6125e47b368678fc8385b0fb6a642c39"
+    },
+    {
+      "page": 602,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/602.png",
+      "bytes": 67386,
+      "width": 456,
+      "height": 672,
+      "sha256": "8a90ed24b063582fbd5573720143f5077e5963f5e05580cdca7d78593f9b7ae4"
+    },
+    {
+      "page": 603,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/603.png",
+      "bytes": 67726,
+      "width": 456,
+      "height": 672,
+      "sha256": "9e03a163007a4c0850dcfc3e7eb820a92d1a919168a9d30f418d8156db2482f9"
+    },
+    {
+      "page": 604,
+      "url": "https://raw.githubusercontent.com/adelpro/open-mushaf-native/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/assets/mushaf-data/mushaf-elmadina-hafs-assim/604.png",
+      "bytes": 65339,
+      "width": 456,
+      "height": 672,
+      "sha256": "9d2bbb006015e7c92aa28a348f5469b0fa08382f656094d3278d3379c2064743"
+    }
+  ]
+}

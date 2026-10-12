@@ -1,0 +1,31 @@
+{
+  "fullPages": 604,
+  "svgCount": 604,
+  "jsonCount": 604,
+  "archives": [
+    {
+      "scope": "svg",
+      "path": "/workspace/ahmad/tools/svg-native/local-fixtures/hafs-604-svg-deflate9.zip",
+      "rawBytes": 372827329,
+      "compressedPayloadBytes": 94969805,
+      "zipBytes": 95050763,
+      "zipOverheadBytes": 80958,
+      "sha256": "477913ac9e1c25caa6042cede40216d7cd214e3f8a9735aec611304d175d3792",
+      "method": "ZIP DEFLATE level 9; original files unchanged"
+    },
+    {
+      "scope": "svg-json",
+      "path": "/workspace/ahmad/tools/svg-native/local-fixtures/hafs-604-svg-json-deflate9.zip",
+      "rawBytes": 373978940,
+      "compressedPayloadBytes": 95245192,
+      "zipBytes": 95409502,
+      "zipOverheadBytes": 164310,
+      "sha256": "bea3bd724403b1b81e729a89e0083430cc222577b626fb20763189bebf6d00c1",
+      "method": "ZIP DEFLATE level 9; original files unchanged"
+    }
+  ],
+  "svgRawBytes": 372827329,
+  "jsonRawBytes": 1151611,
+  "officialBrotliBytes": 63254130,
+  "scope": "Only full pages 001..604. No surah crops. ZIP is a reproducible size measurement, not APK/AAB install size."
+}

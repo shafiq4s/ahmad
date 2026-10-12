@@ -1,0 +1,13 @@
+{
+  "openCommit": "f4aa7867059ac6250a3f8aa68c64002ca1874b7d",
+  "openAyaSha256": "605ffbd1959ce9fea24e0c65b645f6ba0b13dc3f0430deb9f0053f8629c503cd",
+  "mauriCommit": "bddd9097e9dd1573425369b11169e7f8291825d1",
+  "mauriPath": "src/data/madina/coordinateMadina.js",
+  "mauriBlobSha1": "719503c0e852e4a29cbfb22df9a655d0437ea428",
+  "mauriSourceSha256": "e6638184d3277129ac52d19956aef6a84cd327d5674603f1f9500d4037663cc1",
+  "identicalCoordinateArrays": true,
+  "arrayEntries": 605,
+  "pages": 604,
+  "tuples": 6236,
+  "comparisonMethod": "Parse JSON coordinates and JavaScript array; compare every tuple and page including empty entry 0. Full source blob matched in 2021 and current revisions."
+}

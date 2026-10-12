@@ -1,0 +1,56 @@
+{
+  "status": "PASSED_BEFORE_OLD_PATH_REMOVAL",
+  "suites": [
+    {
+      "name": "com.ahmad.quran.ReadingPreferencesTest",
+      "tests": "6",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-11T15:23:34.858Z",
+      "hostname": "325b7aced448",
+      "time": "0.331"
+    },
+    {
+      "name": "com.ahmad.quran.QuranRepositoryTest",
+      "tests": "8",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-11T15:23:24.784Z",
+      "hostname": "325b7aced448",
+      "time": "10.058"
+    },
+    {
+      "name": "com.ahmad.quran.mushaf.svg.MushafSvgTest",
+      "tests": "6",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-11T15:23:39.491Z",
+      "hostname": "325b7aced448",
+      "time": "9.219"
+    },
+    {
+      "name": "com.ahmad.quran.MainActivityTest",
+      "tests": "10",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-11T15:23:06.917Z",
+      "hostname": "325b7aced448",
+      "time": "17.763"
+    },
+    {
+      "name": "com.ahmad.quran.mushaf.svg.MushafSvgGeometryTest",
+      "tests": "8",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-11T15:23:35.206Z",
+      "hostname": "325b7aced448",
+      "time": "4.269"
+    }
+  ],
+  "tests": 38
+}

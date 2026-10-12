@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layoutDirection="rtl" android:orientation="vertical">
+    <TextView android:id="@+id/app_label" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="12dp" android:text="@string/app_name" android:textColor="@color/primary" android:textSize="24sp" android:textStyle="bold" />
+    <LinearLayout style="?android:attr/buttonBarStyle" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:paddingStart="8dp" android:paddingEnd="8dp">
+        <Button android:id="@+id/nav_quran" style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:minHeight="48dp" android:text="@string/surah_index" android:textSize="18sp" />
+        <Button android:id="@+id/nav_settings" style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:minHeight="48dp" android:text="@string/settings" android:textSize="18sp" />
+    </LinearLayout>
+    <TextView android:id="@+id/screen_title" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="8dp" android:paddingBottom="8dp"
+        android:text="@string/surah_index" android:textSize="22sp" android:textStyle="bold" />
+    <ProgressBar android:id="@+id/loading" style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent" android:layout_height="4dp" android:indeterminate="true" android:contentDescription="@string/loading" />
+    <TextView android:id="@+id/load_error" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="12dp" android:visibility="gone" android:text="@string/load_error" android:textSize="18sp" android:accessibilityLiveRegion="polite" />
+    <Button android:id="@+id/retry_load" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:minHeight="48dp" android:visibility="gone" android:text="@string/retry" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:id="@+id/quran_panel" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+            <TextView android:id="@+id/edition_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:textSize="16sp" />
+            <Button android:id="@+id/read_pages" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:minHeight="48dp" android:text="@string/read_pages" />
+            <Button android:id="@+id/continue_reading" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:minHeight="48dp" android:text="@string/continue_reading" android:visibility="gone" />
+            <TextView android:id="@+id/last_location" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingBottom="12dp" android:textSize="16sp" android:visibility="gone" />
+            <ListView android:id="@+id/surah_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fastScrollEnabled="true" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/reader_panel" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:visibility="gone">
+            <TextView android:id="@+id/reader_location" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp" android:textSize="14sp" />
+            <LinearLayout android:id="@+id/page_controls" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <LinearLayout style="?android:attr/buttonBarStyle" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/previous_page" style="?android:attr/buttonBarButtonStyle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:minHeight="48dp" android:text="@string/previous_page" android:textSize="16sp" />
+                <Button android:id="@+id/next_page" style="?android:attr/buttonBarButtonStyle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:minHeight="48dp" android:text="@string/next_page" android:textSize="16sp" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingStart="16dp" android:paddingEnd="16dp">
+                <EditText android:id="@+id/page_number" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:minHeight="48dp" android:inputType="number" android:importantForAutofill="no" android:imeOptions="actionGo" android:maxLines="1" android:maxLength="4" android:hint="@string/page_number" android:textSize="18sp" />
+                <Button android:id="@+id/go_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/go_page" android:textSize="16sp" />
+            </LinearLayout>
+            </LinearLayout>
+            <TextView android:id="@+id/selected_ayah" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:visibility="gone" android:textSize="13sp" />
+            <com.ahmad.quran.mushaf.svg.NativeSvgPageView android:id="@+id/mushaf_page" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:background="#FFFFFF" android:contentDescription="@string/mushaf_page_description" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button android:id="@+id/zoom_1" style="?android:attr/buttonBarButtonStyle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:minHeight="48dp" android:text="@string/zoom_1" />
+                <Button android:id="@+id/zoom_2" style="?android:attr/buttonBarButtonStyle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:minHeight="48dp" android:text="@string/zoom_2" />
+                <Button android:id="@+id/zoom_4" style="?android:attr/buttonBarButtonStyle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:minHeight="48dp" android:text="@string/zoom_4" />
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView android:id="@+id/settings_panel" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:visibility="gone">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/reading_settings" android:textStyle="bold" android:textSize="20sp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/svg_zoom_help" android:textSize="16sp" android:paddingTop="12dp" android:paddingBottom="12dp" />
+                <androidx.appcompat.widget.SwitchCompat android:id="@+id/dark_mode" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:minHeight="48dp" android:layout_marginBottom="24dp" android:text="@string/dark_mode" android:textSize="18sp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/about_heading" android:textStyle="bold" android:textSize="20sp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/about_description" android:textSize="18sp" />
+                <TextView android:id="@+id/tanzil_attribution" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:autoLink="web" android:text="@string/tanzil_attribution" android:textSize="16sp" />
+                <TextView android:id="@+id/quran_svg_attribution" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:autoLink="web" android:text="@string/quran_svg_attribution" android:textSize="16sp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/tanzil_terms" android:textSize="16sp" />
+                <Button android:id="@+id/show_license" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:minHeight="48dp" android:text="@string/show_license" />
+                <TextView android:id="@+id/license_notice" android:layout_width="match_parent" android:layout_height="wrap_content" android:visibility="gone" android:textDirection="ltr" android:textSize="14sp" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

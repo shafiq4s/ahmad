@@ -1,0 +1,36 @@
+{
+  "platform": "Debian 13 x86_64; Python 3.12",
+  "scope": "Cloud audit tooling only; not Android runtime dependencies",
+  "wheels": [
+    {
+      "name": "numpy",
+      "version": "2.5.4",
+      "filename": "numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/43/a3/c799c62e19c337e6d3770b08e475887fb30ce8477d3c09efca6b2f0228a6/numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 16727283,
+      "sha256": "fbde6962867ee75b48b0ee29b2b9372ec5d617799dbaf38e82dc0596f2f7738a"
+    },
+    {
+      "name": "shapely",
+      "version": "2.1.2",
+      "filename": "shapely-2.1.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/b9/37/e781683abac55dde9771e086b790e554811a71ed0b2b8a1e789b7430dd44/shapely-2.1.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "bytes": 3099844,
+      "sha256": "1e7d4d7ad262a48bb44277ca12c7c78cb1b0f56b32c10734ec9a1d30c0b0c54b"
+    },
+    {
+      "name": "Brotli",
+      "version": "1.1.0",
+      "filename": "Brotli-1.1.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/ab/fb/0517cea182219d6768113a38167ef6d4eb157a033178cc938033a552ed6d/Brotli-1.1.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "bytes": 2919252,
+      "sha256": "d0c5516f0aed654134a2fc936325cc2e642f8a0e096d075209672eb321cff408"
+    }
+  ],
+  "rsvg": {
+    "version": "2.60.0",
+    "url": "https://deb.debian.org/debian/pool/main/libr/librsvg/librsvg2-bin_2.60.0+dfsg-1_amd64.deb",
+    "sha256": "f34154cb30c8a96dfa9e8e33ecc4320278495b48d3b36ecbdf6d3a1d06e2e900",
+    "bytes": 1967120
+  }
+}

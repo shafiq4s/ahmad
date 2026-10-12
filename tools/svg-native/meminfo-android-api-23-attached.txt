@@ -1,0 +1,51 @@
+Applications Memory Usage (kB):
+Uptime: 1101917 Realtime: 1101917
+
+** MEMINFO in pid 2806 [com.ahmad.quran.svgnative] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap     5100     5024        0        0    15872    14568     1303
+  Dalvik Heap     5059     5016        0        0    12010     8038     3972
+ Dalvik Other      349      348        0        0                           
+        Stack      144      144        0        0                           
+       Ashmem        2        0        0        0                           
+    Other dev        4        0        4        0                           
+     .so mmap     1226      104      196        0                           
+    .apk mmap      117        0        0        0                           
+    .ttf mmap       67        0       52        0                           
+    .dex mmap     2124        4     2120        0                           
+    .oat mmap     1207        0      180        0                           
+    .art mmap      899      468        0        0                           
+   Other mmap       48        8       12        0                           
+      Unknown      109      108        0        0                           
+        TOTAL    16455    11224     2564        0    27882    22606     5275
+ 
+ App Summary
+                       Pss(KB)
+                        ------
+           Java Heap:     5484
+         Native Heap:     5024
+                Code:     2656
+               Stack:      144
+            Graphics:        0
+       Private Other:      480
+              System:     2667
+ 
+               TOTAL:    16455      TOTAL SWAP (KB):        0
+ 
+ Objects
+               Views:       11         ViewRootImpl:        1
+         AppContexts:        2           Activities:        1
+              Assets:        2        AssetManagers:        2
+       Local Binders:        8        Proxy Binders:       11
+       Parcel memory:        3         Parcel count:       14
+    Death Recipients:        0      OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:      104
+  PAGECACHE_OVERFLOW:       29          MALLOC_SIZE:       62
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b)          cache  Dbname
+         4     2120             13         13/7/1  /data/user/0/com.ahmad.quran.svgnative/no_backup/quran-uthmani-v1.db

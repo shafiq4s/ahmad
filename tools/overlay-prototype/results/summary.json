@@ -1,0 +1,145 @@
+{
+  "sourceCommit": "f4aa7867059ac6250a3f8aa68c64002ca1874b7d",
+  "pageCount": 604,
+  "pointCount": 6236,
+  "regionCount": 14101,
+  "overlapCount": 0,
+  "outOfBoundsCount": 0,
+  "invalidIdCount": 0,
+  "warnings": 0,
+  "paginationDifferencePages": 36,
+  "imageSampleCount": 58,
+  "sampleImageBytes": 4154425,
+  "remainingUnreviewedImages": 546,
+  "readerApkByteIdenticalToApprovedV1": true,
+  "referenceChecks": [
+    {
+      "path": "tools/quran/sources/quran-data.xml",
+      "expectedSha256": "8867c1d88191472adec9db694b3cd9f135b1a2ef580574d32cf888dcb22c5c7a",
+      "actualSha256": "8867c1d88191472adec9db694b3cd9f135b1a2ef580574d32cf888dcb22c5c7a"
+    },
+    {
+      "path": "tools/quran/sources/quran-uthmani.txt",
+      "expectedSha256": "6933e133dd56db778c801bf738848454e43648105a151e8d84d86a7cae39ec5f",
+      "actualSha256": "6933e133dd56db778c801bf738848454e43648105a151e8d84d86a7cae39ec5f"
+    },
+    {
+      "path": "tools/quran/sources/Text_License.html",
+      "expectedSha256": "2edbc4b664fea5402893f3a60f212f8bf43dc3dee800b5fbcf4d3693819a9c79",
+      "actualSha256": "2edbc4b664fea5402893f3a60f212f8bf43dc3dee800b5fbcf4d3693819a9c79"
+    },
+    {
+      "path": "tools/quran/sources/provenance.json",
+      "expectedSha256": "5f497bab3bb993623c1520f94935cb21401dc19e1b6014e5c2be5b2bee34cf82",
+      "actualSha256": "5f497bab3bb993623c1520f94935cb21401dc19e1b6014e5c2be5b2bee34cf82"
+    },
+    {
+      "path": "tools/quran/sources/quran-data.js",
+      "expectedSha256": "9e9930c592aaa34b5c7a79ff4e99ffdc782263a266090bfe2c49e4ed4bac4ca4",
+      "actualSha256": "9e9930c592aaa34b5c7a79ff4e99ffdc782263a266090bfe2c49e4ed4bac4ca4"
+    },
+    {
+      "path": "app/src/main/assets/source-manifest.json",
+      "expectedSha256": "b7710ff7b47a7d1b9404316de999bd3fb266c9f2bae652753bcdfff802d31602",
+      "actualSha256": "b7710ff7b47a7d1b9404316de999bd3fb266c9f2bae652753bcdfff802d31602"
+    },
+    {
+      "path": "app/src/main/assets/TANZIL_METADATA_NOTICE.txt",
+      "expectedSha256": "bfc202cdf6bbd4a1f1a963ba1a31189c25c4f0d01861117dc9aa53e1e1916564",
+      "actualSha256": "bfc202cdf6bbd4a1f1a963ba1a31189c25c4f0d01861117dc9aa53e1e1916564"
+    },
+    {
+      "path": "app/src/main/assets/quran-data.xml",
+      "expectedSha256": "8867c1d88191472adec9db694b3cd9f135b1a2ef580574d32cf888dcb22c5c7a",
+      "actualSha256": "8867c1d88191472adec9db694b3cd9f135b1a2ef580574d32cf888dcb22c5c7a"
+    },
+    {
+      "path": "app/src/main/assets/TANZIL_NOTICE.txt",
+      "expectedSha256": "72493509d507314f60c018fd33aa57d9064a0de42be8926745e4953f59925c62",
+      "actualSha256": "72493509d507314f60c018fd33aa57d9064a0de42be8926745e4953f59925c62"
+    },
+    {
+      "path": "app/src/main/assets/quran-uthmani-v1.db",
+      "expectedSha256": "8ed100334e8eca42124035f51fffe934d52b20e5224b3a44c1a33b44dba74416",
+      "actualSha256": "8ed100334e8eca42124035f51fffe934d52b20e5224b3a44c1a33b44dba74416"
+    },
+    {
+      "path": "app/src/main/java/com/ahmad/quran/data/CorpusInfo.kt",
+      "expectedSha256": "e5e52c87f7c6611ee46808856b0fbff51f243d803751e32ca2cc2ec623b08ffd",
+      "actualSha256": "e5e52c87f7c6611ee46808856b0fbff51f243d803751e32ca2cc2ec623b08ffd"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "app/build/outputs/apk/debug/app-debug.apk",
+      "bytes": 4345924,
+      "sha256": "ab9fe476eaf8a3d7f66afbd6bb076d323560f0c696df9b841d9581cbd42aa802",
+      "imageAssets": 0
+    },
+    {
+      "path": "app/build/outputs/apk/release/app-release-unsigned.apk",
+      "bytes": 1323839,
+      "sha256": "5c2fd8f3853c4bb1522746b839d7ea92954568896fb79d359eecc9e0dedbb806",
+      "imageAssets": 0
+    },
+    {
+      "path": "overlay-prototype/build/outputs/apk/debug/overlay-prototype-debug.apk",
+      "bytes": 5874331,
+      "sha256": "5fac5a0853b176165dc0e8d698b4fa8539f761e37bbb398dd8d5c969006e3b43",
+      "imageAssets": 58
+    }
+  ],
+  "newDependencies": [],
+  "deviceValidation": "API 23/36 Robolectric; API 36 native graphics screenshots; no physical device or emulator available.",
+  "tests": {
+    "app": [
+      {
+        "suite": "com.ahmad.quran.ReadingPreferencesTest",
+        "tests": 6,
+        "failures": 0,
+        "errors": 0
+      },
+      {
+        "suite": "com.ahmad.quran.QuranRepositoryTest",
+        "tests": 8,
+        "failures": 0,
+        "errors": 0
+      },
+      {
+        "suite": "com.ahmad.quran.MainActivityTest",
+        "tests": 12,
+        "failures": 0,
+        "errors": 0
+      }
+    ],
+    "overlay-prototype": [
+      {
+        "suite": "com.ahmad.quran.overlayprototype.OverlayScreenshotTest",
+        "tests": 1,
+        "failures": 0,
+        "errors": 0
+      },
+      {
+        "suite": "com.ahmad.quran.overlayprototype.OverlayGeometryTest",
+        "tests": 10,
+        "failures": 0,
+        "errors": 0
+      }
+    ]
+  },
+  "lint": {
+    "app": [
+      {
+        "id": "NewerVersionAvailable",
+        "severity": "Warning"
+      }
+    ],
+    "overlay-prototype": [
+      {
+        "id": "NewerVersionAvailable",
+        "severity": "Warning"
+      }
+    ]
+  },
+  "build": "Reader debug/release and opt-in prototype debug passed. Prototype release variant disabled."
+}

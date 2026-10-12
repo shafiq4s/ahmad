@@ -1,0 +1,53 @@
+{
+  "serial": "emulator-5554",
+  "deviceKind": "Software-emulated API23, same AVD; retained database, process-cold activity launches; first window, not index metadata readiness",
+  "trials": [
+    {
+      "build": "before",
+      "trial": 1,
+      "totalTimeMs": 5256,
+      "waitTimeMs": 5468,
+      "raw": "Starting: Intent { cmp=com.ahmad.quran/.ui.MainActivity }\nStatus: ok\nActivity: com.ahmad.quran/.ui.MainActivity\nThisTime: 5256\nTotalTime: 5256\nWaitTime: 5468\nComplete\n"
+    },
+    {
+      "build": "before",
+      "trial": 2,
+      "totalTimeMs": 4208,
+      "waitTimeMs": 4448,
+      "raw": "Starting: Intent { cmp=com.ahmad.quran/.ui.MainActivity }\nStatus: ok\nActivity: com.ahmad.quran/.ui.MainActivity\nThisTime: 4208\nTotalTime: 4208\nWaitTime: 4448\nComplete\n"
+    },
+    {
+      "build": "before",
+      "trial": 3,
+      "totalTimeMs": 4172,
+      "waitTimeMs": 4530,
+      "raw": "Starting: Intent { cmp=com.ahmad.quran/.ui.MainActivity }\nStatus: ok\nActivity: com.ahmad.quran/.ui.MainActivity\nThisTime: 4172\nTotalTime: 4172\nWaitTime: 4530\nComplete\n"
+    },
+    {
+      "build": "after",
+      "trial": 1,
+      "totalTimeMs": 4780,
+      "waitTimeMs": 4914,
+      "raw": "Starting: Intent { cmp=com.ahmad.quran/.ui.MainActivity }\nStatus: ok\nActivity: com.ahmad.quran/.ui.MainActivity\nThisTime: 4780\nTotalTime: 4780\nWaitTime: 4914\nComplete\n"
+    },
+    {
+      "build": "after",
+      "trial": 2,
+      "totalTimeMs": 7286,
+      "waitTimeMs": 7605,
+      "raw": "Starting: Intent { cmp=com.ahmad.quran/.ui.MainActivity }\nStatus: ok\nActivity: com.ahmad.quran/.ui.MainActivity\nThisTime: 7286\nTotalTime: 7286\nWaitTime: 7605\nComplete\n"
+    },
+    {
+      "build": "after",
+      "trial": 3,
+      "totalTimeMs": 8603,
+      "waitTimeMs": 9058,
+      "raw": "Starting: Intent { cmp=com.ahmad.quran/.ui.MainActivity }\nStatus: ok\nActivity: com.ahmad.quran/.ui.MainActivity\nThisTime: 8603\nTotalTime: 8603\nWaitTime: 9058\nComplete\n"
+    }
+  ],
+  "medianTotalTimeMs": {
+    "before": 4208,
+    "after": 7286
+  },
+  "medianDifferenceMs": 3078
+}

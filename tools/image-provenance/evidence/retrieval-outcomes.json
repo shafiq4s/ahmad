@@ -1,0 +1,49 @@
+{
+  "reviewDate": "2026-10-11",
+  "outcomes": [
+    {
+      "url": "https://qurancomplex.gov.sa",
+      "status": 503
+    },
+    {
+      "url": "https://qurancomplex.gov.sa/en/techquran/dev/",
+      "status": 503
+    },
+    {
+      "url": "https://qurancomplex.gov.sa/techquran/dev/",
+      "status": 503
+    },
+    {
+      "url": "https://www.qurancomplex.gov.sa/en/techquran/dev/",
+      "status": 503
+    },
+    {
+      "url": "https://api.github.com/repos/adelpro/open-mushaf-native/commits?path=assets/mushaf-data/mushaf-elmadina-hafs-assim/1.png&per_page=100",
+      "status": "proxy tunnel 403"
+    },
+    {
+      "url": "https://community.itqan.dev/d/19",
+      "status": "proxy tunnel 403"
+    },
+    {
+      "url": "https://quran.ksu.edu.sa/png_big/1.png",
+      "status": "proxy tunnel 403"
+    },
+    {
+      "url": "https://quran.ksu.edu.sa/png_big/121.png",
+      "status": "proxy tunnel 403"
+    },
+    {
+      "url": "https://quran.ksu.edu.sa/ayat/?l=en",
+      "status": "proxy tunnel 403"
+    },
+    {
+      "url": "https://github.com/adelpro/open-mushaf-native/commits/main/assets/mushaf-data/mushaf-elmadina-hafs-assim/1.png",
+      "status": 200
+    },
+    {
+      "url": "https://github.com/adelpro/open-mushaf-native.git",
+      "status": "Git filtered bare clone successful"
+    }
+  ]
+}

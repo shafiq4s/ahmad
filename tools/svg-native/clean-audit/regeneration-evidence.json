@@ -1,0 +1,13 @@
+{
+  "checkout": "/workspace/quran-svg-regeneration-validation",
+  "commit": "b4155f07e4aea087d2c458069acff9f7c7e749f6",
+  "dryRunOnly": true,
+  "changedFiles": [],
+  "changedFileCount": 0,
+  "gitStatusAfter": "",
+  "independentWorkingTree": true,
+  "regenerationRequiredByDocs": false,
+  "writeModeExecuted": false,
+  "generatedOutputAdopted": false,
+  "explanation": "README explicitly permits direct audit. The generator imports the same broken marker parser and skips all pages before writes. No write-mode generation was needed or performed."
+}

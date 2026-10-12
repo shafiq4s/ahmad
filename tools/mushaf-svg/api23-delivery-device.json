@@ -1,0 +1,109 @@
+{
+  "api": 23,
+  "model": "Android SDK built for x86",
+  "transitions": [
+    {
+      "page": 1,
+      "cacheHit": false,
+      "requestToFirstDrawMs": 1604.192731,
+      "activityToFirstPageMs": 4984.73123,
+      "parseMs": 352.753489,
+      "renderMs": 313.962188,
+      "hardware": false,
+      "retainedDocuments": 1,
+      "postPrefetchPssKiB": 40777,
+      "retainedAfterPrefetch": 2
+    },
+    {
+      "page": 2,
+      "cacheHit": true,
+      "requestToFirstDrawMs": 553.963265,
+      "activityToFirstPageMs": null,
+      "parseMs": 0,
+      "renderMs": 144.79054,
+      "hardware": false,
+      "retainedDocuments": 2
+    },
+    {
+      "page": 48,
+      "cacheHit": false,
+      "requestToFirstDrawMs": 4162.433058,
+      "activityToFirstPageMs": null,
+      "parseMs": 2542.700065,
+      "renderMs": 221.097535,
+      "hardware": false,
+      "retainedDocuments": 1
+    },
+    {
+      "page": 121,
+      "cacheHit": false,
+      "requestToFirstDrawMs": 2354.086698,
+      "activityToFirstPageMs": null,
+      "parseMs": 935.151216,
+      "renderMs": 150.239831,
+      "hardware": false,
+      "retainedDocuments": 1
+    },
+    {
+      "page": 604,
+      "cacheHit": false,
+      "requestToFirstDrawMs": 4933.321333,
+      "activityToFirstPageMs": null,
+      "parseMs": 1949.046239,
+      "renderMs": 325.613712,
+      "hardware": false,
+      "retainedDocuments": 1,
+      "postPrefetchPssKiB": 40905,
+      "retainedAfterPrefetch": 2
+    },
+    {
+      "page": 121,
+      "cacheHit": false,
+      "requestToFirstDrawMs": 1614.561965,
+      "activityToFirstPageMs": null,
+      "parseMs": 1137.508336,
+      "renderMs": 158.038743,
+      "hardware": false,
+      "retainedDocuments": 1
+    },
+    {
+      "page": 48,
+      "cacheHit": false,
+      "requestToFirstDrawMs": 3060.149005,
+      "activityToFirstPageMs": null,
+      "parseMs": 1621.164467,
+      "renderMs": 315.805463,
+      "hardware": false,
+      "retainedDocuments": 1
+    },
+    {
+      "page": 49,
+      "cacheHit": false,
+      "requestToFirstDrawMs": 3810.297528,
+      "activityToFirstPageMs": null,
+      "parseMs": 1694.172931,
+      "renderMs": 179.94412,
+      "hardware": false,
+      "retainedDocuments": 2,
+      "postPrefetchPssKiB": 44006,
+      "retainedAfterPrefetch": 3
+    },
+    {
+      "page": 48,
+      "cacheHit": true,
+      "requestToFirstDrawMs": 367.297991,
+      "activityToFirstPageMs": null,
+      "parseMs": 0,
+      "renderMs": 173.938257,
+      "hardware": false,
+      "retainedDocuments": 2,
+      "postPrefetchPssKiB": 44838,
+      "retainedAfterPrefetch": 3
+    }
+  ],
+  "policy": "Activity\/request to View draw; excludes compositor. First activity time includes index dwell. PSS sampled after prefetch, not peak.",
+  "instrumentedIndexReadyMs": 4872.07002,
+  "startupParsedSvgDocuments": 0,
+  "instrumentationSuccess": true,
+  "deviceKind": "Google API23 emulator; software CPU emulation, not physical-phone timings"
+}

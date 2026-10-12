@@ -1,0 +1,114 @@
+[
+  {
+    "file": "open-LICENSE.txt",
+    "repository": "adelpro/open-mushaf-native",
+    "commit": "f4aa7867059ac6250a3f8aa68c64002ca1874b7d",
+    "path": "LICENSE",
+    "sha256": "3171cf01a02960122a9160a88a0aa2a4012c2c8b2b1dd9a2616a739ee800689c",
+    "sourceUrl": "https://github.com/adelpro/open-mushaf-native/blob/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/LICENSE"
+  },
+  {
+    "file": "open-README.md",
+    "repository": "adelpro/open-mushaf-native",
+    "commit": "f4aa7867059ac6250a3f8aa68c64002ca1874b7d",
+    "path": "README.md",
+    "sha256": "aa6e4b41d4284ad7af29a7b750b8ac84782c42f1083719f4631e55802da2d24d",
+    "sourceUrl": "https://github.com/adelpro/open-mushaf-native/blob/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/README.md"
+  },
+  {
+    "file": "open-about.tsx.txt",
+    "repository": "adelpro/open-mushaf-native",
+    "commit": "f4aa7867059ac6250a3f8aa68c64002ca1874b7d",
+    "path": "app/(tabs)/(more)/about.tsx",
+    "sha256": "77948cd27b94cbd3ae032f89c56c4d5490feb1da2fd22189851308ebdb08247f",
+    "sourceUrl": "https://github.com/adelpro/open-mushaf-native/blob/f4aa7867059ac6250a3f8aa68c64002ca1874b7d/app/(tabs)/(more)/about.tsx"
+  },
+  {
+    "file": "open-first-image-commit.txt",
+    "repository": "adelpro/open-mushaf-native",
+    "commit": "b11a3ab816443852f34620ed69b01d12ab2b6ba9",
+    "path": null,
+    "sha256": "90078ce860b225d219c66b879a6c1b56bf8407154528b5185511e7e8cf146c56",
+    "sourceUrl": "https://github.com/adelpro/open-mushaf-native/commit/b11a3ab816443852f34620ed69b01d12ab2b6ba9"
+  },
+  {
+    "file": "open-original-attribution.tsx.txt",
+    "repository": "adelpro/open-mushaf-native",
+    "commit": "b5d95e3ee193f6950764724a92b116488ab407fb",
+    "path": "app/(tabs)/(more)/about.tsx",
+    "sha256": "9cfadadcf074c9b7cbb67d60802adc50285f4efb79c7620ad5359b80771b40d9",
+    "sourceUrl": "https://github.com/adelpro/open-mushaf-native/blob/b5d95e3ee193f6950764724a92b116488ab407fb/app/(tabs)/(more)/about.tsx"
+  },
+  {
+    "file": "mauri-LICENSE.txt",
+    "repository": "Zizwar/mushaf-mauri",
+    "commit": "bddd9097e9dd1573425369b11169e7f8291825d1",
+    "path": "LICENSE",
+    "sha256": "3ecf64b3a6116c40a556b4867c05570cb0da91dd8c64c6dbff98821b532a266c",
+    "sourceUrl": "https://github.com/Zizwar/mushaf-mauri/blob/bddd9097e9dd1573425369b11169e7f8291825d1/LICENSE"
+  },
+  {
+    "file": "mauri-README.md",
+    "repository": "Zizwar/mushaf-mauri",
+    "commit": "c4316e433238d3b3b68e254c9252132888c5b3f8",
+    "path": "_archive/README.md",
+    "sha256": "c2763d610b11d0b0bf97f5654e73c61c7011ba6ca268f244323ae9eeeabb30ea",
+    "sourceUrl": "https://github.com/Zizwar/mushaf-mauri/blob/c4316e433238d3b3b68e254c9252132888c5b3f8/_archive/README.md"
+  },
+  {
+    "file": "outils-LICENSE.txt",
+    "repository": "Zizwar/outils-mushaf-mauri",
+    "commit": "6fd129d23a077c254f59fb6fd0a54d8c9409c764",
+    "path": "LICENSE",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "sourceUrl": "https://github.com/Zizwar/outils-mushaf-mauri/blob/6fd129d23a077c254f59fb6fd0a54d8c9409c764/LICENSE"
+  },
+  {
+    "file": "outils-README.md",
+    "repository": "Zizwar/outils-mushaf-mauri",
+    "commit": "6fd129d23a077c254f59fb6fd0a54d8c9409c764",
+    "path": "README.md",
+    "sha256": "0c9520550c54cff81f3af0b96052341a3b5da429a1b0c04352de0589b1a233c6",
+    "sourceUrl": "https://github.com/Zizwar/outils-mushaf-mauri/blob/6fd129d23a077c254f59fb6fd0a54d8c9409c764/README.md"
+  },
+  {
+    "file": "aquran-bower.json",
+    "repository": "forabi/aQuran",
+    "commit": "cb7b0bfbe4b7e653010283e52b46a519d48a2bf0",
+    "path": "bower.json",
+    "sha256": "e34fc0cc3a6f34cf9c000c20ef2ddc93f7f0269dc47fd0ee531ee41d4ccc9c13",
+    "sourceUrl": "https://github.com/forabi/aQuran/blob/cb7b0bfbe4b7e653010283e52b46a519d48a2bf0/bower.json"
+  },
+  {
+    "file": "aquran-README.en.md",
+    "repository": "forabi/aQuran",
+    "commit": "cb7b0bfbe4b7e653010283e52b46a519d48a2bf0",
+    "path": "README.en.md",
+    "sha256": "2235ee7ffb52fd6f6f648956affedacf09104ebb9aaea94b07852c4ce9376643",
+    "sourceUrl": "https://github.com/forabi/aQuran/blob/cb7b0bfbe4b7e653010283e52b46a519d48a2bf0/README.en.md"
+  },
+  {
+    "file": "open-earliest-image-commit.txt",
+    "repository": "adelpro/open-mushaf-native",
+    "commit": "29445bcaff08ba218f3d5b84a95377951982a79a",
+    "path": null,
+    "sha256": "5ed242427774d2ebc1ca97c88c2305429d50c7afd20fb891c9f240dc3715b324",
+    "sourceUrl": "https://github.com/adelpro/open-mushaf-native/commit/29445bcaff08ba218f3d5b84a95377951982a79a"
+  },
+  {
+    "file": "open-image-move-commit.txt",
+    "repository": "adelpro/open-mushaf-native",
+    "commit": "d637a25898f4fd72bab6dac505cb138ca5a2f266",
+    "path": null,
+    "sha256": "ee845cdc191c873579502673148f5a1d9c28e3c89db69c5f7e76fce2a019c9f1",
+    "sourceUrl": "https://github.com/adelpro/open-mushaf-native/commit/d637a25898f4fd72bab6dac505cb138ca5a2f266"
+  },
+  {
+    "file": "svg-permission-placeholder.eml.txt",
+    "repository": "adelpro/open-mushaf-native",
+    "commit": "576f45a4c6df9f04ea6fd382d142bc2433755e5c",
+    "path": "docs/licenses/quran-svg-permission.eml",
+    "sha256": "b919f8352d2b6d3cbfd43ffd5a2676e4fba77aa52c8eb0248952291ea50b5030",
+    "sourceUrl": "https://github.com/adelpro/open-mushaf-native/blob/576f45a4c6df9f04ea6fd382d142bc2433755e5c/docs/licenses/quran-svg-permission.eml"
+  }
+]

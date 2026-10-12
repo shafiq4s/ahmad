@@ -1,0 +1,10 @@
+{
+  "coordinate": "com.caverock:androidsvg-aar:1.4",
+  "version": "1.4",
+  "license": "Apache-2.0",
+  "aarBytes": 202395,
+  "classesJarBytes": 222137,
+  "aarSha256": "02a5b08a2b35d2d58eb2eaca9d84ac00fb341da725fdbd653ea3ed130437e95a",
+  "sourceUrl": "https://repo.maven.apache.org/maven2/com/caverock/androidsvg-aar/1.4/androidsvg-aar-1.4.aar",
+  "scope": "Standalone prototype only; not added to main app."
+}

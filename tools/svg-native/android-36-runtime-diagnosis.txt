@@ -1,0 +1,6 @@
+10-11 09:29:21.635   682   726 W Watchdog: *** WATCHDOG KILLING SYSTEM PROCESS: Blocked in handler on main thread (main) for 62s
+10-11 09:33:03.676  1422  1456 W Watchdog: *** WATCHDOG KILLING SYSTEM PROCESS: Blocked in handler on main thread (main) for 74s
+10-11 09:33:17.701  1422  1422 F libc    : Unwind request: crash_dump helper failed to exec, or was killed
+10-11 09:33:18.144  1422  1422 I system_server: WaitForGcToComplete blocked ClassLinker on HeapTrim for 69.881s
+VM fallback attempt: dalvik.vm.gctype=CC; ART aborted with heap.cc:440: foreground_collector_type_ == kCollectorTypeCMC. Default collector settings restored; no app/SVG change.
+API 36 VM instrumentation did not run successfully. No actual API 36 performance report is claimed.

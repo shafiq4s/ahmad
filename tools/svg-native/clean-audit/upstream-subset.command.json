@@ -1,0 +1,26 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "tools/audit_ayah_polygons.py",
+    "--mushaf",
+    "hafs",
+    "--tier",
+    "all",
+    "--workers",
+    "4",
+    "--max-detail",
+    "100000",
+    "--pages",
+    "3,48,121,604",
+    "--json",
+    "/workspace/ahmad/tools/svg-native/clean-audit/upstream-subset.json"
+  ],
+  "exactCommand": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/audit_ayah_polygons.py --mushaf hafs --tier all --workers 4 --max-detail 100000 --pages 3,48,121,604 --json /workspace/ahmad/tools/svg-native/clean-audit/upstream-subset.json",
+  "cwd": "/workspace/quran-svg-upstream-validation",
+  "exitCode": 1,
+  "environmentOverrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH": "/workspace/.tools/svg-audit-python"
+  },
+  "pathPrefix": "/workspace/.tools/librsvg-audit/usr/bin"
+}

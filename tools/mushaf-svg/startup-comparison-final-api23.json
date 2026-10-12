@@ -1,0 +1,55 @@
+{
+  "serial": "emulator-5554",
+  "deviceKind": "Software-emulated API23, same AVD; retained database, process-cold activity launches; first window, not index metadata readiness",
+  "trials": [
+    {
+      "build": "before",
+      "trial": 1,
+      "totalTimeMs": 5256,
+      "waitTimeMs": 5468,
+      "raw": "Starting: Intent { cmp=com.ahmad.quran/.ui.MainActivity }\nStatus: ok\nActivity: com.ahmad.quran/.ui.MainActivity\nThisTime: 5256\nTotalTime: 5256\nWaitTime: 5468\nComplete\n"
+    },
+    {
+      "build": "before",
+      "trial": 2,
+      "totalTimeMs": 4208,
+      "waitTimeMs": 4448,
+      "raw": "Starting: Intent { cmp=com.ahmad.quran/.ui.MainActivity }\nStatus: ok\nActivity: com.ahmad.quran/.ui.MainActivity\nThisTime: 4208\nTotalTime: 4208\nWaitTime: 4448\nComplete\n"
+    },
+    {
+      "build": "before",
+      "trial": 3,
+      "totalTimeMs": 4172,
+      "waitTimeMs": 4530,
+      "raw": "Starting: Intent { cmp=com.ahmad.quran/.ui.MainActivity }\nStatus: ok\nActivity: com.ahmad.quran/.ui.MainActivity\nThisTime: 4172\nTotalTime: 4172\nWaitTime: 4530\nComplete\n"
+    },
+    {
+      "build": "after",
+      "trial": 1,
+      "totalTimeMs": 5050,
+      "waitTimeMs": 5284,
+      "raw": "Starting: Intent { cmp=com.ahmad.quran/.ui.MainActivity }\nStatus: ok\nActivity: com.ahmad.quran/.ui.MainActivity\nThisTime: 5050\nTotalTime: 5050\nWaitTime: 5284\nComplete\n"
+    },
+    {
+      "build": "after",
+      "trial": 2,
+      "totalTimeMs": 3639,
+      "waitTimeMs": 4114,
+      "raw": "Starting: Intent { cmp=com.ahmad.quran/.ui.MainActivity }\nStatus: ok\nActivity: com.ahmad.quran/.ui.MainActivity\nThisTime: 3639\nTotalTime: 3639\nWaitTime: 4114\nComplete\n"
+    },
+    {
+      "build": "after",
+      "trial": 3,
+      "totalTimeMs": 4199,
+      "waitTimeMs": 4594,
+      "raw": "Starting: Intent { cmp=com.ahmad.quran/.ui.MainActivity }\nStatus: ok\nActivity: com.ahmad.quran/.ui.MainActivity\nThisTime: 4199\nTotalTime: 4199\nWaitTime: 4594\nComplete\n"
+    }
+  ],
+  "medianTotalTimeMs": {
+    "before": 4208,
+    "after": 4199
+  },
+  "medianDifferenceMs": -9,
+  "candidateSha256": "3fb3f221973add8582945ebe04bafd0067f05095ff25b288fe5f04b5ade9026f",
+  "policy": "Baseline trials retained from same AVD. Candidate trials rerun on final APK after host build completed. Software CPU emulation; three samples are noisy, not phone performance."
+}

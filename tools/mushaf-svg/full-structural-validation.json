@@ -1,0 +1,27 @@
+{
+  "pageCount": 604,
+  "svgCount": 604,
+  "jsonCount": 604,
+  "canonicalAyahIds": 6236,
+  "passed": true,
+  "missing": [],
+  "invalidIds": [],
+  "failures": [],
+  "finalPositiveAreaOverlaps": [],
+  "openingOverrideSha256": "f9cdec09bb5abae526d5ce59aaa2fff9eaa5e3f26107f02c69352622dd258b22",
+  "tanzilSha256": "8ed100334e8eca42124035f51fffe934d52b20e5224b3a44c1a33b44dba74416",
+  "textLimitation": "SVG outlines have no lossless Unicode verse text: this audit validates identity/sequence/artifact hashes, not a 604-page visual transcription. Frozen Tanzil text remains unchanged.",
+  "referenceHashes": {
+    "tools/quran/sources/quran-data.xml": "8867c1d88191472adec9db694b3cd9f135b1a2ef580574d32cf888dcb22c5c7a",
+    "tools/quran/sources/quran-uthmani.txt": "6933e133dd56db778c801bf738848454e43648105a151e8d84d86a7cae39ec5f",
+    "tools/quran/sources/Text_License.html": "2edbc4b664fea5402893f3a60f212f8bf43dc3dee800b5fbcf4d3693819a9c79",
+    "tools/quran/sources/provenance.json": "5f497bab3bb993623c1520f94935cb21401dc19e1b6014e5c2be5b2bee34cf82",
+    "tools/quran/sources/quran-data.js": "9e9930c592aaa34b5c7a79ff4e99ffdc782263a266090bfe2c49e4ed4bac4ca4",
+    "app/src/main/assets/source-manifest.json": "b7710ff7b47a7d1b9404316de999bd3fb266c9f2bae652753bcdfff802d31602",
+    "app/src/main/assets/TANZIL_METADATA_NOTICE.txt": "bfc202cdf6bbd4a1f1a963ba1a31189c25c4f0d01861117dc9aa53e1e1916564",
+    "app/src/main/assets/quran-data.xml": "8867c1d88191472adec9db694b3cd9f135b1a2ef580574d32cf888dcb22c5c7a",
+    "app/src/main/assets/TANZIL_NOTICE.txt": "72493509d507314f60c018fd33aa57d9064a0de42be8926745e4953f59925c62",
+    "app/src/main/assets/quran-uthmani-v1.db": "8ed100334e8eca42124035f51fffe934d52b20e5224b3a44c1a33b44dba74416",
+    "app/src/main/java/com/ahmad/quran/data/CorpusInfo.kt": "e5e52c87f7c6611ee46808856b0fbff51f243d803751e32ca2cc2ec623b08ffd"
+  }
+}

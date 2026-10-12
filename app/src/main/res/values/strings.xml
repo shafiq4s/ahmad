@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">القرآن الكريم</string>
+    <string name="surah_index">فهرس السور</string>
+    <string name="read_pages">قراءة بالصفحة</string>
+    <string name="settings">الإعدادات</string>
+    <string name="loading">جارٍ فتح المصحف…</string>
+    <string name="load_error">تعذر فتح بيانات المصحف. حاول مرة أخرى.</string>
+    <string name="retry">إعادة المحاولة</string>
+    <string name="number_value">%1$d</string>
+    <string name="meccan">مكية</string>
+    <string name="medinan">مدنية</string>
+    <string name="surah_type_count">%1$s · عدد الآيات: %2$d</string>
+    <string name="surah_ayah_count">عدد الآيات: %1$d</string>
+    <string name="page_location">صفحة %1$d من %2$d</string>
+    <string name="page_juz">الصفحة %1$d من %2$d · الجزء %3$d</string>
+    <string name="continue_reading">متابعة القراءة</string>
+    <string name="resume_surah">%1$s · الآية %2$d</string>
+    <string name="resume_page">مصحف المدينة · الصفحة %1$d</string>
+    <string name="reading_settings">إعدادات القراءة</string>
+    <string name="dark_mode">الوضع الداكن</string>
+    <string name="previous_page">الصفحة السابقة</string>
+    <string name="next_page">الصفحة التالية</string>
+    <string name="page_value">%1$d</string>
+    <string name="page_number">رقم الصفحة</string>
+    <string name="go_page">انتقال</string>
+    <string name="page_invalid">أدخل رقم صفحة من 1 إلى %1$d.</string>
+    <string name="about_heading">حول التطبيق</string>
+    <string name="about_description">قراءة القرآن كاملًا دون اتصال بالإنترنت.</string>
+    <string name="tanzil_attribution">نص القرآن وبيانات المصحف: Tanzil Project
+https://tanzil.net
+Creative Commons Attribution 3.0</string>
+    <string name="tanzil_terms">النص محفوظ كما ورد من المصدر دون تغيير.</string>
+    <string name="show_license">إشعار الترخيص</string>
+    <string name="selected_ayah">%1$d:%2$d</string>
+    <string name="mushaf_page_description">صفحة المصحف. اسحب إلى اليمين للتقدم وإلى اليسار للرجوع. اضغط مطولًا لتحديد آية.</string>
+    <string name="zoom_1">1×</string>
+    <string name="zoom_2">2×</string>
+    <string name="zoom_4">4×</string>
+    <string name="svg_zoom_help">يمكن تكبير صفحة المصحف بإصبعين أو بأزرار التكبير. التنقل بالسحب متاح عندما تكون الصفحة بحجمها الأصلي.</string>
+    <string name="quran_svg_attribution">أصول المصحف وهندسة تحديد الآيات: Quran.ws
+https://github.com/quran-ws/quran-svg
+حفص / KFQC · v1.1.1
+المصدر التقني المثبت: b4155f07e4aea087d2c458069acff9f7c7e749f6
+بحسب توثيق المصدر، يعود الرسم إلى مصحف مجمع الملك فهد 1441هـ. Quran.ws مشروع تقني مستقل.
+مساهمات المصدر وبيانات التحديد: CC BY 4.0؛ شروط الرسم الأصلي محفوظة في إشعار الترخيص.</string>
+</resources>

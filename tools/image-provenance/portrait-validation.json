@@ -1,0 +1,47 @@
+{
+  "scope": "Portrait manifest change and provenance review only",
+  "apk": {
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "bytes": 5144948,
+    "sha256": "3ea2ca5d131685088eb43ff2c2efd60afe34092e59810a905ab30fccc602b53f",
+    "debugOnly": true,
+    "availableImagePages": [
+      1,
+      2,
+      7,
+      48,
+      121,
+      187,
+      531,
+      585,
+      604
+    ]
+  },
+  "portraitOnlyRequested": true,
+  "temporaryApi36ActivityOptOut": true,
+  "geometryChanged": false,
+  "geometrySha256": {
+    "app/src/main/java/com/ahmad/quran/mushaf/OverlayGeometry.kt": "0224c49e756d47a2503bec76b407084a66bc4a8de20d7dd354c19d7138c4daa1",
+    "app/src/main/java/com/ahmad/quran/mushaf/MushafPageMap.kt": "284645f54b127f0f950763c76df989026f2c6165b8f4132f561f2aeef38b8486",
+    "app/src/main/java/com/ahmad/quran/mushaf/MushafTouchOverlayView.kt": "6a47ae274f25e13f3f6729291cca3197246edb506b611237cbd98ca9e95a8383"
+  },
+  "frozenReferencesVerified": 11,
+  "targetedUiTestsPassed": 5,
+  "testedSimulatedApis": [
+    23,
+    36
+  ],
+  "lintErrors": 0,
+  "lintWarnings": [
+    "LockedOrientationActivity",
+    "NewerVersionAvailable",
+    "DiscouragedApi",
+    "UseKtx"
+  ],
+  "realDeviceOverlayValidation": "Reported and approved by the user; device model/OS unspecified. This portrait APK has not been re-tested on a physical device by the agent.",
+  "imagesReleaseApproved": false,
+  "webpConversionApproved": false,
+  "releaseImagesAdded": 0,
+  "releaseApkBuilt": false,
+  "newDependencies": []
+}

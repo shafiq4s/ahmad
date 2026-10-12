@@ -1,0 +1,108 @@
+{
+  "checkedAt": "2026-10-11T09:42:26.468863+00:00",
+  "commit": "b4155f07e4aea087d2c458069acff9f7c7e749f6",
+  "editionId": "quran_ws_hafs_kfqc_b4155f0",
+  "sourceLock": "../quran-svg/source-lock.json",
+  "pages": [
+    1,
+    2,
+    48,
+    121,
+    604
+  ],
+  "allTenOriginalSvgJsonHashesMatch": true,
+  "frozenTanzilReferencesUnchanged": 11,
+  "tests": {
+    "app": {
+      "tests": 51,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "overlay-prototype": {
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "svg-prototype": {
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "svg-native-prototype": {
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "totalPassingExecutions": 80,
+  "lint": {
+    "app": "0 errors, 4 warnings",
+    "native": "0 errors, 3 warnings"
+  },
+  "sourceAyahIds": 34,
+  "localPolygonCount": 35,
+  "openingOverrides": {
+    "pages": [
+      1,
+      2
+    ],
+    "sha256": "f9cdec09bb5abae526d5ce59aaa2fff9eaa5e3f26107f02c69352622dd258b22",
+    "inkCoverage": [
+      {
+        "page": 1,
+        "inkPixels": 101503,
+        "gaps": 0,
+        "ambiguous": 0
+      },
+      {
+        "page": 2,
+        "inkPixels": 108093,
+        "gaps": 0,
+        "ambiguous": 0
+      }
+    ],
+    "pages3Through604Bypass": true
+  },
+  "api23": {
+    "actualAndroidInstrumentationPassed": true,
+    "actualAttachedActivityRenderingPassed": true,
+    "softwareLayerRequired": true,
+    "performanceReport": "measurements-android-api-23.json"
+  },
+  "api36": {
+    "robolectricNativeGraphicsPassed": true,
+    "actualAndroidInstrumentationPassed": false,
+    "reason": "Official default x86_64 revision 2 VM had system_server GC/Watchdog failure under TCG without KVM, before instrumentation. Alternative collector rejected; defaults restored."
+  },
+  "dependency": {
+    "coordinate": "com.caverock:androidsvg-aar:1.4",
+    "version": "1.4",
+    "license": "Apache-2.0",
+    "aarBytes": 202395,
+    "classesJarBytes": 222137,
+    "aarSha256": "02a5b08a2b35d2d58eb2eaca9d84ac00fb341da725fdbd653ea3ed130437e95a",
+    "sourceUrl": "https://repo.maven.apache.org/maven2/com/caverock/androidsvg-aar/1.4/androidsvg-aar-1.4.aar",
+    "scope": "Standalone prototype only; not added to main app."
+  },
+  "apk": {
+    "path": "svg-native-prototype/build/outputs/apk/debug/svg-native-prototype-debug.apk",
+    "bytes": 2446098,
+    "sha256": "16bcf88da1e62767f670bad6a83da9b8ccb0305ea3f41a5b8cd901dd66060752",
+    "svgFiles": [
+      "assets/native-svg/001.svg",
+      "assets/native-svg/002.svg",
+      "assets/native-svg/048.svg",
+      "assets/native-svg/121.svg",
+      "assets/native-svg/604.svg"
+    ],
+    "compressedSvgBytes": 654183,
+    "releaseDisabled": true,
+    "hasWebP": false,
+    "hasInternetPermission": false
+  },
+  "recommendation": "Option A: direct SVG; bounded document cache, API<26 software view layer; stable API36 device/VM validation remains a prerequisite before rollout."
+}

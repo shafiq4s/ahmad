@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-10-11T02:33:19.763149+00:00",
+  "commit": "b4155f07e4aea087d2c458069acff9f7c7e749f6",
+  "tests": {
+    "app": {
+      "tests": 51,
+      "failures": 0,
+      "errors": 0
+    },
+    "overlay-prototype": {
+      "tests": 11,
+      "failures": 0,
+      "errors": 0
+    },
+    "svg-prototype": {
+      "tests": 9,
+      "failures": 0,
+      "errors": 0
+    }
+  },
+  "totalPassingExecutions": 71,
+  "lint": {
+    "app": "0 errors, 4 warnings",
+    "svg-prototype": "0 errors, 3 warnings"
+  },
+  "frozenQuranReferencesUnchanged": 11,
+  "allCandidateSourcesMatchLock": true,
+  "apk": {
+    "path": "svg-prototype/build/outputs/apk/debug/svg-prototype-debug.apk",
+    "bytes": 2649368,
+    "sha256": "4dfab01d07ebbd029e202b11fae0755d43061f1d04a189b6d7dd4df458be5381",
+    "pages": [
+      "assets/svg-mushaf/001.webp",
+      "assets/svg-mushaf/002.webp",
+      "assets/svg-mushaf/048.webp",
+      "assets/svg-mushaf/121.webp",
+      "assets/svg-mushaf/604.webp"
+    ],
+    "hasInternetPermission": false,
+    "includesOpenMushafAssets": false,
+    "includesSourceSvg": false,
+    "releaseVariantEnabled": false
+  },
+  "runtimeDependenciesAdded": [],
+  "successfulLongPressChecksAcrossApi23And36": 480,
+  "visualCaptureApi": 36,
+  "api23NativeGraphicsVerified": false,
+  "physicalDeviceOrEmulatorAvailable": false,
+  "officialOpeningSpreadOverlapPairsRemaining": 6,
+  "selected1440WebpBytes": 985290
+}

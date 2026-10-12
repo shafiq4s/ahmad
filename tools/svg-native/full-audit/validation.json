@@ -1,0 +1,107 @@
+{
+  "checkedAt": "2026-10-11T14:05:07.564105+00:00",
+  "stage": "Final validation gate; no main integration",
+  "commit": "b4155f07e4aea087d2c458069acff9f7c7e749f6",
+  "tests": {
+    "app": {
+      "tests": 51,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "mostRecentTimestamp": "2026-10-11T09:30:51.165Z"
+    },
+    "overlay-prototype": {
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "mostRecentTimestamp": "2026-10-11T00:39:19.620Z"
+    },
+    "svg-prototype": {
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "mostRecentTimestamp": "2026-10-11T09:27:53.510Z"
+    },
+    "svg-native-prototype": {
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "mostRecentTimestamp": "2026-10-11T14:03:11.682Z"
+    }
+  },
+  "testExecutions": 82,
+  "auditToolTests": {
+    "tests": 4,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lint": {
+    "app": {
+      "Warning": 4
+    },
+    "svg-native-prototype": {
+      "Warning": 3
+    }
+  },
+  "frozenTanzilReferencesUnchanged": 11,
+  "openingOverridesSha256": "f9cdec09bb5abae526d5ce59aaa2fff9eaa5e3f26107f02c69352622dd258b22",
+  "openingInkCoverage": [
+    {
+      "page": 1,
+      "inkPixels": 101503,
+      "gaps": 0,
+      "ambiguous": 0,
+      "unnumberedInkPixels": 7338,
+      "wronglyAssignedUnnumberedInk": 0
+    },
+    {
+      "page": 2,
+      "inkPixels": 108093,
+      "gaps": 0,
+      "ambiguous": 0,
+      "unnumberedInkPixels": 18015,
+      "wronglyAssignedUnnumberedInk": 0
+    }
+  ],
+  "apk": {
+    "path": "/workspace/ahmad/svg-native-prototype/build/outputs/apk/debug/svg-native-prototype-debug.apk",
+    "bytes": 2453941,
+    "sha256": "7a0fc70531703e7dbf0566bc46a2b95c33b6da78dd29ae149b1873561e0adcb6",
+    "minSdk": 23,
+    "targetSdk": 36,
+    "debugOnly": true,
+    "artwork": [
+      "assets/native-svg/001.svg",
+      "assets/native-svg/002.svg",
+      "assets/native-svg/048.svg",
+      "assets/native-svg/121.svg",
+      "assets/native-svg/604.svg"
+    ],
+    "frozenDatabaseHashMatches": true
+  },
+  "androidSvgAarSha256": "02a5b08a2b35d2d58eb2eaca9d84ac00fb341da725fdbd653ea3ed130437e95a",
+  "deviceValidation": {
+    "status": "Pending",
+    "adbDevices": "List of devices attached\n\n",
+    "model": null,
+    "android": null,
+    "api": null,
+    "hardwareRendering": null,
+    "cold": null,
+    "warmMedian": null,
+    "warmP95": null,
+    "pss": null,
+    "cacheComparison": null
+  },
+  "independentAuditPassed": true,
+  "upstreamAuditExitCode": 1,
+  "verdict": "NOT_READY_FOR_MAIN_INTEGRATION",
+  "reasons": [
+    "Unmodified pinned upstream audit failed: incompatible marker parsing; marker-derived checks need a compatible verified audit.",
+    "No physical modern Android device; hardware quality, real performance/PSS and 1-versus-3 cache benefit remain Pending."
+  ]
+}

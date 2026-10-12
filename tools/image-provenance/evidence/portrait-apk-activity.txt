@@ -1,0 +1,7 @@
+A: android:name(0x01010003)="com.ahmad.quran.mushaf.ImageMushafDebugActivity" (Raw: "com.ahmad.quran.mushaf.ImageMushafDebugActivity")
+        A: android:exported(0x01010010)=(type 0x12)0x0
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0x1
+        E: property (line=34)
+          A: android:name(0x01010003)="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" (Raw: "android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY")
+          A: android:value(0x01010024)=(type 0x12)0xffffffff
+      

@@ -1,0 +1,10390 @@
+{
+  "editionId": "quran_ws_hafs_kfqc_b4155f0",
+  "commit": "b4155f07e4aea087d2c458069acff9f7c7e749f6",
+  "pages": [
+    {
+      "pageNumber": 1,
+      "viewBox": [
+        -53.3109,
+        -198.4777,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "1:1",
+      "lastAyahId": "1:7",
+      "renderBox": [
+        8.09,
+        -60.5067,
+        221.68,
+        275.457
+      ]
+    },
+    {
+      "pageNumber": 2,
+      "viewBox": [
+        -53.3109,
+        -198.4777,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:1",
+      "lastAyahId": "2:5",
+      "renderBox": [
+        11.46,
+        -60.7597,
+        217.06,
+        276.96
+      ]
+    },
+    {
+      "pageNumber": 3,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:6",
+      "lastAyahId": "2:16",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 4,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:17",
+      "lastAyahId": "2:24",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 5,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:25",
+      "lastAyahId": "2:29",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 6,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:30",
+      "lastAyahId": "2:37",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 7,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:38",
+      "lastAyahId": "2:48",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 8,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:49",
+      "lastAyahId": "2:57",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 9,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:58",
+      "lastAyahId": "2:61",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 10,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:62",
+      "lastAyahId": "2:69",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 11,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:70",
+      "lastAyahId": "2:76",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 12,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:77",
+      "lastAyahId": "2:83",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 13,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:84",
+      "lastAyahId": "2:88",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 14,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:89",
+      "lastAyahId": "2:93",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 15,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:94",
+      "lastAyahId": "2:101",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 16,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:102",
+      "lastAyahId": "2:105",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 17,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:106",
+      "lastAyahId": "2:112",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 18,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:113",
+      "lastAyahId": "2:119",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 19,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:120",
+      "lastAyahId": "2:126",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 20,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:127",
+      "lastAyahId": "2:134",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 21,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:135",
+      "lastAyahId": "2:141",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 22,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:142",
+      "lastAyahId": "2:145",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 23,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:146",
+      "lastAyahId": "2:153",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 24,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:154",
+      "lastAyahId": "2:163",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 25,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:164",
+      "lastAyahId": "2:169",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 26,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:170",
+      "lastAyahId": "2:176",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 27,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:177",
+      "lastAyahId": "2:181",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 28,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:182",
+      "lastAyahId": "2:186",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 29,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:187",
+      "lastAyahId": "2:190",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 30,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:191",
+      "lastAyahId": "2:196",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 31,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:197",
+      "lastAyahId": "2:202",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 32,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:203",
+      "lastAyahId": "2:210",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 33,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:211",
+      "lastAyahId": "2:215",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 34,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:216",
+      "lastAyahId": "2:219",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 35,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:220",
+      "lastAyahId": "2:224",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 36,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:225",
+      "lastAyahId": "2:230",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 37,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:231",
+      "lastAyahId": "2:233",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 38,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:234",
+      "lastAyahId": "2:237",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 39,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:238",
+      "lastAyahId": "2:245",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 40,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:246",
+      "lastAyahId": "2:248",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 41,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:249",
+      "lastAyahId": "2:252",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 42,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:253",
+      "lastAyahId": "2:256",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 43,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:257",
+      "lastAyahId": "2:259",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 44,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:260",
+      "lastAyahId": "2:264",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 45,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:265",
+      "lastAyahId": "2:269",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 46,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:270",
+      "lastAyahId": "2:274",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 47,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:275",
+      "lastAyahId": "2:281",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 48,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:282",
+      "lastAyahId": "2:282",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 49,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "2:283",
+      "lastAyahId": "2:286",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 50,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:1",
+      "lastAyahId": "3:9",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 51,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:10",
+      "lastAyahId": "3:15",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 52,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:16",
+      "lastAyahId": "3:22",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 53,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:23",
+      "lastAyahId": "3:29",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 54,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:30",
+      "lastAyahId": "3:37",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 55,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:38",
+      "lastAyahId": "3:45",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 56,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:46",
+      "lastAyahId": "3:52",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 57,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:53",
+      "lastAyahId": "3:61",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 58,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:62",
+      "lastAyahId": "3:70",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 59,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:71",
+      "lastAyahId": "3:77",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 60,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:78",
+      "lastAyahId": "3:83",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 61,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:84",
+      "lastAyahId": "3:91",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 62,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:92",
+      "lastAyahId": "3:100",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 63,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:101",
+      "lastAyahId": "3:108",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 64,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:109",
+      "lastAyahId": "3:115",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 65,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:116",
+      "lastAyahId": "3:121",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 66,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:122",
+      "lastAyahId": "3:132",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 67,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:133",
+      "lastAyahId": "3:140",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 68,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:141",
+      "lastAyahId": "3:148",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 69,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:149",
+      "lastAyahId": "3:153",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 70,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:154",
+      "lastAyahId": "3:157",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 71,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:158",
+      "lastAyahId": "3:165",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 72,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:166",
+      "lastAyahId": "3:173",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 73,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:174",
+      "lastAyahId": "3:180",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 74,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:181",
+      "lastAyahId": "3:186",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 75,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:187",
+      "lastAyahId": "3:194",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 76,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "3:195",
+      "lastAyahId": "3:200",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 77,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:1",
+      "lastAyahId": "4:6",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 78,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:7",
+      "lastAyahId": "4:11",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 79,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:12",
+      "lastAyahId": "4:14",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 80,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:15",
+      "lastAyahId": "4:19",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 81,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:20",
+      "lastAyahId": "4:23",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 82,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:24",
+      "lastAyahId": "4:26",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 83,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:27",
+      "lastAyahId": "4:33",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 84,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:34",
+      "lastAyahId": "4:37",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 85,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:38",
+      "lastAyahId": "4:44",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 86,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:45",
+      "lastAyahId": "4:51",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 87,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:52",
+      "lastAyahId": "4:59",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 88,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:60",
+      "lastAyahId": "4:65",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 89,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:66",
+      "lastAyahId": "4:74",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 90,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:75",
+      "lastAyahId": "4:79",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 91,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:80",
+      "lastAyahId": "4:86",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 92,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:87",
+      "lastAyahId": "4:91",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 93,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:92",
+      "lastAyahId": "4:94",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 94,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:95",
+      "lastAyahId": "4:101",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 95,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:102",
+      "lastAyahId": "4:105",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 96,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:106",
+      "lastAyahId": "4:113",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 97,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:114",
+      "lastAyahId": "4:121",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 98,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:122",
+      "lastAyahId": "4:127",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 99,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:128",
+      "lastAyahId": "4:134",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 100,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:135",
+      "lastAyahId": "4:140",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 101,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:141",
+      "lastAyahId": "4:147",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 102,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:148",
+      "lastAyahId": "4:154",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 103,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:155",
+      "lastAyahId": "4:162",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 104,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:163",
+      "lastAyahId": "4:170",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 105,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:171",
+      "lastAyahId": "4:175",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 106,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "4:176",
+      "lastAyahId": "5:2",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 107,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:3",
+      "lastAyahId": "5:5",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 108,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:6",
+      "lastAyahId": "5:9",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 109,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:10",
+      "lastAyahId": "5:13",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 110,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:14",
+      "lastAyahId": "5:17",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 111,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:18",
+      "lastAyahId": "5:23",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 112,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:24",
+      "lastAyahId": "5:31",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 113,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:32",
+      "lastAyahId": "5:36",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 114,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:37",
+      "lastAyahId": "5:41",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 115,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:42",
+      "lastAyahId": "5:45",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 116,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:46",
+      "lastAyahId": "5:50",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 117,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:51",
+      "lastAyahId": "5:57",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 118,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:58",
+      "lastAyahId": "5:64",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 119,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:65",
+      "lastAyahId": "5:70",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 120,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:71",
+      "lastAyahId": "5:77",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 121,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:78",
+      "lastAyahId": "5:83",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 122,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:84",
+      "lastAyahId": "5:90",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 123,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:91",
+      "lastAyahId": "5:95",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 124,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:96",
+      "lastAyahId": "5:103",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 125,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:104",
+      "lastAyahId": "5:108",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 126,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:109",
+      "lastAyahId": "5:113",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 127,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "5:114",
+      "lastAyahId": "5:120",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 128,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:1",
+      "lastAyahId": "6:8",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 129,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:9",
+      "lastAyahId": "6:18",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 130,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:19",
+      "lastAyahId": "6:27",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 131,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:28",
+      "lastAyahId": "6:35",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 132,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:36",
+      "lastAyahId": "6:44",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 133,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:45",
+      "lastAyahId": "6:52",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 134,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:53",
+      "lastAyahId": "6:59",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 135,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:60",
+      "lastAyahId": "6:68",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 136,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:69",
+      "lastAyahId": "6:73",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 137,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:74",
+      "lastAyahId": "6:81",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 138,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:82",
+      "lastAyahId": "6:90",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 139,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:91",
+      "lastAyahId": "6:94",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 140,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:95",
+      "lastAyahId": "6:101",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 141,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:102",
+      "lastAyahId": "6:110",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 142,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:111",
+      "lastAyahId": "6:118",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 143,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:119",
+      "lastAyahId": "6:124",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 144,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:125",
+      "lastAyahId": "6:130",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 145,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:131",
+      "lastAyahId": "6:137",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 146,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:138",
+      "lastAyahId": "6:142",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 147,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:143",
+      "lastAyahId": "6:146",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 148,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:147",
+      "lastAyahId": "6:151",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 149,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:152",
+      "lastAyahId": "6:157",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 150,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "6:158",
+      "lastAyahId": "6:165",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 151,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:1",
+      "lastAyahId": "7:11",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 152,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:12",
+      "lastAyahId": "7:22",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 153,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:23",
+      "lastAyahId": "7:30",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 154,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:31",
+      "lastAyahId": "7:37",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 155,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:38",
+      "lastAyahId": "7:43",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 156,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:44",
+      "lastAyahId": "7:51",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 157,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:52",
+      "lastAyahId": "7:57",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 158,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:58",
+      "lastAyahId": "7:67",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 159,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:68",
+      "lastAyahId": "7:73",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 160,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:74",
+      "lastAyahId": "7:81",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 161,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:82",
+      "lastAyahId": "7:87",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 162,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:88",
+      "lastAyahId": "7:95",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 163,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:96",
+      "lastAyahId": "7:104",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 164,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:105",
+      "lastAyahId": "7:120",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 165,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:121",
+      "lastAyahId": "7:130",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 166,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:131",
+      "lastAyahId": "7:137",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 167,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:138",
+      "lastAyahId": "7:143",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 168,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:144",
+      "lastAyahId": "7:149",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 169,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:150",
+      "lastAyahId": "7:155",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 170,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:156",
+      "lastAyahId": "7:159",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 171,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:160",
+      "lastAyahId": "7:163",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 172,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:164",
+      "lastAyahId": "7:170",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 173,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:171",
+      "lastAyahId": "7:178",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 174,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:179",
+      "lastAyahId": "7:187",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 175,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:188",
+      "lastAyahId": "7:195",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 176,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "7:196",
+      "lastAyahId": "7:206",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 177,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "8:1",
+      "lastAyahId": "8:8",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 178,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "8:9",
+      "lastAyahId": "8:16",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 179,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "8:17",
+      "lastAyahId": "8:25",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 180,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "8:26",
+      "lastAyahId": "8:33",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 181,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "8:34",
+      "lastAyahId": "8:40",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 182,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "8:41",
+      "lastAyahId": "8:45",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 183,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "8:46",
+      "lastAyahId": "8:52",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 184,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "8:53",
+      "lastAyahId": "8:61",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 185,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "8:62",
+      "lastAyahId": "8:69",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 186,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "8:70",
+      "lastAyahId": "8:75",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 187,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:1",
+      "lastAyahId": "9:6",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 188,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:7",
+      "lastAyahId": "9:13",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 189,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:14",
+      "lastAyahId": "9:20",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 190,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:21",
+      "lastAyahId": "9:26",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 191,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:27",
+      "lastAyahId": "9:31",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 192,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:32",
+      "lastAyahId": "9:36",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 193,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:37",
+      "lastAyahId": "9:40",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 194,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:41",
+      "lastAyahId": "9:47",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 195,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:48",
+      "lastAyahId": "9:54",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 196,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:55",
+      "lastAyahId": "9:61",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 197,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:62",
+      "lastAyahId": "9:68",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 198,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:69",
+      "lastAyahId": "9:72",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 199,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:73",
+      "lastAyahId": "9:79",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 200,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:80",
+      "lastAyahId": "9:86",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 201,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:87",
+      "lastAyahId": "9:93",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 202,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:94",
+      "lastAyahId": "9:99",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 203,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:100",
+      "lastAyahId": "9:106",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 204,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:107",
+      "lastAyahId": "9:111",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 205,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:112",
+      "lastAyahId": "9:117",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 206,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:118",
+      "lastAyahId": "9:122",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 207,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "9:123",
+      "lastAyahId": "9:129",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 208,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "10:1",
+      "lastAyahId": "10:6",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 209,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "10:7",
+      "lastAyahId": "10:14",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 210,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "10:15",
+      "lastAyahId": "10:20",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 211,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "10:21",
+      "lastAyahId": "10:25",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 212,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "10:26",
+      "lastAyahId": "10:33",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 213,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "10:34",
+      "lastAyahId": "10:42",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 214,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "10:43",
+      "lastAyahId": "10:53",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 215,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "10:54",
+      "lastAyahId": "10:61",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 216,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "10:62",
+      "lastAyahId": "10:70",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 217,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "10:71",
+      "lastAyahId": "10:78",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 218,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "10:79",
+      "lastAyahId": "10:88",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 219,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "10:89",
+      "lastAyahId": "10:97",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 220,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "10:98",
+      "lastAyahId": "10:106",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 221,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "10:107",
+      "lastAyahId": "11:5",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 222,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "11:6",
+      "lastAyahId": "11:12",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 223,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "11:13",
+      "lastAyahId": "11:19",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 224,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "11:20",
+      "lastAyahId": "11:28",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 225,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "11:29",
+      "lastAyahId": "11:37",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 226,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "11:38",
+      "lastAyahId": "11:45",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 227,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "11:46",
+      "lastAyahId": "11:53",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 228,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "11:54",
+      "lastAyahId": "11:62",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 229,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "11:63",
+      "lastAyahId": "11:71",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 230,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "11:72",
+      "lastAyahId": "11:81",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 231,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "11:82",
+      "lastAyahId": "11:88",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 232,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "11:89",
+      "lastAyahId": "11:97",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 233,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "11:98",
+      "lastAyahId": "11:108",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 234,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "11:109",
+      "lastAyahId": "11:117",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 235,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "11:118",
+      "lastAyahId": "12:4",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 236,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "12:5",
+      "lastAyahId": "12:14",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 237,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "12:15",
+      "lastAyahId": "12:22",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 238,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "12:23",
+      "lastAyahId": "12:30",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 239,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "12:31",
+      "lastAyahId": "12:37",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 240,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "12:38",
+      "lastAyahId": "12:43",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 241,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "12:44",
+      "lastAyahId": "12:52",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 242,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "12:53",
+      "lastAyahId": "12:63",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 243,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "12:64",
+      "lastAyahId": "12:69",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 244,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "12:70",
+      "lastAyahId": "12:78",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 245,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "12:79",
+      "lastAyahId": "12:86",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 246,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "12:87",
+      "lastAyahId": "12:95",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 247,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "12:96",
+      "lastAyahId": "12:103",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 248,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "12:104",
+      "lastAyahId": "12:111",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 249,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "13:1",
+      "lastAyahId": "13:5",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 250,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "13:6",
+      "lastAyahId": "13:13",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 251,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "13:14",
+      "lastAyahId": "13:18",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 252,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "13:19",
+      "lastAyahId": "13:28",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 253,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "13:29",
+      "lastAyahId": "13:34",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 254,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "13:35",
+      "lastAyahId": "13:42",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 255,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "13:43",
+      "lastAyahId": "14:5",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 256,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "14:6",
+      "lastAyahId": "14:10",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 257,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "14:11",
+      "lastAyahId": "14:18",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 258,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "14:19",
+      "lastAyahId": "14:24",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 259,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "14:25",
+      "lastAyahId": "14:33",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 260,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "14:34",
+      "lastAyahId": "14:42",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 261,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "14:43",
+      "lastAyahId": "14:52",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 262,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "15:1",
+      "lastAyahId": "15:15",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 263,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "15:16",
+      "lastAyahId": "15:31",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 264,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "15:32",
+      "lastAyahId": "15:51",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 265,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "15:52",
+      "lastAyahId": "15:70",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 266,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "15:71",
+      "lastAyahId": "15:90",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 267,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "15:91",
+      "lastAyahId": "16:6",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 268,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "16:7",
+      "lastAyahId": "16:14",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 269,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "16:15",
+      "lastAyahId": "16:26",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 270,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "16:27",
+      "lastAyahId": "16:34",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 271,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "16:35",
+      "lastAyahId": "16:42",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 272,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "16:43",
+      "lastAyahId": "16:54",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 273,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "16:55",
+      "lastAyahId": "16:64",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 274,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "16:65",
+      "lastAyahId": "16:72",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 275,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "16:73",
+      "lastAyahId": "16:79",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 276,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "16:80",
+      "lastAyahId": "16:87",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 277,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "16:88",
+      "lastAyahId": "16:93",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 278,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "16:94",
+      "lastAyahId": "16:102",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 279,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "16:103",
+      "lastAyahId": "16:110",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 280,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "16:111",
+      "lastAyahId": "16:118",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 281,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "16:119",
+      "lastAyahId": "16:128",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 282,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "17:1",
+      "lastAyahId": "17:7",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 283,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "17:8",
+      "lastAyahId": "17:17",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 284,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "17:18",
+      "lastAyahId": "17:27",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 285,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "17:28",
+      "lastAyahId": "17:38",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 286,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "17:39",
+      "lastAyahId": "17:49",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 287,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "17:50",
+      "lastAyahId": "17:58",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 288,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "17:59",
+      "lastAyahId": "17:66",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 289,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "17:67",
+      "lastAyahId": "17:75",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 290,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "17:76",
+      "lastAyahId": "17:86",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 291,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "17:87",
+      "lastAyahId": "17:96",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 292,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "17:97",
+      "lastAyahId": "17:104",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 293,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "17:105",
+      "lastAyahId": "18:4",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 294,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "18:5",
+      "lastAyahId": "18:15",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 295,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "18:16",
+      "lastAyahId": "18:20",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 296,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "18:21",
+      "lastAyahId": "18:27",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 297,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "18:28",
+      "lastAyahId": "18:34",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 298,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "18:35",
+      "lastAyahId": "18:45",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 299,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "18:46",
+      "lastAyahId": "18:53",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 300,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "18:54",
+      "lastAyahId": "18:61",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 301,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "18:62",
+      "lastAyahId": "18:74",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 302,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "18:75",
+      "lastAyahId": "18:83",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 303,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "18:84",
+      "lastAyahId": "18:97",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 304,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "18:98",
+      "lastAyahId": "18:110",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 305,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "19:1",
+      "lastAyahId": "19:11",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 306,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "19:12",
+      "lastAyahId": "19:25",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 307,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "19:26",
+      "lastAyahId": "19:38",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 308,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "19:39",
+      "lastAyahId": "19:51",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 309,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "19:52",
+      "lastAyahId": "19:64",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 310,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "19:65",
+      "lastAyahId": "19:76",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 311,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "19:77",
+      "lastAyahId": "19:95",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 312,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "19:96",
+      "lastAyahId": "20:12",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 313,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "20:13",
+      "lastAyahId": "20:37",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 314,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "20:38",
+      "lastAyahId": "20:51",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 315,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "20:52",
+      "lastAyahId": "20:64",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 316,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "20:65",
+      "lastAyahId": "20:76",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 317,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "20:77",
+      "lastAyahId": "20:87",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 318,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "20:88",
+      "lastAyahId": "20:98",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 319,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "20:99",
+      "lastAyahId": "20:113",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 320,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "20:114",
+      "lastAyahId": "20:125",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 321,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "20:126",
+      "lastAyahId": "20:135",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 322,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "21:1",
+      "lastAyahId": "21:10",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 323,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "21:11",
+      "lastAyahId": "21:24",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 324,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "21:25",
+      "lastAyahId": "21:35",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 325,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "21:36",
+      "lastAyahId": "21:44",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 326,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "21:45",
+      "lastAyahId": "21:57",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 327,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "21:58",
+      "lastAyahId": "21:72",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 328,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "21:73",
+      "lastAyahId": "21:81",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 329,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "21:82",
+      "lastAyahId": "21:90",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 330,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "21:91",
+      "lastAyahId": "21:101",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 331,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "21:102",
+      "lastAyahId": "21:112",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 332,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "22:1",
+      "lastAyahId": "22:5",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 333,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "22:6",
+      "lastAyahId": "22:15",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 334,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "22:16",
+      "lastAyahId": "22:23",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 335,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "22:24",
+      "lastAyahId": "22:30",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 336,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "22:31",
+      "lastAyahId": "22:38",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 337,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "22:39",
+      "lastAyahId": "22:46",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 338,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "22:47",
+      "lastAyahId": "22:55",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 339,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "22:56",
+      "lastAyahId": "22:64",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 340,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "22:65",
+      "lastAyahId": "22:72",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 341,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "22:73",
+      "lastAyahId": "22:78",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 342,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "23:1",
+      "lastAyahId": "23:17",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 343,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "23:18",
+      "lastAyahId": "23:27",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 344,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "23:28",
+      "lastAyahId": "23:42",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 345,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "23:43",
+      "lastAyahId": "23:59",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 346,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "23:60",
+      "lastAyahId": "23:74",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 347,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "23:75",
+      "lastAyahId": "23:89",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 348,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "23:90",
+      "lastAyahId": "23:104",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 349,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "23:105",
+      "lastAyahId": "23:118",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 350,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "24:1",
+      "lastAyahId": "24:10",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 351,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "24:11",
+      "lastAyahId": "24:20",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 352,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "24:21",
+      "lastAyahId": "24:27",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 353,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "24:28",
+      "lastAyahId": "24:31",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 354,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "24:32",
+      "lastAyahId": "24:36",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 355,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "24:37",
+      "lastAyahId": "24:43",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 356,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "24:44",
+      "lastAyahId": "24:53",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 357,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "24:54",
+      "lastAyahId": "24:58",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 358,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "24:59",
+      "lastAyahId": "24:61",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 359,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "24:62",
+      "lastAyahId": "25:2",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 360,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "25:3",
+      "lastAyahId": "25:11",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 361,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "25:12",
+      "lastAyahId": "25:20",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 362,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "25:21",
+      "lastAyahId": "25:32",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 363,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "25:33",
+      "lastAyahId": "25:43",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 364,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "25:44",
+      "lastAyahId": "25:55",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 365,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "25:56",
+      "lastAyahId": "25:67",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 366,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "25:68",
+      "lastAyahId": "25:77",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 367,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "26:1",
+      "lastAyahId": "26:19",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 368,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "26:20",
+      "lastAyahId": "26:39",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 369,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "26:40",
+      "lastAyahId": "26:60",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 370,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "26:61",
+      "lastAyahId": "26:83",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 371,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "26:84",
+      "lastAyahId": "26:111",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 372,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "26:112",
+      "lastAyahId": "26:136",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 373,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "26:137",
+      "lastAyahId": "26:159",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 374,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "26:160",
+      "lastAyahId": "26:183",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 375,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "26:184",
+      "lastAyahId": "26:206",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 376,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "26:207",
+      "lastAyahId": "26:227",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 377,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "27:1",
+      "lastAyahId": "27:13",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 378,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "27:14",
+      "lastAyahId": "27:22",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 379,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "27:23",
+      "lastAyahId": "27:35",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 380,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "27:36",
+      "lastAyahId": "27:44",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 381,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "27:45",
+      "lastAyahId": "27:55",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 382,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "27:56",
+      "lastAyahId": "27:63",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 383,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "27:64",
+      "lastAyahId": "27:76",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 384,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "27:77",
+      "lastAyahId": "27:88",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 385,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "27:89",
+      "lastAyahId": "28:5",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 386,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "28:6",
+      "lastAyahId": "28:13",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 387,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "28:14",
+      "lastAyahId": "28:21",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 388,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "28:22",
+      "lastAyahId": "28:28",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 389,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "28:29",
+      "lastAyahId": "28:35",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 390,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "28:36",
+      "lastAyahId": "28:43",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 391,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "28:44",
+      "lastAyahId": "28:50",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 392,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "28:51",
+      "lastAyahId": "28:59",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 393,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "28:60",
+      "lastAyahId": "28:70",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 394,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "28:71",
+      "lastAyahId": "28:77",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 395,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "28:78",
+      "lastAyahId": "28:84",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 396,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "28:85",
+      "lastAyahId": "29:6",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 397,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "29:7",
+      "lastAyahId": "29:14",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 398,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "29:15",
+      "lastAyahId": "29:23",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 399,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "29:24",
+      "lastAyahId": "29:30",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 400,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "29:31",
+      "lastAyahId": "29:38",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 401,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "29:39",
+      "lastAyahId": "29:45",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 402,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "29:46",
+      "lastAyahId": "29:52",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 403,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "29:53",
+      "lastAyahId": "29:63",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 404,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "29:64",
+      "lastAyahId": "30:5",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 405,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "30:6",
+      "lastAyahId": "30:15",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 406,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "30:16",
+      "lastAyahId": "30:24",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 407,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "30:25",
+      "lastAyahId": "30:32",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 408,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "30:33",
+      "lastAyahId": "30:41",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 409,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "30:42",
+      "lastAyahId": "30:50",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 410,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "30:51",
+      "lastAyahId": "30:60",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 411,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "31:1",
+      "lastAyahId": "31:11",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 412,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "31:12",
+      "lastAyahId": "31:19",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 413,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "31:20",
+      "lastAyahId": "31:28",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 414,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "31:29",
+      "lastAyahId": "31:34",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 415,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "32:1",
+      "lastAyahId": "32:11",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 416,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "32:12",
+      "lastAyahId": "32:20",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 417,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "32:21",
+      "lastAyahId": "32:30",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 418,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "33:1",
+      "lastAyahId": "33:6",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 419,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "33:7",
+      "lastAyahId": "33:15",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 420,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "33:16",
+      "lastAyahId": "33:22",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 421,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "33:23",
+      "lastAyahId": "33:30",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 422,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "33:31",
+      "lastAyahId": "33:35",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 423,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "33:36",
+      "lastAyahId": "33:43",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 424,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "33:44",
+      "lastAyahId": "33:50",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 425,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "33:51",
+      "lastAyahId": "33:54",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 426,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "33:55",
+      "lastAyahId": "33:62",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 427,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "33:63",
+      "lastAyahId": "33:73",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 428,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "34:1",
+      "lastAyahId": "34:7",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 429,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "34:8",
+      "lastAyahId": "34:14",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 430,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "34:15",
+      "lastAyahId": "34:22",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 431,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "34:23",
+      "lastAyahId": "34:31",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 432,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "34:32",
+      "lastAyahId": "34:39",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 433,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "34:40",
+      "lastAyahId": "34:48",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 434,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "34:49",
+      "lastAyahId": "35:3",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 435,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "35:4",
+      "lastAyahId": "35:11",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 436,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "35:12",
+      "lastAyahId": "35:18",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 437,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "35:19",
+      "lastAyahId": "35:30",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 438,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "35:31",
+      "lastAyahId": "35:38",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 439,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "35:39",
+      "lastAyahId": "35:44",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 440,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "35:45",
+      "lastAyahId": "36:12",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 441,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "36:13",
+      "lastAyahId": "36:27",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 442,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "36:28",
+      "lastAyahId": "36:40",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 443,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "36:41",
+      "lastAyahId": "36:54",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 444,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "36:55",
+      "lastAyahId": "36:70",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 445,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "36:71",
+      "lastAyahId": "36:83",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 446,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "37:1",
+      "lastAyahId": "37:24",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 447,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "37:25",
+      "lastAyahId": "37:51",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 448,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "37:52",
+      "lastAyahId": "37:76",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 449,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "37:77",
+      "lastAyahId": "37:102",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 450,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "37:103",
+      "lastAyahId": "37:126",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 451,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "37:127",
+      "lastAyahId": "37:153",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 452,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "37:154",
+      "lastAyahId": "37:182",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 453,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "38:1",
+      "lastAyahId": "38:16",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 454,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "38:17",
+      "lastAyahId": "38:26",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 455,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "38:27",
+      "lastAyahId": "38:42",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 456,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "38:43",
+      "lastAyahId": "38:61",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 457,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "38:62",
+      "lastAyahId": "38:83",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 458,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "38:84",
+      "lastAyahId": "39:5",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 459,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "39:6",
+      "lastAyahId": "39:10",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 460,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "39:11",
+      "lastAyahId": "39:21",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 461,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "39:22",
+      "lastAyahId": "39:31",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 462,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "39:32",
+      "lastAyahId": "39:40",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 463,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "39:41",
+      "lastAyahId": "39:47",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 464,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "39:48",
+      "lastAyahId": "39:56",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 465,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "39:57",
+      "lastAyahId": "39:67",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 466,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "39:68",
+      "lastAyahId": "39:74",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 467,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "39:75",
+      "lastAyahId": "40:7",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 468,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "40:8",
+      "lastAyahId": "40:16",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 469,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "40:17",
+      "lastAyahId": "40:25",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 470,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "40:26",
+      "lastAyahId": "40:33",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 471,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "40:34",
+      "lastAyahId": "40:40",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 472,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "40:41",
+      "lastAyahId": "40:49",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 473,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "40:50",
+      "lastAyahId": "40:58",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 474,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "40:59",
+      "lastAyahId": "40:66",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 475,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "40:67",
+      "lastAyahId": "40:77",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 476,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "40:78",
+      "lastAyahId": "40:85",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 477,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "41:1",
+      "lastAyahId": "41:11",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 478,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "41:12",
+      "lastAyahId": "41:20",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 479,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "41:21",
+      "lastAyahId": "41:29",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 480,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "41:30",
+      "lastAyahId": "41:38",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 481,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "41:39",
+      "lastAyahId": "41:46",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 482,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "41:47",
+      "lastAyahId": "41:54",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 483,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "42:1",
+      "lastAyahId": "42:10",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 484,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "42:11",
+      "lastAyahId": "42:15",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 485,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "42:16",
+      "lastAyahId": "42:22",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 486,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "42:23",
+      "lastAyahId": "42:31",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 487,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "42:32",
+      "lastAyahId": "42:44",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 488,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "42:45",
+      "lastAyahId": "42:51",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 489,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "42:52",
+      "lastAyahId": "43:10",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 490,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "43:11",
+      "lastAyahId": "43:22",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 491,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "43:23",
+      "lastAyahId": "43:33",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 492,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "43:34",
+      "lastAyahId": "43:47",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 493,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "43:48",
+      "lastAyahId": "43:60",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 494,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "43:61",
+      "lastAyahId": "43:73",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 495,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "43:74",
+      "lastAyahId": "43:89",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 496,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "44:1",
+      "lastAyahId": "44:18",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 497,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "44:19",
+      "lastAyahId": "44:39",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 498,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "44:40",
+      "lastAyahId": "44:59",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 499,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "45:1",
+      "lastAyahId": "45:13",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 500,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "45:14",
+      "lastAyahId": "45:22",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 501,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "45:23",
+      "lastAyahId": "45:32",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 502,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "45:33",
+      "lastAyahId": "46:5",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 503,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "46:6",
+      "lastAyahId": "46:14",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 504,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "46:15",
+      "lastAyahId": "46:20",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 505,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "46:21",
+      "lastAyahId": "46:28",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 506,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "46:29",
+      "lastAyahId": "46:35",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 507,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "47:1",
+      "lastAyahId": "47:11",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 508,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "47:12",
+      "lastAyahId": "47:19",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 509,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "47:20",
+      "lastAyahId": "47:29",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 510,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "47:30",
+      "lastAyahId": "47:38",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 511,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "48:1",
+      "lastAyahId": "48:9",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 512,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "48:10",
+      "lastAyahId": "48:15",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 513,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "48:16",
+      "lastAyahId": "48:23",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 514,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "48:24",
+      "lastAyahId": "48:28",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 515,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "48:29",
+      "lastAyahId": "49:4",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 516,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "49:5",
+      "lastAyahId": "49:11",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 517,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "49:12",
+      "lastAyahId": "49:18",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 518,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "50:1",
+      "lastAyahId": "50:15",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 519,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "50:16",
+      "lastAyahId": "50:35",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 520,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "50:36",
+      "lastAyahId": "51:6",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 521,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "51:7",
+      "lastAyahId": "51:30",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 522,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "51:31",
+      "lastAyahId": "51:51",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 523,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "51:52",
+      "lastAyahId": "52:14",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 524,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "52:15",
+      "lastAyahId": "52:31",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 525,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "52:32",
+      "lastAyahId": "52:49",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 526,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "53:1",
+      "lastAyahId": "53:26",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 527,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "53:27",
+      "lastAyahId": "53:44",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 528,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "53:45",
+      "lastAyahId": "54:6",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 529,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "54:7",
+      "lastAyahId": "54:27",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 530,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "54:28",
+      "lastAyahId": "54:49",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 531,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "54:50",
+      "lastAyahId": "55:18",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 532,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "55:19",
+      "lastAyahId": "55:41",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 533,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "55:42",
+      "lastAyahId": "55:69",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 534,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "55:70",
+      "lastAyahId": "56:16",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 535,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "56:17",
+      "lastAyahId": "56:50",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 536,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "56:51",
+      "lastAyahId": "56:76",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 537,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "56:77",
+      "lastAyahId": "57:3",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 538,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "57:4",
+      "lastAyahId": "57:11",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 539,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "57:12",
+      "lastAyahId": "57:18",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 540,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "57:19",
+      "lastAyahId": "57:24",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 541,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "57:25",
+      "lastAyahId": "57:29",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 542,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "58:1",
+      "lastAyahId": "58:6",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 543,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "58:7",
+      "lastAyahId": "58:11",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 544,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "58:12",
+      "lastAyahId": "58:21",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 545,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "58:22",
+      "lastAyahId": "59:3",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 546,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "59:4",
+      "lastAyahId": "59:9",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 547,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "59:10",
+      "lastAyahId": "59:16",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 548,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "59:17",
+      "lastAyahId": "59:24",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 549,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "60:1",
+      "lastAyahId": "60:5",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 550,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "60:6",
+      "lastAyahId": "60:11",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 551,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "60:12",
+      "lastAyahId": "61:5",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 552,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "61:6",
+      "lastAyahId": "61:14",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 553,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "62:1",
+      "lastAyahId": "62:8",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 554,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "62:9",
+      "lastAyahId": "63:4",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 555,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "63:5",
+      "lastAyahId": "63:11",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 556,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "64:1",
+      "lastAyahId": "64:9",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 557,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "64:10",
+      "lastAyahId": "64:18",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 558,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "65:1",
+      "lastAyahId": "65:5",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 559,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "65:6",
+      "lastAyahId": "65:12",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 560,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "66:1",
+      "lastAyahId": "66:7",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 561,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "66:8",
+      "lastAyahId": "66:12",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 562,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "67:1",
+      "lastAyahId": "67:12",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 563,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "67:13",
+      "lastAyahId": "67:26",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 564,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "67:27",
+      "lastAyahId": "68:16",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 565,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "68:17",
+      "lastAyahId": "68:42",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 566,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "68:43",
+      "lastAyahId": "69:8",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 567,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "69:9",
+      "lastAyahId": "69:35",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 568,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "69:36",
+      "lastAyahId": "70:10",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 569,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "70:11",
+      "lastAyahId": "70:40",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 570,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "70:41",
+      "lastAyahId": "71:10",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 571,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "71:11",
+      "lastAyahId": "71:28",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 572,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "72:1",
+      "lastAyahId": "72:13",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 573,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "72:14",
+      "lastAyahId": "72:28",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 574,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "73:1",
+      "lastAyahId": "73:19",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 575,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "73:20",
+      "lastAyahId": "74:18",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 576,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "74:19",
+      "lastAyahId": "74:47",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 577,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "74:48",
+      "lastAyahId": "75:19",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 578,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "75:20",
+      "lastAyahId": "76:5",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 579,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "76:6",
+      "lastAyahId": "76:25",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 580,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "76:26",
+      "lastAyahId": "77:19",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 581,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "77:20",
+      "lastAyahId": "77:50",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 582,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "78:1",
+      "lastAyahId": "78:30",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 583,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "78:31",
+      "lastAyahId": "79:16",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 584,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "79:17",
+      "lastAyahId": "79:46",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 585,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "80:1",
+      "lastAyahId": "80:40",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 586,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "80:41",
+      "lastAyahId": "81:29",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 587,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "82:1",
+      "lastAyahId": "83:4",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 588,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "83:5",
+      "lastAyahId": "83:33",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 589,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "83:34",
+      "lastAyahId": "84:24",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 590,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "84:25",
+      "lastAyahId": "85:22",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 591,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "86:1",
+      "lastAyahId": "87:10",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 592,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "87:11",
+      "lastAyahId": "88:22",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 593,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "88:23",
+      "lastAyahId": "89:22",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 594,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "89:23",
+      "lastAyahId": "90:18",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 595,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "90:19",
+      "lastAyahId": "92:9",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 596,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "92:10",
+      "lastAyahId": "94:2",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 597,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "94:3",
+      "lastAyahId": "96:12",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 598,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "96:13",
+      "lastAyahId": "98:5",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 599,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "98:6",
+      "lastAyahId": "100:5",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 600,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "100:6",
+      "lastAyahId": "102:8",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 601,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "103:1",
+      "lastAyahId": "105:5",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 602,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "106:1",
+      "lastAyahId": "108:3",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 603,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "109:1",
+      "lastAyahId": "111:5",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    },
+    {
+      "pageNumber": 604,
+      "viewBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ],
+      "firstAyahId": "112:1",
+      "lastAyahId": "114:6",
+      "renderBox": [
+        0.0,
+        0.0,
+        345.0,
+        550.0
+      ]
+    }
+  ],
+  "surahFirstPages": {
+    "1": 1,
+    "2": 2,
+    "3": 50,
+    "4": 77,
+    "5": 106,
+    "6": 128,
+    "7": 151,
+    "8": 177,
+    "9": 187,
+    "10": 208,
+    "11": 221,
+    "12": 235,
+    "13": 249,
+    "14": 255,
+    "15": 262,
+    "16": 267,
+    "17": 282,
+    "18": 293,
+    "19": 305,
+    "20": 312,
+    "21": 322,
+    "22": 332,
+    "23": 342,
+    "24": 350,
+    "25": 359,
+    "26": 367,
+    "27": 377,
+    "28": 385,
+    "29": 396,
+    "30": 404,
+    "31": 411,
+    "32": 415,
+    "33": 418,
+    "34": 428,
+    "35": 434,
+    "36": 440,
+    "37": 446,
+    "38": 453,
+    "39": 458,
+    "40": 467,
+    "41": 477,
+    "42": 483,
+    "43": 489,
+    "44": 496,
+    "45": 499,
+    "46": 502,
+    "47": 507,
+    "48": 511,
+    "49": 515,
+    "50": 518,
+    "51": 520,
+    "52": 523,
+    "53": 526,
+    "54": 528,
+    "55": 531,
+    "56": 534,
+    "57": 537,
+    "58": 542,
+    "59": 545,
+    "60": 549,
+    "61": 551,
+    "62": 553,
+    "63": 554,
+    "64": 556,
+    "65": 558,
+    "66": 560,
+    "67": 562,
+    "68": 564,
+    "69": 566,
+    "70": 568,
+    "71": 570,
+    "72": 572,
+    "73": 574,
+    "74": 575,
+    "75": 577,
+    "76": 578,
+    "77": 580,
+    "78": 582,
+    "79": 583,
+    "80": 585,
+    "81": 586,
+    "82": 587,
+    "83": 587,
+    "84": 589,
+    "85": 590,
+    "86": 591,
+    "87": 591,
+    "88": 592,
+    "89": 593,
+    "90": 594,
+    "91": 595,
+    "92": 595,
+    "93": 596,
+    "94": 596,
+    "95": 597,
+    "96": 597,
+    "97": 598,
+    "98": 598,
+    "99": 599,
+    "100": 599,
+    "101": 600,
+    "102": 600,
+    "103": 601,
+    "104": 601,
+    "105": 601,
+    "106": 602,
+    "107": 602,
+    "108": 602,
+    "109": 603,
+    "110": 603,
+    "111": 603,
+    "112": 604,
+    "113": 604,
+    "114": 604
+  }
+}

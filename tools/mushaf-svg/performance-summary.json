@@ -1,0 +1,21 @@
+{
+  "api": 23,
+  "model": "Android SDK built for x86",
+  "success": true,
+  "indexReadyMs": 4872.07002,
+  "firstPageLoadMs": 1604.192731,
+  "firstPageParseMs": 352.753489,
+  "firstPageRenderMs": 313.962188,
+  "warmNavigationMedianMs": 2707.1178515,
+  "cacheHitNavigationMedianMs": 460.630628,
+  "cacheHits": 2,
+  "warmTransitions": 8,
+  "maximumObservedRetainedDocuments": 3,
+  "observedPssMaximumKiB": 44838,
+  "lastPssKiB": 44838,
+  "pssSamples": 4,
+  "startupParsedSvgDocuments": 0,
+  "allDrawsSoftware": true,
+  "sha256": "3fb3f221973add8582945ebe04bafd0067f05095ff25b288fe5f04b5ade9026f",
+  "limitation": "Google API23 emulator; software CPU emulation, not physical-phone timings"
+}

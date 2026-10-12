@@ -1,0 +1,91 @@
+{
+  "version": "0.4.0",
+  "validatedOn": "2026-10-10",
+  "build": "clean assembleDebug/testDebugUnitTest/lintDebug passed",
+  "tests": [
+    {
+      "suite": "com.ahmad.quran.MainActivityTest",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "com.ahmad.quran.QuranRepositoryTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "com.ahmad.quran.ReadingPreferencesTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "apiConfigurations": [
+    23,
+    36
+  ],
+  "lint": [
+    {
+      "id": "NewerVersionAvailable",
+      "severity": "Warning"
+    }
+  ],
+  "dependenciesAdded": [],
+  "sizes": {
+    "apkBytes": 4345924,
+    "priorOfflineReaderApkBytes": 4310103,
+    "increaseBytes": 35821,
+    "databaseBytes": 2170880,
+    "xmlMetadataBytes": 77234,
+    "compressedXmlBytesInApk": 15618
+  },
+  "apkSha256": "ab9fe476eaf8a3d7f66afbd6bb076d323560f0c696df9b841d9581cbd42aa802",
+  "fixedReferenceFilesUnchanged": 11,
+  "databaseRebuilt": false,
+  "databaseSha256": "8ed100334e8eca42124035f51fffe934d52b20e5224b3a44c1a33b44dba74416",
+  "readingChecks": {
+    "baqarahAyahs": 286,
+    "resumeAyahAfterFreshLaunchAndRecreation": 140,
+    "recycledRowsAndBoundedViewport": "passed",
+    "rapidDistantPageSequence": [
+      604,
+      22,
+      400,
+      50,
+      200,
+      3,
+      600,
+      2,
+      1,
+      604,
+      400
+    ],
+    "latestPageWins": 400,
+    "latestPageStart": [
+      29,
+      31
+    ],
+    "latestPageJuz": 20,
+    "pageResumeEdition": "madina_hafs_604",
+    "textSizeSpRange": [
+      20,
+      40
+    ],
+    "defaultTextSizeSp": 28,
+    "persistedThemeAndTextSize": "passed",
+    "small320dpScreenAndFontScale2": "passed"
+  },
+  "apkChecks": {
+    "signature": "passed",
+    "internetPermission": false,
+    "fixedCorpusManifestAndNoticesMatchAssets": true,
+    "xmlMatchesApprovedOriginal": true,
+    "audioAssets": false
+  },
+  "limitations": "Robolectric simulations only; no physical device or emulator screenshots, frame-rate, or Quran glyph certification."
+}

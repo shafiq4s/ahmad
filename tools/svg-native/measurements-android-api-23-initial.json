@@ -1,0 +1,355 @@
+{
+  "environment": "Android emulator, software CPU acceleration disabled",
+  "api": 23,
+  "viewportPixels": [
+    1080,
+    1722
+  ],
+  "renderSurfaceBytes": 7439040,
+  "nativeGraphics": true,
+  "firstContentColdMs": 988.693892,
+  "firstPageLoadMs": 362.547322,
+  "firstParseMs": 249.755361,
+  "firstRenderMs": 118.909273,
+  "cacheModes": [
+    {
+      "cacheCapacity": 1,
+      "loadMedianMs": 679.132435,
+      "renderMedianMs": 147.871685,
+      "switchMedianMs": 848.02765,
+      "switchP95Ms": 1517.216472,
+      "samples": [
+        {
+          "page": 1,
+          "cacheHit": false,
+          "loadMs": 292.895451,
+          "parseMs": 257.663161,
+          "renderMs": 66.953149,
+          "contentReadyMs": 364.567357
+        },
+        {
+          "page": 2,
+          "cacheHit": false,
+          "loadMs": 393.953417,
+          "parseMs": 360.239051,
+          "renderMs": 102.109909,
+          "contentReadyMs": 499.447383
+        },
+        {
+          "page": 48,
+          "cacheHit": false,
+          "loadMs": 723.677505,
+          "parseMs": 714.30582,
+          "renderMs": 195.675243,
+          "contentReadyMs": 925.345591
+        },
+        {
+          "page": 121,
+          "cacheHit": false,
+          "loadMs": 740.516093,
+          "parseMs": 586.410952,
+          "renderMs": 320.427202,
+          "contentReadyMs": 1063.979664
+        },
+        {
+          "page": 604,
+          "cacheHit": false,
+          "loadMs": 620.484133,
+          "parseMs": 544.336094,
+          "renderMs": 120.380575,
+          "contentReadyMs": 744.421067
+        },
+        {
+          "page": 121,
+          "cacheHit": false,
+          "loadMs": 788.724086,
+          "parseMs": 726.660448,
+          "renderMs": 205.697582,
+          "contentReadyMs": 1003.56411
+        },
+        {
+          "page": 48,
+          "cacheHit": false,
+          "loadMs": 1353.955592,
+          "parseMs": 1326.579631,
+          "renderMs": 160.445547,
+          "contentReadyMs": 1517.216472
+        },
+        {
+          "page": 2,
+          "cacheHit": false,
+          "loadMs": 764.843736,
+          "parseMs": 729.869861,
+          "renderMs": 80.257601,
+          "contentReadyMs": 848.02765
+        },
+        {
+          "page": 1,
+          "cacheHit": false,
+          "loadMs": 302.092561,
+          "parseMs": 261.772008,
+          "renderMs": 66.892421,
+          "contentReadyMs": 372.086026
+        },
+        {
+          "page": 2,
+          "cacheHit": false,
+          "loadMs": 319.21366,
+          "parseMs": 289.668077,
+          "renderMs": 70.503929,
+          "contentReadyMs": 392.690021
+        },
+        {
+          "page": 48,
+          "cacheHit": false,
+          "loadMs": 956.2199,
+          "parseMs": 948.755728,
+          "renderMs": 147.966327,
+          "contentReadyMs": 1107.230201
+        },
+        {
+          "page": 121,
+          "cacheHit": false,
+          "loadMs": 752.636608,
+          "parseMs": 702.404464,
+          "renderMs": 298.916345,
+          "contentReadyMs": 1055.026743
+        },
+        {
+          "page": 604,
+          "cacheHit": false,
+          "loadMs": 679.132435,
+          "parseMs": 603.662931,
+          "renderMs": 269.754995,
+          "contentReadyMs": 987.422617
+        },
+        {
+          "page": 121,
+          "cacheHit": false,
+          "loadMs": 619.240011,
+          "parseMs": 569.176213,
+          "renderMs": 146.013846,
+          "contentReadyMs": 768.629748
+        },
+        {
+          "page": 48,
+          "cacheHit": false,
+          "loadMs": 619.500865,
+          "parseMs": 611.058055,
+          "renderMs": 147.871685,
+          "contentReadyMs": 770.591852
+        }
+      ],
+      "memory": {
+        "baselineManagedPlusNativeBytes": 12872128,
+        "retainedManagedPlusNativeBytes": 13519872,
+        "retainedDeltaBytes": 647744,
+        "observedPeakBytes": 19776032,
+        "observedPeakDeltaBytes": 6903904,
+        "sampleIntervalMs": 5,
+        "scope": "Runtime managed heap + Debug native malloc heap; rendering surface already in baseline; not PSS"
+      }
+    },
+    {
+      "cacheCapacity": 3,
+      "loadMedianMs": 0.017923,
+      "renderMedianMs": 143.862043,
+      "switchMedianMs": 147.237678,
+      "switchP95Ms": 367.706753,
+      "samples": [
+        {
+          "page": 1,
+          "cacheHit": false,
+          "loadMs": 298.960346,
+          "parseMs": 258.420115,
+          "renderMs": 65.401937,
+          "contentReadyMs": 367.706753
+        },
+        {
+          "page": 2,
+          "cacheHit": true,
+          "loadMs": 0.08356,
+          "parseMs": 0,
+          "renderMs": 73.880811,
+          "contentReadyMs": 76.639211
+        },
+        {
+          "page": 48,
+          "cacheHit": true,
+          "loadMs": 0.018929,
+          "parseMs": 0,
+          "renderMs": 306.199785,
+          "contentReadyMs": 309.132474
+        },
+        {
+          "page": 121,
+          "cacheHit": true,
+          "loadMs": 0.01913,
+          "parseMs": 0,
+          "renderMs": 146.164869,
+          "contentReadyMs": 150.737854
+        },
+        {
+          "page": 604,
+          "cacheHit": true,
+          "loadMs": 0.018103,
+          "parseMs": 0,
+          "renderMs": 116.514447,
+          "contentReadyMs": 121.179637
+        },
+        {
+          "page": 121,
+          "cacheHit": true,
+          "loadMs": 0.009113,
+          "parseMs": 0,
+          "renderMs": 140.804941,
+          "contentReadyMs": 143.346009
+        },
+        {
+          "page": 48,
+          "cacheHit": true,
+          "loadMs": 0.007302,
+          "parseMs": 0,
+          "renderMs": 158.458892,
+          "contentReadyMs": 161.178809
+        },
+        {
+          "page": 2,
+          "cacheHit": true,
+          "loadMs": 0.017092,
+          "parseMs": 0,
+          "renderMs": 83.473818,
+          "contentReadyMs": 86.264251
+        },
+        {
+          "page": 1,
+          "cacheHit": true,
+          "loadMs": 0.017863,
+          "parseMs": 0,
+          "renderMs": 79.358868,
+          "contentReadyMs": 82.068136
+        },
+        {
+          "page": 2,
+          "cacheHit": true,
+          "loadMs": 3.995745,
+          "parseMs": 0,
+          "renderMs": 213.39893,
+          "contentReadyMs": 222.854951
+        },
+        {
+          "page": 48,
+          "cacheHit": true,
+          "loadMs": 0.00694,
+          "parseMs": 0,
+          "renderMs": 155.702638,
+          "contentReadyMs": 158.87047
+        },
+        {
+          "page": 121,
+          "cacheHit": true,
+          "loadMs": 0.017923,
+          "parseMs": 0,
+          "renderMs": 144.34748,
+          "contentReadyMs": 147.237678
+        },
+        {
+          "page": 604,
+          "cacheHit": true,
+          "loadMs": 0.01831,
+          "parseMs": 0,
+          "renderMs": 155.946835,
+          "contentReadyMs": 162.380682
+        },
+        {
+          "page": 121,
+          "cacheHit": true,
+          "loadMs": 0.008502,
+          "parseMs": 0,
+          "renderMs": 141.744681,
+          "contentReadyMs": 144.521756
+        },
+        {
+          "page": 48,
+          "cacheHit": true,
+          "loadMs": 0.014333,
+          "parseMs": 0,
+          "renderMs": 143.862043,
+          "contentReadyMs": 146.689998
+        }
+      ],
+      "memory": {
+        "baselineManagedPlusNativeBytes": 12546168,
+        "retainedManagedPlusNativeBytes": 14037064,
+        "retainedDeltaBytes": 1490896,
+        "observedPeakBytes": 22383272,
+        "observedPeakDeltaBytes": 9837104,
+        "sampleIntervalMs": 5,
+        "scope": "Runtime managed heap + Debug native malloc heap; rendering surface already in baseline; not PSS"
+      }
+    }
+  ],
+  "hitTestingMedianMs": 0.153037,
+  "hitTestingP95Ms": 0.367196,
+  "rasterBaseline": {
+    "format": "PNG, temporary in-memory native capture",
+    "decodeMedianMs": 238.293447,
+    "drawMedianMs": 4.243186,
+    "decodedBitmapBytes": 7439040,
+    "encodedBytes": 263124
+  },
+  "pageParseAndRender": [
+    {
+      "page": 1,
+      "parseMs": 395.149976,
+      "renderMs": 62.226178
+    },
+    {
+      "page": 2,
+      "parseMs": 435.661704,
+      "renderMs": 69.421981
+    },
+    {
+      "page": 48,
+      "parseMs": 1426.631176,
+      "renderMs": 291.452295
+    },
+    {
+      "page": 121,
+      "parseMs": 966.081596,
+      "renderMs": 360.217997
+    },
+    {
+      "page": 604,
+      "parseMs": 874.309081,
+      "renderMs": 127.621673
+    }
+  ],
+  "nativePageSmokeChecks": [
+    {
+      "page": 1,
+      "inkPixels": 67385,
+      "hitIdentityVerified": true
+    },
+    {
+      "page": 2,
+      "inkPixels": 81668,
+      "hitIdentityVerified": true
+    },
+    {
+      "page": 48,
+      "inkPixels": 157006,
+      "hitIdentityVerified": true
+    },
+    {
+      "page": 121,
+      "inkPixels": 141820,
+      "hitIdentityVerified": true
+    },
+    {
+      "page": 604,
+      "inkPixels": 84831,
+      "hitIdentityVerified": true
+    }
+  ]
+}

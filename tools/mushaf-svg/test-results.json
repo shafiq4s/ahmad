@@ -1,0 +1,86 @@
+{
+  "app": [
+    {
+      "name": "com.ahmad.quran.MainActivityTest",
+      "tests": "10",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-11T15:38:16.874Z",
+      "hostname": "325b7aced448",
+      "time": "31.43"
+    },
+    {
+      "name": "com.ahmad.quran.QuranRepositoryTest",
+      "tests": "8",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-11T15:38:48.435Z",
+      "hostname": "325b7aced448",
+      "time": "11.982"
+    },
+    {
+      "name": "com.ahmad.quran.ReadingPreferencesTest",
+      "tests": "6",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-11T15:39:00.422Z",
+      "hostname": "325b7aced448",
+      "time": "0.401"
+    },
+    {
+      "name": "com.ahmad.quran.mushaf.svg.MushafSvgGeometryTest",
+      "tests": "8",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-11T15:39:00.835Z",
+      "hostname": "325b7aced448",
+      "time": "3.976"
+    },
+    {
+      "name": "com.ahmad.quran.mushaf.svg.MushafSvgTest",
+      "tests": "6",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-11T15:39:04.824Z",
+      "hostname": "325b7aced448",
+      "time": "12.343"
+    }
+  ],
+  "svg-native-prototype": [
+    {
+      "name": "com.ahmad.quran.svgnative.NativeSvgActivityTest",
+      "tests": "2",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-11T15:32:48.210Z",
+      "hostname": "325b7aced448",
+      "time": "22.56"
+    },
+    {
+      "name": "com.ahmad.quran.svgnative.NativeSvgMeasurementsTest",
+      "tests": "2",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-11T15:33:10.837Z",
+      "hostname": "325b7aced448",
+      "time": "34.432"
+    },
+    {
+      "name": "com.ahmad.quran.svgnative.NativeSvgValidationTest",
+      "tests": "9",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-11T15:33:45.445Z",
+      "hostname": "325b7aced448",
+      "time": "12.361"
+    }
+  ]
+}

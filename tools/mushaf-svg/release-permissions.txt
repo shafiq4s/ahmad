@@ -1,0 +1,3 @@
+package: com.ahmad.quran
+permission: com.ahmad.quran.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission: name='com.ahmad.quran.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'

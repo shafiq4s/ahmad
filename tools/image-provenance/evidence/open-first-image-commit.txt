@@ -1,0 +1,7 @@
+commit b11a3ab816443852f34620ed69b01d12ab2b6ba9
+Author:     adelpro <adelpro@gmail.com>
+AuthorDate: Mon Mar 17 10:14:56 2025 +0100
+Commit:     adelpro <adelpro@gmail.com>
+CommitDate: Mon Mar 17 10:14:56 2025 +0100
+
+    test: adding multiple mashaf

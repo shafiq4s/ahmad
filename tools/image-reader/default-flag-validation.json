@@ -1,0 +1,9 @@
+{
+  "flag": false,
+  "testsPassed": 1,
+  "temporaryImagesPackaged": 0,
+  "entryAbsent": true,
+  "testCases": [
+    "indexEntryRequiresTheExplicitBuildFlag"
+  ]
+}
