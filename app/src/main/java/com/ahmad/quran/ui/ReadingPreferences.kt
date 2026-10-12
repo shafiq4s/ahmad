@@ -23,6 +23,14 @@ data class ReadingBookmark(
     val createdAtMillis: Long = System.currentTimeMillis(),
 )
 
+data class ReadingHistoryEntry(
+    val pageNumber: Int,
+    val surahNumber: Int,
+    val ayahNumber: Int? = null,
+    val editionId: String = QuranSvgEdition.ID,
+    val readAtMillis: Long = System.currentTimeMillis(),
+)
+
 class ReadingPreferences(context: Context) {
     private val ayahCounts by lazy { com.ahmad.quran.data.ReadingMetadata.getSurahAyahCounts(context.applicationContext) }
     private val preferences = context.applicationContext.getSharedPreferences("reading", Context.MODE_PRIVATE)
@@ -47,13 +55,37 @@ class ReadingPreferences(context: Context) {
             }.getOrNull()
         }.distinctBy { it.editionId to it.pageNumber }.sortedByDescending { it.createdAtMillis }
     }.getOrDefault(emptyList())
+    val history: List<ReadingHistoryEntry> get() = runCatching {
+        val rows = JSONArray(preferences.getString("history", "[]"))
+        (0 until rows.length()).mapNotNull { i ->
+            runCatching {
+                val r = rows.getJSONObject(i)
+                ReadingHistoryEntry(r.getInt("page"), r.getInt("surah"),
+                    if (r.isNull("ayah")) null else r.getInt("ayah"), r.getString("edition"), r.getLong("readAtMillis"))
+                    .takeIf { it.editionId == QuranSvgEdition.ID && it.pageNumber in 1..604 &&
+                        it.surahNumber in 1..114 && it.readAtMillis >= 0 &&
+                        (it.ayahNumber == null || it.ayahNumber in 1..(ayahCounts[it.surahNumber] ?: 0)) }
+            }.getOrNull()
+        }.sortedByDescending { it.readAtMillis }.distinctBy { it.editionId to it.pageNumber }.take(10)
+    }.getOrDefault(emptyList())
+
+    // One recent position per page. Revisiting moves it to the front and retains the latest selection.
+    fun recordHistory(entry: ReadingHistoryEntry) {
+        require(entry.editionId == QuranSvgEdition.ID && entry.pageNumber in 1..604 && entry.surahNumber in 1..114)
+        require(entry.readAtMillis >= 0 && (entry.ayahNumber == null || entry.ayahNumber in 1..(ayahCounts[entry.surahNumber] ?: 0)))
+        val items = (listOf(entry) + history.filterNot { it.editionId == entry.editionId && it.pageNumber == entry.pageNumber }).take(10)
+        val rows = JSONArray()
+        items.forEach { rows.put(JSONObject().put("edition", it.editionId).put("page", it.pageNumber)
+            .put("surah", it.surahNumber).put("ayah", it.ayahNumber ?: JSONObject.NULL).put("readAtMillis", it.readAtMillis)) }
+        preferences.edit { putString("history", rows.toString()) }
+    }
     val lastLocation: ReadingLocation? get() {
         val mode = ReaderMode.entries.firstOrNull { it.name == preferences.getString("mode", null) } ?: return null
         val surah = preferences.getInt("surah", 0)
         val ayah = preferences.getInt("ayah", 0)
         val page = preferences.getInt("page", 0)
         val edition = preferences.getString("edition", null) ?: return null
-        if (surah !in 1..114 || ayah !in 1..286 || page !in 1..604 ||
+        if (surah !in 1..114 || ayah !in 1..(ayahCounts[surah] ?: 0) || page !in 1..604 ||
             edition !in listOf(QuranRepository.DEFAULT_EDITION,QuranSvgEdition.ID)) return null
         return ReadingLocation(mode, surah, ayah, page, edition)
     }

@@ -22,7 +22,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.currentCoroutineContext
 import kotlinx.coroutines.ensureActive
 
-enum class Screen { HOME, QURAN, READER, SETTINGS, BOOKMARKS, SEARCH }
+enum class Screen { HOME, QURAN, READER, SETTINGS, BOOKMARKS, SEARCH, HISTORY, ABOUT, SUPPORT }
 enum class ReaderMode { SURAH, PAGE }
 
 data class AyahDetails(val ayah: Ayah, val surahName: String, val juzNumber: Int?)
@@ -43,6 +43,7 @@ data class QuranUiState(
     val loading: Boolean = true,
     val error: Boolean = false,
     val bookmarks: List<ReadingBookmark> = emptyList(),
+    val history: List<ReadingHistoryEntry> = emptyList(),
     val juzPages: Map<Int, Int> = emptyMap(),
     val keepScreenAwake: Boolean = false,
     val autoResumeReading: Boolean = false,
@@ -70,6 +71,7 @@ class MainViewModel(application: Application, private val savedState: SavedState
         lastLocation = preferences.lastLocation,
         darkMode = preferences.darkMode,
         bookmarks = preferences.bookmarks,
+        history = preferences.history,
         keepScreenAwake = preferences.keepScreenAwake,
         autoResumeReading = preferences.autoResumeReading,
         showReaderBarsOnOpen = preferences.showReaderBarsOnOpen,
@@ -86,15 +88,21 @@ class MainViewModel(application: Application, private val savedState: SavedState
     }
 
     fun navigateTo(screen: Screen) {
+        val current = mutableState.value.screen
+        if (screen == Screen.SETTINGS && current !in listOf(Screen.SETTINGS, Screen.ABOUT, Screen.SUPPORT))
+            savedState["settingsReturnScreen"] = current.name
         if (screen != Screen.READER) clearTarget()
         savedState["readingScreen"] = screen.name
         mutableState.value = mutableState.value.copy(screen = screen)
     }
 
     fun navigateBack() {
-        val destination = if(mutableState.value.screen == Screen.READER)
-            Screen.entries.firstOrNull { it.name == savedState.get<String>("readerReturnScreen") && it != Screen.READER } ?: Screen.HOME
-            else Screen.HOME
+        val destination = when (mutableState.value.screen) {
+            Screen.READER -> Screen.entries.firstOrNull { it.name == savedState.get<String>("readerReturnScreen") && it != Screen.READER } ?: Screen.HOME
+            Screen.SETTINGS -> Screen.entries.firstOrNull { it.name == savedState.get<String>("settingsReturnScreen") && it !in listOf(Screen.SETTINGS, Screen.ABOUT, Screen.SUPPORT) } ?: Screen.HOME
+            Screen.ABOUT, Screen.SUPPORT -> Screen.SETTINGS
+            else -> Screen.HOME
+        }
         navigateTo(destination)
     }
 
@@ -164,7 +172,25 @@ class MainViewModel(application: Application, private val savedState: SavedState
         val id = AyahId(location.surahNumber, location.ayahNumber)
         // Older text-reader locations belong to Tanzil pagination; migrate by canonical identity.
         val page = if (location.editionId == QuranSvgEdition.ID) location.pageNumber else map.pageForAyah(id) ?: return
-        open(ReaderMode.PAGE, location.surahNumber, page, id)
+        val recent = preferences.history.firstOrNull { it.pageNumber == page && it.editionId == location.editionId }
+        openSavedPosition(page, location.surahNumber, if (location.editionId == QuranSvgEdition.ID) recent?.ayahNumber else location.ayahNumber)
+    }
+
+    fun openBookmark(bookmark: ReadingBookmark) = openSavedPosition(bookmark.pageNumber, bookmark.surahNumber, bookmark.ayahNumber)
+    fun openHistory(entry: ReadingHistoryEntry) = openSavedPosition(entry.pageNumber, entry.surahNumber, entry.ayahNumber)
+
+    private fun openSavedPosition(page: Int, surah: Int, ayah: Int?) {
+        val map = svgEdition ?: return
+        if (page !in 1..map.edition.pageCount) return
+        val id = ayah?.let { AyahId(surah, it) }
+        // The saved edition page takes precedence for an ayah spanning multiple pages.
+        val target = id?.takeIf { candidate ->
+            val first = map.firstAyah(page); val last = map.lastAyah(page)
+            val key = candidate.surahNumber * 1000 + candidate.ayahNumber
+            mutableState.value.surahs.any { it.surahNumber == candidate.surahNumber && candidate.ayahNumber in 1..it.ayahCount } &&
+                key in (first.surahNumber * 1000 + first.ayahNumber)..(last.surahNumber * 1000 + last.ayahNumber)
+        }
+        if (page in 1..map.edition.pageCount) open(ReaderMode.PAGE, surah, page, map.firstAyah(page), target)
     }
 
     fun openJuz(juzNumber: Int) {
@@ -208,13 +234,17 @@ class MainViewModel(application: Application, private val savedState: SavedState
         load()
     }
 
-    fun recordPageDisplayed(pageNumber: Int) {
+    fun recordPageDisplayed(pageNumber: Int, selectedAyah: AyahId? = null) {
         val current=mutableState.value
         if (current.screen!=Screen.READER || current.loading || current.error || current.pageNumber!=pageNumber) return
-        val id=checkNotNull(svgEdition).firstAyah(pageNumber)
+        if (selectedAyah != null && current.surahs.none { it.surahNumber == selectedAyah.surahNumber && selectedAyah.ayahNumber in 1..it.ayahCount }) return
+        val recent = preferences.history.firstOrNull { it.pageNumber == pageNumber }
+        val selection = selectedAyah ?: recent?.ayahNumber?.let { AyahId(recent.surahNumber, it) }
+        val id=selection ?: checkNotNull(svgEdition).firstAyah(pageNumber)
         val location=ReadingLocation(ReaderMode.PAGE,id.surahNumber,id.ayahNumber,pageNumber,QuranSvgEdition.ID)
         preferences.saveLocation(location)
-        mutableState.value=current.copy(lastLocation=location)
+        preferences.recordHistory(ReadingHistoryEntry(pageNumber, id.surahNumber, selection?.ayahNumber))
+        mutableState.value=current.copy(lastLocation=location, history=preferences.history)
     }
 
     fun setDarkMode(enabled: Boolean) {

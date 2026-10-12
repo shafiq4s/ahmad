@@ -42,6 +42,7 @@
                     <Button android:id="@+id/open_bookmarks" style="@style/ReaderTextButton" android:layout_width="0dp" android:layout_height="56dp" android:layout_weight="1" android:layout_marginStart="12dp" android:text="@string/bookmarks_short" />
                 </LinearLayout>
                 <Button android:id="@+id/open_search" style="@style/ReaderTextButton" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="12dp" android:text="@string/search" />
+                <Button android:id="@+id/open_history" style="@style/ReaderTextButton" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="12dp" android:text="@string/reading_history" />
             </LinearLayout>
         </ScrollView>
         <LinearLayout android:id="@+id/search_panel" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:visibility="gone">
@@ -78,7 +79,7 @@
                     android:visibility="gone" android:accessibilityLiveRegion="polite">
                     <ProgressBar android:id="@+id/page_asset_progress" android:layout_width="32dp" android:layout_height="32dp" />
                     <TextView android:id="@+id/page_asset_message" android:layout_width="match_parent" android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp" android:gravity="center" android:textSize="16sp" android:textColor="@color/text_secondary" />
+                        android:layout_marginTop="16dp" android:gravity="center" android:textSize="16sp" android:lineSpacingExtra="4dp" android:textColor="@color/text_secondary" />
                     <Button android:id="@+id/page_asset_retry" style="@style/ReaderTextButton" android:layout_width="wrap_content"
                         android:layout_height="48dp" android:layout_marginTop="16dp" android:text="@string/retry" android:visibility="gone" />
                 </LinearLayout>
@@ -110,7 +111,11 @@
         </LinearLayout>
         <LinearLayout android:id="@+id/bookmarks_panel" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:visibility="gone" android:padding="20dp">
             <TextView style="@style/SettingsBody" android:text="@string/bookmarks_hint" android:layout_marginBottom="16dp" />
-            <TextView android:id="@+id/bookmarks_empty" style="@style/SettingsHeading" android:text="@string/bookmarks_empty" android:gravity="center" android:paddingTop="32dp" />
+            <LinearLayout android:id="@+id/bookmarks_empty" style="@style/SettingsSection" android:gravity="center" android:layout_marginTop="24dp">
+                <ImageView android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_bookmark" android:importantForAccessibility="no" />
+                <TextView style="@style/SettingsHeading" android:text="@string/bookmarks_empty" android:gravity="center" android:layout_marginTop="16dp" />
+                <TextView style="@style/SettingsBody" android:text="@string/bookmarks_empty_help" android:gravity="center" />
+            </LinearLayout>
             <ListView android:id="@+id/bookmarks_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:divider="@color/divider" android:dividerHeight="1dp" />
         </LinearLayout>
         <ScrollView android:id="@+id/settings_panel" android:layout_width="match_parent" android:layout_height="match_parent"
@@ -132,17 +137,29 @@
                     <Button android:id="@+id/cache_clear" style="@style/ReaderTextButton" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="16dp" android:text="@string/cache_clear" />
                     <TextView android:id="@+id/cache_feedback" style="@style/SettingsBody" android:visibility="gone" android:accessibilityLiveRegion="polite" />
                 </LinearLayout>
-                <LinearLayout android:id="@+id/support_section" style="@style/SettingsSection" android:layout_marginTop="16dp">
-                    <TextView style="@style/SettingsHeading" android:text="@string/support_heading" />
-                    <TextView style="@style/SettingsBody" android:text="@string/support_description" />
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"
-                        android:padding="8dp" android:text="@string/coming_soon" android:textSize="14sp" android:textColor="@color/support_badge_text" android:background="@drawable/support_badge_background" />
+                <LinearLayout style="@style/SettingsSection" android:layout_marginTop="16dp">
+                    <Button android:id="@+id/open_about" style="@style/ReaderTextButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/about_heading" />
+                    <Button android:id="@+id/open_support" style="@style/ReaderTextButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/support_heading" />
                 </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:id="@+id/history_panel" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:visibility="gone" android:padding="20dp">
+            <TextView style="@style/SettingsBody" android:text="@string/history_hint" android:layout_marginBottom="16dp" />
+            <LinearLayout android:id="@+id/history_empty" style="@style/SettingsSection" android:gravity="center" android:layout_marginTop="24dp">
+                <ImageView android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_launcher" android:importantForAccessibility="no" />
+                <TextView style="@style/SettingsHeading" android:text="@string/history_empty" android:gravity="center" android:layout_marginTop="16dp" />
+                <TextView style="@style/SettingsBody" android:text="@string/history_empty_help" android:gravity="center" />
+            </LinearLayout>
+            <ListView android:id="@+id/history_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:divider="@color/divider" android:dividerHeight="1dp" />
+        </LinearLayout>
+        <ScrollView android:id="@+id/about_panel" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:visibility="gone">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
                 <LinearLayout style="@style/SettingsSection" android:layout_marginTop="16dp">
                     <TextView style="@style/SettingsHeading" android:text="@string/about_heading" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:textColor="@color/text_primary" android:textStyle="bold" android:textSize="22sp" />
                     <TextView style="@style/SettingsBody" android:text="@string/about_description" />
                     <TextView android:id="@+id/app_version" style="@style/SettingsBody" />
+                    <TextView style="@style/SettingsBody" android:text="@string/android_support" />
                     <TextView style="@style/SettingsBody" android:text="@string/about_sources" />
                 </LinearLayout>
                 <LinearLayout style="@style/SettingsSection" android:layout_marginTop="16dp">
@@ -150,12 +167,23 @@
                     <TextView android:id="@+id/tanzil_attribution" style="@style/SettingsBody" android:autoLink="web" android:text="@string/tanzil_attribution" />
                     <TextView android:id="@+id/quran_svg_attribution" style="@style/SettingsBody" android:autoLink="web" android:text="@string/quran_svg_attribution" />
                     <TextView style="@style/SettingsBody" android:text="@string/tanzil_terms" />
+                    <TextView style="@style/SettingsBody" android:text="@string/licenses_summary" />
                     <TextView style="@style/SettingsHeading" android:text="@string/privacy_heading" android:layout_marginTop="20dp" />
                     <TextView style="@style/SettingsBody" android:text="@string/privacy_placeholder" />
                     <Button android:id="@+id/show_license" style="@style/ReaderTextButton" android:layout_width="match_parent"
                         android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/show_license" />
                     <TextView android:id="@+id/license_notice" android:layout_width="match_parent" android:layout_height="wrap_content"
                         android:visibility="gone" android:textDirection="ltr" android:textSize="14sp" android:layout_marginTop="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <ScrollView android:id="@+id/support_panel" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:visibility="gone">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <LinearLayout android:id="@+id/support_section" style="@style/SettingsSection" android:layout_marginTop="16dp">
+                    <TextView style="@style/SettingsHeading" android:text="@string/support_heading" />
+                    <TextView style="@style/SettingsBody" android:text="@string/support_description" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"
+                        android:padding="8dp" android:text="@string/coming_soon" android:textSize="14sp" android:textColor="@color/support_badge_text" android:background="@drawable/support_badge_background" />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

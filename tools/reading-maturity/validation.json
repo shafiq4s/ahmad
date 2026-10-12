@@ -1,0 +1,70 @@
+{
+  "tests": {
+    "app": {
+      "tests": 122,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "svg-native-prototype": {
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "finalHistoryFormattingUiRecheck": {
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "testedApis": [
+    23,
+    36
+  ],
+  "platform": "Robolectric; UI captures use native Canvas",
+  "lint": {
+    "errors": 0,
+    "warnings": 9,
+    "issueIds": [
+      "LockedOrientationActivity",
+      "NewerVersionAvailable",
+      "DiscouragedApi",
+      "InefficientWeight",
+      "Overdraw",
+      "UselessParent",
+      "UselessParent",
+      "TooManyViews",
+      "UseKtx"
+    ]
+  },
+  "frozenReferencesUnchanged": 16,
+  "readerRendererHitTestingAndDownloaderUnchanged": true,
+  "canonicalAndEditionAssetBytesExact": true,
+  "sourceArtworkCount": 604,
+  "packagedSeedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    300,
+    600,
+    601,
+    602,
+    603,
+    604
+  ],
+  "packagedOfficialPolygons": 604,
+  "defaultBaseUrl": "",
+  "newDependencies": [],
+  "historyLimit": 10,
+  "historyDeduplication": "edition/page; latest selected ayah retained",
+  "apk": {
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "bytes": 6876578,
+    "sha256": "d71eba219b34b005061808eb7754395310d8dbf923ff2a25a246f107ed2f5bae",
+    "previousBytes": 6862682
+  }
+}

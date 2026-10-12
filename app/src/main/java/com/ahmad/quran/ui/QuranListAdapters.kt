@@ -66,7 +66,8 @@ class BookmarkAdapter(private val context: Context, private val onRemove: (Readi
     private var items: List<ReadingBookmark> = emptyList()
     private var names: Map<Int, String> = emptyMap()
     fun submit(items: List<ReadingBookmark>, surahs: List<Surah>) {
-        this.items=items;names=surahs.associate { it.surahNumber to it.name };notifyDataSetChanged()
+        if (this.items == items && names.size == surahs.size) return
+        this.items=items.sortedByDescending { it.createdAtMillis };names=surahs.associate { it.surahNumber to it.name };notifyDataSetChanged()
     }
     override fun getCount()=items.size
     override fun getItem(position: Int)=items[position]
@@ -79,7 +80,10 @@ class BookmarkAdapter(private val context: Context, private val onRemove: (Readi
         view.findViewById<TextView>(R.id.bookmark_location).text=item.ayahNumber?.let {
             context.getString(R.string.bookmark_ayah_location,item.pageNumber,it)
         } ?: context.getString(R.string.ayah_page,item.pageNumber)
-        view.findViewById<View>(R.id.bookmark_remove).setOnClickListener { onRemove(item) }
+        view.findViewById<View>(R.id.bookmark_remove).apply {
+            contentDescription = context.getString(R.string.bookmark_remove_named, names[item.surahNumber].orEmpty(), item.pageNumber)
+            setOnClickListener { onRemove(item) }
+        }
         return view
     }
 }
@@ -103,6 +107,33 @@ class SearchResultAdapter(private val context: Context) : BaseAdapter() {
         view.findViewById<TextView>(R.id.search_result_reference).text=context.getString(R.string.quran_search_reference,names[ayah.surahNumber].orEmpty(),ayah.ayahNumber)
         // Native line clamping previews the original string; no normalized text or edited substring is displayed.
         view.findViewById<TextView>(R.id.search_result_text).text=ayah.text
+        return view
+    }
+}
+
+class ReadingHistoryAdapter(private val context: Context) : BaseAdapter() {
+    private var items: List<ReadingHistoryEntry> = emptyList()
+    private var names: Map<Int, String> = emptyMap()
+    fun submit(items: List<ReadingHistoryEntry>, surahs: List<Surah>) {
+        if (this.items == items && names.size == surahs.size) return
+        this.items = items
+        names = surahs.associate { it.surahNumber to it.name }
+        notifyDataSetChanged()
+    }
+    override fun getCount() = items.size
+    override fun getItem(position: Int) = items[position]
+    override fun getItemId(position: Int) = items[position].pageNumber.toLong()
+    override fun hasStableIds() = true
+    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+        val view = convertView ?: LayoutInflater.from(context).inflate(R.layout.row_history, parent, false)
+        val item = getItem(position)
+        view.findViewById<TextView>(R.id.history_surah).text = context.getString(R.string.ayah_surah, names[item.surahNumber].orEmpty())
+        view.findViewById<TextView>(R.id.history_location).text = item.ayahNumber?.let {
+            context.getString(R.string.bookmark_ayah_location, item.pageNumber, it)
+        } ?: context.getString(R.string.ayah_page, item.pageNumber)
+        view.findViewById<TextView>(R.id.history_time).text = java.text.DateFormat.getDateTimeInstance(
+            java.text.DateFormat.MEDIUM, java.text.DateFormat.SHORT, java.util.Locale.forLanguageTag("ar")
+        ).format(java.util.Date(item.readAtMillis))
         return view
     }
 }

@@ -46,7 +46,7 @@ class PageAssetUiTest {
             await { a.reader.failed }
             assertEquals(View.VISIBLE,a.findViewById<View>(R.id.page_asset_status).visibility)
             assertEquals(View.GONE,a.findViewById<View>(R.id.page_asset_progress).visibility)
-            assertEquals(a.getString(R.string.page_asset_test_unconfigured),a.findViewById<TextView>(R.id.page_asset_message).text.toString())
+            assertEquals(a.getString(R.string.page_asset_unavailable),a.findViewById<TextView>(R.id.page_asset_message).text.toString())
             a.findViewById<View>(R.id.page_asset_retry).performClick()
             assertEquals(View.VISIBLE,a.findViewById<View>(R.id.page_asset_progress).visibility)
             await { a.reader.failed }

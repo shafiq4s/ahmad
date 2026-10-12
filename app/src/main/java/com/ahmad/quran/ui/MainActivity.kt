@@ -49,6 +49,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var viewModel: MainViewModel
     private lateinit var backCallback: OnBackPressedCallback
     private lateinit var bookmarkAdapter: BookmarkAdapter
+    private lateinit var historyAdapter: ReadingHistoryAdapter
     private lateinit var searchAdapter: SearchResultAdapter
     private var launchComplete = false
     private var previousScreen: Screen? = null
@@ -87,7 +88,8 @@ class MainActivity : AppCompatActivity() {
         ViewCompat.setAccessibilityHeading(findViewById(R.id.screen_title),true)
         mapOf(R.id.home_panel to R.string.home,R.id.quran_panel to R.string.surah_index,
             R.id.search_panel to R.string.quran_search_title,R.id.bookmarks_panel to R.string.bookmarks,
-            R.id.settings_panel to R.string.settings).forEach { (id,title) ->
+            R.id.settings_panel to R.string.settings,R.id.history_panel to R.string.reading_history,
+            R.id.about_panel to R.string.about_heading,R.id.support_panel to R.string.support_heading).forEach { (id,title) ->
             ViewCompat.setAccessibilityPaneTitle(findViewById(id),getString(title))
         }
         ViewCompat.setOnApplyWindowInsetsListener(root) { view,insets ->
@@ -113,7 +115,11 @@ class MainActivity : AppCompatActivity() {
         })
         pageView.onPageSwipe={ step -> viewModel.openPage(viewModel.state.value.pageNumber+step) }
         pageView.onBlankTap={ toggleReaderChrome() }
+        pageView.onAyahTap={ id ->
+            pageView.page?.geometry?.pageNumber?.let { viewModel.recordPageDisplayed(it,id) }
+        }
         pageView.onAyahLongPress={ id ->
+            pageView.page?.geometry?.pageNumber?.let { viewModel.recordPageDisplayed(it,id) }
             val page=checkNotNull(pageView.page).geometry
             pageView.holdSelection()
             ayahLoad?.cancel()
@@ -160,7 +166,12 @@ class MainActivity : AppCompatActivity() {
         bookmarkAdapter=BookmarkAdapter(this) { viewModel.removeBookmark(it.editionId,it.pageNumber) }
         findViewById<ListView>(R.id.bookmarks_list).apply {
             adapter=bookmarkAdapter
-            setOnItemClickListener { _,_,position,_ -> viewModel.openPage(bookmarkAdapter.getItem(position).pageNumber) }
+            setOnItemClickListener { _,_,position,_ -> viewModel.openBookmark(bookmarkAdapter.getItem(position)) }
+        }
+        historyAdapter=ReadingHistoryAdapter(this)
+        findViewById<ListView>(R.id.history_list).apply {
+            adapter=historyAdapter
+            setOnItemClickListener { _,_,position,_ -> viewModel.openHistory(historyAdapter.getItem(position)) }
         }
         backCallback=object:OnBackPressedCallback(false) {
             override fun handleOnBackPressed() { if(!cacheClearBusy) viewModel.navigateBack() }
@@ -175,6 +186,9 @@ class MainActivity : AppCompatActivity() {
         ayahDialog.onBookmarkToggle={ id,page -> viewModel.toggleBookmark(page,id) }
         findViewById<View>(R.id.open_bookmarks).setOnClickListener { viewModel.navigateTo(Screen.BOOKMARKS) }
         findViewById<View>(R.id.open_surahs).setOnClickListener { viewModel.navigateTo(Screen.QURAN) }
+        findViewById<View>(R.id.open_history).setOnClickListener { viewModel.navigateTo(Screen.HISTORY) }
+        findViewById<View>(R.id.open_about).setOnClickListener { viewModel.navigateTo(Screen.ABOUT) }
+        findViewById<View>(R.id.open_support).setOnClickListener { viewModel.navigateTo(Screen.SUPPORT) }
         findViewById<View>(R.id.open_search).setOnClickListener { viewModel.navigateTo(Screen.SEARCH) }
         findViewById<View>(R.id.toggle_bookmark).setOnClickListener {
             val page=pageView.page?.geometry?.pageNumber
@@ -235,11 +249,18 @@ class MainActivity : AppCompatActivity() {
                 Screen.QURAN -> getString(R.string.surah_index)
                 Screen.BOOKMARKS -> getString(R.string.bookmarks)
                 Screen.SEARCH -> getString(R.string.quran_search_title)
+                Screen.HISTORY -> getString(R.string.reading_history)
+                Screen.ABOUT -> getString(R.string.about_heading)
+                Screen.SUPPORT -> getString(R.string.support_heading)
             }
         }
         surahAdapter.submit(state.surahs,state.revelationTypes)
         findViewById<View>(R.id.surah_search_empty).isVisible=surahAdapter.count==0 && !state.loading
         bookmarkAdapter.submit(state.bookmarks,state.surahs)
+        historyAdapter.submit(state.history,state.surahs)
+        findViewById<View>(R.id.history_empty).isVisible=state.history.isEmpty()
+        findViewById<View>(R.id.history_list).isVisible=state.history.isNotEmpty()
+        findViewById<View>(R.id.bookmarks_list).isVisible=state.bookmarks.isNotEmpty()
         searchAdapter.submit(state.searchResults,state.surahs)
         findViewById<View>(R.id.search_progress).isVisible=state.searchLoading
         findViewById<TextView>(R.id.search_status).text=when {
@@ -262,7 +283,7 @@ class MainActivity : AppCompatActivity() {
             isEnabled=reading && !state.loading && !state.error && reader.displaying && pageView.page?.geometry?.pageNumber==state.pageNumber
         }
         ayahDialog.refreshBookmarkAction()
-        mapOf(Screen.HOME to R.id.home_panel,Screen.SEARCH to R.id.search_panel,Screen.QURAN to R.id.quran_panel,Screen.READER to R.id.reader_panel,Screen.SETTINGS to R.id.settings_panel,Screen.BOOKMARKS to R.id.bookmarks_panel).forEach { (screen,id) ->
+        mapOf(Screen.HOME to R.id.home_panel,Screen.SEARCH to R.id.search_panel,Screen.QURAN to R.id.quran_panel,Screen.READER to R.id.reader_panel,Screen.SETTINGS to R.id.settings_panel,Screen.BOOKMARKS to R.id.bookmarks_panel,Screen.HISTORY to R.id.history_panel,Screen.ABOUT to R.id.about_panel,Screen.SUPPORT to R.id.support_panel).forEach { (screen,id) ->
             findViewById<View>(id).isVisible=state.screen==screen
         }
         mapOf(Screen.QURAN to R.id.nav_quran,Screen.SETTINGS to R.id.nav_settings).forEach { (screen,id) ->
@@ -291,6 +312,9 @@ class MainActivity : AppCompatActivity() {
             Screen.HOME, Screen.QURAN -> state.edition?.name.orEmpty()
             Screen.BOOKMARKS -> getString(R.string.bookmarks_subtitle)
             Screen.SEARCH -> getString(R.string.quran_search_help)
+            Screen.HISTORY -> getString(R.string.history_subtitle)
+            Screen.ABOUT -> getString(R.string.about_subtitle)
+            Screen.SUPPORT -> getString(R.string.support_subtitle)
         }
         findViewById<TextView>(R.id.page_indicator).apply {
             text=getString(R.string.page_fraction,state.pageNumber,604)
@@ -329,7 +353,10 @@ class MainActivity : AppCompatActivity() {
         if(state.screen==Screen.READER && !state.loading && !state.error && reader.displaying &&
             pageView.page?.geometry?.pageNumber==state.pageNumber) {
             pageView.setZoom(1f)
-            if(pageView.selectAyah(id)) viewModel.consumeTarget(id)
+            if(pageView.selectAyah(id)) {
+                viewModel.recordPageDisplayed(state.pageNumber,id)
+                viewModel.consumeTarget(id)
+            }
         }
     }
     private fun updatePageAssetStatus() {
@@ -339,7 +366,6 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.page_asset_retry).apply { isVisible=reader.failed;isEnabled=reader.failed }
         findViewById<TextView>(R.id.page_asset_message).setText(when {
             !reader.failed -> R.string.page_asset_loading
-            !pageSourceConfigured && com.ahmad.quran.BuildConfig.DEBUG -> R.string.page_asset_test_unconfigured
             !pageSourceConfigured -> R.string.page_asset_unavailable
             else -> R.string.page_asset_error
         })

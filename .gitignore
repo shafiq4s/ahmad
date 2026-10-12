@@ -40,3 +40,5 @@ tools/reading-experience/screenshots/
 tools/offline-search/screenshots/
 __pycache__/
 *.pyc
+
+/tools/reading-maturity/screenshots/

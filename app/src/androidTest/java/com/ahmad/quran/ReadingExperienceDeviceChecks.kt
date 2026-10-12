@@ -62,6 +62,7 @@ class ReadingExperienceDeviceChecks(private val test: Instrumentation, private v
             activity.findViewById<View>(R.id.toggle_bookmark).performClick()
         }
         check(preferences.bookmarks.single().pageNumber == 121)
+        check(preferences.history.first().pageNumber == 121 && preferences.history.size <= 10)
         main { model.navigateTo(Screen.HOME) }
         waitUntil { activity.findViewById<View>(R.id.home_panel).visibility == View.VISIBLE }
         main {
@@ -131,6 +132,20 @@ class ReadingExperienceDeviceChecks(private val test: Instrumentation, private v
             check(activity.window.attributes.flags and WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON == 0)
         }
         capture("05-settings")
+        main { activity.findViewById<View>(R.id.open_about).performClick() }
+        waitUntil { activity.findViewById<View>(R.id.about_panel).visibility == View.VISIBLE }
+        main {
+            check(activity.findViewById<TextView>(R.id.quran_svg_attribution).text.contains("مشروع مستقل"))
+            check(activity.findViewById<TextView>(R.id.app_version).text.contains(BuildConfig.VERSION_NAME))
+        }
+        capture("06-about")
+        main { activity.onBackPressedDispatcher.onBackPressed() }
+        waitUntil { activity.findViewById<View>(R.id.settings_panel).visibility == View.VISIBLE }
+        main { activity.findViewById<View>(R.id.open_support).performClick() }
+        waitUntil { activity.findViewById<View>(R.id.support_panel).visibility == View.VISIBLE }
+        capture("07-support")
+        main { activity.onBackPressedDispatcher.onBackPressed() }
+        waitUntil { activity.findViewById<View>(R.id.settings_panel).visibility == View.VISIBLE }
         check(preferences.keepScreenAwake && preferences.autoResumeReading && !preferences.showReaderBarsOnOpen)
         main { model.openPage(1) }
         waitUntil { activity.reader.displaying && activity.findViewById<View>(R.id.top_bar).visibility == View.GONE }
@@ -139,6 +154,7 @@ class ReadingExperienceDeviceChecks(private val test: Instrumentation, private v
         waitUntil { activity.findViewById<View>(R.id.settings_panel).visibility == View.VISIBLE }
         val last = preferences.lastLocation
         val bookmarks = preferences.bookmarks
+        val history = preferences.history
         acknowledgeEmulatorBootDialog()
         main { activity.findViewById<View>(R.id.cache_clear).performClick() }
         SystemClock.sleep(400)
@@ -150,7 +166,7 @@ class ReadingExperienceDeviceChecks(private val test: Instrumentation, private v
         check(positive.performAction(android.view.accessibility.AccessibilityNodeInfo.ACTION_CLICK))
         waitUntil { activity.findViewById<TextView>(R.id.cache_feedback).text == activity.getString(R.string.cache_cleared) }
         check(DownloadedPageCache(activity).sizeBytes() == 0L)
-        check(preferences.lastLocation == last && preferences.bookmarks == bookmarks)
+        check(preferences.lastLocation == last && preferences.bookmarks == bookmarks && preferences.history == history)
         check(activity.assets.open("mushaf-svg/001.svg").use { it.read() } >= 0)
         check(activity.assets.open("mushaf-svg/121.json").use { it.read() } >= 0)
         QuranRepository.open(activity).use { check(it.getSurahs().sumOf { s -> s.ayahCount } == 6236) }
@@ -159,6 +175,7 @@ class ReadingExperienceDeviceChecks(private val test: Instrumentation, private v
             .put("resumeTimestamp", true).put("bookmarkModalExactId", true).put("surahNameSearch", true)
             .put("juz7ArtworkPage", 121).put("optionsPersist", true).put("awakeOnlyInReader", true)
             .put("entryBarsHidden", true).put("cacheClearPreservesLocalStateAndCanonicalAssets", true)
-            .put("screenshots", 5).toString(2))
+            .put("historyBoundedAndPreserved", true).put("aboutSupportNaturalBack", true)
+            .put("screenshots", 7).toString(2))
     }
 }

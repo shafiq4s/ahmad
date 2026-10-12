@@ -77,3 +77,11 @@ A hidden, default-off `recitationOnAyahTap` SharedPreferences preference records
 ## Deferred work
 
 No audio, tafsir, translation, notes, word selection, media downloads or additional editions are implemented. Stop after the current stage report. The future recitation design in ARCHITECTURE.md remains design only.
+
+## Local reading history and interface maturity
+
+The home screen offers resume, mushaf, index, bookmarks, offline text search and recent readings. The local history retains at most ten distinct edition/pages, newest first, including the latest selected canonical ayah when present and a timestamp. Returning from a bookmark or history item preserves the saved edition page, even when an ayah spans page boundaries, and selects it through the existing reader API. Only successfully displayed pages are recorded; an unavailable download does not replace the last reading position.
+
+Settings expose actual local preferences and the downloaded-page cache size/clear action. About and Support are separate, scrollable native screens with Back returning to Settings. Support has no payment or networking action. The About page identifies Tanzil, independent Quran.ws and its documented KFQC provenance without claiming government affiliation. Cache clearing leaves seed pages, canonical data, polygons, all settings, bookmarks and history intact. All new UI uses the existing quiet green/ivory tokens and native controls; there are no new dependencies.
+
+See [maturity validation](tools/reading-maturity/REPORT.md) for checks and their runtime scope.

@@ -121,7 +121,7 @@ class OfflineSearchUiTest {
             assertTrue(model.openAyah(AyahId(5,78)));await { a.reader.failed };settle(a)
             assertEquals(AyahId(5,78),model.state.value.targetAyah)
             assertNull(ReadingPreferences(a).lastLocation)
-            assertEquals(a.getString(R.string.page_asset_test_unconfigured),a.findViewById<TextView>(R.id.page_asset_message).text)
+            assertEquals(a.getString(R.string.page_asset_unavailable),a.findViewById<TextView>(R.id.page_asset_message).text)
             capture(a.window.decorView,"06-unavailable-page")
             val retry=a.findViewById<View>(R.id.page_asset_retry)
             retry.performClick();assertFalse(retry.isEnabled);retry.performClick()

@@ -21,7 +21,6 @@
     <string name="jump_ayah_title">رقم الآية</string>
     <string name="first_ayah_number" translatable="false">1</string>
     <string name="jump_ayah_invalid">أدخل رقم آية من 1 إلى %1$d.</string>
-    <string name="page_asset_test_unconfigured">لم يُضبط مصدر تحميل الصفحات في هذه النسخة التجريبية. الصفحات المضمنة والمحفوظة متاحة للقراءة.</string>
     <string name="ayah_options_title">تفاصيل الآية</string>
     <string name="ayah_close">إغلاق</string>
     <string name="ayah_surah">سورة %1$s</string>
@@ -73,7 +72,7 @@ https://github.com/quran-ws/quran-svg</string>
     <string name="page_jump_title">انتقال في المصحف</string>
     <string name="page_jump_hint">أدخل رقم الصفحة من ١ إلى ٦٠٤</string>
     <string name="surah_first_page">صفحة %1$d</string>
-    <string name="settings_subtitle">القراءة ومعلومات التطبيق</string>
+    <string name="settings_subtitle">خيارات قراءة تناسبك</string>
     <string name="app_version">الإصدار %1$s</string>
     <string name="sources_heading">المصادر والترخيص</string>
     <string name="bookmarks">العلامات المرجعية</string>
@@ -98,7 +97,7 @@ https://github.com/quran-ws/quran-svg</string>
     <string name="cache_size">حجم الصفحات المنزلة: %1$s</string>
     <string name="cache_help">تبقى الصفحات المنزلة متاحة للقراءة دون اتصال.</string>
     <string name="cache_clear">مسح الصفحات المنزلة</string>
-    <string name="cache_confirm">ستحتاج الصفحات المنزلة إلى التحميل مرة أخرى. ستبقى الصفحات المضمنة والعلامات وآخر موضع قراءة محفوظة.</string>
+    <string name="cache_confirm">ستحتاج الصفحات المنزلة إلى التحميل مرة أخرى. ستبقى الصفحات المضمنة والعلامات وسجل القراءة والإعدادات محفوظة.</string>
     <string name="cache_clearing">جارٍ مسح الصفحات…</string>
     <string name="cache_cleared">تم مسح الصفحات المنزلة</string>
     <string name="cache_clear_failed">تعذر مسح بعض الصفحات. حاول مرة أخرى.</string>
@@ -111,4 +110,18 @@ https://github.com/quran-ws/quran-svg</string>
     <string name="about_sources">النص القرآني: Tanzil
 صفحات المصحف ومواضع الآيات: Quran.ws</string>
     <string name="page_asset_unavailable">هذه الصفحة غير متاحة على جهازك حاليًا. يمكنك قراءة الصفحات المضمنة أو المحفوظة.</string>
+    <string name="reading_history">آخر القراءات</string>
+    <string name="history_hint">آخر ١٠ صفحات قرأتها، من الأحدث إلى الأقدم</string>
+    <string name="history_empty">تبدأ رحلتك من أول صفحة</string>
+    <string name="history_empty_help">افتح المصحف، وستجد مواضع قراءتك هنا للعودة إليها بسهولة.</string>
+    <string name="bookmarks_empty_help">المس رمز العلامة أثناء القراءة لحفظ الصفحة والعودة إليها لاحقًا.</string>
+    <string name="android_support">يعمل على Android 6 والإصدارات الأحدث</string>
+    <string name="about_subtitle">مصادر موثقة، وقراءة مريحة</string>
+    <string name="support_subtitle">معًا يستمر المشروع</string>
+    <string name="bookmark_remove_named">إزالة علامة سورة %1$s، الصفحة %2$d</string>
+    <string name="licenses_summary">نص Tanzil: CC BY 3.0.
+مساهمة Quran.ws وبيانات المواضع: CC BY 4.0؛ أدواته: MIT.
+صفحات حفص: شروط الناشر الموثقة في الإشعار.
+AndroidSVG: Apache 2.0.</string>
+    <string name="history_subtitle">مواضع قراءتك على هذا الجهاز</string>
 </resources>

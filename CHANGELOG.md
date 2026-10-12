@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased — Local reading history and interface maturity
+
+- Added a local ten-page reading history with timestamps and optional selected canonical ayah identity. Revisiting a page moves it to the front; history and bookmarks return to the saved edition page and selection.
+- Polished RTL bookmark/history empty states, contextual removal descriptions and resume navigation; preserved the existing fast surah-name filter and edition first-page labels.
+- Separated About and Support into lightweight native pages, with natural Back navigation, real version/Android compatibility/source attribution and a quiet future-support badge without payment actions.
+- Settings retain only implemented reading preferences and downloaded-page cache controls. Clearing that cache preserves all preference-backed history, bookmarks and last position plus bundled canonical/edition assets.
+- Removed the visible debug source-configuration message in favor of a consistent Arabic offline message and guarded retry action.
+- Kept Quran source bytes, highlights, hit-testing, renderer, page mapping, downloader, minSdk and dependencies unchanged.
+
 ## Unreleased — Home, offline Quran search and ayah navigation
 
 - Added a compact RTL home screen with last-page resume and clear mushaf/index/bookmark/search entry points; retained optional automatic resume and local preferences.
