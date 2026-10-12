@@ -2,7 +2,6 @@ package com.ahmad.quran.ui
 
 import android.animation.ValueAnimator
 import android.content.Context
-import android.content.res.Configuration
 import android.os.Bundle
 import android.view.Gravity
 import android.view.Window
@@ -43,7 +42,6 @@ import com.ahmad.quran.R
 import com.ahmad.quran.mushaf.svg.NativeSvgPageView
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.Job
-import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
     private lateinit var viewModel: MainViewModel
@@ -73,9 +71,7 @@ class MainActivity : AppCompatActivity() {
         private set
 
     override fun attachBaseContext(newBase: Context) {
-        val arabic=Locale.forLanguageTag("ar")
-        val configuration=Configuration(newBase.resources.configuration).apply { setLocale(arabic);setLayoutDirection(arabic) }
-        super.attachBaseContext(newBase.createConfigurationContext(configuration))
+        super.attachBaseContext(InterfaceLocales.wrap(newBase))
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         val createdAt=System.nanoTime()
@@ -85,6 +81,12 @@ class MainActivity : AppCompatActivity() {
         WindowCompat.setDecorFitsSystemWindows(window,false)
         setContentView(R.layout.activity_main)
         val root=findViewById<View>(R.id.app_root)
+        val direction=InterfaceLocales.direction(InterfaceLocales.effective(this))
+        window.decorView.layoutDirection=direction
+        root.layoutDirection=direction
+        root.textDirection=if(direction==View.LAYOUT_DIRECTION_RTL) View.TEXT_DIRECTION_RTL else View.TEXT_DIRECTION_LTR
+        findViewById<android.widget.ImageButton>(R.id.previous_page).setImageResource(if(direction==View.LAYOUT_DIRECTION_RTL) R.drawable.ic_chevron_right else R.drawable.ic_chevron_left)
+        findViewById<android.widget.ImageButton>(R.id.next_page).setImageResource(if(direction==View.LAYOUT_DIRECTION_RTL) R.drawable.ic_chevron_left else R.drawable.ic_chevron_right)
         ViewCompat.setAccessibilityHeading(findViewById(R.id.screen_title),true)
         mapOf(R.id.home_panel to R.string.home,R.id.quran_panel to R.string.surah_index,
             R.id.search_panel to R.string.quran_search_title,R.id.bookmarks_panel to R.string.bookmarks,
@@ -186,6 +188,8 @@ class MainActivity : AppCompatActivity() {
         ayahDialog.onBookmarkToggle={ id,page -> viewModel.toggleBookmark(page,id) }
         findViewById<View>(R.id.open_bookmarks).setOnClickListener { viewModel.navigateTo(Screen.BOOKMARKS) }
         findViewById<View>(R.id.open_surahs).setOnClickListener { viewModel.navigateTo(Screen.QURAN) }
+        findViewById<View>(R.id.choose_language).setOnClickListener { showLanguageChoice() }
+        refreshLanguageChoice()
         findViewById<View>(R.id.open_history).setOnClickListener { viewModel.navigateTo(Screen.HISTORY) }
         findViewById<View>(R.id.open_about).setOnClickListener { viewModel.navigateTo(Screen.ABOUT) }
         findViewById<View>(R.id.open_support).setOnClickListener { viewModel.navigateTo(Screen.SUPPORT) }
@@ -242,7 +246,7 @@ class MainActivity : AppCompatActivity() {
         if (!reading) pageJumpDialog?.dismiss()
         findViewById<TextView>(R.id.screen_title).apply {
             text=when(state.screen) {
-                Screen.READER -> state.surahs.firstOrNull { it.surahNumber==state.anchor.surahNumber }?.let { getString(R.string.ayah_surah,it.name) }
+                Screen.READER -> state.surahs.firstOrNull { it.surahNumber==state.anchor.surahNumber }?.let { getString(R.string.ayah_surah,InterfaceLocales.displayName(this@MainActivity,it.name)) }
                     ?: getString(R.string.app_name)
                 Screen.SETTINGS -> getString(R.string.settings)
                 Screen.HOME -> getString(R.string.app_name)
@@ -307,9 +311,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<View>(R.id.retry_load).isVisible=state.error
         findViewById<TextView>(R.id.reader_location).text=when(state.screen) {
             Screen.READER -> state.juzNumber?.let { getString(R.string.ayah_juz,it) }
-                ?: state.edition?.name.orEmpty()
+                ?: getString(R.string.mushaf_edition_label)
             Screen.SETTINGS -> getString(R.string.settings_subtitle)
-            Screen.HOME, Screen.QURAN -> state.edition?.name.orEmpty()
+            Screen.HOME, Screen.QURAN -> getString(R.string.mushaf_edition_label)
             Screen.BOOKMARKS -> getString(R.string.bookmarks_subtitle)
             Screen.SEARCH -> getString(R.string.quran_search_help)
             Screen.HISTORY -> getString(R.string.history_subtitle)
@@ -325,8 +329,8 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.last_location).apply {
             text=state.lastLocation?.let { location ->
                 val name=state.surahs.firstOrNull { it.surahNumber==location.surahNumber }?.name.orEmpty()
-                if(location.editionId==state.edition?.editionId) getString(R.string.resume_details,name,location.pageNumber)
-                else getString(R.string.resume_surah,name,location.ayahNumber)
+                if(location.editionId==state.edition?.editionId) getString(R.string.resume_details,InterfaceLocales.displayName(this@MainActivity,name),location.pageNumber)
+                else getString(R.string.resume_surah,InterfaceLocales.displayName(this@MainActivity,name),location.ayahNumber)
             } ?: getString(R.string.last_read_empty)
         }
         findViewById<SwitchCompat>(R.id.dark_mode).isChecked=state.darkMode
@@ -410,7 +414,25 @@ class MainActivity : AppCompatActivity() {
                     refreshCacheSize()
                 }
             }.create()
-        dialog.show();dialog.window?.setBackgroundDrawableResource(R.drawable.ayah_dialog_background)
+        dialog.show();dialog.window?.decorView?.layoutDirection=InterfaceLocales.direction(InterfaceLocales.effective(this));dialog.window?.setBackgroundDrawableResource(R.drawable.ayah_dialog_background)
+    }
+    private fun refreshLanguageChoice() {
+        val choice=InterfaceLocales.choice(this)
+        findViewById<TextView>(R.id.language_value).text=if(choice==InterfaceLocales.SYSTEM) getString(R.string.language_system)
+            else resources.getStringArray(R.array.language_names)[InterfaceLocales.tags.indexOf(choice)]
+    }
+    private fun showLanguageChoice() {
+        val choices=listOf(InterfaceLocales.SYSTEM)+InterfaceLocales.tags
+        val labels=arrayOf(getString(R.string.language_system))+resources.getStringArray(R.array.language_names)
+        val dialog=AlertDialog.Builder(this).setTitle(R.string.language)
+            .setSingleChoiceItems(labels,choices.indexOf(InterfaceLocales.choice(this))) { window,index ->
+                window.dismiss()
+                InterfaceLocales.select(this,choices[index])
+                refreshLanguageChoice()
+            }.setNegativeButton(R.string.cancel,null).create()
+        dialog.show()
+        dialog.window?.decorView?.layoutDirection=InterfaceLocales.direction(InterfaceLocales.effective(this))
+        dialog.window?.setBackgroundDrawableResource(R.drawable.ayah_dialog_background)
     }
     private fun readerChrome(): List<View> = listOf(R.id.top_bar,R.id.bottom_bar).map { findViewById(it) }
 
@@ -485,7 +507,7 @@ class MainActivity : AppCompatActivity() {
             if(!pageMode) {
                 WindowCompat.getInsetsController(checkNotNull(dialog.window),input).hide(WindowInsetsCompat.Type.ime())
                 val labels=if(checked==R.id.jump_mode_juz) (1..30).map { getString(R.string.ayah_juz,it) }
-                    else viewModel.state.value.surahs.map { getString(R.string.number_value,it.surahNumber)+" · "+it.name }
+                    else viewModel.state.value.surahs.map { getString(R.string.surah_choice,it.surahNumber,InterfaceLocales.displayName(this@MainActivity,it.name)) }
                 selection.adapter=ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item,labels)
                 selection.setSelection(if(checked==R.id.jump_mode_juz)(viewModel.state.value.juzNumber ?: 1)-1 else viewModel.state.value.anchor.surahNumber-1)
             } else input.requestFocus()
@@ -526,6 +548,7 @@ class MainActivity : AppCompatActivity() {
             setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE or WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE)
         }
         dialog.show()
+        dialog.window?.decorView?.layoutDirection=InterfaceLocales.direction(InterfaceLocales.effective(this))
         val width=minOf((480*resources.displayMetrics.density).toInt(),(findViewById<View>(R.id.app_root).width*.90f).toInt())
         dialog.window?.setLayout(width,android.view.ViewGroup.LayoutParams.WRAP_CONTENT)
         input.requestFocus();input.selectAll()

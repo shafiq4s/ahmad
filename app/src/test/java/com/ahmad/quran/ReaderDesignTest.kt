@@ -26,7 +26,7 @@ import java.io.File
 import java.time.Duration
 
 @RunWith(RobolectricTestRunner::class)
-@Config(sdk=[23,36],qualifiers="w360dp-h640dp-xhdpi")
+@Config(sdk=[23,36],qualifiers="ar-w360dp-h640dp-xhdpi")
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
 class ReaderDesignTest {
     @org.junit.Before fun installLocalRenderingFixtures() {

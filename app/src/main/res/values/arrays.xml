@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language_names" translatable="false">
+        <item>العربية</item><item>English</item><item>دری</item><item>پښتو</item>
+        <item>O‘zbekcha</item><item>Тоҷикӣ</item><item>هزارگی</item>
+    </string-array>
+</resources>

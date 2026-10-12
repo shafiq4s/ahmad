@@ -40,7 +40,7 @@
     <string name="retry">إعادة المحاولة</string>
     <string name="page_asset_loading">جارٍ تحميل الصفحة…</string>
     <string name="page_asset_error">تعذر تحميل الصفحة. تحقق من الاتصال وحاول مرة أخرى.</string>
-    <string name="number_value">%1$d</string>
+    <string name="number_value" translatable="false">%1$d</string>
     <string name="meccan">مكية</string>
     <string name="medinan">مدنية</string>
     <string name="surah_type_count">%1$s · عدد الآيات: %2$d</string>
@@ -52,23 +52,20 @@
     <string name="dark_mode">الوضع الداكن</string>
     <string name="previous_page">الصفحة السابقة</string>
     <string name="next_page">الصفحة التالية</string>
-    <string name="page_value">%1$d</string>
+    <string name="page_value" translatable="false">%1$d</string>
     <string name="page_number">رقم الصفحة</string>
     <string name="go_page">انتقال</string>
     <string name="page_invalid">أدخل رقم صفحة من 1 إلى %1$d.</string>
     <string name="about_heading">حول التطبيق</string>
     <string name="about_description">النص القرآني محفوظ محليًا. صفحات المصحف متاحة دون اتصال بعد تحميلها.</string>
-    <string name="tanzil_attribution">نص القرآن وبيانات المصحف: Tanzil Project
-https://tanzil.net
-Creative Commons Attribution 3.0</string>
+    <string name="tanzil_attribution">نص القرآن وبيانات المصحف: Tanzil Project\nhttps://tanzil.net\nCreative Commons Attribution 3.0</string>
     <string name="tanzil_terms">النص محفوظ كما ورد من المصدر دون تغيير.</string>
     <string name="show_license">إشعار الترخيص</string>
-    <string name="selected_ayah">%1$d:%2$d</string>
+    <string name="selected_ayah" translatable="false">%1$d:%2$d</string>
     <string name="mushaf_page_description">صفحة المصحف. اسحب إلى اليمين للتقدم وإلى اليسار للرجوع. المس آية لتحديدها، واضغط مطولًا لخياراتها. المس الفراغ لإظهار عناصر القراءة أو إخفائها.</string>
     <string name="svg_zoom_help">كبّر صفحة المصحف بإصبعين. المس الفراغ لإظهار الأشرطة أو إخفائها. التنقل بالسحب متاح بحجم الصفحة الأصلي.</string>
-    <string name="quran_svg_attribution">Quran.ws مشروع مستقل، ومصدر صفحات المصحف وبيانات مواضع الآيات. توثيقه يُرجع أصل صفحات حفص إلى مصحف مجمع الملك فهد لعام ١٤٤١هـ.
-https://github.com/quran-ws/quran-svg</string>
-    <string name="page_fraction">%1$d / %2$d</string>
+    <string name="quran_svg_attribution">Quran.ws مشروع مستقل، ومصدر صفحات المصحف وبيانات مواضع الآيات. توثيقه يُرجع أصل صفحات حفص إلى مصحف مجمع الملك فهد لعام ١٤٤١هـ.\nhttps://github.com/quran-ws/quran-svg</string>
+    <string name="page_fraction" translatable="false">%1$d / %2$d</string>
     <string name="page_jump_title">انتقال في المصحف</string>
     <string name="page_jump_hint">أدخل رقم الصفحة من ١ إلى ٦٠٤</string>
     <string name="surah_first_page">صفحة %1$d</string>
@@ -107,8 +104,7 @@ https://github.com/quran-ws/quran-svg</string>
     <string name="coming_soon">قريبًا</string>
     <string name="privacy_heading">الخصوصية</string>
     <string name="privacy_placeholder">سياسة الخصوصية قيد الإعداد، وستتوفر قبل النشر العام.</string>
-    <string name="about_sources">النص القرآني: Tanzil
-صفحات المصحف ومواضع الآيات: Quran.ws</string>
+    <string name="about_sources">النص القرآني: Tanzil\nصفحات المصحف ومواضع الآيات: Quran.ws</string>
     <string name="page_asset_unavailable">هذه الصفحة غير متاحة على جهازك حاليًا. يمكنك قراءة الصفحات المضمنة أو المحفوظة.</string>
     <string name="reading_history">آخر القراءات</string>
     <string name="history_hint">آخر ١٠ صفحات قرأتها، من الأحدث إلى الأقدم</string>
@@ -119,9 +115,11 @@ https://github.com/quran-ws/quran-svg</string>
     <string name="about_subtitle">مصادر موثقة، وقراءة مريحة</string>
     <string name="support_subtitle">معًا يستمر المشروع</string>
     <string name="bookmark_remove_named">إزالة علامة سورة %1$s، الصفحة %2$d</string>
-    <string name="licenses_summary">نص Tanzil: CC BY 3.0.
-مساهمة Quran.ws وبيانات المواضع: CC BY 4.0؛ أدواته: MIT.
-صفحات حفص: شروط الناشر الموثقة في الإشعار.
-AndroidSVG: Apache 2.0.</string>
+    <string name="licenses_summary">نص Tanzil: CC BY 3.0.\nمساهمة Quran.ws وبيانات المواضع: CC BY 4.0؛ أدواته: MIT.\nصفحات حفص: شروط الناشر الموثقة في الإشعار.\nAndroidSVG: Apache 2.0.</string>
     <string name="history_subtitle">مواضع قراءتك على هذا الجهاز</string>
+    <string name="language">اللغة</string>
+    <string name="language_system">تلقائي — لغة الجهاز</string>
+    <string name="language_description">اختر لغة الواجهة. يبقى نص القرآن كما ورد من المصدر.</string>
+    <string name="mushaf_edition_label">مصحف المدينة · حفص</string>
+    <string name="surah_choice" translatable="false">%1$d · %2$s</string>
 </resources>

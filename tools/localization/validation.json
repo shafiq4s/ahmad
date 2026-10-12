@@ -1,0 +1,76 @@
+{
+  "tests": {
+    "app": {
+      "tests": 130,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "svg-native-prototype": {
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "testedApis": [
+    23,
+    36
+  ],
+  "platform": "Robolectric; UI captures use native Canvas",
+  "lint": {
+    "errors": 0,
+    "warnings": 11,
+    "issueIds": [
+      "UnusedAttribute",
+      "LockedOrientationActivity",
+      "NewerVersionAvailable",
+      "DiscouragedApi",
+      "InefficientWeight",
+      "Overdraw",
+      "UselessParent",
+      "UselessParent",
+      "TooManyViews",
+      "UseKtx",
+      "UseKtx"
+    ]
+  },
+  "frozenReferencesUnchanged": 16,
+  "quranReadingModelsRendererAndDownloaderUnchanged": true,
+  "canonicalAndEditionAssetBytesExact": true,
+  "sourceArtworkCount": 604,
+  "packagedSeedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    300,
+    600,
+    601,
+    602,
+    603,
+    604
+  ],
+  "packagedOfficialPolygons": 604,
+  "defaultBaseUrl": "",
+  "newDependencies": [],
+  "uiMessagesPerLanguage": 116,
+  "languages": [
+    "ar",
+    "en",
+    "fa-AF",
+    "ps-AF",
+    "uz-UZ",
+    "tg-TJ",
+    "haz-AF"
+  ],
+  "hazaragiQualifierCompiledAndRuntimeVerified": true,
+  "translationReview": "TRANSLATION_REVIEW.md",
+  "apk": {
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "bytes": 6938261,
+    "sha256": "6b9eda79e2ba2b5f2923b2e98ee6084a16dd1b2748264a09c0e563c0e5703e96",
+    "previousBytes": 6876578
+  }
+}

@@ -42,3 +42,5 @@ __pycache__/
 *.pyc
 
 /tools/reading-maturity/screenshots/
+
+/tools/localization/screenshots/

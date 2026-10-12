@@ -34,7 +34,7 @@ import org.robolectric.annotation.GraphicsMode
 import java.time.Duration
 
 @RunWith(RobolectricTestRunner::class)
-@Config(sdk=[23,36])
+@Config(sdk=[23,36],qualifiers="ar")
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
 class MainActivityTest {
     @org.junit.Before fun installLocalRenderingFixtures() {

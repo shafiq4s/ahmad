@@ -37,7 +37,7 @@ import java.io.File
 import java.time.Duration
 
 @RunWith(RobolectricTestRunner::class)
-@Config(sdk=[23,36],qualifiers="w412dp-h800dp-xhdpi")
+@Config(sdk=[23,36],qualifiers="ar-w412dp-h800dp-xhdpi")
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
 class AyahOptionsDialogTest {
     @org.junit.Before fun installLocalRenderingFixtures() {

@@ -46,6 +46,7 @@ class AyahOptionsDialog(private val activity: AppCompatActivity, private val onC
         dialog.supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setContentView(R.layout.ayah_options_dialog)
         root = checkNotNull(dialog.findViewById(R.id.ayah_dialog))
+        root.layoutDirection=InterfaceLocales.direction(InterfaceLocales.effective(activity))
         dialog.setCanceledOnTouchOutside(true)
         dialog.setOnDismissListener { if (!dialog.isShowing) finishDismiss() }
         dialog.window?.apply {
@@ -67,7 +68,7 @@ class AyahOptionsDialog(private val activity: AppCompatActivity, private val onC
             text?.let {
                 val clipboard = activity.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
                 clipboard.setPrimaryClip(ClipData.newPlainText(activity.getString(R.string.ayah_options_title), it))
-                if (android.os.Build.VERSION.SDK_INT < 33) Toast.makeText(activity.applicationContext, R.string.ayah_copied, Toast.LENGTH_SHORT).show()
+                if (android.os.Build.VERSION.SDK_INT < 33) Toast.makeText(activity.applicationContext, activity.getString(R.string.ayah_copied), Toast.LENGTH_SHORT).show()
             }
         }
         view<Button>(R.id.ayah_dialog_share).setOnClickListener {
@@ -85,7 +86,7 @@ class AyahOptionsDialog(private val activity: AppCompatActivity, private val onC
     fun begin(id: AyahId, surahName: String, edition: String, page: Int) {
         ayahId = id; editionId = edition; pageNumber = page; text = null
         back.isEnabled = true
-        view<TextView>(R.id.ayah_dialog_surah).text = activity.getString(R.string.ayah_surah, surahName)
+        view<TextView>(R.id.ayah_dialog_surah).text = activity.getString(R.string.ayah_surah, InterfaceLocales.displayName(activity, surahName))
         view<TextView>(R.id.ayah_dialog_number).text = activity.getString(R.string.ayah_number, id.ayahNumber)
         view<TextView>(R.id.ayah_dialog_page).text = activity.getString(R.string.ayah_page, page)
         view<View>(R.id.ayah_dialog_juz).isVisible = false

@@ -76,12 +76,12 @@ class BookmarkAdapter(private val context: Context, private val onRemove: (Readi
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val view=convertView ?: LayoutInflater.from(context).inflate(R.layout.row_bookmark,parent,false)
         val item=getItem(position)
-        view.findViewById<TextView>(R.id.bookmark_surah).text=context.getString(R.string.ayah_surah,names[item.surahNumber].orEmpty())
+        view.findViewById<TextView>(R.id.bookmark_surah).text=context.getString(R.string.ayah_surah,InterfaceLocales.displayName(context, names[item.surahNumber].orEmpty()))
         view.findViewById<TextView>(R.id.bookmark_location).text=item.ayahNumber?.let {
             context.getString(R.string.bookmark_ayah_location,item.pageNumber,it)
         } ?: context.getString(R.string.ayah_page,item.pageNumber)
         view.findViewById<View>(R.id.bookmark_remove).apply {
-            contentDescription = context.getString(R.string.bookmark_remove_named, names[item.surahNumber].orEmpty(), item.pageNumber)
+            contentDescription = context.getString(R.string.bookmark_remove_named, InterfaceLocales.displayName(context, names[item.surahNumber].orEmpty()), item.pageNumber)
             setOnClickListener { onRemove(item) }
         }
         return view
@@ -104,7 +104,7 @@ class SearchResultAdapter(private val context: Context) : BaseAdapter() {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val view=convertView ?: LayoutInflater.from(context).inflate(R.layout.row_search_result,parent,false)
         val ayah=getItem(position)
-        view.findViewById<TextView>(R.id.search_result_reference).text=context.getString(R.string.quran_search_reference,names[ayah.surahNumber].orEmpty(),ayah.ayahNumber)
+        view.findViewById<TextView>(R.id.search_result_reference).text=context.getString(R.string.quran_search_reference,InterfaceLocales.displayName(context, names[ayah.surahNumber].orEmpty()),ayah.ayahNumber)
         // Native line clamping previews the original string; no normalized text or edited substring is displayed.
         view.findViewById<TextView>(R.id.search_result_text).text=ayah.text
         return view
@@ -127,12 +127,12 @@ class ReadingHistoryAdapter(private val context: Context) : BaseAdapter() {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val view = convertView ?: LayoutInflater.from(context).inflate(R.layout.row_history, parent, false)
         val item = getItem(position)
-        view.findViewById<TextView>(R.id.history_surah).text = context.getString(R.string.ayah_surah, names[item.surahNumber].orEmpty())
+        view.findViewById<TextView>(R.id.history_surah).text = context.getString(R.string.ayah_surah, InterfaceLocales.displayName(context, names[item.surahNumber].orEmpty()))
         view.findViewById<TextView>(R.id.history_location).text = item.ayahNumber?.let {
             context.getString(R.string.bookmark_ayah_location, item.pageNumber, it)
         } ?: context.getString(R.string.ayah_page, item.pageNumber)
         view.findViewById<TextView>(R.id.history_time).text = java.text.DateFormat.getDateTimeInstance(
-            java.text.DateFormat.MEDIUM, java.text.DateFormat.SHORT, java.util.Locale.forLanguageTag("ar")
+            java.text.DateFormat.MEDIUM, java.text.DateFormat.SHORT, InterfaceLocales.dateLocale(context)
         ).format(java.util.Date(item.readAtMillis))
         return view
     }

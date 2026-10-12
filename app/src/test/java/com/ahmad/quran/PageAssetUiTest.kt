@@ -23,7 +23,7 @@ import org.robolectric.RobolectricTestRunner
 import java.io.File
 
 @RunWith(RobolectricTestRunner::class)
-@Config(sdk=[23,36])
+@Config(sdk=[23,36],qualifiers="ar")
 @GraphicsMode(GraphicsMode.Mode.NATIVE)
 class PageAssetUiTest {
     private fun await(condition:()->Boolean) {

@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased — Seven interface languages
+
+- Added System/manual language selection using existing AppCompat, with local persistence before Android 13 and native per-app locale settings on Android 13+.
+- Added complete Arabic, English, Afghan Dari/Pashto/Hazaragi, Uzbek Latin and Tajik Cyrillic UI resources plus a native language picker and locale config.
+- Applied explicit regional fallback for bare/AF Persian vs Iranian Persian; unknown device languages fall back to Arabic.
+- Adapted UI layout/text direction, dialogs, arrows, mixed-script labels and long buttons without mirroring Mushaf pages or changing Quran/cache/reading models.
+- Added resource-completeness, regional detection, language-switch data-preservation and canonical-text/touch regressions. Recorded provisional native-speaker review terms.
+
 ## Unreleased — Local reading history and interface maturity
 
 - Added a local ten-page reading history with timestamps and optional selected canonical ayah identity. Revisiting a page moves it to the front; history and bookmarks return to the saved edition page and selection.

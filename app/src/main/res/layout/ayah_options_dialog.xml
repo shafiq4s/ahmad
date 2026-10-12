@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/ayah_dialog" android:layout_width="match_parent" android:layout_height="wrap_content"
-    android:orientation="vertical" android:layoutDirection="rtl" android:padding="20dp"
+    android:orientation="vertical" android:layoutDirection="inherit" android:padding="20dp"
     android:background="@drawable/ayah_dialog_background">
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal"
         android:gravity="center_vertical">
         <TextView android:id="@+id/ayah_dialog_surah" android:layout_width="0dp" android:layout_height="wrap_content"
-            android:layout_weight="1" android:gravity="start" android:textDirection="rtl" android:textColor="@color/primary"
+            android:layout_weight="1" android:gravity="start" android:textDirection="firstStrong" android:textColor="@color/primary"
             android:textSize="22sp" android:textStyle="bold" />
         <Button android:id="@+id/ayah_dialog_close" style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content" android:layout_height="48dp" android:minWidth="48dp"
@@ -27,7 +27,7 @@
     <androidx.core.widget.NestedScrollView android:id="@+id/ayah_dialog_scroll" android:layout_width="match_parent"
         android:layout_height="wrap_content" android:layout_weight="1" android:clipToPadding="false">
         <TextView android:id="@+id/ayah_dialog_text" android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:paddingTop="12dp" android:paddingBottom="16dp" android:gravity="start" android:textDirection="rtl"
+            android:paddingTop="12dp" android:paddingBottom="16dp" android:layoutDirection="rtl" android:gravity="start" android:textDirection="rtl"
             android:fontFamily="serif" android:includeFontPadding="true" android:lineSpacingExtra="8dp"
             android:textColor="@color/text_primary" android:textSize="26sp" />
     </androidx.core.widget.NestedScrollView>
