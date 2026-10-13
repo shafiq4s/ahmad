@@ -53,3 +53,7 @@ Review `Нишонаҳо` (bookmarks), `Хонданҳои охирин` (recent
 - Technical names, publisher references, URLs and license identifiers stay intact. Quran.ws is described as independent; KFQC is identified only through the documented upstream provenance.
 - Language autonyms are kept in resources and always displayed in their own scripts. Dates follow the chosen UI locale. Hazaragi uses `fa-AF` only for calendar presentation because Android/Java CLDR lacks reliable Hazaragi date data; the application locale, language name, resource qualifier and Hazaragi UI text remain `haz-AF`.
 - The navigation descriptions intentionally retain the established Mushaf swipe direction in all languages: right advances, left goes back. UI controls change direction; page artwork and coordinates never mirror.
+
+## Reader gesture instruction update
+
+Review the new `reader_gesture_help` and `mushaf_page_description` wording in all seven locales: short tap controls the reader bars, a half-second hold selects, continuing for approximately one second opens options, and right/left retains the approved Mushaf page order. These UI instructions replace obsolete pinch/zoom wording without changing any other translation or canonical Quran text.

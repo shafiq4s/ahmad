@@ -58,8 +58,8 @@
     <string name="tanzil_attribution">Qur’on matni va ma’lumotlari: Tanzil Project\nhttps://tanzil.net\nCreative Commons Attribution 3.0</string>
     <string name="tanzil_terms">Matn manbadan olingan shaklda, o‘zgartirilmasdan saqlanadi.</string>
     <string name="show_license">Litsenziya bildirishnomasi</string>
-    <string name="mushaf_page_description">Mushaf sahifasi. Oldinga o‘tish uchun o‘ngga, orqaga qaytish uchun chapga suring. Oyatni tanlash uchun bosing; uning imkoniyatlarini ochish uchun bosib turing. Boshqaruv tugmalarini ko‘rsatish yoki yashirish uchun bo‘sh joyga bosing.</string>
-    <string name="svg_zoom_help">Sahifani ikki barmoq bilan kattalashtiring. Boshqaruv tugmalarini ko‘rsatish yoki yashirish uchun bo‘sh joyga bosing. Sahifalarni surish asl o‘lchamda ishlaydi.</string>
+    <string name="mushaf_page_description">Mushaf sahifasi. O‘qish tugmalarini ko‘rsatish yoki yashirish uchun teging. Oyatni tanlash uchun yarim soniya bosib turing; uning amallarini ochish uchun taxminan bir soniya ushlab turing. Keyingi sahifa uchun o‘ngga, oldingi sahifa uchun chapga suring.</string>
+    <string name="reader_gesture_help">Tugmalarni ko‘rsatish yoki yashirish uchun sahifaga teging. Oyatni tanlash uchun yarim soniya bosib turing; amallarini ochish uchun ushlab turishda davom eting. Sahifalarni o‘ngga yoki chapga surib almashtiring.</string>
     <string name="quran_svg_attribution">Quran.ws — mushaf sahifalari va oyat joylashuvlarini taqdim etuvchi mustaqil loyiha. Uning hujjatlarida Hafs sahifalari manbasi sifatida Qirol Fahd Qur’on chop etish majmuasining hijriy 1441-yilgi mushafi ko‘rsatilgan.\nhttps://github.com/quran-ws/quran-svg</string>
     <string name="page_jump_title">Mushafdagi joyga o‘tish</string>
     <string name="page_jump_hint">1 dan 604 gacha sahifa raqamini kiriting</string>

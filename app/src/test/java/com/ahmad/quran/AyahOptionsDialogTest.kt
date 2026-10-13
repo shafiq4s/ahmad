@@ -77,13 +77,13 @@ class AyahOptionsDialogTest {
     private fun touch(v:NativeSvgPageView,p:PagePoint,long:Boolean) {
         val now=SystemClock.uptimeMillis()
         val down=MotionEvent.obtain(now,now,MotionEvent.ACTION_DOWN,p.x,p.y,0);v.dispatchTouchEvent(down);down.recycle()
-        shadowOf(Looper.getMainLooper()).idleFor(Duration.ofMillis(if(long)(ViewConfiguration.getLongPressTimeout()+ViewConfiguration.getTapTimeout()+30).toLong() else 60))
+        shadowOf(Looper.getMainLooper()).idleFor(Duration.ofMillis(if(long)NativeSvgPageView.AYAH_OPTIONS_HOLD_MS+30 else 60))
         val up=MotionEvent.obtain(now,SystemClock.uptimeMillis(),MotionEvent.ACTION_UP,p.x,p.y,0);v.dispatchTouchEvent(up);up.recycle()
     }
     private fun press(a:MainActivity,v:NativeSvgPageView,id:AyahId) {
         val p=point(a,v,id);assertEquals(id,v.hitTest(p.x,p.y));touch(v,p,true)
         await { a.ayahDialog.dialog.findViewById<Button>(R.id.ayah_dialog_copy)!!.isEnabled };settle(a)
-        assertEquals(id,v.selectedAyah);assertEquals(id,a.ayahDialog.ayahId);assertEquals(id,v.hitTest(p.x,p.y))
+        assertEquals(id,v.selectedAyah);assertEquals(id,a.ayahDialog.ayahId);val fitted=point(a,v,id);assertEquals(id,v.hitTest(fitted.x,fitted.y))
     }
 
     @Test fun fiveCanonicalAyahsKeepTextMetadataAndTextOnlyCopyShareInCenteredModal() {
@@ -135,44 +135,28 @@ class AyahOptionsDialogTest {
         } finally { controller.pause().stop().destroy() }
     }
 
-    @Test fun singleTapSelectsOnlyAndBlankTapExpandsViewportWithoutBreakingIdentityZoomOrSwipe() {
+    @Test fun shortTapOnlyTogglesChromeAndViewportStillMapsAyahsAfterPinchIsIgnored() {
         val controller=Robolectric.buildActivity(MainActivity::class.java).setup();val a=controller.get()
         try {
             ready(a);val v=page(a,48);val id=AyahId(2,282);val p=point(a,v,id)
-            touch(v,p,false);settle(a);assertEquals(id,v.selectedAyah);assertFalse(a.ayahDialog.isOpen)
-            shadowOf(Looper.getMainLooper()).idleFor(Duration.ofMillis(2500));assertEquals(id,v.selectedAyah)
-            capture(a,"long-line-highlight")
-            val blank=PagePoint(1f,1f);assertNull(v.hitTest(blank.x,blank.y))
             val originalSize=v.width to v.height
-            touch(v,blank,false);settle(a)
+            touch(v,p,false);settle(a)
+            assertNull(v.selectedAyah);assertFalse(a.ayahDialog.isOpen)
             for(r in listOf(R.id.top_bar,R.id.bottom_bar)) assertEquals(View.GONE,a.findViewById<View>(r).visibility)
             assertEquals(originalSize.first,v.width);assertTrue(v.height>originalSize.second)
-            val enlarged=point(a,v,id);assertEquals(id,v.hitTest(enlarged.x,enlarged.y));assertFalse(a.ayahDialog.isOpen)
-            assertNull(v.hitTest(blank.x,blank.y))
-            touch(v,blank,false);settle(a);assertEquals(View.VISIBLE,a.findViewById<View>(R.id.top_bar).visibility)
-            assertEquals(originalSize,v.width to v.height)
-            for(zoom in listOf(1f,2f,4f)) {
-                v.setZoom(zoom,p.x,p.y);val z=point(a,v,id);assertEquals(id,v.hitTest(z.x,z.y));touch(v,z,false)
-                assertEquals(id,v.selectedAyah);assertFalse(a.ayahDialog.isOpen)
-            }
-            fun swipe() {
-                val now=SystemClock.uptimeMillis();val y=v.height/2f
-                for((action,x,time) in listOf(Triple(MotionEvent.ACTION_DOWN,20f,now),Triple(MotionEvent.ACTION_MOVE,200f,now+30),Triple(MotionEvent.ACTION_UP,500f,now+60))) {
-                    val e=MotionEvent.obtain(now,time,action,x,y,0);v.dispatchTouchEvent(e);e.recycle()
-                }
-            }
-            swipe();settle(a);assertEquals(48,v.page!!.geometry.pageNumber)
-            v.setZoom(1f)
-            pinch(v)
-            assertFalse(a.ayahDialog.isOpen)
+            val enlarged=point(a,v,id);assertEquals(id,v.hitTest(enlarged.x,enlarged.y))
+            val blank=PagePoint(1f,1f);assertNull(v.hitTest(blank.x,blank.y))
+            touch(v,blank,false);settle(a)
             assertEquals(View.VISIBLE,a.findViewById<View>(R.id.top_bar).visibility)
-            assertEquals(id,v.selectedAyah)
-            val zoomedPoint=point(a,v,id);assertEquals(id,v.hitTest(zoomedPoint.x,zoomedPoint.y))
-            v.setZoom(1f);val now=SystemClock.uptimeMillis();val y=v.height/2f
+            assertEquals(originalSize,v.width to v.height)
+            val before=point(a,v,id);pinch(v);settle(a)
+            assertEquals(before,point(a,v,id));assertNull(v.selectedAyah);assertFalse(a.ayahDialog.isOpen)
+            val now=SystemClock.uptimeMillis();val y=v.height/2f
             for((action,x,time) in listOf(Triple(MotionEvent.ACTION_DOWN,20f,now),Triple(MotionEvent.ACTION_MOVE,200f,now+30),Triple(MotionEvent.ACTION_UP,500f,now+60))) {
                 val e=MotionEvent.obtain(now,time,action,x,y,0);v.dispatchTouchEvent(e);e.recycle()
             }
-            await { v.page?.geometry?.pageNumber==49 };layout(a);assertFalse(a.ayahDialog.isOpen);assertNull(v.selectedAyah)
+            await { v.page?.geometry?.pageNumber==49 };layout(a)
+            assertFalse(a.ayahDialog.isOpen);assertNull(v.selectedAyah)
         } finally { controller.pause().stop().destroy() }
     }
 
@@ -182,7 +166,7 @@ class AyahOptionsDialogTest {
             ready(a);val v=page(a,1);val p=point(a,v,AyahId(1,1));val now=SystemClock.uptimeMillis()
             val down=MotionEvent.obtain(now,now,MotionEvent.ACTION_DOWN,p.x,p.y,0);v.dispatchTouchEvent(down);down.recycle()
             shadowOf(Looper.getMainLooper()).idleFor(Duration.ofMillis(100));assertFalse(a.ayahDialog.isOpen)
-            shadowOf(Looper.getMainLooper()).idleFor(Duration.ofMillis((ViewConfiguration.getLongPressTimeout()+ViewConfiguration.getTapTimeout()).toLong()))
+            shadowOf(Looper.getMainLooper()).idleFor(Duration.ofMillis(850))
             await { a.ayahDialog.isOpen };assertEquals(AyahId(1,1),a.ayahDialog.ayahId)
             val up=MotionEvent.obtain(now,SystemClock.uptimeMillis(),MotionEvent.ACTION_UP,p.x,p.y,0);v.dispatchTouchEvent(up);up.recycle()
             await { a.ayahDialog.dialog.findViewById<Button>(R.id.ayah_dialog_copy)!!.isEnabled }
@@ -220,7 +204,7 @@ class AyahOptionsDialogTest {
         event(MotionEvent.ACTION_POINTER_UP or (1 shl MotionEvent.ACTION_POINTER_INDEX_SHIFT),2,220f,now+120)
         event(MotionEvent.ACTION_UP,1,220f,now+150)
         val after=v.screenPoint(PagePoint(20f,20f)).x-v.screenPoint(PagePoint(10f,20f)).x
-        assertTrue("Two-pointer pinch must still scale the existing matrix",after>before)
+        assertEquals("Two-pointer input must keep the fitted matrix unchanged",before,after,0.001f)
     }
 
     private fun output()=File(requireNotNull(System.getProperty("quran.sourceDir")),"../../reader-ui").apply { mkdirs() }

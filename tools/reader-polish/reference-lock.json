@@ -1,0 +1,39 @@
+{
+  "files": {
+    "app/src/main/java/com/ahmad/quran/mushaf/svg/AyahHighlight.kt": "5bf92e4857cec04b77ad4e2fb297ea6623510f19e4bcbb0cc9d5d11ae69c6733",
+    "app/src/main/java/com/ahmad/quran/mushaf/svg/AyahPolygons.kt": "016d094d1d96338a12cca7a5e8b49588629c8bc2a309876c0623ad22330d4255",
+    "app/src/main/java/com/ahmad/quran/mushaf/svg/QuranSvgPageAdapter.kt": "481b8caf5bdf16b49ddb16873241deb41a5c30bba1b651830422b10bec184b1f",
+    "app/src/main/java/com/ahmad/quran/mushaf/svg/OpeningPageHitOverrides.kt": "9131c3381e7d5e2d58df92686dc6210eaa14595737d314bbfcab090a03056f30",
+    "app/src/main/java/com/ahmad/quran/mushaf/svg/QuranSvgEdition.kt": "ae4c365ec2514c247538db50bce3e35e73190459388d4489865514853cc6f3cd",
+    "app/src/main/java/com/ahmad/quran/mushaf/svg/NativeSvgPageLoader.kt": "185e5cc6a44805f68ee0bd781c48760ac2a4d29bf9cdb565107ddf0d05427b25",
+    "app/src/main/java/com/ahmad/quran/mushaf/svg/OnDemandPageAssets.kt": "67dbdf0fea2c059fc45f992e79bbd25fcf3d5471fb5b6bb1d52257b8eb7d7f54",
+    "app/src/main/java/com/ahmad/quran/ui/MushafReaderController.kt": "da0171bb674ece354dd7707419805c5789d83ada04f1083508c8ea94cbb8347e",
+    "app/build.gradle.kts": "bec5168409bf8a125a7f156e9c28b37f5ae048653cf527e745d0f824ab350a32",
+    "config/mushaf-page-assets.json": "43550f03ad1e23637012adbf125ca1e990d2bf7a3b117753a11d703ba473b7b1",
+    "app/src/main/java/com/ahmad/quran/data/QuranRepository.kt": "5dbfaf5e14394b351ae29172fbb4c46e485abcef37f2f04810a5edbaa510c5d2",
+    "app/src/main/java/com/ahmad/quran/data/QuranSearch.kt": "7d732485f78125c5dbc19069f690903035291fe21dd55911b37b683a7fed6993",
+    "app/src/main/java/com/ahmad/quran/ui/DownloadedPageCache.kt": "6d131b11e62ea8cd8bd2f450acd63fd7c2d4c75f0512b12a38e80e6321b5bdab",
+    "app/src/main/java/com/ahmad/quran/ui/MainViewModel.kt": "6340d587fc419d09daaeed70abe9ecc935a0b49657ad2cff86d1d0e5b3d4a586",
+    "app/src/main/java/com/ahmad/quran/ui/ReadingPreferences.kt": "1737b02cea535c3093dd24f4fd3eb611115d19944fd0432253fc88ab44e3ab03",
+    "app/src/main/assets/quran-uthmani-v1.db": "8ed100334e8eca42124035f51fffe934d52b20e5224b3a44c1a33b44dba74416",
+    "tools/mushaf-svg/asset-manifest.json": "ae2d878ed9fc69c97042a082d5478a82f742a998bf73137f7805331c4621fc63",
+    "app/src/main/java/com/ahmad/quran/ui/InterfaceLocales.kt": "4175fbd42c79aa81b38347475cad6b62915d236fe758b270aa4947eaead63e32",
+    "app/src/main/java/com/ahmad/quran/ui/AyahOptionsDialog.kt": "c8894108990f2355d07c863852314a1c8811550144e9841eec25ab150588a47b"
+  },
+  "rendererMethods": {
+    "onDraw": "64ff55439e03bb024ff5b6f006769c17ae39d2850bbb1ff0b306bd36e9ed241a",
+    "updateMatrix": "1132c9c94ca060e3218120c776a9da9c3693dd88a872c26e0c7d6a2f2b68202f",
+    "hitTest": "2c8fb2d74d5c7f3e2d1c1d5692e192e53c5e6d32608d47936b139d3504d54d8a",
+    "visualHighlight": "f5fd6ca649057d9d539feb4258b8c60ed9a1aceea4d119eba70ca3fc90aed2d9",
+    "transitionTo": "05c9a2e2b5009489ad6217a766c60394fb63b71ad46469b77b4195ab0b0c7581",
+    "resetHighlight": "f46392de8a9924271aef4f91e52eab54cc3c73a7faf3d86f6eaa2876f3476c62",
+    "screenPoint": "bd850be9fa0c8121666796dee4d417bee5e32d1cc4fdbaf2bff74c6a663acc93",
+    "setZoom": "52ba9fb9674c88f99f89da94693e9c6bd7a7bab1721e06c6731921e8fc476f95"
+  },
+  "beforeSizes": {
+    "debug": 6938261,
+    "release": 3318346,
+    "aab": 3906183
+  },
+  "baselineCommit": "a77bea71f3b155e85f153924128003e2c9f4800e"
+}

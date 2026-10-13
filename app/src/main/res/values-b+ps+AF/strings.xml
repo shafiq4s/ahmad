@@ -58,8 +58,8 @@
     <string name="tanzil_attribution">د قرآن متن او معلومات: Tanzil پروژه\nhttps://tanzil.net\nCreative Commons Attribution 3.0</string>
     <string name="tanzil_terms">متن له سرچینې سره سم، پرته له بدلون څخه ساتل شوی دی.</string>
     <string name="show_license">د کارونې د جواز خبرتیا</string>
-    <string name="mushaf_page_description">د مصحف مخ. د مخکې تلو لپاره ښي لوري ته او د بېرته تلو لپاره کیڼ لوري ته کش کړئ. آیت لمس کړئ چې وټاکل شي؛ د انتخابونو لپاره یې لمس ونیسئ. تش ځای لمس کړئ چې د لوستلو تڼۍ ښکاره یا پټې شي.</string>
-    <string name="svg_zoom_help">په دوو ګوتو مخ لوی کړئ. د تڼیو د ښکاره یا پټولو لپاره تش ځای لمس کړئ. په اصلي اندازې کې مخونه په کشولو بدلولی شئ.</string>
+    <string name="mushaf_page_description">د مصحف مخ. لنډ لمس د لوستلو تڼۍ ښيي یا پټوي. د آیت د ټاکلو لپاره نیمه ثانیه ګوته ونیسئ؛ د آیت د غوراویو لپاره شاوخوا یوه ثانیه یې ونیسئ. بل مخ ته د تلو لپاره ښي او تېر مخ ته د تلو لپاره کیڼ لوري ته کش کړئ.</string>
+    <string name="reader_gesture_help">د لوستلو تڼیو د ښودلو یا پټولو لپاره مخ لمس کړئ. د آیت د ټاکلو لپاره نیمه ثانیه ګوته ونیسئ؛ د غوراویو لپاره یې لا ونیسئ. د مخونو د بدلولو لپاره ښي یا کیڼ لوري ته کش کړئ.</string>
     <string name="quran_svg_attribution">Quran.ws یوه خپلواکه پروژه ده چې د مصحف مخونه او د آیتونو ځایونه برابروي. د دې اسناد د حفص مخونو سرچینه د ملک فهد د قرآن کریم د چاپ مجمع د ۱۴۴۱ هجري قمري کال مصحف ښيي.\nhttps://github.com/quran-ws/quran-svg</string>
     <string name="page_jump_title">د مصحف یوه ځای ته ورشئ</string>
     <string name="page_jump_hint">د مخ شمېره له ۱ تر ۶۰۴ ولیکئ</string>

@@ -58,8 +58,8 @@
     <string name="tanzil_attribution">Quran text and metadata: Tanzil Project\nhttps://tanzil.net\nCreative Commons Attribution 3.0</string>
     <string name="tanzil_terms">The text is preserved exactly as supplied by the source.</string>
     <string name="show_license">License notice</string>
-    <string name="mushaf_page_description">Mushaf page. Swipe right to advance and left to go back. Tap a verse to select it; long press for its options. Tap blank space to show or hide reading controls.</string>
-    <string name="svg_zoom_help">Pinch to zoom. Tap blank space to show or hide controls. Swipe between pages at the original zoom level.</string>
+    <string name="mushaf_page_description">Mushaf page. Tap to show or hide reading controls. Hold for half a second to select a verse; keep holding for about a second to open its options. Swipe right to advance or left to go back.</string>
+    <string name="reader_gesture_help">Tap the page to show or hide controls. Hold for half a second to select a verse; keep holding to open its options. Swipe right or left to turn pages.</string>
     <string name="quran_svg_attribution">Quran.ws is an independent project providing Mushaf pages and verse geometry. Its documentation traces the Hafs artwork to the King Fahd Quran Printing Complex edition of 1441 AH.\nhttps://github.com/quran-ws/quran-svg</string>
     <string name="page_jump_title">Go to a position</string>
     <string name="page_jump_hint">Enter a page number from 1 to 604</string>

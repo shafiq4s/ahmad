@@ -70,7 +70,7 @@ class MainActivityTest {
         val start=SystemClock.uptimeMillis()
         val down=MotionEvent.obtain(start,start,MotionEvent.ACTION_DOWN,p.x,p.y,0)
         view.dispatchTouchEvent(down);down.recycle()
-        shadowOf(Looper.getMainLooper()).idleFor(Duration.ofMillis(850))
+        shadowOf(Looper.getMainLooper()).idleFor(Duration.ofMillis(950))
         val up=MotionEvent.obtain(start,SystemClock.uptimeMillis(),MotionEvent.ACTION_UP,p.x,p.y,0)
         view.dispatchTouchEvent(up);up.recycle()
     }

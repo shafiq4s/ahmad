@@ -1,0 +1,125 @@
+{
+  "platform": "Robolectric native Canvas on Linux desktop; not Android device timings",
+  "samples": [
+    {
+      "page": 1,
+      "width": 640,
+      "height": 960,
+      "drawMs": 9.066265,
+      "hitTestUs": 24.737,
+      "retainedDocuments": 1
+    },
+    {
+      "page": 2,
+      "width": 640,
+      "height": 960,
+      "drawMs": 4.129833,
+      "hitTestUs": 22.161,
+      "retainedDocuments": 2
+    },
+    {
+      "page": 48,
+      "width": 640,
+      "height": 960,
+      "drawMs": 7.119639,
+      "hitTestUs": 12.828,
+      "retainedDocuments": 1
+    },
+    {
+      "page": 121,
+      "width": 640,
+      "height": 960,
+      "drawMs": 12.663989,
+      "hitTestUs": 24.163,
+      "retainedDocuments": 1
+    },
+    {
+      "page": 604,
+      "width": 640,
+      "height": 960,
+      "drawMs": 10.756637,
+      "hitTestUs": 29.81,
+      "retainedDocuments": 1
+    },
+    {
+      "page": 1,
+      "width": 720,
+      "height": 1280,
+      "drawMs": 4.415509,
+      "hitTestUs": 21.066,
+      "retainedDocuments": 1
+    },
+    {
+      "page": 2,
+      "width": 720,
+      "height": 1280,
+      "drawMs": 5.444648,
+      "hitTestUs": 14.775,
+      "retainedDocuments": 2
+    },
+    {
+      "page": 48,
+      "width": 720,
+      "height": 1280,
+      "drawMs": 9.955411,
+      "hitTestUs": 12.262,
+      "retainedDocuments": 1
+    },
+    {
+      "page": 121,
+      "width": 720,
+      "height": 1280,
+      "drawMs": 12.7989,
+      "hitTestUs": 24.748,
+      "retainedDocuments": 1
+    },
+    {
+      "page": 604,
+      "width": 720,
+      "height": 1280,
+      "drawMs": 139.195577,
+      "hitTestUs": 27.393,
+      "retainedDocuments": 1
+    },
+    {
+      "page": 1,
+      "width": 1200,
+      "height": 2000,
+      "drawMs": 6.105972,
+      "hitTestUs": 23.658,
+      "retainedDocuments": 1
+    },
+    {
+      "page": 2,
+      "width": 1200,
+      "height": 2000,
+      "drawMs": 6.471459,
+      "hitTestUs": 19.289,
+      "retainedDocuments": 2
+    },
+    {
+      "page": 48,
+      "width": 1200,
+      "height": 2000,
+      "drawMs": 11.549916,
+      "hitTestUs": 102.525,
+      "retainedDocuments": 1
+    },
+    {
+      "page": 121,
+      "width": 1200,
+      "height": 2000,
+      "drawMs": 19.361121,
+      "hitTestUs": 76.258,
+      "retainedDocuments": 1
+    },
+    {
+      "page": 604,
+      "width": 1200,
+      "height": 2000,
+      "drawMs": 25.711533,
+      "hitTestUs": 28.83,
+      "retainedDocuments": 1
+    }
+  ]
+}

@@ -116,8 +116,9 @@ class MainActivity : AppCompatActivity() {
             updatePageAssetStatus()
         })
         pageView.onPageSwipe={ step -> viewModel.openPage(viewModel.state.value.pageNumber+step) }
-        pageView.onBlankTap={ toggleReaderChrome() }
-        pageView.onAyahTap={ id ->
+        pageView.onReaderTap={ toggleReaderChrome() }
+        pageView.onAyahPress={ id ->
+            if(readerChromeVisible) toggleReaderChrome()
             pageView.page?.geometry?.pageNumber?.let { viewModel.recordPageDisplayed(it,id) }
         }
         pageView.onAyahLongPress={ id ->
@@ -351,7 +352,7 @@ class MainActivity : AppCompatActivity() {
             if(viewModel.state.value.screen==Screen.READER && readerChromeVisible) toggleReaderChrome()
         }
     }
-    override fun onPause() { if (::reader.isInitialized) reader.saveMeasurements();super.onPause() }
+    override fun onPause() { if (::pageView.isInitialized) pageView.cancelPendingInteraction();if (::reader.isInitialized) reader.saveMeasurements();super.onPause() }
     private fun applyNavigationSelection(state: QuranUiState) {
         val id=state.targetAyah ?: return
         if(state.screen==Screen.READER && !state.loading && !state.error && reader.displaying &&

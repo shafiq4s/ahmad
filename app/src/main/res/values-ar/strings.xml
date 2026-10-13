@@ -58,8 +58,8 @@
     <string name="tanzil_attribution">نص القرآن وبيانات المصحف: Tanzil Project\nhttps://tanzil.net\nCreative Commons Attribution 3.0</string>
     <string name="tanzil_terms">النص محفوظ كما ورد من المصدر دون تغيير.</string>
     <string name="show_license">إشعار الترخيص</string>
-    <string name="mushaf_page_description">صفحة المصحف. اسحب إلى اليمين للتقدم وإلى اليسار للرجوع. المس آية لتحديدها، واضغط مطولًا لخياراتها. المس الفراغ لإظهار عناصر القراءة أو إخفائها.</string>
-    <string name="svg_zoom_help">كبّر صفحة المصحف بإصبعين. المس الفراغ لإظهار الأشرطة أو إخفائها. التنقل بالسحب متاح بحجم الصفحة الأصلي.</string>
+    <string name="mushaf_page_description">صفحة المصحف. لمسة قصيرة تُظهر أو تُخفي أشرطة القراءة. اضغط نصف ثانية لتحديد الآية، واستمر نحو ثانية لفتح خياراتها. اسحب لليمين للصفحة التالية ولليسار للسابقة.</string>
+    <string name="reader_gesture_help">المس الصفحة لإظهار أشرطة القراءة أو إخفائها. اضغط نصف ثانية لتحديد آية، واستمر لفتح خياراتها. اسحب يمينًا أو يسارًا للتنقل بين الصفحات.</string>
     <string name="quran_svg_attribution">Quran.ws مشروع مستقل، ومصدر صفحات المصحف وبيانات مواضع الآيات. توثيقه يُرجع أصل صفحات حفص إلى مصحف مجمع الملك فهد لعام ١٤٤١هـ.\nhttps://github.com/quran-ws/quran-svg</string>
     <string name="page_jump_title">انتقال في المصحف</string>
     <string name="page_jump_hint">أدخل رقم الصفحة من ١ إلى ٦٠٤</string>

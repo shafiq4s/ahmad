@@ -176,7 +176,7 @@ class MushafSvgGeometryTest {
         val down = MotionEvent.obtain(now,now,MotionEvent.ACTION_DOWN,point.x,point.y,0)
         view.dispatchTouchEvent(down);down.recycle()
         if(long)shadowOf(Looper.getMainLooper()).idleFor(Duration.ofMillis(
-            ViewConfiguration.getLongPressTimeout().toLong()+ViewConfiguration.getTapTimeout()+150))
+            NativeSvgPageView.AYAH_OPTIONS_HOLD_MS+150))
         val up = MotionEvent.obtain(now,SystemClock.uptimeMillis(),MotionEvent.ACTION_UP,point.x,point.y,0)
         view.dispatchTouchEvent(up);up.recycle()
     }

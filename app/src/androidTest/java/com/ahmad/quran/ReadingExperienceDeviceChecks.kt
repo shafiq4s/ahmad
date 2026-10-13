@@ -98,7 +98,7 @@ class ReadingExperienceDeviceChecks(private val test: Instrumentation, private v
             val down = MotionEvent.obtain(downTime, downTime, MotionEvent.ACTION_DOWN, point.x, point.y, 0)
             view.dispatchTouchEvent(down); down.recycle()
         }
-        SystemClock.sleep((android.view.ViewConfiguration.getLongPressTimeout() + android.view.ViewConfiguration.getTapTimeout() + 80).toLong())
+        SystemClock.sleep(950L)
         main {
             val up = MotionEvent.obtain(downTime, SystemClock.uptimeMillis(), MotionEvent.ACTION_UP, point.x, point.y, 0)
             view.dispatchTouchEvent(up); up.recycle()

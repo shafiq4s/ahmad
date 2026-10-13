@@ -68,10 +68,10 @@ class ReaderUiInstrumentation : Instrumentation() {
                                 val tap = MotionEvent.obtain(now, now + if (action == MotionEvent.ACTION_UP) 60 else 0, action, tapPoint.x, tapPoint.y, 0)
                                 view.dispatchTouchEvent(tap); tap.recycle()
                             }
-                            check(view.selectedAyah == id && !activity.ayahDialog.isOpen)
+                            check(view.selectedAyah == null && !activity.ayahDialog.isOpen)
                         }
                         SystemClock.sleep(500)
-                        capture("reader-long-line-highlight.png")
+                        capture("reader-short-tap-no-highlight.png")
                     }
                     val downTime = SystemClock.uptimeMillis()
                     runOnMainSync {
@@ -80,7 +80,7 @@ class ReaderUiInstrumentation : Instrumentation() {
                         val down = MotionEvent.obtain(downTime, downTime, MotionEvent.ACTION_DOWN, point.x, point.y, 0)
                         view.dispatchTouchEvent(down); down.recycle()
                     }
-                    SystemClock.sleep((android.view.ViewConfiguration.getLongPressTimeout() + android.view.ViewConfiguration.getTapTimeout() + 50).toLong())
+                    SystemClock.sleep(950L)
                     runOnMainSync {
                         val up = MotionEvent.obtain(downTime, SystemClock.uptimeMillis(), MotionEvent.ACTION_UP, point.x, point.y, 0)
                         view.dispatchTouchEvent(up); up.recycle()

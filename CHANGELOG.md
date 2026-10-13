@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased — Fitted reader interaction and visual polish
+
+- Removed interactive pinch/zoom/pan and multi-touch page gestures from the main reader.
+- Short taps toggle reader bars;500ms holds select/hide bars and 900ms holds open the existing centered modal. Movement/swipes/page/lifecycle changes cancel pending holds.
+- Kept source polygons, mapping, white artwork background, line highlight, rendering functions and three-document/download cache contracts unchanged.
+- Refined header height, translated wrapping, 4dp outer page spacing and loading-card spacing; updated seven-language gesture/accessibility help.
+- Added boundary/cancellation/coordinate/pinch regressions and small/medium/large API 23/36 native-Canvas UI checks.
+
 ## Unreleased — Seven interface languages
 
 - Added System/manual language selection using existing AppCompat, with local persistence before Android 13 and native per-app locale settings on Android 13+.

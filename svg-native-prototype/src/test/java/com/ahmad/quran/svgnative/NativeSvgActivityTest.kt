@@ -51,7 +51,7 @@ class NativeSvgActivityTest {
             val now=SystemClock.uptimeMillis()
             val down=MotionEvent.obtain(now,now,MotionEvent.ACTION_DOWN,point.x,point.y,0)
             activity.pageView.dispatchTouchEvent(down);down.recycle()
-            shadowOf(Looper.getMainLooper()).idleFor(Duration.ofMillis(850))
+            shadowOf(Looper.getMainLooper()).idleFor(Duration.ofMillis(950))
             assertTrue("Panel after press: ${metrics.text}; selected=${activity.pageView.selectedAyah}",
                 metrics.text.toString().contains("Ayah 1:1"))
             val up=MotionEvent.obtain(now,SystemClock.uptimeMillis(),MotionEvent.ACTION_UP,point.x,point.y,0)

@@ -1,0 +1,113 @@
+{
+  "tests": {
+    "app": {
+      "tests": 150,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "svg-native-prototype": {
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "debug": {
+      "errors": 0,
+      "warnings": 11,
+      "ids": [
+        "UnusedAttribute",
+        "LockedOrientationActivity",
+        "NewerVersionAvailable",
+        "DiscouragedApi",
+        "InefficientWeight",
+        "Overdraw",
+        "UselessParent",
+        "UselessParent",
+        "TooManyViews",
+        "UseKtx",
+        "UseKtx"
+      ]
+    },
+    "release": {
+      "errors": 0,
+      "warnings": 11,
+      "ids": [
+        "UnusedAttribute",
+        "LockedOrientationActivity",
+        "NewerVersionAvailable",
+        "DiscouragedApi",
+        "InefficientWeight",
+        "Overdraw",
+        "UselessParent",
+        "UselessParent",
+        "TooManyViews",
+        "UseKtx",
+        "UseKtx"
+      ]
+    }
+  },
+  "frozenFiles": 19,
+  "rendererMethodsUnchanged": [
+    "onDraw",
+    "updateMatrix",
+    "hitTest",
+    "visualHighlight",
+    "transitionTo",
+    "resetHighlight",
+    "screenPoint",
+    "setZoom"
+  ],
+  "canonicalAndArtworkBytesExactInAllArtifacts": true,
+  "packagedSeedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    300,
+    600,
+    601,
+    602,
+    603,
+    604
+  ],
+  "polygons": 604,
+  "newDependencies": [],
+  "userZoomPanAndMultitouchDisabled": true,
+  "uiLanguages": [
+    "ar",
+    "en",
+    "fa-AF",
+    "ps-AF",
+    "uz-UZ",
+    "tg-TJ",
+    "haz-AF"
+  ],
+  "runtime": "Robolectric API23/36; native Canvas on Linux desktop, not new hardware measurements",
+  "artifacts": {
+    "debug": {
+      "bytes": 6939140,
+      "sha256": "b0579dd4478d660c0e426039dd186473f4cd2ffa326b9bf6f8afc1e8e549016a",
+      "path": "app/build/outputs/apk/debug/app-debug.apk",
+      "beforeBytes": 6938261,
+      "differenceBytes": 879
+    },
+    "release": {
+      "bytes": 3318930,
+      "sha256": "0b3a7c26051c0b93c7c2641df749786188c2589aaa0bc7c1c4dd541aae4de938",
+      "path": "app/build/outputs/apk/release/app-release-unsigned.apk",
+      "beforeBytes": 3318346,
+      "differenceBytes": 584
+    },
+    "aab": {
+      "bytes": 3906349,
+      "sha256": "4399c7f6e13b94a996f6b49fcf404e751e885f8b9131b28b3c8f06fa3d006495",
+      "path": "app/build/outputs/bundle/release/app-release.aab",
+      "beforeBytes": 3906183,
+      "differenceBytes": 166
+    }
+  }
+}

@@ -104,7 +104,7 @@ class ReaderDesignTest {
             val originalHeight=v.height;val topHeight=a.findViewById<View>(R.id.top_bar).height
             await { a.reader.retainedDocumentCount==3 }
             val parsed=a.reader.parsedDocumentCount
-            v.onBlankTap!!.invoke()
+            v.onReaderTap!!.invoke()
             val field=MainActivity::class.java.getDeclaredField("chromeAnimation").apply { isAccessible=true }
             var animation=field.get(a) as ValueAnimator;assertEquals(190L,animation.duration)
             animation.currentPlayTime=95;layout(a)
@@ -113,10 +113,10 @@ class ReaderDesignTest {
             val mid=v.screenPoint(source);assertEquals(identity,v.hitTest(mid.x,mid.y))
             // Reverse from the current fraction, without jumping to a fully open/closed endpoint.
             val midHeight=a.findViewById<View>(R.id.top_bar).height
-            v.onBlankTap!!.invoke();animation=field.get(a) as ValueAnimator;layout(a)
+            v.onReaderTap!!.invoke();animation=field.get(a) as ValueAnimator;layout(a)
             assertEquals(midHeight,a.findViewById<View>(R.id.top_bar).height)
             animation.end();layout(a);assertEquals(originalHeight,v.height);assertNoCover(a,v)
-            v.onBlankTap!!.invoke();(field.get(a) as ValueAnimator).end();layout(a)
+            v.onReaderTap!!.invoke();(field.get(a) as ValueAnimator).end();layout(a)
             assertEquals(View.GONE,a.findViewById<View>(R.id.top_bar).visibility)
             assertEquals(View.GONE,a.findViewById<View>(R.id.bottom_bar).visibility)
             assertTrue(v.height>originalHeight)
@@ -125,7 +125,7 @@ class ReaderDesignTest {
             val enlarged=v.screenPoint(source);assertEquals(identity,v.hitTest(enlarged.x,enlarged.y))
             assertEquals(parsed,a.reader.parsedDocumentCount)
             capture(a,"reader-48-immersive")
-            v.onBlankTap!!.invoke();(field.get(a) as ValueAnimator).end();layout(a);assertNoCover(a,v)
+            v.onReaderTap!!.invoke();(field.get(a) as ValueAnimator).end();layout(a);assertNoCover(a,v)
             assertEquals(originalHeight,v.height)
         } finally { controller.pause().stop().destroy() }
     }

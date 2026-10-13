@@ -9,7 +9,9 @@ import android.graphics.Paint
 import android.graphics.Path
 import android.graphics.RectF
 import android.util.AttributeSet
-import android.view.GestureDetector
+import android.os.Handler
+import android.os.Looper
+import android.view.ViewConfiguration
 import android.view.MotionEvent
 import android.view.View
 import com.ahmad.quran.data.AyahId
@@ -20,6 +22,8 @@ import kotlin.math.min
 /** Direct vector rendering and edition touch geometry share exactly one display matrix. */
 class NativeSvgPageView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null) : View(context, attrs) {
     init {
+        isClickable = true
+        isFocusable = true
         // API 23 hardware path caching blurred the source's tiny transformed glyph paths.
         // Software redraw keeps vector zoom sharp; the OS owns one viewport layer, not page rasters.
         if (android.os.Build.VERSION.SDK_INT < 26) setLayerType(LAYER_TYPE_SOFTWARE, null)
@@ -41,9 +45,8 @@ class NativeSvgPageView @JvmOverloads constructor(context: Context, attrs: Attri
         private set
     private var selectionHeld = false
     var onAyahLongPress: ((AyahId) -> Unit)? = null
-    var onAyahTap: ((AyahId) -> Unit)? = null
-    var onBlankTap: (() -> Unit)? = null
-    private var multiplePointers = false
+    var onAyahPress: ((AyahId) -> Unit)? = null
+    var onReaderTap: (() -> Unit)? = null
     var onPageSwipe: ((Int) -> Unit)? = null
     /** One-shot completion of the next actual View draw, for the standalone gate. */
     var onNextRender: (() -> Unit)? = null
@@ -57,47 +60,45 @@ class NativeSvgPageView @JvmOverloads constructor(context: Context, attrs: Attri
     var lastLongPressDispatchNanos = 0L
         private set
     private val clearSelection = Runnable { selectedAyah = null; ink = null; transitionTo(null) }
-    private val gestures = GestureDetector(context, object : GestureDetector.SimpleOnGestureListener() {
-        override fun onDown(e: MotionEvent) = true
-        override fun onSingleTapUp(e: MotionEvent): Boolean {
-            if (multiplePointers) return true
-            val chosen = hitTest(e.x, e.y)
-            if (chosen == null) onBlankTap?.invoke()
-            else {
-                holdSelection()
-                select(chosen)
-                onAyahTap?.invoke(chosen)
-            }
-            return performClick()
+    companion object {
+        const val AYAH_SELECT_HOLD_MS = 500L
+        const val AYAH_OPTIONS_HOLD_MS = 900L
+        private const val PAGE_SWIPE_DISTANCE_DP = 60f
+    }
+    private val touchHandler = Handler(Looper.getMainLooper())
+    private val touchSlop = ViewConfiguration.get(context).scaledTouchSlop.toFloat()
+    private var touchActive = false
+    private var touchMoved = false
+    private var pressSelected = false
+    private var downX = 0f
+    private var downY = 0f
+    private var downTime = 0L
+    private var touchAyah: AyahId? = null
+    private var touchPage: NativeSvgPage? = null
+    private val selectHold = Runnable {
+        val id = touchAyah
+        if (touchActive && !touchMoved && id != null && page === touchPage) {
+            holdSelection()
+            select(id)
+            pressSelected = true
+            onAyahPress?.invoke(id)
         }
-        override fun onFling(start: MotionEvent?, end: MotionEvent, velocityX: Float, velocityY: Float): Boolean {
-            if (start == null || zoom > 1f || page == null) return false
-            val dx = end.x-start.x
-            if (kotlin.math.abs(dx) < 60*resources.displayMetrics.density ||
-                kotlin.math.abs(dx) <= kotlin.math.abs(end.y-start.y) || kotlin.math.abs(velocityX) < 150) return false
-            // RTL book order: a rightward swipe advances; artwork coordinates stay unchanged.
-            onPageSwipe?.invoke(if (dx > 0) 1 else -1)
-            return true
-        }
-        override fun onLongPress(e: MotionEvent) {
-            if (multiplePointers) return
+    }
+    private val optionsHold = Runnable {
+        val id = touchAyah
+        if (touchActive && !touchMoved && pressSelected && id != null && page === touchPage) {
             val start = System.nanoTime()
-            val chosen = hitTest(e.x, e.y) ?: return
-            lastLongPressDispatchNanos = System.nanoTime()-start
-            select(chosen)
-            onAyahLongPress?.invoke(chosen)
+            onAyahLongPress?.invoke(id)
+            lastLongPressDispatchNanos = System.nanoTime() - start
         }
-    }).apply { setOnDoubleTapListener(null) }
-    private val scaleGestures = android.view.ScaleGestureDetector(context,
-        object : android.view.ScaleGestureDetector.SimpleOnScaleGestureListener() {
-            override fun onScale(detector: android.view.ScaleGestureDetector): Boolean {
-                setZoom(zoom*detector.scaleFactor, detector.focusX, detector.focusY)
-                return true
-            }
-        })
+    }
+    private fun cancelHoldTimers() {
+        touchHandler.removeCallbacks(selectHold)
+        touchHandler.removeCallbacks(optionsHold)
+    }
 
     fun display(page: NativeSvgPage) {
-        cancelPendingGesture()
+        cancelPendingInteraction()
         removeCallbacks(clearSelection)
         this.page = page
         selectedAyah = null
@@ -109,7 +110,7 @@ class NativeSvgPageView @JvmOverloads constructor(context: Context, attrs: Attri
     }
 
     fun release() {
-        cancelPendingGesture()
+        cancelPendingInteraction()
         removeCallbacks(clearSelection)
         onNextRender = null
         page = null
@@ -119,11 +120,16 @@ class NativeSvgPageView @JvmOverloads constructor(context: Context, attrs: Attri
         invalidate()
     }
 
-    private fun cancelPendingGesture() {
-        val now = android.os.SystemClock.uptimeMillis()
-        val event = MotionEvent.obtain(now, now, MotionEvent.ACTION_CANCEL, 0f, 0f, 0)
-        gestures.onTouchEvent(event)
-        event.recycle()
+    /** Cancel timers on page replacement, lifecycle changes or detached views. */
+    fun cancelPendingInteraction() {
+        cancelHoldTimers()
+        touchActive = false
+        touchAyah = null
+        touchPage = null
+    }
+    override fun onDetachedFromWindow() {
+        cancelPendingInteraction()
+        super.onDetachedFromWindow()
     }
 
     private fun select(id: AyahId) {
@@ -155,6 +161,7 @@ class NativeSvgPageView @JvmOverloads constructor(context: Context, attrs: Attri
         clearSelection.run()
     }
 
+    /** Programmatic matrix validation only; production touch input never changes scale or translation. */
     fun setZoom(value: Float, x: Float = width/2f, y: Float = height/2f) {
         zoom = max(1f, min(4f, value))
         focus = PagePoint(x, y)
@@ -242,18 +249,54 @@ class NativeSvgPageView @JvmOverloads constructor(context: Context, attrs: Attri
         onNextRender = null
         completed?.invoke()
     }
-    override fun performClick(): Boolean { super.performClick(); return true }
-    @SuppressLint("ClickableViewAccessibility") // GestureDetector delegates ordinary taps to performClick.
+    override fun performClick(): Boolean {
+        super.performClick()
+        onReaderTap?.invoke()
+        return true
+    }
+    @SuppressLint("ClickableViewAccessibility") // Short touches use performClick; holds resolve source polygons.
     override fun onTouchEvent(event: MotionEvent): Boolean {
-        if (event.actionMasked == MotionEvent.ACTION_DOWN) multiplePointers = false
-        if (event.pointerCount > 1) multiplePointers = true
-        scaleGestures.onTouchEvent(event)
-        if (scaleGestures.isInProgress) {
-            val cancel = MotionEvent.obtain(event).apply { action = MotionEvent.ACTION_CANCEL }
-            gestures.onTouchEvent(cancel)
-            cancel.recycle()
-        } else gestures.onTouchEvent(event)
-        if (event.actionMasked == MotionEvent.ACTION_UP && selectedAyah != null && !selectionHeld) postDelayed(clearSelection, 1800)
+        when (event.actionMasked) {
+            MotionEvent.ACTION_DOWN -> {
+                cancelPendingInteraction()
+                touchActive = true
+                touchMoved = false
+                pressSelected = false
+                // Global coordinates stay stable while hiding chrome resizes/repositions this View.
+                downX = event.rawX; downY = event.rawY; downTime = event.eventTime
+                touchPage = page
+                touchAyah = hitTest(event.x, event.y)
+                if (touchAyah != null) {
+                    touchHandler.postDelayed(selectHold, AYAH_SELECT_HOLD_MS)
+                    touchHandler.postDelayed(optionsHold, AYAH_OPTIONS_HOLD_MS)
+                }
+            }
+            MotionEvent.ACTION_POINTER_DOWN, MotionEvent.ACTION_CANCEL -> cancelPendingInteraction()
+            MotionEvent.ACTION_MOVE -> if (touchActive) {
+                val dx = event.rawX - downX; val dy = event.rawY - downY
+                if (event.pointerCount != 1) cancelPendingInteraction()
+                else if (!touchMoved && dx * dx + dy * dy > touchSlop * touchSlop) {
+                    touchMoved = true
+                    cancelHoldTimers()
+                    if (pressSelected) clearAyahSelection()
+                }
+            }
+            MotionEvent.ACTION_UP -> if (touchActive) {
+                cancelHoldTimers()
+                val dx = event.rawX - downX; val dy = event.rawY - downY
+                if (pressSelected && dx * dx + dy * dy > touchSlop * touchSlop) clearAyahSelection()
+                val distance = PAGE_SWIPE_DISTANCE_DP * resources.displayMetrics.density
+                if (event.pointerCount == 1 && page != null && kotlin.math.abs(dx) >= distance &&
+                    kotlin.math.abs(dx) > kotlin.math.abs(dy) * 1.2f) {
+                    // Approved book order in every UI language; the artwork never mirrors.
+                    onPageSwipe?.invoke(if (dx > 0) 1 else -1)
+                } else if (!touchMoved && !pressSelected && dx * dx + dy * dy <= touchSlop * touchSlop &&
+                    event.eventTime - downTime < AYAH_SELECT_HOLD_MS) {
+                    performClick()
+                }
+                cancelPendingInteraction()
+            }
+        }
         return true
     }
 }
